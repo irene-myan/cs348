@@ -14,9 +14,9 @@ const WorldRanking = () => {
 
         try {
             const response = await instance.get('/topelo/');
-            const responseData = response.data; // Extract the data from the response
+            const responseData = response.data;
             console.log(responseData);
-            setData(responseData); // Update the state with the fetched data
+            setData(responseData);
         } catch (error) {
             console.error('Error fetching data:', error);
         }
