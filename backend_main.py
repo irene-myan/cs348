@@ -32,6 +32,10 @@ def get_db():
 # python3 -m uvicorn backend_main:app --host 0.0.0.0 --port 8000 --reload
 
 # FastAPI
+def generate_result_from_query(res):
+    columns = res.keys()
+    result = [{column: value for column, value in zip(columns, row)} for row in res.fetchall()]
+    return result
 
 # Return the frequencies of win, draw, loss for a given position
 @app.get("/plist/")
@@ -51,18 +55,9 @@ def get_plist(fen: str, db: Session = Depends(get_db)):
     result = db.execute(
         text(query),
         fen=fen
-    ).fetchall()
+    )
 
-    rows = [
-        {
-            "pwhite": float(row[0]),
-            "pdraw": float(row[1]),
-            "pblack": float(row[2]),
-            "total": int(row[3])
-        }
-        for row in result
-    ]
-    return {'games': rows}
+    return generate_result_from_query(result)
 
 
 # Datetime input
@@ -92,33 +87,16 @@ def get_items(date_start: Optional[date] = None, date_end: Optional[date] = None
         text(query),
         start_date=date_start,
         end_date=date_end
-    ).fetchall()
+    )
 
-    rows = [
-        {
-            "gid": int(row[0]), 
-            "event": str(row[1]),
-            "site": str(row[2]),
-            "date": date(row[3]),
-            "round": int(row[4]),
-            "whitepid": int(row[5]),
-            "blackpid": int(row[6]),
-            "result": str(row[6]),
-            "whiteelo": int(row[6]),
-            "blackelo": int(row[6]),
-            "eco": str(row[6]),
-            "event_date": date(row[6]),
-        }
-        for row in result
-    ]
-    return {'games': rows}
+    return generate_result_from_query(result)
 
 # Sort all the games by date
 @app.get("/sbd/")
 def get_items(desc: bool, db: Session = Depends(get_db)):
     order = "DESC" if desc else "ASC"
     result = db.execute(text(f"SELECT * FROM Games ORDER BY date {order}"))
-    return {'games': [dict(row) for row in result]}
+    return generate_result_from_query(result)
 
 # Count the number of openings and its name
 @app.get("/openings/")
@@ -130,13 +108,10 @@ def get_items(desc: bool, db: Session = Depends(get_db)):
         "GROUP BY o.name"
     )
     result = db.execute(text())
-    return {'games': [dict(row) for row in result]}
+
+    return generate_result_from_query(result)
 
 @app.get("/test/")
 def get_items(db: Session = Depends(get_db)):
-    result = db.execute(text("SELECT * FROM student"))
-    rows = [
-        {"id": int(row[0]), "name": row[1], "score": float(row[2])}
-        for row in result
-    ]
-    return {'students': rows}
+    result_proxy = db.execute(text("SELECT * FROM student"))
+    return generate_result_from_query(result_proxy)
