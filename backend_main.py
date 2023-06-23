@@ -57,7 +57,7 @@ def get_plist(fen: str, db: Session = Depends(get_db)):
         fen=fen
     )
 
-    return {'games': generate_result_from_query(result)}
+    return generate_result_from_query(result)
 
 
 # Datetime input
@@ -89,14 +89,14 @@ def get_items(date_start: Optional[date] = None, date_end: Optional[date] = None
         end_date=date_end
     )
 
-    return {'games': generate_result_from_query(result)}
+    return generate_result_from_query(result)
 
 # Sort all the games by date
 @app.get("/sbd/")
 def get_items(desc: bool, db: Session = Depends(get_db)):
     order = "DESC" if desc else "ASC"
     result = db.execute(text(f"SELECT * FROM Games ORDER BY date {order}"))
-    return {'games': [dict(row) for row in result]}
+    return generate_result_from_query(result)
 
 # Count the number of openings and its name
 @app.get("/openings/")
@@ -108,12 +108,10 @@ def get_items(desc: bool, db: Session = Depends(get_db)):
         "GROUP BY o.name"
     )
     result = db.execute(text())
-    
-    return {'games': generate_result_from_query(result)}
+
+    return generate_result_from_query(result)
 
 @app.get("/test/")
 def get_items(db: Session = Depends(get_db)):
     result_proxy = db.execute(text("SELECT * FROM student"))
-    # get columns from cursor object
-    result = generate_result_from_query(result_proxy)
-    return {'students': result}
+    return generate_result_from_query(result_proxy)
