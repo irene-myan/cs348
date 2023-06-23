@@ -1,12 +1,32 @@
-
 import React from 'react';
-const TopEloPlayersPage = () => {
+import axios from 'axios';
+import { useState, useEffect } from 'react';
+
+const WorldRanking = () => {
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        fetchData();
+    }, []);
+
+    async function fetchData() {
+        try {
+            const response = await axios.get('/topelo');
+            const responseData = response.data; // Extract the data from the response
+            setData(responseData); // Update the state with the fetched data
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
+    };
+
     return (
         <div>
-            <h1>Top elo players played games within a date time</h1>
-            {/* Implement the logic to display the list of games */}
+            <h1>World Ranking</h1>
+            {data.map((item, index) => (
+                <div key={index}>{item}</div>
+            ))} 
         </div>
     );
 };
 
-export default TopEloPlayersPage;
+export default WorldRanking;

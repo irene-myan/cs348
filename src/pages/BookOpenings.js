@@ -1,6 +1,6 @@
 
 import React from 'react';
-const BookOpeningsPage = () => {
+const BookOpenings = () => {
     return (
         <div>
             <h1>Viewing book openings by set of moves</h1>
@@ -9,4 +9,4 @@ const BookOpeningsPage = () => {
     );
 };
 
-export default BookOpeningsPage;
+export default BookOpenings;

@@ -1,0 +1,32 @@
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #4876d2;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-bar li {
+    margin: 0 10px;
+  }
+  
+  .nav-bar li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .nav-bar li a:hover {
+    color: #000;
+  }

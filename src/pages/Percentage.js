@@ -1,6 +1,6 @@
 
 import React from 'react';
-const PercentagePage = () => {
+const Percentage = () => {
     return (
         <div>
             <h1>Percentage won/draw/lost from given fen</h1>
@@ -9,4 +9,4 @@ const PercentagePage = () => {
     );
 };
     
-export default PercentagePage;
+export default Percentage;
