@@ -67,7 +67,7 @@ def get_plist(fen: str, db: Session = Depends(get_db)):
 
     result = db.execute(
         text(query),
-        fen=fen
+        { 'fen': fen }
     )
 
     return generate_result_from_query(result)
@@ -85,22 +85,26 @@ def get_items(date_start: Optional[date] = None, date_end: Optional[date] = None
         date_end = date(9999,9,9)
 
     query = (
-        "WITH topelo AS ("
-        "  SELECT "
-        "    CASE WHEN white_elo >= black_elo THEN white_elo ELSE black_elo END AS top_elo "
-        "  FROM Games "
-        "  WHERE date >= :start_date AND date <= :end_date"
-        ")"
+        "WITH all_elo AS ("
+        "  SELECT wp_elo as elo FROM Games WHERE date >= :date_start AND date <= :date_end "
+        "  UNION ALL "
+        "  SELECT bp_elo as elo FROM Games WHERE date >= :date_start AND date <= :date_end"
+        "), "
+        "topelo AS ("
+        "  SELECT MAX(elo) as top_elo FROM all_elo"
+        ") "
         "SELECT g.* "
         "FROM Games g "
-        "WHERE g.white_elo in topelo.top_elo or g.black_elo in topelo.top_elo"
+        "WHERE g.wp_id IN (SELECT wp_id FROM Games WHERE wp_elo IN (SELECT top_elo FROM topelo)) "
+        "   OR g.bp_id IN (SELECT bp_id FROM Games WHERE bp_elo IN (SELECT top_elo FROM topelo))"
     )
+
 
     result = db.execute(
         text(query),
-        start_date=date_start,
-        end_date=date_end
+        {"date_start": date_start, "date_end": date_end}
     )
+
 
     return generate_result_from_query(result)
 
