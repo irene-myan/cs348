@@ -1,0 +1,4 @@
+beautifulsoup4==4.11.1
+fastapi==0.98.0
+SQLAlchemy==2.0.16
+tqdm==4.65.0
