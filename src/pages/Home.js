@@ -3,19 +3,19 @@ import '../css/home-page.css';
 
 const Home = () => {
     const [inputFen, setInputFen] = useState("");
-    
-    
+
     const handleInputFen = (e) => {
         setInputFen(e.target.value);
     };
 
     const handleSearchFen = () => {
-        console.log("GOT HRE");
-        return (
-            <div>
-                Fen is: {inputFen}
-            </div>
-        );
+        if (inputFen !== "") {
+            return (
+                <div>
+                    Fen is: {inputFen}
+                </div>
+            );
+        }
     };
 
 
@@ -26,7 +26,6 @@ const Home = () => {
             <div>
                 <input type="text" onChange={handleInputFen} value={inputFen} />
                 <button onClick={handleSearchFen}> Search </button>
-                {handleSearchFen}
             </div>
         </div>
     );

@@ -5,6 +5,7 @@ from sqlalchemy.orm import sessionmaker, scoped_session, Session
 from sqlalchemy.ext.automap import automap_base
 from datetime import date, datetime
 SQLALCHEMY_DATABASE_URL = "mysql+mysqlconnector://root:Password123@localhost/testDB"
+from fastapi.middleware.cors import CORSMiddleware
 
 # Password123
 engine = create_engine(
@@ -19,6 +20,18 @@ Base = automap_base()
 Base.prepare(engine, reflect=True)
 
 app = FastAPI()
+
+origins = [
+    "http://localhost:3000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 def get_db():
     db = SessionLocal()

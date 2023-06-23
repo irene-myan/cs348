@@ -10,9 +10,12 @@ const WorldRanking = () => {
     }, []);
 
     async function fetchData() {
+        const instance = axios.create({baseURL: 'http://localhost:8000'})
+
         try {
-            const response = await axios.get('/topelo');
+            const response = await instance.get('/topelo/');
             const responseData = response.data; // Extract the data from the response
+            console.log(responseData);
             setData(responseData); // Update the state with the fetched data
         } catch (error) {
             console.error('Error fetching data:', error);
@@ -22,9 +25,9 @@ const WorldRanking = () => {
     return (
         <div>
             <h1>World Ranking</h1>
-            {data.map((item, index) => (
+            {/* {data.map((item, index) => (
                 <div key={index}>{item}</div>
-            ))} 
+            ))}  */}
         </div>
     );
 };
