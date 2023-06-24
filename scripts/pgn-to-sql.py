@@ -19,15 +19,20 @@ import sys
 
 fields = ['event', 'site', 'date', 'round', 'white', 'black', 'result', 'whiteelo', 'blackelo', 'eco']
 
+fieldss = ['event', 'site', 'date', 'round', 'white', 'black', 'result', 'wp_elo', 'bp_elo', 'eco']
+
 def allow(game):
-	if game.whiteelo == "" or game.blackelo == "" or game.round == "?" or "?" in game.date:
+	if game.date[0] == '1': return False
+	if game.whiteelo == "" or game.blackelo == "" or "?" in game.date or "?" in game.round:
+		return False
+	if len(game.moves) > 75:
 		return False
 	return True
 
 def values_row (game):
 	ret = '('
 	for field in fields:
-		if hasattr(game, field):
+		if hasattr(game, field) and getattr(game, field) is not None:
 			ret += ' \'' + getattr(game, field).replace('\'', '\\\'') + '\', '
 		else:
 			ret += ' \'\', '
@@ -52,7 +57,7 @@ for game in pgn.GameIterator(sys.argv[1]):
 		continue
 
 	if (i % 500) == 0:
-		print 'INSERT INTO Games(' + ', '.join(fields) + ', moves, game) VALUES '
+		print 'INSERT INTO Games(' + ', '.join(fieldss) + ', moves, game) VALUES '
 
 	print values_row(game)
 
