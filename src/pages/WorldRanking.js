@@ -10,10 +10,13 @@ const WorldRanking = () => {
     }, []);
 
     async function fetchData() {
+        const instance = axios.create({baseURL: 'http://localhost:8000'})
+
         try {
-            const response = await axios.get('/topelo');
-            const responseData = response.data; // Extract the data from the response
-            setData(responseData); // Update the state with the fetched data
+            const response = await instance.get('/topelo/');
+            const responseData = response.data;
+            console.log(responseData);
+            setData(responseData);
         } catch (error) {
             console.error('Error fetching data:', error);
         }
