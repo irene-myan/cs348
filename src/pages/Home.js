@@ -4,6 +4,8 @@ import axios from 'axios';
 
 const Home = () => {
   const [games, setGames] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage] = useState(10);
 
   async function fetchGames() {
     try {
@@ -20,44 +22,65 @@ const Home = () => {
 
   useEffect(() => {
     fetchGames();
-    console.log(1);
   }, []);
 
   if (games == null) {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        Loading...
+      </div>
+    );
   }
-  console.log(games[0]);
+
+  // Pagination calculations
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = games.slice(indexOfFirstItem, indexOfLastItem);
+  const maxPages = Math.ceil(games.length / 10)
+
+  // Change page
+  const paginate = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
 
   return (
     <div>
       <h1>Chess App</h1>
       <p>Welcome to the Chess App!</p>
       <div className='games'>
-      {/* <table>
-        <thead>
-          <tr>
-            <th>First name</th>
-            <th>Last name</th>
-            <th>Password</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          {arrayWithData.map(item => {
-            return (
-              <tr key={item.password}>
-                <td>{ item.firstname }</td>
-                <td>{ item.lastname }</td>
-                <td>{ item.password }</td>
-                <td>{ item.email }</td>
+        <table>
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th>White Player</th>
+              <th>Black Player</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            {currentItems.map((item, index) => (
+              <tr key={index}>
+                <td>{item.event}</td>
+                <td>{item.wp_id}</td>
+                <td>{item.bp_id}</td>
+                <td>{item.result}</td>
               </tr>
-            );
-          })}
-        </tbody>
-      </table> */}
-        {games.map((item, index) => (
-          <div key={index}>{index}</div>
-        ))}
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div className="pagination">
+        <button disabled={currentPage === 1} onClick={() => paginate(currentPage - 1)}>
+          Back
+        </button>
+        {/* {games.map((_, index) => (
+          <button key={index} onClick={() => paginate(index + 1)}>
+            {index + 1}
+          </button>
+        ))} */}
+        <button disabled={currentPage === maxPages} onClick={() => paginate(currentPage + 1)}>
+          Next
+        </button>
       </div>
     </div>
   );

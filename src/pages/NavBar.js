@@ -10,50 +10,50 @@ const NavBar = () => {
     });
     
     const handleLink = (path) => {
-        setCurPath(path);
+      setCurPath(path);
     };
 
     return (
-        <div className="nav-bar">
-          <ul>
-            <li>
-              <Link
-                onClick={() => handleLink('/')}
-                to="/"
-                className={curPath === '/' ? 'active' : ''}
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                onClick={() => handleLink('/percentage')}
-                to="/percentage"
-                className={curPath === '/percentage' ? 'active' : ''}
-              >
-                Percentage
-              </Link>
-            </li>
-            <li>
-              <Link
-                onClick={() => handleLink('/book-openings')}
-                to="/book-openings"
-                className={curPath === '/book-openings' ? 'active' : ''}
-              >
-                Book Openings
-              </Link>
-            </li>
-            <li>
-              <Link
-                onClick={() => handleLink('/top-elo-players')}
-                to="/top-elo-players"
-                className={curPath === '/top-elo-players' ? 'active' : ''}
-              >
-                World Ranking
-              </Link>
-            </li>
-          </ul>
-        </div>
+      <div className="nav-bar">
+        <ul>
+          <li>
+            <Link
+              onClick={() => handleLink('/')}
+              to="/"
+              className={curPath === '/' ? 'active' : ''}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => handleLink('/percentage')}
+              to="/percentage"
+              className={curPath === '/percentage' ? 'active' : ''}
+            >
+              Percentage
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => handleLink('/book-openings')}
+              to="/book-openings"
+              className={curPath === '/book-openings' ? 'active' : ''}
+            >
+              Book Openings
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => handleLink('/top-elo-players')}
+              to="/top-elo-players"
+              className={curPath === '/top-elo-players' ? 'active' : ''}
+            >
+              World Ranking
+            </Link>
+          </li>
+        </ul>
+      </div>
     );
 };
 
