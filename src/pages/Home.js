@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import '../css/home-page.css';
-import axios from 'axios';
+import React, { useEffect, useState } from "react";
+import "../css/home-page.css";
+import axios from "axios";
 
 const Home = () => {
   const [games, setGames] = useState(null);
@@ -11,12 +11,12 @@ const Home = () => {
     try {
       const response = await axios.get("http://localhost:8000/sbd/", {
         params: {
-          desc: false
-        }
+          desc: false,
+        },
       });
       setGames(response.data);
     } catch (error) {
-      console.error('Error fetching games:', error);
+      console.error("Error fetching games:", error);
     }
   }
 
@@ -25,18 +25,14 @@ const Home = () => {
   }, []);
 
   if (games == null) {
-    return (
-      <div>
-        Loading...
-      </div>
-    );
+    return <div>Loading...</div>;
   }
 
   // Pagination calculations
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = games.slice(indexOfFirstItem, indexOfLastItem);
-  const maxPages = Math.ceil(games.length / 10)
+  const maxPages = Math.ceil(games.length / 10);
 
   // Change page
   const paginate = (pageNumber) => {
@@ -47,7 +43,7 @@ const Home = () => {
     <div>
       <h1>Chess App</h1>
       <p>Welcome to the Chess App!</p>
-      <div className='games'>
+      <div className="games">
         <table>
           <thead>
             <tr>
@@ -70,7 +66,10 @@ const Home = () => {
         </table>
       </div>
       <div className="pagination">
-        <button disabled={currentPage === 1} onClick={() => paginate(currentPage - 1)}>
+        <button
+          disabled={currentPage === 1}
+          onClick={() => paginate(currentPage - 1)}
+        >
           Back
         </button>
         {/* {games.map((_, index) => (
@@ -78,7 +77,10 @@ const Home = () => {
             {index + 1}
           </button>
         ))} */}
-        <button disabled={currentPage === maxPages} onClick={() => paginate(currentPage + 1)}>
+        <button
+          disabled={currentPage >= maxPages}
+          onClick={() => paginate(currentPage + 1)}
+        >
           Next
         </button>
       </div>
