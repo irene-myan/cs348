@@ -8,7 +8,7 @@ import WorldRanking from './pages/WorldRanking';
 import './css/main.css';
 import NavBar from './pages/NavBar';
 
-function Router() {
+function Router () {
   return (
     <BrowserRouter>
       <div className='screen'>

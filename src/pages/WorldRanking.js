@@ -25,9 +25,9 @@ const WorldRanking = () => {
     return (
         <div>
             <h1>World Ranking</h1>
-            {/* {data.map((item, index) => (
+            {data.map((item, index) => (
                 <div key={index}>{item}</div>
-            ))}  */}
+            ))} 
         </div>
     );
 };
