@@ -17,17 +17,21 @@
 import pgn
 import sys
 
+
+
 fields = ['event', 'site', 'date', 'round', 'white', 'black', 'result', 'whiteelo', 'blackelo', 'eco']
 
 fieldss = ['event', 'site', 'date', 'round', 'white', 'black', 'result', 'wp_elo', 'bp_elo', 'eco']
+
 
 def allow(game):
 	if game.date[0] == '1': return False
 	if game.whiteelo == "" or game.blackelo == "" or "?" in game.date or "?" in game.round:
 		return False
-	if len(game.moves) > 75:
+	if len(game.moves) > 40:
 		return False
 	return True
+
 
 def values_row (game):
 	ret = '('
@@ -50,11 +54,19 @@ if len(sys.argv) != 2:
 	print 'Usage: python pgn-to-sql.py input.pgn > out.sql'
 
 i = 0
+done = 0
+f = open("clean.txt", "w")
 for game in pgn.GameIterator(sys.argv[1]):
 	if not(hasattr(game, 'result')):
 		break;
 	if not allow(game):
 		continue
+	done += 1
+	if done == 100:
+		break
+	f.write(pgn.dumps(game))
+	f.write("\n")
+	f.write("\n")
 
 	if (i % 500) == 0:
 		print 'INSERT INTO Games(' + ', '.join(fieldss) + ', moves, game) VALUES '
@@ -68,4 +80,5 @@ for game in pgn.GameIterator(sys.argv[1]):
 
 	i += 1
 
+f.close()
 print ';'
