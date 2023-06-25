@@ -121,14 +121,15 @@ def get_items(desc: bool, db: Session = Depends(get_db)):
 
 # Count the number of openings and its name
 @app.get("/openings/")
-def get_items(desc: bool, db: Session = Depends(get_db)):
+def get_items(db: Session = Depends(get_db)):
     query = (
-        "SELECT o.name, COUNT(*) as frequency_played"
-        "From Games g, opened_with ow, Openings o"
-        "WHERE g.gid = ow.gid AND ow.oid = o.oid"
-        "GROUP BY o.name"
+        "SELECT o.name, COUNT(*) as frequency_played "
+        "FROM Games g, GameOpenings go, Openings o "
+        "WHERE g.gid = go.gid AND go.eco = o.eco "
+        "GROUP BY o.name; "
     )
-    result = db.execute(text())
+
+    result = db.execute(text(query))
 
     return generate_result_from_query(result)
 
