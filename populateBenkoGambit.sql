@@ -99,8 +99,8 @@ INSERT INTO Games(event, site, date, round, white, black, result, wp_elo, bp_elo
 ,
 ( '1st Wilhelm Steinitz Mem B',  'Prague CZE',  '2001.01.01',  '7',  'Tobyas,M',  'Livshits,G',  '1/2-1/2',  '2266',  '2217',  'A57', 34,  'd4 Nf6 c4 c5 d5 b5 cxb5 a6 b6 e6 Nc3 Nxd5 Nxd5 exd5 Qxd5 Nc6 Nf3 Rb8 e4 Be7 Bc4 O-O O-O Rxb6 Qh5 d6 Ng5 Bxg5 Bxg5 Qe8 Rad1 Ne5 Be2 1/2-1/2')
 ,
-( 'Corus Reserve Gp',  'Wijk aan Zee NED',  '2001.01.16',  '1',  'Cmilyte,V',  'Piket,Jo',  '1-0',  '2433',  '2228',  '', 38,  'd4 Nf6 c4 c5 d5 e5 Nc3 d6 e4 Be7 Nge2 Nh5 Ng3 Nxg3 hxg3 a6 Be3 Bg5 f4 exf4 gxf4 Bh4+ Kd2 Bf6 e5 dxe5 fxe5 Bxe5 Qh5 Bxc3+ bxc3 Nd7 Re1 Kf8 Bd3 b6 Bh6 1-0')
-,
+-- ( 'Corus Reserve Gp',  'Wijk aan Zee NED',  '2001.01.16',  '1',  'Cmilyte,V',  'Piket,Jo',  '1-0',  '2433',  '2228',  '', 38,  'd4 Nf6 c4 c5 d5 e5 Nc3 d6 e4 Be7 Nge2 Nh5 Ng3 Nxg3 hxg3 a6 Be3 Bg5 f4 exf4 gxf4 Bh4+ Kd2 Bf6 e5 dxe5 fxe5 Bxe5 Qh5 Bxc3+ bxc3 Nd7 Re1 Kf8 Bd3 b6 Bh6 1-0')
+-- ,
 ( 'ch-ROM',  'Baile Tusnad ROM',  '2001.02.11',  '7',  'Danilov,V',  'Navrotescu,C',  '0-1',  '2343',  '2451',  'A57', 27,  'd4 Nf6 c4 c5 d5 b5 cxb5 a6 e3 g6 Nc3 Bg7 a4 O-O Ra3 e6 Nf3 Bb7 dxe6 fxe6 Qd6 Qc8 b4 cxb4 Qxb4 Nd5 0-1')
 ,
 ( 'FSGM February',  'Budapest HUN',  '2001.02.16',  '13',  'Kallio,H',  'Vajda,Al',  '1-0',  '2431',  '2409',  'A57', 36,  'd4 Nf6 c4 c5 d5 b5 cxb5 a6 e3 g6 Nc3 Bg7 bxa6 O-O Nf3 d6 e4 Nbd7 h3 Bxa6 Bxa6 Rxa6 O-O Qa8 Re1 e6 dxe6 fxe6 Ng5 Re8 f4 Nh5 e5 Ng3 Nb5 1-0')
@@ -195,6 +195,4 @@ INSERT INTO Games(event, site, date, round, white, black, result, wp_elo, bp_elo
 ,
 ( 'ch-ESP Semi-Final',  'Cala Mendia, Mallorca ESP',  '2001.11.22',  '1.1',  'Comas Fabrego,L',  'Cacho Reigadas,S',  '1/2-1/2',  '2510',  '2463',  'A58', 30,  'd4 Nf6 c4 c5 d5 b5 cxb5 a6 bxa6 Bxa6 Nc3 d6 g3 g6 Bg2 Bg7 Nf3 Nbd7 Rb1 Nb6 b3 Bc8 Nh4 O-O O-O Ne8 Qc2 Nc7 e4 1/2-1/2')
 ,
-( 'It',  'Lvov UKR',  '2001.12.27',  '10',  'Golod,V',  'Volokitin,A',  '1/2-1/2',  '2517',  '2566',  'A56', 27,  'd4 Nf6 c4 c5 d5 a6 a4 e6 Nc3 Bd6 e4 exd5 cxd5 O-O Bd3 Bc7 Nf3 d6 h3 Nbd7 O-O Rb8 Re1 Re8 Bf4 h6 1/2-1/2')
-,
-;
+( 'It',  'Lvov UKR',  '2001.12.27',  '10',  'Golod,V',  'Volokitin,A',  '1/2-1/2',  '2517',  '2566',  'A56', 27,  'd4 Nf6 c4 c5 d5 a6 a4 e6 Nc3 Bd6 e4 exd5 cxd5 O-O Bd3 Bc7 Nf3 d6 h3 Nbd7 O-O Rb8 Re1 Re8 Bf4 h6 1/2-1/2');
