@@ -85,24 +85,28 @@ def get_items(date_start: Optional[date] = None, date_end: Optional[date] = None
         date_end = date(9999,9,9)
 
     query = (
-        "WITH all_elo AS ("
-        "  SELECT wp_elo as elo FROM Games WHERE date >= :date_start AND date <= :date_end "
-        "  UNION ALL "
-        "  SELECT bp_elo as elo FROM Games WHERE date >= :date_start AND date <= :date_end"
+        "WITH playerelos AS ("
+        "  SELECT player_id, MAX(elo) AS max_elo "
+        "  FROM ( "
+        "    SELECT wp_id AS player_id, wp_elo AS elo, date FROM Games WHERE date BETWEEN :start_date AND :end_date "
+        "    UNION ALL "
+        "    SELECT bp_id AS player_id, bp_elo AS elo, date FROM Games WHERE date BETWEEN :start_date AND :end_date "
+        "  ) AS TotalPlayers "
+        "  GROUP BY player_id "
         "), "
-        "topelo AS ("
-        "  SELECT MAX(elo) as top_elo FROM all_elo"
+        "topids AS ("
+        "  SELECT player_id "
+        "  FROM playerelos p"
+        "  WHERE p.max_elo = (SELECT MAX(max_elo) FROM playerelos) "
         ") "
-        "SELECT g.* "
+        "SELECT *"
         "FROM Games g "
-        "WHERE g.wp_id IN (SELECT wp_id FROM Games WHERE wp_elo IN (SELECT top_elo FROM topelo)) "
-        "   OR g.bp_id IN (SELECT bp_id FROM Games WHERE bp_elo IN (SELECT top_elo FROM topelo))"
+        "WHERE g.wp_id = (SELECT player_id FROM topids) or g.bp_id = (SELECT player_id FROM topids);"
     )
-
 
     result = db.execute(
         text(query),
-        {"date_start": date_start, "date_end": date_end}
+        {"start_date": date_start, "end_date": date_end}
     )
 
 
