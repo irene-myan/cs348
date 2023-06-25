@@ -124,9 +124,9 @@ def get_items(desc: bool, db: Session = Depends(get_db)):
 def get_items(db: Session = Depends(get_db)):
     query = (
         "SELECT o.name, COUNT(*) as frequency_played "
-        "FROM Games g, GameOpenings go, Openings o "
-        "WHERE g.gid = go.gid AND go.eco = o.eco "
-        "GROUP BY o.name; "
+        "FROM Games g, Openings o "
+        "WHERE g.eco = o.eco "
+        "GROUP BY o.eco, o.name; "
     )
 
     result = db.execute(text(query))
@@ -135,5 +135,6 @@ def get_items(db: Session = Depends(get_db)):
 
 @app.get("/test/")
 def get_items(db: Session = Depends(get_db)):
-    result_proxy = db.execute(text("SELECT * FROM student"))
+    result_proxy = db.execute(
+        text("SELECT * FROM Games g WHERE g.eco NOT IN(SELECT eco FROM Openings)"))
     return generate_result_from_query(result_proxy)
