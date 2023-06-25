@@ -56,11 +56,11 @@ def get_plist(fen: str, db: Session = Depends(get_db)):
     query = (
         "WITH games_including_fen AS( "
         "    SELECT gid "
-        "    FROM GameMoves gm "
-        "    WHERE gm.fen=: fen "
+        "    FROM Moves gm "
+        "    WHERE gm.fen=:fen "
         ")"
         "SELECT result, COUNT(*) AS total_count "
-        "FROM Game g "
+        "FROM Games g "
         "JOIN games_including_fen ON g.gid=games_including_fen.gid "
         "GROUP BY result"
     )
