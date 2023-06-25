@@ -1,0 +1,4 @@
+result	total_count
+1/2-1/2	39
+0-1	4
+1-0	7
