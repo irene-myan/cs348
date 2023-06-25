@@ -1,9 +1,8 @@
 # Starting the project
 - - -
 ## Database
-Runs on a local MySQL, password must be manually entered into the backend_main.py script
-Load database data by running
-python3 updateDB.py
+- Runs on a local MySQL, password must be manually entered into the backend_main.py script
+- Load database data by running ```python3 updateDB.py```
 
 ## Frontend
 Run ```npm start``` in repo dir
