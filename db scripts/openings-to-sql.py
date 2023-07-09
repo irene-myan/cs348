@@ -14,7 +14,5 @@ while i < len(lines):
   name = name[:-1]
   ml = max(ml, len(moves) - 1)
   moves = moves[:-1]
-#   print("(\"" + eco + "\", \"" + name + "\", \"" + moves + "\"),")
 
-# print(";")
 print(ml)

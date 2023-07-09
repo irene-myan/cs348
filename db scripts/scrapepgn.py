@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 
 import urllib.request, urllib.error, urllib.parse
-import os
+import os, zipfile
 from tqdm import tqdm
 
 
@@ -29,8 +29,15 @@ if not os.path.exists(d):
 
 for pgn in tqdm(games):
     url = 'https://www.pgnmentor.com/' + pgn
-    try:
-        urllib.request.urlretrieve(url, d + os.path.basename(pgn))
-    except:
-        print(url)
-        pass
+    file_name = os.path.basename(d + pgn)
+    
+    if os.path.exists(d + file_name[:-4] + ".pgn"):
+        continue
+
+    urllib.request.urlretrieve(url, file_name)
+    
+    file_name = os.path.abspath(file_name)
+    zip_ref = zipfile.ZipFile(file_name)
+    zip_ref.extractall(d)
+    zip_ref.close()
+    os.remove(file_name)
