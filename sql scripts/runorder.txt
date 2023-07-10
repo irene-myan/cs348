@@ -1,4 +1,0 @@
-1. createTables.sql
-2. populateOpenings.sql
-3. populate*.sql
-4. updateTables.sql

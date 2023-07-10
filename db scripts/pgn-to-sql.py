@@ -15,23 +15,11 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import pgn
-import sys
-
-
+import os, sys
 
 fields = ['event', 'site', 'date', 'round', 'white', 'black', 'result', 'whiteelo', 'blackelo', 'eco']
 
 fieldss = ['event', 'site', 'date', 'round', 'white', 'black', 'result', 'wp_elo', 'bp_elo', 'eco']
-
-
-def allow(game):
-	if game.date[0] == '1': return False
-	if game.whiteelo == "" or game.blackelo == "" or "?" in game.date or "?" in game.round:
-		return False
-	if len(game.moves) > 40:
-		return False
-	return True
-
 
 def values_row (game):
 	ret = '('
@@ -41,44 +29,44 @@ def values_row (game):
 		else:
 			ret += ' \'\', '
 
-	if hasattr(game, 'moves'):
-		ret += str(len(game.moves)) + ', '
-		ret += ' \'' + ' '.join(game.moves) + '\''
-	else:
-		ret += '0, \'\''
+	ret += str(len(game.moves)) + ', '
+	ret += ' \'' + ' '.join(game.moves) + '\''
 
-	ret += ')'
+	ret += ')\n'
 	return ret
 
-if len(sys.argv) != 2:
-	print 'Usage: python pgn-to-sql.py input.pgn > out.sql'
+def one_pgn(file_name, sql_gen):
+	i = 0
+	f = open(sql_gen, "w")
+	for game in pgn.GameIterator(file_name):
+		if(game is None): break
+		if (i % 500) == 0:
+			f.write('INSERT IGNORE INTO Games(' + ', '.join(fieldss) + ', moves, game) VALUES ')
 
-i = 0
-done = 0
-f = open("clean.txt", "w")
-for game in pgn.GameIterator(sys.argv[1]):
-	if not(hasattr(game, 'result')):
-		break;
-	if not allow(game):
-		continue
-	done += 1
-	if done == 100:
-		break
-	f.write(pgn.dumps(game))
-	f.write("\n")
-	f.write("\n")
+		if (i % 500) == 499:
+			f.write(';\n')
+			i += 1
+			f.write('INSERT IGNORE INTO Games(' + ', '.join(fieldss) + ', moves, game) VALUES ')
+			f.write(values_row(game))
+			i += 1
+			continue
+		elif (i % 500) != 0:
+			f.write(',\n')
+		
+		f.write(values_row(game))
+		
+		i += 1
+	f.write(';\n')
+	f.close()
 
-	if (i % 500) == 0:
-		print 'INSERT INTO Games(' + ', '.join(fieldss) + ', moves, game) VALUES '
 
-	print values_row(game)
+dw =  os.getcwd() + "/games"
+dr =  os.getcwd() + "/clean_pgns"
 
-	if (i % 500) == 499:
-		print ';'
-	else:
-		print ','
+if not os.path.exists(dw):
+    os.mkdir(dw)
 
-	i += 1
-
-f.close()
-print ';'
+for pgn_file in os.listdir(dr):
+    sql_gen = pgn_file[:-4] + "_games.sql"
+    if not os.path.exists(sql_gen):
+        one_pgn(dr + "/" + pgn_file, dw + "/" + sql_gen)
