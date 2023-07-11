@@ -11,7 +11,8 @@
 .page {
     display: flex;
     padding-left: 20px;
-    width: 100%;
+    width: 95%;
+    align-items: center;
     height: 100%;
     flex-direction: column;
     margin-top: 50px;
