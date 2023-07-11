@@ -1,1 +1,0 @@
-SELECT * FROM Games ORDER BY date DESC
