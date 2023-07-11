@@ -1,27 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "../css/home-page.css";
-import axios from "axios";
+import GetGames from "../resourceFunctions";
 
 const Home = () => {
   const [games, setGames] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(10);
 
-  async function fetchGames() {
-    try {
-      const response = await axios.get("http://localhost:8000/sbd/", {
-        params: {
-          desc: false,
-        },
-      });
-      setGames(response.data);
-    } catch (error) {
-      console.error("Error fetching games:", error);
-    }
-  }
-
   useEffect(() => {
-    fetchGames();
+    GetGames(setGames);
   }, []);
 
   if (games == null) {
@@ -72,11 +59,6 @@ const Home = () => {
         >
           Back
         </button>
-        {/* {games.map((_, index) => (
-          <button key={index} onClick={() => paginate(index + 1)}>
-            {index + 1}
-          </button>
-        ))} */}
         <button
           disabled={currentPage >= maxPages}
           onClick={() => paginate(currentPage + 1)}
