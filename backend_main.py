@@ -7,6 +7,18 @@ from datetime import date, datetime
 SQLALCHEMY_DATABASE_URL = "mysql+mysqlconnector://root:Password123@localhost/testDB"
 from fastapi.middleware.cors import CORSMiddleware
 
+# Played games subquery
+played_games = (
+        "WITH playedgames_temp (pid, gid, color, elo) as "
+        " ((SELECT p.pid as pid, g.gid as gid, 'w' as color, g.wp_elo as elo "
+        " FROM players p, games g "
+        " WHERE p.pid = g.wp_id) "
+        " UNION "
+        " (SELECT p.pid as pid, g.gid as gid, 'b' as color, g.bp_elo as elo "
+        " FROM players p, games g "
+        " WHERE p.pid = g.bp_id)) "
+    )
+
 # Password123
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL
@@ -123,7 +135,7 @@ def get_items(desc: bool, db: Session = Depends(get_db)):
 @app.get("/openings/")
 def get_items(db: Session = Depends(get_db)):
     query = (
-        "SELECT o.name, COUNT(*) as frequency_played "
+        "SELECT o.eco, o.name, COUNT(*) as frequency_played "
         "FROM Games g, Openings o "
         "WHERE g.eco = o.eco "
         "GROUP BY o.eco, o.name; "
@@ -132,6 +144,52 @@ def get_items(db: Session = Depends(get_db)):
     result = db.execute(text(query))
 
     return generate_result_from_query(result)
+
+@app.get('/players_ranking/')
+def get_items(date_start: Optional[date] = None, date_end: Optional[date] = None, db: Session = Depends(get_db)):
+    if not date_start:
+        date_start = date(1, 1, 1)
+    if not date_end:
+        date_end = date(9999,9,9)
+    query = (
+        f"{played_games} "
+        "SELECT DISTINCT p.pid as pid, p.name as name, MAX(pg.elo) as max_elo "
+        "FROM players p "
+        "JOIN playedgames_temp pg ON p.pid = pg.pid "
+        "JOIN games g ON pg.gid = g.gid "
+        "WHERE g.date BETWEEN :start_date AND :end_date "
+        "GROUP BY p.pid, p.name "
+        "ORDER BY max_elo DESC"
+    )
+
+    result = db.execute(
+        text(query),
+        {"start_date": date_start, "end_date": date_end}
+    )
+
+    return generate_result_from_query(result)
+
+@app.get('/players_opening_count/')
+def get_items(eco: str, db: Session = Depends(get_db)):
+    query = (
+        f"{played_games} "
+        "SELECT COUNT(*) as play_count, p.pid as pid, p.name as name, o.name as opening_name, o.startingMoves as starting_moves "
+        "FROM players p, playedgames_temp pg, games g, openings o "
+        "WHERE p.pid = pg.pid "
+        "and pg.gid = g.gid "
+        "and o.eco = g.eco "
+        "and o.eco = :eco "
+        "GROUP BY p.pid, p.name, o.name, o.startingMoves "
+        "ORDER BY play_count DESC"
+    )
+
+    result = db.execute(
+        text(query),
+        {"eco": eco}
+        )
+
+    return generate_result_from_query(result)
+
 
 @app.get("/test/")
 def get_items(db: Session = Depends(get_db)):
