@@ -1,11 +1,31 @@
 import React, { useEffect, useState } from "react";
 import "../css/home-page.css";
-import GetGames from "../resourceFunctions";
+import axios from "axios";
+import { DataGrid } from "@mui/x-data-grid";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+
+const darkTheme = createTheme({
+  palette: {
+    mode: "dark",
+  },
+});
+
+const columns = [
+  { field: "event", headerName: "Event", width: 130, filterable: false },
+  {
+    field: "wp_id",
+    headerName: "White Player",
+    width: 130,
+    filterable: false,
+  },
+  { field: "bp_id", headerName: "Black Player", width: 130, filterable: false },
+  { field: "result", headerName: "Result", width: 130, filterable: false },
+];
 
 const Home = () => {
   const [games, setGames] = useState(null);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage] = useState(10);
+
+  var row_id = 0;
 
   useEffect(() => {
     GetGames(setGames);
@@ -15,56 +35,35 @@ const Home = () => {
     return <div>Loading...</div>;
   }
 
-  // Pagination calculations
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = games.slice(indexOfFirstItem, indexOfLastItem);
-  const maxPages = Math.ceil(games.length / 10);
-
-  // Change page
-  const paginate = (pageNumber) => {
-    setCurrentPage(pageNumber);
-  };
-
   return (
     <div>
       <h1>Chess App</h1>
       <p>Welcome to the Chess App!</p>
       <div className="games">
-        <table>
-          <thead>
-            <tr>
-              <th>Event</th>
-              <th>White Player</th>
-              <th>Black Player</th>
-              <th>Email</th>
-            </tr>
-          </thead>
-          <tbody>
-            {currentItems.map((item, index) => (
-              <tr key={index}>
-                <td>{item.event}</td>
-                <td>{item.wp_id}</td>
-                <td>{item.bp_id}</td>
-                <td>{item.result}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-      <div className="pagination">
-        <button
-          disabled={currentPage === 1}
-          onClick={() => paginate(currentPage - 1)}
+        <div
+          style={{
+            height: 500,
+            width: "100%",
+          }}
         >
-          Back
-        </button>
-        <button
-          disabled={currentPage >= maxPages}
-          onClick={() => paginate(currentPage + 1)}
-        >
-          Next
-        </button>
+          <ThemeProvider theme={darkTheme}>
+            <DataGrid
+              disableColumnSelector
+              rows={games}
+              getRowId={(row) => {
+                row_id++;
+                return row_id;
+              }}
+              columns={columns}
+              initialState={{
+                pagination: {
+                  paginationModel: { page: 0, pageSize: 5 },
+                },
+              }}
+              pageSizeOptions={[5, 10]}
+            />
+          </ThemeProvider>
+        </div>
       </div>
     </div>
   );
