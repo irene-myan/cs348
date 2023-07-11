@@ -1,2 +1,0 @@
-gid	event	site	round	date	wp_id	wp_elo	bp_id	bp_elo	eco	moves	result	game
-20	1st ch-Europe	Saint Vincent ITA	4	2000.07.06	20	2675	144	2583	A57	37	1/2-1/2	d4 Nf6 c4 c5 d5 b5 cxb5 a6 b6 Qxb6 Nc3 d6 Nf3 g6 Nd2 Bg7 e4 O-O Be2 Nbd7 Nc4 Qc7 Bf4 Nb6 Ne3 Bd7 a4 Rfb8 O-O Nc8 Nc4 Nb6 Ne3 Nc8 Nc4 Nb6 1/2-1/2
