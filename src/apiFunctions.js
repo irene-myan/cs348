@@ -51,3 +51,17 @@ export async function GetPercentage(
     console.error("Error fetching percentage:", error);
   }
 }
+
+export async function GetTopElo(setTopElo, dateStart, dateEnd) {
+  try {
+    const response = await axios.get("http://localhost:8000/players_ranking/", {
+      params: {
+        date_start: dateStart,
+        date_end: dateEnd,
+      },
+    });
+    setTopElo(response.data);
+  } catch (error) {
+    console.error("Error fetching top-elo players:", error);
+  }
+}
