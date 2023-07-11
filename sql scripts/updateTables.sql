@@ -1,3 +1,7 @@
+-- Delete nulled rows
+DELETE FROM testDB.Moves WHERE gid IN (SELECT gid FROM testDB.Games WHERE eco = "" ) AND gid != 0;
+DELETE FROM testDB.Games WHERE eco = "" AND gid != 0;
+
 -- Insert player names into Players table and assign ID
 INSERT IGNORE INTO Players(name) SELECT white FROM Games;
 INSERT IGNORE INTO Players(name) SELECT black FROM Games;
