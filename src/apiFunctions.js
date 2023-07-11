@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export async function GetGames (setGames) {
+export async function GetGames(setGames) {
     try {
         const response = await axios.get("http://localhost:8000/sbd/", {
             params: {
@@ -30,7 +30,7 @@ export async function GetPercentage(fen, setPercentage) {
 
 export async function GetTopElo(setTopElo, dateStart, dateEnd) {
     try {
-        const response = await axios.get("http://localhost:8000/topelo/", {
+        const response = await axios.get("http://localhost:8000/players_ranking/", {
             params: {
                 date_start: dateStart,
                 date_end: dateEnd,

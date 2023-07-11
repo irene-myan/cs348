@@ -11,26 +11,54 @@ const darkTheme = createTheme({
 });
 
 const columns = [
-  { field: "event", headerName: "Event", width: 130, filterable: false },
-  {
-    field: "wp_id",
-    headerName: "White Player",
-    width: 130,
-    filterable: false,
-  },
-  { field: "bp_id", headerName: "Black Player", width: 130, filterable: false },
-  { field: "result", headerName: "Result", width: 130, filterable: false },
+  { field: "name", headerName: "Player Name", width: 260, filterable: false },
+  { field: "max_elo", headerName: "Highest Rank", width: 260, filterable: false }
 ];
 
 const WorldRanking = () => {
   const [topElo, setTopElo] = useState(null);
+  const [beginDate, setBeginDate] = useState('');
+  const [endDate, setEndDate] = useState('');
+  const [isValidRange, setIsValidRange] = useState(true);
   var row_id = 0;
 
-  useEffect(() => {
-    GetTopElo(setTopElo, null, null);
-  }, []);
+  const handleBeginDateChange = (event) => {
+    setBeginDate(event.target.value);
+    setIsValidRange(true);
+  };
 
-  console.log(topElo);
+  const handleEndDateChange = (event) => {
+    setEndDate(event.target.value);
+    setIsValidRange(true);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const beginTimestamp = Date.parse(beginDate);
+    const endTimestamp = Date.parse(endDate);
+    
+    if (isNaN(beginTimestamp) && isNaN(endTimestamp)) {
+      GetTopElo(setTopElo)
+    } else {
+      const begin_date = formatDate(beginDate).replaceAll(",", "-");
+      const end_date = formatDate(endDate).replaceAll(",", "-");
+      GetTopElo(setTopElo, begin_date, end_date);
+    }
+  };
+
+  const formatDate = (dateString) => {
+    const dateObj = new Date(dateString);
+    const year = dateObj.getFullYear();
+    const month = dateObj.getMonth() + 1;
+    const day = dateObj.getDate();
+
+    return `${year},${month.toString().padStart(2, '0')},${day.toString().padStart(2, '0')}`;
+  };
+
+  useEffect(() => {
+    GetTopElo(setTopElo);
+  }, []);
 
   if (topElo == null) {
     return <div>Loading...</div>;
@@ -45,22 +73,43 @@ const WorldRanking = () => {
         width: "100%",
         }}
       >
-      <ThemeProvider theme={darkTheme}>
-        <DataGrid
-          disableColumnSelector
-          rows={topElo}
-          getRowId={() => {
-            row_id++;
-            return row_id;
-          }}
-          columns={columns}
-          initialState={{
-            pagination: {
-              paginationModel: { page: 0, pageSize: 5 },
-            },
-          }}
-          pageSizeOptions={[5, 10, 20, 50]}
-        />
+        <form onSubmit={handleSubmit}>
+          <span>
+            <label>Begin Date: </label>
+            <input
+              type="date"
+              value={beginDate}
+              onChange={handleBeginDateChange}
+            />
+            {/* <br /> */}
+            <label>End Date: </label>
+            <input
+              type="date"
+              value={endDate}
+              onChange={handleEndDateChange}
+            />
+            <br />
+            {!isValidRange && <p>Invalid date range</p>}
+          </span>
+          <button type="submit">Search</button>
+        </form>
+
+        <ThemeProvider theme={darkTheme}>
+          <DataGrid
+            disableColumnSelector
+            rows={topElo}
+            getRowId={() => {
+              row_id++;
+              return row_id;
+            }}
+            columns={columns}
+            initialState={{
+              pagination: {
+                paginationModel: { page: 0, pageSize: 5 },
+              },
+            }}
+            pageSizeOptions={[5, 10, 20, 50]}
+          />
         </ThemeProvider>
       </div>
     </div>
