@@ -10,7 +10,9 @@ const darkTheme = createTheme({
 });
 
 const Percentage = () => {
-  const [percentage, setPercentage] = useState(null);
+  const [winPercentage, setWWinPercentage] = useState(null);
+  const [lossPercentage, setLossPercentage] = useState(null);
+  const [drawPercentage, setDrawPercentage] = useState(null);
 
   return (
     <div>
@@ -22,12 +24,19 @@ const Percentage = () => {
           variant="standard"
           onKeyPress={(e) => {
             if (e.key === "Enter") {
-              GetPercentage(e.target.value, setPercentage)
+              GetPercentage(
+                e.target.value,
+                setWWinPercentage,
+                setLossPercentage,
+                setDrawPercentage
+              );
             }
           }}
         />
       </ThemeProvider>
-      <h3>Percentage: {percentage}</h3>
+      <h3>Win Percentage: {winPercentage}</h3>
+      <h3>Loss Percentage: {lossPercentage}</h3>
+      <h3>Draw Percentage: {drawPercentage}</h3>
     </div>
   );
 };
