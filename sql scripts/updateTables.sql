@@ -12,6 +12,10 @@ SET Games.wp_id = (SELECT pid FROM Players WHERE name = white) WHERE Games.gid <
 UPDATE Games
 SET Games.bp_id = (SELECT pid FROM Players WHERE name = black) WHERE Games.gid <> 0;
 
+-- Add PlayedGames
+INSERT INTO PlayedGames(pid, gid, color, elo) (SELECT wp_id, gid, "white", wp_elo FROM Games);
+INSERT INTO PlayedGames(pid, gid, color, elo) (SELECT bp_id, gid, "black", bp_elo FROM Games);
+
 -- Delete name columns from Games
 ALTER TABLE Games
 DROP COLUMN white;

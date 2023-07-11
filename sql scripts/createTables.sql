@@ -33,10 +33,10 @@ CREATE TABLE Games(
 	black VARCHAR(32) NOT NULL, -- del
     bp_id INT, -- pop
     bp_elo INT,
-    eco VARCHAR(3), -- pop, del
+    eco VARCHAR(3) NOT NULL, -- del
     moves INT NOT NULL,
 	result VARCHAR(10) NOT NULL,
-    game VARCHAR(1000) NOT NULL
+    game VARCHAR(255) NOT NULL UNIQUE
 );
 ALTER TABLE Games MODIFY gid INT NOT NULL AUTO_INCREMENT;
 
@@ -55,7 +55,7 @@ CREATE TABLE PlayedGames(
     elo INT NOT NULL,
     FOREIGN KEY (pid) REFERENCES Players(pid),
     FOREIGN KEY (gid) REFERENCES Games(gid),
-    PRIMARY KEY (pid, gid)
+    PRIMARY KEY (pid, gid, color)
 );
 
 CREATE TABLE Moves(
