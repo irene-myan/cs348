@@ -1,9 +1,12 @@
+USE testDB;
 
-DROP TABLE GameOpenings;
-DROP TABLE PlayedGames;
-DROP TABLE Openings;
-DROP TABLE Games;
-DROP TABLE Players;
+DROP TABLE IF EXISTS GameOpenings;
+DROP TABLE IF EXISTS PlayedGames;
+DROP TABLE IF EXISTS Openings;
+DROP TABLE IF EXISTS Moves;
+DROP TABLE IF EXISTS Games;
+DROP TABLE IF EXISTS Players;
+
 
 CREATE TABLE Openings(
 	eco VARCHAR(3) NOT NULL PRIMARY KEY, 
@@ -53,6 +56,15 @@ CREATE TABLE PlayedGames(
     FOREIGN KEY (pid) REFERENCES Players(pid),
     FOREIGN KEY (gid) REFERENCES Games(gid),
     PRIMARY KEY (pid, gid)
+);
+
+CREATE TABLE Moves(
+    gid INT NOT NULL,
+    movenum INT NOT NULL,
+    color VARCHAR(1),
+    fen VARCHAR(100),
+    FOREIGN KEY(gid) REFERENCES Games(gid),
+    PRIMARY KEY(gid, movenum, color)
 );
 
 select * from Games
