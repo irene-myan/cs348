@@ -16,6 +16,7 @@ for pgn_file in os.listdir(dg):
     sql_files.append("games/" + pgn_file)
 
 for pgn_file in os.listdir(df):
+    if pgn_file[0] == ".": continue
     sql_files.append("fens/" + pgn_file)
 
 sql_files.append("updateTables.sql")
@@ -29,3 +30,16 @@ for sql_file in sql_files:
 
     # Execute the command using subprocess
     subprocess.run(full_command, shell=True)
+
+# i = 0
+# for pgn_file in os.listdir(df):
+#     # if i == 3:
+#     #     break
+#     if pgn_file[0] == ".": continue
+#     i += 1
+#     pgn_file = "fens/" + pgn_file
+#     print(pgn_file)
+#     lines = open(pgn_file, "rt").readlines()
+#     with open(pgn_file, "wt") as fout:
+#         for line in lines:
+#             fout.write(line.replace("INSERT ", 'INSERT IGNORE '))

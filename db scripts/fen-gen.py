@@ -34,9 +34,11 @@ def one_pgn(file_name, fen_gened):
 
 
         # SET GAME ID
-        f.write(f"SET @game_id = (SELECT gid FROM Games WHERE event=\"{(mygame2.headers['Event'])}\" AND site=\"{mygame2.headers['Site']}\" AND date=\"{mygame2.headers['Date']}\" AND wp_elo={mygame2.headers['WhiteElo']} AND bp_elo={mygame2.headers['BlackElo']});")
+        moves = pgn.split('\n')[-1]
+        f.write(f"SET @game_id = (SELECT gid FROM Games WHERE game=\"{moves}\");") 
+        # AND site=\"{mygame2.headers['Site']}\" AND date=\"{mygame2.headers['Date']}\" AND wp_elo={mygame2.headers['WhiteElo']} AND bp_elo={mygame2.headers['BlackElo']});")
         # print fens
-        f.write('INSERT INTO Moves(' + ', '.join(fields) + ') VALUES ')
+        f.write('INSERT IGNORE INTO Moves(' + ', '.join(fields) + ') VALUES ')
         s = ""
         for fen in fens:
             s += "\n" + values_row(fen) + ","

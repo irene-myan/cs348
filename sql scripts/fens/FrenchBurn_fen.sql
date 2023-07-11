@@ -1,4 +1,4 @@
-SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW AUS" AND date="2000.01.03" AND wp_elo=2306 AND bp_elo=2173);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Bd3 h6 7. Bh4 Be7 8. Nxf6+ Bxf6 9. Bxf6 Nxf6 10. Bb5+ Bd7 11. Bxd7+ Qxd7 12. Nf3 Qb5 13. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -22,7 +22,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 11, "b", "r2qk2r/pppB1pp1/4pn1p/8/3P4/8/PPP2PPP/R2QK1NR b KQkq - 0 11"),
 (@game_id, 12, "w", "r3k2r/pppq1pp1/4pn1p/8/3P4/8/PPP2PPP/R2QK1NR w KQkq - 0 12"),
 (@game_id, 12, "b", "r3k2r/pppq1pp1/4pn1p/8/3P4/5N2/PPP2PPP/R2QK2R b KQkq - 1 12"),
-(@game_id, 13, "w", "r3k2r/ppp2pp1/4pn1p/1q6/3P4/5N2/PPP2PPP/R2QK2R w KQkq - 2 13");SET @game_id = (SELECT gid FROM Games WHERE event="ch-BRA" AND site="Brasilia BRA" AND date="2000.01.25" AND wp_elo=2273 AND bp_elo=2229);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "r3k2r/ppp2pp1/4pn1p/1q6/3P4/5N2/PPP2PPP/R2QK2R w KQkq - 2 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nc3 d5 3. Bg5 e6 4. e4 dxe4 5. Nxe4 Be7 6. Nxf6+ Bxf6 7. Bxf6 Qxf6 8. Nf3 O-O 9. Bd3 c5 10. dxc5 Qxb2 11. O-O Qf6 12. Qd2 h6 13. Rab1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 2 2"),
@@ -47,7 +47,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "w", "rnb2rk1/pp3ppp/4pq2/2P5/8/3B1N2/P1P2PPP/R2Q1RK1 w - - 2 12"),
 (@game_id, 12, "b", "rnb2rk1/pp3ppp/4pq2/2P5/8/3B1N2/P1PQ1PPP/R4RK1 b - - 3 12"),
 (@game_id, 13, "w", "rnb2rk1/pp3pp1/4pq1p/2P5/8/3B1N2/P1PQ1PPP/R4RK1 w - - 0 13"),
-(@game_id, 13, "b", "rnb2rk1/pp3pp1/4pq1p/2P5/8/3B1N2/P1PQ1PPP/1R3RK1 b - - 1 13");SET @game_id = (SELECT gid FROM Games WHERE event="Extraliga CZE" AND site="Ostrava CZE" AND date="2000.03.19" AND wp_elo=2330 AND bp_elo=2365);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "rnb2rk1/pp3pp1/4pq1p/2P5/8/3B1N2/P1PQ1PPP/1R3RK1 b - - 1 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 O-O 8. Nxf6+ Qxf6 9. Bd3 Nc6 10. O-O 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -66,7 +66,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "w", "rnb2rk1/ppp2ppp/4pq2/8/3P4/5N2/PPP2PPP/R2QKB1R w KQ - 0 9"),
 (@game_id, 9, "b", "rnb2rk1/ppp2ppp/4pq2/8/3P4/3B1N2/PPP2PPP/R2QK2R b KQ - 1 9"),
 (@game_id, 10, "w", "r1b2rk1/ppp2ppp/2n1pq2/8/3P4/3B1N2/PPP2PPP/R2QK2R w KQ - 2 10"),
-(@game_id, 10, "b", "r1b2rk1/ppp2ppp/2n1pq2/8/3P4/3B1N2/PPP2PPP/R2Q1RK1 b - - 3 10");SET @game_id = (SELECT gid FROM Games WHERE event="Cat XI Spring" AND site="Kiev UKR" AND date="2000.03.28" AND wp_elo=2560 AND bp_elo=2571);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "b", "r1b2rk1/ppp2ppp/2n1pq2/8/3P4/3B1N2/PPP2PPP/R2Q1RK1 b - - 3 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 Be7 7. Nxf6+ Bxf6 8. Bxf6 Nxf6 9. Bd3 O-O 10. O-O b6 11. Qe2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -87,7 +87,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 10, "w", "r1bq1rk1/ppp2ppp/4pn2/8/3P4/3B1N2/PPP2PPP/R2QK2R w KQ - 2 10"),
 (@game_id, 10, "b", "r1bq1rk1/ppp2ppp/4pn2/8/3P4/3B1N2/PPP2PPP/R2Q1RK1 b - - 3 10"),
 (@game_id, 11, "w", "r1bq1rk1/p1p2ppp/1p2pn2/8/3P4/3B1N2/PPP2PPP/R2Q1RK1 w - - 0 11"),
-(@game_id, 11, "b", "r1bq1rk1/p1p2ppp/1p2pn2/8/3P4/3B1N2/PPP1QPPP/R4RK1 b - - 1 11");SET @game_id = (SELECT gid FROM Games WHERE event="Capablanca Mem Elite" AND site="Varadero CUB" AND date="2000.05.14" AND wp_elo=2542 AND bp_elo=2563);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "b", "r1bq1rk1/p1p2ppp/1p2pn2/8/3P4/3B1N2/PPP1QPPP/R4RK1 b - - 1 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 O-O 8. c3 Nd7 9. Qc2 e5 10. O-O-O exd4 11. Nxf6+ Qxf6 12. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -109,7 +109,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 10, "b", "r1bq1rk1/pppn1ppp/5b2/4p3/3PN3/2P2N2/PPQ2PPP/2KR1B1R b - - 1 10"),
 (@game_id, 11, "w", "r1bq1rk1/pppn1ppp/5b2/8/3pN3/2P2N2/PPQ2PPP/2KR1B1R w - - 0 11"),
 (@game_id, 11, "b", "r1bq1rk1/pppn1ppp/5N2/8/3p4/2P2N2/PPQ2PPP/2KR1B1R b - - 0 11"),
-(@game_id, 12, "w", "r1b2rk1/pppn1ppp/5q2/8/3p4/2P2N2/PPQ2PPP/2KR1B1R w - - 0 12");SET @game_id = (SELECT gid FROM Games WHERE event="Capablanca Mem Elite" AND site="Varadero CUB" AND date="2000.05.21" AND wp_elo=2568 AND bp_elo=2563);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "w", "r1b2rk1/pppn1ppp/5q2/8/3p4/2P2N2/PPQ2PPP/2KR1B1R w - - 0 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 O-O 8. Qd3 Nd7 9. O-O-O b6 10. h4 Bb7 11. Nfg5 Bxg5+ 12. Nxg5 Nf6 13. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -133,7 +133,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 11, "b", "r2q1rk1/pbpn1ppp/1p2pb2/6N1/3PN2P/3Q4/PPP2PP1/2KR1B1R b - - 2 11"),
 (@game_id, 12, "w", "r2q1rk1/pbpn1ppp/1p2p3/6b1/3PN2P/3Q4/PPP2PP1/2KR1B1R w - - 0 12"),
 (@game_id, 12, "b", "r2q1rk1/pbpn1ppp/1p2p3/6N1/3P3P/3Q4/PPP2PP1/2KR1B1R b - - 0 12"),
-(@game_id, 13, "w", "r2q1rk1/pbp2ppp/1p2pn2/6N1/3P3P/3Q4/PPP2PP1/2KR1B1R w - - 1 13");SET @game_id = (SELECT gid FROM Games WHERE event="White Nights Men" AND site="St Petersburg RUS" AND date="2000.07.01" AND wp_elo=2352 AND bp_elo=2438);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "r2q1rk1/pbp2ppp/1p2pn2/6N1/3P3P/3Q4/PPP2PP1/2KR1B1R w - - 1 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 O-O 8. Nxf6+ Qxf6 9. Qd2 Nd7 10. O-O-O e5 11. dxe5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -154,7 +154,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 10, "w", "r1b2rk1/pppn1ppp/4pq2/8/3P4/5N2/PPPQ1PPP/R3KB1R w KQ - 2 10"),
 (@game_id, 10, "b", "r1b2rk1/pppn1ppp/4pq2/8/3P4/5N2/PPPQ1PPP/2KR1B1R b - - 3 10"),
 (@game_id, 11, "w", "r1b2rk1/pppn1ppp/5q2/4p3/3P4/5N2/PPPQ1PPP/2KR1B1R w - - 0 11"),
-(@game_id, 11, "b", "r1b2rk1/pppn1ppp/5q2/4P3/8/5N2/PPPQ1PPP/2KR1B1R b - - 0 11");SET @game_id = (SELECT gid FROM Games WHERE event="SuperGM" AND site="Dortmund GER" AND date="2000.07.09" AND wp_elo=2743 AND bp_elo=2660);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "b", "r1b2rk1/pppn1ppp/5q2/4P3/8/5N2/PPPQ1PPP/2KR1B1R b - - 0 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 O-O 8. Qd2 Nd7 9. O-O-O b6 10. Qe3 Bb7 11. Bd3 Be7 12. Ne5 f5 13. Nc3 Nxe5 14. Qxe5 Bd6 15. Qxe6+ 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -183,7 +183,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 14, "w", "r2q1rk1/pbp1b1pp/1p2p3/4np2/3P4/2NBQ3/PPP2PPP/2KR3R w - - 0 14"),
 (@game_id, 14, "b", "r2q1rk1/pbp1b1pp/1p2p3/4Qp2/3P4/2NB4/PPP2PPP/2KR3R b - - 0 14"),
 (@game_id, 15, "w", "r2q1rk1/pbp3pp/1p1bp3/4Qp2/3P4/2NB4/PPP2PPP/2KR3R w - - 1 15"),
-(@game_id, 15, "b", "r2q1rk1/pbp3pp/1p1bQ3/5p2/3P4/2NB4/PPP2PPP/2KR3R b - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE event="ch-ISL KO" AND site="Kopavogur ISL" AND date="2000.08.28" AND wp_elo=2369 AND bp_elo=2454);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "r2q1rk1/pbp3pp/1p1bQ3/5p2/3P4/2NB4/PPP2PPP/2KR3R b - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Nxf6+ Bxf6 7. Bxf6 Qxf6 8. Nf3 c5 9. Bb5+ Bd7 10. Bxd7+ Nxd7 11. O-O cxd4 12. Qxd4 Qxd4 13. Nxd4 a6 14. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -209,7 +209,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "b", "r3k2r/pp1n1ppp/4pq2/8/3Q4/5N2/PPP2PPP/R4RK1 b kq - 0 12"),
 (@game_id, 13, "w", "r3k2r/pp1n1ppp/4p3/8/3q4/5N2/PPP2PPP/R4RK1 w kq - 0 13"),
 (@game_id, 13, "b", "r3k2r/pp1n1ppp/4p3/8/3N4/8/PPP2PPP/R4RK1 b kq - 0 13"),
-(@game_id, 14, "w", "r3k2r/1p1n1ppp/p3p3/8/3N4/8/PPP2PPP/R4RK1 w kq - 0 14");SET @game_id = (SELECT gid FROM Games WHERE event="FIDE World Cup KO" AND site="Shenyang CHN" AND date="2000.09.09" AND wp_elo=2633 AND bp_elo=2702);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "w", "r3k2r/1p1n1ppp/p3p3/8/3N4/8/PPP2PPP/R4RK1 w kq - 0 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 Nd7 8. Bc4 a6 9. Qe2 b5 10. Bb3 O-O 11. Rd1 Bb7 12. O-O c5 13. c3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -234,7 +234,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "w", "r2q1rk1/1bpn1ppp/p3pb2/1p6/3PN3/1B3N2/PPP1QPPP/3RK2R w K - 4 12"),
 (@game_id, 12, "b", "r2q1rk1/1bpn1ppp/p3pb2/1p6/3PN3/1B3N2/PPP1QPPP/3R1RK1 b - - 5 12"),
 (@game_id, 13, "w", "r2q1rk1/1b1n1ppp/p3pb2/1pp5/3PN3/1B3N2/PPP1QPPP/3R1RK1 w - - 0 13"),
-(@game_id, 13, "b", "r2q1rk1/1b1n1ppp/p3pb2/1pp5/3PN3/1BP2N2/PP2QPPP/3R1RK1 b - - 0 13");SET @game_id = (SELECT gid FROM Games WHERE event="Veselin Boskovic Mem" AND site="Belgrade YUG" AND date="2000.10.10" AND wp_elo=2476 AND bp_elo=2641);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r2q1rk1/1b1n1ppp/p3pb2/1pp5/3PN3/1BP2N2/PP2QPPP/3R1RK1 b - - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 b6 8. Bd3 Bb7 9. Qe2 Nc6 10. c3 Rg8 11. O-O Qd7 12. a4 a5 13. Rfe1 O-O-O 14. Ba6 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -261,7 +261,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "w", "r3k1r1/1bpqbp1p/1pn1pp2/p7/P2PN3/2PB1N2/1P2QPPP/R4RK1 w q - 0 13"),
 (@game_id, 13, "b", "r3k1r1/1bpqbp1p/1pn1pp2/p7/P2PN3/2PB1N2/1P2QPPP/R3R1K1 b q - 1 13"),
 (@game_id, 14, "w", "2kr2r1/1bpqbp1p/1pn1pp2/p7/P2PN3/2PB1N2/1P2QPPP/R3R1K1 w - - 2 14"),
-(@game_id, 14, "b", "2kr2r1/1bpqbp1p/Bpn1pp2/p7/P2PN3/2P2N2/1P2QPPP/R3R1K1 b - - 3 14");SET @game_id = (SELECT gid FROM Games WHERE event="Chigorin Mem" AND site="St Petersburg RUS" AND date="2000.11.10" AND wp_elo=2608 AND bp_elo=2526);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "2kr2r1/1bpqbp1p/Bpn1pp2/p7/P2PN3/2P2N2/1P2QPPP/R3R1K1 b - - 3 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 O-O 8. Qd2 Nd7 9. O-O-O b6 10. Bc4 Bb7 11. Rhe1 Bd5 12. Bd3 c5 13. c4 Bb7 14. dxc5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -288,7 +288,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "w", "r2q1rk1/p2n1ppp/1p2pb2/2pb4/3PN3/3B1N2/PPPQ1PPP/2KRR3 w - - 0 13"),
 (@game_id, 13, "b", "r2q1rk1/p2n1ppp/1p2pb2/2pb4/2PPN3/3B1N2/PP1Q1PPP/2KRR3 b - - 0 13"),
 (@game_id, 14, "w", "r2q1rk1/pb1n1ppp/1p2pb2/2p5/2PPN3/3B1N2/PP1Q1PPP/2KRR3 w - - 1 14"),
-(@game_id, 14, "b", "r2q1rk1/pb1n1ppp/1p2pb2/2P5/2P1N3/3B1N2/PP1Q1PPP/2KRR3 b - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE event="Autumn Cup GM" AND site="Bucharest ROM" AND date="2000.12.03" AND wp_elo=2330 AND bp_elo=2578);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "r2q1rk1/pb1n1ppp/1p2pb2/2P5/2P1N3/3B1N2/PP1Q1PPP/2KRR3 b - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nxf6+ Nxf6 7. Nf3 Be7 8. Bd3 O-O 9. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -304,7 +304,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 7, "b", "r1bqkb1r/ppp2ppp/4pn2/6B1/3P4/5N2/PPP2PPP/R2QKB1R b KQkq - 1 7"),
 (@game_id, 8, "w", "r1bqk2r/ppp1bppp/4pn2/6B1/3P4/5N2/PPP2PPP/R2QKB1R w KQkq - 2 8"),
 (@game_id, 8, "b", "r1bqk2r/ppp1bppp/4pn2/6B1/3P4/3B1N2/PPP2PPP/R2QK2R b KQkq - 3 8"),
-(@game_id, 9, "w", "r1bq1rk1/ppp1bppp/4pn2/6B1/3P4/3B1N2/PPP2PPP/R2QK2R w KQ - 4 9");SET @game_id = (SELECT gid FROM Games WHERE event="ch-ISR" AND site="Ramat-Aviv/Modiin ISR" AND date="2000.12.22" AND wp_elo=2502 AND bp_elo=2574);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 9, "w", "r1bq1rk1/ppp1bppp/4pn2/6B1/3P4/3B1N2/PPP2PPP/R2QK2R w KQ - 4 9");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Be3 Bd6 9. Bd3 Bd7 10. Qe2 Bc6 11. O-O Bxf3 12. Qxf3 c6 13. Rad1 Qa5 14. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -330,7 +330,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "b", "r2qk2r/ppp2pp1/3bpn1p/8/3P4/3BBQ2/PPP2PPP/R4RK1 b kq - 0 12"),
 (@game_id, 13, "w", "r2qk2r/pp3pp1/2pbpn1p/8/3P4/3BBQ2/PPP2PPP/R4RK1 w kq - 0 13"),
 (@game_id, 13, "b", "r2qk2r/pp3pp1/2pbpn1p/8/3P4/3BBQ2/PPP2PPP/3R1RK1 b kq - 1 13"),
-(@game_id, 14, "w", "r3k2r/pp3pp1/2pbpn1p/q7/3P4/3BBQ2/PPP2PPP/3R1RK1 w kq - 2 14");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-FRA" AND site="Montpellier FRA" AND date="2001.04.28" AND wp_elo=2525 AND bp_elo=2539);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "w", "r3k2r/pp3pp1/2pbpn1p/q7/3P4/3BBQ2/PPP2PPP/3R1RK1 w kq - 2 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 Be7 7. Nxf6+ Bxf6 8. Qd2 Bxg5 9. Nxg5 Nf6 10. O-O-O Bd7 11. Bc4 O-O 12. Rhe1 b5 13. Bf1 Bc6 14. Re5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -357,7 +357,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "w", "r2q1rk1/p1pb1ppp/4pn2/1p4N1/2BP4/8/PPPQ1PPP/2KRR3 w - - 0 13"),
 (@game_id, 13, "b", "r2q1rk1/p1pb1ppp/4pn2/1p4N1/3P4/8/PPPQ1PPP/2KRRB2 b - - 1 13"),
 (@game_id, 14, "w", "r2q1rk1/p1p2ppp/2b1pn2/1p4N1/3P4/8/PPPQ1PPP/2KRRB2 w - - 2 14"),
-(@game_id, 14, "b", "r2q1rk1/p1p2ppp/2b1pn2/1p2R1N1/3P4/8/PPPQ1PPP/2KR1B2 b - - 3 14");SET @game_id = (SELECT gid FROM Games WHERE event="Golden Cleopatra Open" AND site="Cairo EGY" AND date="2001.05.04" AND wp_elo=2444 AND bp_elo=2539);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "r2q1rk1/p1p2ppp/2b1pn2/1p2R1N1/3P4/8/PPPQ1PPP/2KR1B2 b - - 3 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 Be7 7. Nxf6+ Bxf6 8. Qd2 Bxg5 9. Qxg5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -374,7 +374,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 8, "w", "r1bqk2r/pppn1ppp/4pb2/6B1/3P4/5N2/PPP2PPP/R2QKB1R w KQkq - 0 8"),
 (@game_id, 8, "b", "r1bqk2r/pppn1ppp/4pb2/6B1/3P4/5N2/PPPQ1PPP/R3KB1R b KQkq - 1 8"),
 (@game_id, 9, "w", "r1bqk2r/pppn1ppp/4p3/6b1/3P4/5N2/PPPQ1PPP/R3KB1R w KQkq - 0 9"),
-(@game_id, 9, "b", "r1bqk2r/pppn1ppp/4p3/6Q1/3P4/5N2/PPP2PPP/R3KB1R b KQkq - 0 9");SET @game_id = (SELECT gid FROM Games WHERE event="XXXVI Capablanca Mem Elite" AND site="Havana CUB" AND date="2001.05.11" AND wp_elo=2552 AND bp_elo=2557);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 9, "b", "r1bqk2r/pppn1ppp/4p3/6Q1/3P4/5N2/PPP2PPP/R3KB1R b KQkq - 0 9");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 O-O 8. Qd2 Be7 9. Bc4 Nd7 10. O-O-O Nf6 11. Rhe1 Nxe4 12. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -396,7 +396,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 10, "b", "r1bq1rk1/pppnbppp/4p3/8/2BPN3/5N2/PPPQ1PPP/2KR3R b - - 7 10"),
 (@game_id, 11, "w", "r1bq1rk1/ppp1bppp/4pn2/8/2BPN3/5N2/PPPQ1PPP/2KR3R w - - 8 11"),
 (@game_id, 11, "b", "r1bq1rk1/ppp1bppp/4pn2/8/2BPN3/5N2/PPPQ1PPP/2KRR3 b - - 9 11"),
-(@game_id, 12, "w", "r1bq1rk1/ppp1bppp/4p3/8/2BPn3/5N2/PPPQ1PPP/2KRR3 w - - 0 12");SET @game_id = (SELECT gid FROM Games WHERE event="IX Guillermo Garcia Mem Alfil" AND site="Santa Clara CUB" AND date="2001.05.24" AND wp_elo=2378 AND bp_elo=2418);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "w", "r1bq1rk1/ppp1bppp/4p3/8/2BPn3/5N2/PPPQ1PPP/2KRR3 w - - 0 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 e6 2. e4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 Be7 7. Nxf6+ Bxf6 8. Bxf6 Qxf6 9. Qd2 O-O 10. O-O-O 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -415,7 +415,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "w", "r1b1k2r/pppn1ppp/4pq2/8/3P4/5N2/PPP2PPP/R2QKB1R w KQkq - 0 9"),
 (@game_id, 9, "b", "r1b1k2r/pppn1ppp/4pq2/8/3P4/5N2/PPPQ1PPP/R3KB1R b KQkq - 1 9"),
 (@game_id, 10, "w", "r1b2rk1/pppn1ppp/4pq2/8/3P4/5N2/PPPQ1PPP/R3KB1R w KQ - 2 10"),
-(@game_id, 10, "b", "r1b2rk1/pppn1ppp/4pq2/8/3P4/5N2/PPPQ1PPP/2KR1B1R b - - 3 10");SET @game_id = (SELECT gid FROM Games WHERE event="2nd IECC" AND site="Ohrid MKD" AND date="2001.06.04" AND wp_elo=2568 AND bp_elo=2688);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "b", "r1b2rk1/pppn1ppp/4pq2/8/3P4/5N2/PPPQ1PPP/2KR1B1R b - - 3 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 Nd7 8. Nxf6+ Nxf6 9. Bb5+ Bd7 10. Qe2 O-O 11. O-O Bxb5 12. Qxb5 Qd5 13. Qxd5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -440,7 +440,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "w", "r2q1rk1/ppp2ppp/4pn2/1b6/3P4/5N2/PPP1QPPP/R4RK1 w - - 0 12"),
 (@game_id, 12, "b", "r2q1rk1/ppp2ppp/4pn2/1Q6/3P4/5N2/PPP2PPP/R4RK1 b - - 0 12"),
 (@game_id, 13, "w", "r4rk1/ppp2ppp/4pn2/1Q1q4/3P4/5N2/PPP2PPP/R4RK1 w - - 1 13"),
-(@game_id, 13, "b", "r4rk1/ppp2ppp/4pn2/3Q4/3P4/5N2/PPP2PPP/R4RK1 b - - 0 13");SET @game_id = (SELECT gid FROM Games WHERE event="ch-ARM" AND site="Yerevan ARM" AND date="2001.09.16" AND wp_elo=2562 AND bp_elo=2581);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r4rk1/ppp2ppp/4pn2/3Q4/3P4/5N2/PPP2PPP/R4RK1 b - - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Bh4 c5 9. c3 a6 10. Be2 cxd4 11. Nxd4 Bd6 12. Qd3 Bf4 13. Bg3 Qc7 14. Rd1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -467,7 +467,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "w", "r1bqk2r/1p3pp1/p3pn1p/8/3N1b1B/2PQ4/PP2BPPP/R3K2R w KQkq - 3 13"),
 (@game_id, 13, "b", "r1bqk2r/1p3pp1/p3pn1p/8/3N1b2/2PQ2B1/PP2BPPP/R3K2R b KQkq - 4 13"),
 (@game_id, 14, "w", "r1b1k2r/1pq2pp1/p3pn1p/8/3N1b2/2PQ2B1/PP2BPPP/R3K2R w KQkq - 5 14"),
-(@game_id, 14, "b", "r1b1k2r/1pq2pp1/p3pn1p/8/3N1b2/2PQ2B1/PP2BPPP/3RK2R b Kkq - 6 14");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-FIN 2001-02" AND site="FIN" AND date="2001.09.22" AND wp_elo=2293 AND bp_elo=2423);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "r1b1k2r/1pq2pp1/p3pn1p/8/3N1b2/2PQ2B1/PP2BPPP/3RK2R b Kkq - 6 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Bxf6 Nxf6 8. Bd3 c5 9. Nxc5 Bxc5 10. dxc5 Qa5+ 11. Qd2 Qxc5 12. O-O 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -490,7 +490,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 11, "w", "r1b1k2r/pp3pp1/4pn1p/q1P5/8/3B1N2/PPP2PPP/R2QK2R w KQkq - 1 11"),
 (@game_id, 11, "b", "r1b1k2r/pp3pp1/4pn1p/q1P5/8/3B1N2/PPPQ1PPP/R3K2R b KQkq - 2 11"),
 (@game_id, 12, "w", "r1b1k2r/pp3pp1/4pn1p/2q5/8/3B1N2/PPPQ1PPP/R3K2R w KQkq - 0 12"),
-(@game_id, 12, "b", "r1b1k2r/pp3pp1/4pn1p/2q5/8/3B1N2/PPPQ1PPP/R4RK1 b kq - 1 12");SET @game_id = (SELECT gid FROM Games WHERE event="ECC" AND site="Panormo GRE" AND date="2001.09.28" AND wp_elo=2504 AND bp_elo=2571);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "b", "r1b1k2r/pp3pp1/4pn1p/2q5/8/3B1N2/PPPQ1PPP/R4RK1 b kq - 1 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Bh4 c5 9. Bd3 cxd4 10. Nxd4 Bc5 11. Nf3 Bd7 12. O-O Qc7 13. Qe2 Bd6 14. Bg3 Bxg3 15. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -518,7 +518,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "b", "r3k2r/ppqb1pp1/4pn1p/2b5/7B/3B1N2/PPP1QPPP/R4RK1 b kq - 6 13"),
 (@game_id, 14, "w", "r3k2r/ppqb1pp1/3bpn1p/8/7B/3B1N2/PPP1QPPP/R4RK1 w kq - 7 14"),
 (@game_id, 14, "b", "r3k2r/ppqb1pp1/3bpn1p/8/8/3B1NB1/PPP1QPPP/R4RK1 b kq - 8 14"),
-(@game_id, 15, "w", "r3k2r/ppqb1pp1/4pn1p/8/8/3B1Nb1/PPP1QPPP/R4RK1 w kq - 0 15");SET @game_id = (SELECT gid FROM Games WHERE event="Essent Open" AND site="Hoogeveen NED" AND date="2001.10.16" AND wp_elo=2495 AND bp_elo=2519);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "w", "r3k2r/ppqb1pp1/4pn1p/8/8/3B1Nb1/PPP1QPPP/R4RK1 w kq - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 Nd7 8. c3 Qe7 9. Qc2 b6 10. O-O-O Bb7 11. Bb5 a6 12. Bd3 Rd8 13. Rhe1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -543,7 +543,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "w", "r3k2r/1bpnqppp/pp2pb2/1B6/3PN3/2P2N2/PPQ2PPP/2KR3R w kq - 0 12"),
 (@game_id, 12, "b", "r3k2r/1bpnqppp/pp2pb2/8/3PN3/2PB1N2/PPQ2PPP/2KR3R b kq - 1 12"),
 (@game_id, 13, "w", "3rk2r/1bpnqppp/pp2pb2/8/3PN3/2PB1N2/PPQ2PPP/2KR3R w k - 2 13"),
-(@game_id, 13, "b", "3rk2r/1bpnqppp/pp2pb2/8/3PN3/2PB1N2/PPQ2PPP/2KRR3 b k - 3 13");SET @game_id = (SELECT gid FROM Games WHERE event="5th OIBM" AND site="Bad Wiessee GER" AND date="2001.11.04" AND wp_elo=2590 AND bp_elo=2660);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "3rk2r/1bpnqppp/pp2pb2/8/3PN3/2PB1N2/PPQ2PPP/2KRR3 b k - 3 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 O-O 8. Qd2 Nd7 9. O-O-O b6 10. Bd3 Bb7 11. Qe2 Be7 12. h4 Nf6 13. Neg5 Bxf3 14. Nxf3 Qd6 15. Kb1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -572,7 +572,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 14, "w", "r2q1rk1/p1p1bppp/1p2pn2/6N1/3P3P/3B1b2/PPP1QPP1/2KR3R w - - 0 14"),
 (@game_id, 14, "b", "r2q1rk1/p1p1bppp/1p2pn2/8/3P3P/3B1N2/PPP1QPP1/2KR3R b - - 0 14"),
 (@game_id, 15, "w", "r4rk1/p1p1bppp/1p1qpn2/8/3P3P/3B1N2/PPP1QPP1/2KR3R w - - 1 15"),
-(@game_id, 15, "b", "r4rk1/p1p1bppp/1p1qpn2/8/3P3P/3B1N2/PPP1QPP1/1K1R3R b - - 2 15");SET @game_id = (SELECT gid FROM Games WHERE event="7th Hotel" AND site="Opatija CRO" AND date="2002.01.09" AND wp_elo=2447 AND bp_elo=2340);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "r4rk1/p1p1bppp/1p1qpn2/8/3P3P/3B1N2/PPP1QPP1/1K1R3R b - - 2 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Bc4 Nd7 8. Nf3 a6 9. a4 c5 10. O-O 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -591,7 +591,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "w", "r1bqk2r/1ppnbp1p/p3pp2/8/2BPN3/5N2/PPP2PPP/R2QK2R w KQkq - 0 9"),
 (@game_id, 9, "b", "r1bqk2r/1ppnbp1p/p3pp2/8/P1BPN3/5N2/1PP2PPP/R2QK2R b KQkq - 0 9"),
 (@game_id, 10, "w", "r1bqk2r/1p1nbp1p/p3pp2/2p5/P1BPN3/5N2/1PP2PPP/R2QK2R w KQkq - 0 10"),
-(@game_id, 10, "b", "r1bqk2r/1p1nbp1p/p3pp2/2p5/P1BPN3/5N2/1PP2PPP/R2Q1RK1 b kq - 1 10");SET @game_id = (SELECT gid FROM Games WHERE event="18th Open" AND site="Skopje MKD" AND date="2002.01.18" AND wp_elo=2381 AND bp_elo=2542);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "b", "r1bqk2r/1p1nbp1p/p3pp2/2p5/P1BPN3/5N2/1PP2PPP/R2Q1RK1 b kq - 1 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Bh4 c5 9. Bb5+ Bd7 10. Bxd7+ 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -610,7 +610,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "w", "r1bqkb1r/pp3pp1/4pn1p/2p5/3P3B/5N2/PPP2PPP/R2QKB1R w KQkq - 0 9"),
 (@game_id, 9, "b", "r1bqkb1r/pp3pp1/4pn1p/1Bp5/3P3B/5N2/PPP2PPP/R2QK2R b KQkq - 1 9"),
 (@game_id, 10, "w", "r2qkb1r/pp1b1pp1/4pn1p/1Bp5/3P3B/5N2/PPP2PPP/R2QK2R w KQkq - 2 10"),
-(@game_id, 10, "b", "r2qkb1r/pp1B1pp1/4pn1p/2p5/3P3B/5N2/PPP2PPP/R2QK2R b KQkq - 0 10");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-ISR" AND site="ISR" AND date="2002.01.26" AND wp_elo=2219 AND bp_elo=2442);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "b", "r2qkb1r/pp1B1pp1/4pn1p/2p5/3P3B/5N2/PPP2PPP/R2QK2R b KQkq - 0 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 d5 2. Nc3 e6 3. e4 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nxf6+ Qxf6 8. 0-1");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/ppp1pppp/8/3p4/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 1 2"),
@@ -624,7 +624,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 6, "b", "rnbqk2r/ppp1bppp/4pB2/8/3PN3/8/PPP2PPP/R2QKBNR b KQkq - 0 6"),
 (@game_id, 7, "w", "rnbqk2r/ppp2ppp/4pb2/8/3PN3/8/PPP2PPP/R2QKBNR w KQkq - 0 7"),
 (@game_id, 7, "b", "rnbqk2r/ppp2ppp/4pN2/8/3P4/8/PPP2PPP/R2QKBNR b KQkq - 0 7"),
-(@game_id, 8, "w", "rnb1k2r/ppp2ppp/4pq2/8/3P4/8/PPP2PPP/R2QKBNR w KQkq - 0 8");SET @game_id = (SELECT gid FROM Games WHERE event="13th Goodricke" AND site="Calcutta IND" AND date="2002.03.26" AND wp_elo=2451 AND bp_elo=2480);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 8, "w", "rnb1k2r/ppp2ppp/4pq2/8/3P4/8/PPP2PPP/R2QKBNR w KQkq - 0 8");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nc3 e6 3. e4 d5 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nxf6+ Qxf6 8. Nf3 Nc6 9. c3 O-O 10. Be2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 2 2"),
@@ -643,7 +643,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "w", "r1b1k2r/ppp2ppp/2n1pq2/8/3P4/5N2/PPP2PPP/R2QKB1R w KQkq - 2 9"),
 (@game_id, 9, "b", "r1b1k2r/ppp2ppp/2n1pq2/8/3P4/2P2N2/PP3PPP/R2QKB1R b KQkq - 0 9"),
 (@game_id, 10, "w", "r1b2rk1/ppp2ppp/2n1pq2/8/3P4/2P2N2/PP3PPP/R2QKB1R w KQ - 1 10"),
-(@game_id, 10, "b", "r1b2rk1/ppp2ppp/2n1pq2/8/3P4/2P2N2/PP2BPPP/R2QK2R b KQ - 2 10");SET @game_id = (SELECT gid FROM Games WHERE event="Open" AND site="Dubai UAE" AND date="2002.04.17" AND wp_elo=2570 AND bp_elo=2555);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "b", "r1b2rk1/ppp2ppp/2n1pq2/8/3P4/2P2N2/PP2BPPP/R2QK2R b KQ - 2 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Nxf6+ Bxf6 7. Bxf6 Qxf6 8. Nf3 O-O 9. c3 Nd7 10. Be2 e5 11. dxe5 Nxe5 12. Nxe5 Qxe5 13. O-O Be6 14. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -669,7 +669,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "b", "r1b2rk1/ppp2ppp/5q2/4N3/8/2P5/PP2BPPP/R2QK2R b KQ - 0 12"),
 (@game_id, 13, "w", "r1b2rk1/ppp2ppp/8/4q3/8/2P5/PP2BPPP/R2QK2R w KQ - 0 13"),
 (@game_id, 13, "b", "r1b2rk1/ppp2ppp/8/4q3/8/2P5/PP2BPPP/R2Q1RK1 b - - 1 13"),
-(@game_id, 14, "w", "r4rk1/ppp2ppp/4b3/4q3/8/2P5/PP2BPPP/R2Q1RK1 w - - 2 14");SET @game_id = (SELECT gid FROM Games WHERE event="9th RUS-chT" AND site="Ekaterinburg RUS" AND date="2002.05.22" AND wp_elo=2531 AND bp_elo=2602);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "w", "r4rk1/ppp2ppp/4b3/4q3/8/2P5/PP2BPPP/R2Q1RK1 w - - 2 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 Nd7 8. Qd2 O-O 9. O-O-O Be7 10. Bc4 Nf6 11. Rhe1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -690,7 +690,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 10, "w", "r1bq1rk1/pppnbppp/4p3/8/3PN3/5N2/PPPQ1PPP/2KR1B1R w - - 6 10"),
 (@game_id, 10, "b", "r1bq1rk1/pppnbppp/4p3/8/2BPN3/5N2/PPPQ1PPP/2KR3R b - - 7 10"),
 (@game_id, 11, "w", "r1bq1rk1/ppp1bppp/4pn2/8/2BPN3/5N2/PPPQ1PPP/2KR3R w - - 8 11"),
-(@game_id, 11, "b", "r1bq1rk1/ppp1bppp/4pn2/8/2BPN3/5N2/PPPQ1PPP/2KRR3 b - - 9 11");SET @game_id = (SELECT gid FROM Games WHERE event="5th Pyramiden-Franken Cup" AND site="Fuerth GER" AND date="2002.09.08" AND wp_elo=2450 AND bp_elo=2477);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "b", "r1bq1rk1/ppp1bppp/4pn2/8/2BPN3/5N2/PPPQ1PPP/2KRR3 b - - 9 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 Be7 7. Nxf6+ Bxf6 8. h4 O-O 9. Qd2 e5 10. Bxf6 Qxf6 11. O-O-O exd4 12. Qxd4 Qxd4 13. Rxd4 Re8 14. Bd3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -717,7 +717,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "w", "r1b2rk1/pppn1ppp/8/8/3q3P/5N2/PPP2PP1/2KR1B1R w - - 0 13"),
 (@game_id, 13, "b", "r1b2rk1/pppn1ppp/8/8/3R3P/5N2/PPP2PP1/2K2B1R b - - 0 13"),
 (@game_id, 14, "w", "r1b1r1k1/pppn1ppp/8/8/3R3P/5N2/PPP2PP1/2K2B1R w - - 1 14"),
-(@game_id, 14, "b", "r1b1r1k1/pppn1ppp/8/8/3R3P/3B1N2/PPP2PP1/2K4R b - - 2 14");SET @game_id = (SELECT gid FROM Games WHERE event="GMA" AND site="Wijk aan Zee NED" AND date="2003.01.26" AND wp_elo=2753 AND bp_elo=2729);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "r1b1r1k1/pppn1ppp/8/8/3R3P/3B1N2/PPP2PP1/2K4R b - - 2 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 Nd7 8. Qd2 O-O 9. O-O-O Be7 10. Bc4 a6 11. Bb3 a5 12. Bc4 c6 13. Kb1 Qc7 14. h4 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -744,7 +744,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "w", "r1bq1rk1/1p1nbppp/2p1p3/p7/2BPN3/5N2/PPPQ1PPP/2KR3R w - - 0 13"),
 (@game_id, 13, "b", "r1bq1rk1/1p1nbppp/2p1p3/p7/2BPN3/5N2/PPPQ1PPP/1K1R3R b - - 1 13"),
 (@game_id, 14, "w", "r1b2rk1/1pqnbppp/2p1p3/p7/2BPN3/5N2/PPPQ1PPP/1K1R3R w - - 2 14"),
-(@game_id, 14, "b", "r1b2rk1/1pqnbppp/2p1p3/p7/2BPN2P/5N2/PPPQ1PP1/1K1R3R b - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE event="56th ch-RUS" AND site="Krasnoyarsk RUS" AND date="2003.09.05" AND wp_elo=2558 AND bp_elo=2653);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "r1b2rk1/1pqnbppp/2p1p3/p7/2BPN2P/5N2/PPPQ1PP1/1K1R3R b - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nxf6+ Nxf6 7. Nf3 h6 8. Bxf6 Qxf6 9. Bb5+ c6 10. Bd3 Bd7 11. c3 O-O-O 12. O-O Bd6 13. Qe2 c5 14. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -770,7 +770,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "b", "2kr1b1r/pp1b1pp1/2p1pq1p/8/3P4/2PB1N2/PP3PPP/R2Q1RK1 b - - 2 12"),
 (@game_id, 13, "w", "2kr3r/pp1b1pp1/2pbpq1p/8/3P4/2PB1N2/PP3PPP/R2Q1RK1 w - - 3 13"),
 (@game_id, 13, "b", "2kr3r/pp1b1pp1/2pbpq1p/8/3P4/2PB1N2/PP2QPPP/R4RK1 b - - 4 13"),
-(@game_id, 14, "w", "2kr3r/pp1b1pp1/3bpq1p/2p5/3P4/2PB1N2/PP2QPPP/R4RK1 w - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE event="56th ch-RUS" AND site="Krasnoyarsk RUS" AND date="2003.09.05" AND wp_elo=2333 AND bp_elo=2553);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "w", "2kr3r/pp1b1pp1/3bpq1p/2p5/3P4/2PB1N2/PP2QPPP/R4RK1 w - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Nxf6+ Bxf6 7. Bxf6 Qxf6 8. Nf3 O-O 9. c3 Nd7 10. Bd3 e5 11. dxe5 Nxe5 12. Nxe5 Qxe5+ 13. Qe2 Re8 14. O-O-O Qxe2 15. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -798,7 +798,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "b", "r1b2rk1/ppp2ppp/8/4q3/8/2PB4/PP2QPPP/R3K2R b KQ - 1 13"),
 (@game_id, 14, "w", "r1b1r1k1/ppp2ppp/8/4q3/8/2PB4/PP2QPPP/R3K2R w KQ - 2 14"),
 (@game_id, 14, "b", "r1b1r1k1/ppp2ppp/8/4q3/8/2PB4/PP2QPPP/2KR3R b - - 3 14"),
-(@game_id, 15, "w", "r1b1r1k1/ppp2ppp/8/8/8/2PB4/PP2qPPP/2KR3R w - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-CRO" AND site="Rabac CRO" AND date="2003.09.14" AND wp_elo=2409 AND bp_elo=2474);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "w", "r1b1r1k1/ppp2ppp/8/8/8/2PB4/PP2qPPP/2KR3R w - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Bxf6 Nxf6 7. Nxf6+ Qxf6 8. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -812,7 +812,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 6, "b", "r1bqkb1r/pppn1ppp/4pB2/8/3PN3/8/PPP2PPP/R2QKBNR b KQkq - 0 6"),
 (@game_id, 7, "w", "r1bqkb1r/ppp2ppp/4pn2/8/3PN3/8/PPP2PPP/R2QKBNR w KQkq - 0 7"),
 (@game_id, 7, "b", "r1bqkb1r/ppp2ppp/4pN2/8/3P4/8/PPP2PPP/R2QKBNR b KQkq - 0 7"),
-(@game_id, 8, "w", "r1b1kb1r/ppp2ppp/4pq2/8/3P4/8/PPP2PPP/R2QKBNR w KQkq - 0 8");SET @game_id = (SELECT gid FROM Games WHERE event="Classics II IM" AND site="Gausdal NOR" AND date="2003.10.26" AND wp_elo=2358 AND bp_elo=2323);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 8, "w", "r1b1kb1r/ppp2ppp/4pq2/8/3P4/8/PPP2PPP/R2QKBNR w KQkq - 0 8");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Nxf6+ Bxf6 7. Bxf6 Qxf6 8. c3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -827,7 +827,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 7, "w", "rnbqk2r/ppp2ppp/4pb2/6B1/3P4/8/PPP2PPP/R2QKBNR w KQkq - 0 7"),
 (@game_id, 7, "b", "rnbqk2r/ppp2ppp/4pB2/8/3P4/8/PPP2PPP/R2QKBNR b KQkq - 0 7"),
 (@game_id, 8, "w", "rnb1k2r/ppp2ppp/4pq2/8/3P4/8/PPP2PPP/R2QKBNR w KQkq - 0 8"),
-(@game_id, 8, "b", "rnb1k2r/ppp2ppp/4pq2/8/3P4/2P5/PP3PPP/R2QKBNR b KQkq - 0 8");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-BEL 2003-4" AND site="Belgium BEL" AND date="2003.12.08" AND wp_elo=2276 AND bp_elo=2260);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 8, "b", "rnb1k2r/ppp2ppp/4pq2/8/3P4/2P5/PP3PPP/R2QKBNR b KQkq - 0 8");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Bxf6 Nxf6 7. Nxf6+ Qxf6 8. Nf3 Bd7 9. Qd3 Bd6 10. O-O-O O-O-O 11. g3 c5 12. dxc5 Bxc5 13. Qc4 Qxf3 14. Qxc5+ Qc6 15. Qc4 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -856,7 +856,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 14, "w", "2kr3r/pp1b1ppp/4p3/2b5/2Q5/5qP1/PPP2P1P/2KR1B1R w - - 0 14"),
 (@game_id, 14, "b", "2kr3r/pp1b1ppp/4p3/2Q5/8/5qP1/PPP2P1P/2KR1B1R b - - 0 14"),
 (@game_id, 15, "w", "2kr3r/pp1b1ppp/2q1p3/2Q5/8/6P1/PPP2P1P/2KR1B1R w - - 1 15"),
-(@game_id, 15, "b", "2kr3r/pp1b1ppp/2q1p3/8/2Q5/6P1/PPP2P1P/2KR1B1R b - - 2 15");SET @game_id = (SELECT gid FROM Games WHERE event="Gibraltar Masters" AND site="Catalan Bay ENG" AND date="2004.02.01" AND wp_elo=2446 AND bp_elo=2518);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "2kr3r/pp1b1ppp/2q1p3/8/2Q5/6P1/PPP2P1P/2KR1B1R b - - 2 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Nxf6+ Bxf6 7. Bxf6 Qxf6 8. Nf3 Nd7 9. Bd3 c5 10. c3 O-O 11. O-O cxd4 12. Nxd4 e5 13. Nb3 Rd8 14. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -882,7 +882,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "b", "r1b2rk1/pp1n1ppp/4pq2/8/3N4/2PB4/PP3PPP/R2Q1RK1 b - - 0 12"),
 (@game_id, 13, "w", "r1b2rk1/pp1n1ppp/5q2/4p3/3N4/2PB4/PP3PPP/R2Q1RK1 w - - 0 13"),
 (@game_id, 13, "b", "r1b2rk1/pp1n1ppp/5q2/4p3/8/1NPB4/PP3PPP/R2Q1RK1 b - - 1 13"),
-(@game_id, 14, "w", "r1br2k1/pp1n1ppp/5q2/4p3/8/1NPB4/PP3PPP/R2Q1RK1 w - - 2 14");SET @game_id = (SELECT gid FROM Games WHERE event="75th ch-GER" AND site="Hoeckendorf GER" AND date="2004.02.03" AND wp_elo=2488 AND bp_elo=2572);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "w", "r1br2k1/pp1n1ppp/5q2/4p3/8/1NPB4/PP3PPP/R2Q1RK1 w - - 2 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 Be7 7. Bxf6 Nxf6 8. Nxf6+ Bxf6 9. c3 Bd7 10. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -900,7 +900,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 8, "b", "r1bqk2r/ppp1bppp/4pN2/8/3P4/5N2/PPP2PPP/R2QKB1R b KQkq - 0 8"),
 (@game_id, 9, "w", "r1bqk2r/ppp2ppp/4pb2/8/3P4/5N2/PPP2PPP/R2QKB1R w KQkq - 0 9"),
 (@game_id, 9, "b", "r1bqk2r/ppp2ppp/4pb2/8/3P4/2P2N2/PP3PPP/R2QKB1R b KQkq - 0 9"),
-(@game_id, 10, "w", "r2qk2r/pppb1ppp/4pb2/8/3P4/2P2N2/PP3PPP/R2QKB1R w KQkq - 1 10");SET @game_id = (SELECT gid FROM Games WHERE event="Aeroflot Open" AND site="Moscow RUS" AND date="2004.02.21" AND wp_elo=2564 AND bp_elo=2674);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "w", "r2qk2r/pppb1ppp/4pb2/8/3P4/2P2N2/PP3PPP/R2QKB1R w KQkq - 1 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Bh4 c5 8. Nxf6+ Nxf6 9. Bb5+ Bd7 10. Bxd7+ Qxd7 11. Qe2 Be7 12. dxc5 O-O 13. O-O Bxc5 14. Ne5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -927,7 +927,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "w", "r4rk1/pp1qbpp1/4pn1p/2P5/7B/5N2/PPP1QPPP/R3K2R w KQ - 1 13"),
 (@game_id, 13, "b", "r4rk1/pp1qbpp1/4pn1p/2P5/7B/5N2/PPP1QPPP/R4RK1 b - - 2 13"),
 (@game_id, 14, "w", "r4rk1/pp1q1pp1/4pn1p/2b5/7B/5N2/PPP1QPPP/R4RK1 w - - 0 14"),
-(@game_id, 14, "b", "r4rk1/pp1q1pp1/4pn1p/2b1N3/7B/8/PPP1QPPP/R4RK1 b - - 1 14");SET @game_id = (SELECT gid FROM Games WHERE event="Bundesliga Playoff 2003-4" AND site="Baden Baden GER" AND date="2004.05.09" AND wp_elo=2603 AND bp_elo=2672);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "r4rk1/pp1q1pp1/4pn1p/2b1N3/7B/8/PPP1QPPP/R4RK1 b - - 1 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nxf6+ Nxf6 7. Nf3 h6 8. Bxf6 Qxf6 9. Bb5+ c6 10. Bd3 Bd7 11. O-O c5 12. c3 cxd4 13. Nxd4 Bc5 14. Be4 Bxd4 15. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -955,7 +955,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "b", "r3kb1r/pp1b1pp1/4pq1p/8/3N4/2PB4/PP3PPP/R2Q1RK1 b kq - 0 13"),
 (@game_id, 14, "w", "r3k2r/pp1b1pp1/4pq1p/2b5/3N4/2PB4/PP3PPP/R2Q1RK1 w kq - 1 14"),
 (@game_id, 14, "b", "r3k2r/pp1b1pp1/4pq1p/2b5/3NB3/2P5/PP3PPP/R2Q1RK1 b kq - 2 14"),
-(@game_id, 15, "w", "r3k2r/pp1b1pp1/4pq1p/8/3bB3/2P5/PP3PPP/R2Q1RK1 w kq - 0 15");SET @game_id = (SELECT gid FROM Games WHERE event="Capablanca Mem Premier I" AND site="Havana CUB" AND date="2004.05.19" AND wp_elo=2451 AND bp_elo=2440);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "w", "r3k2r/pp1b1pp1/4pq1p/8/3bB3/2P5/PP3PPP/R2Q1RK1 w kq - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nxf6+ Nxf6 7. Nf3 Be7 8. Bd3 c5 9. dxc5 Qa5+ 10. Bd2 Qxc5 11. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -975,7 +975,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "b", "r1bqk2r/pp2bppp/4pn2/2P3B1/8/3B1N2/PPP2PPP/R2QK2R b KQkq - 0 9"),
 (@game_id, 10, "w", "r1b1k2r/pp2bppp/4pn2/q1P3B1/8/3B1N2/PPP2PPP/R2QK2R w KQkq - 1 10"),
 (@game_id, 10, "b", "r1b1k2r/pp2bppp/4pn2/q1P5/8/3B1N2/PPPB1PPP/R2QK2R b KQkq - 2 10"),
-(@game_id, 11, "w", "r1b1k2r/pp2bppp/4pn2/2q5/8/3B1N2/PPPB1PPP/R2QK2R w KQkq - 0 11");SET @game_id = (SELECT gid FROM Games WHERE event="ch-SLO" AND site="Maribor SLO" AND date="2004.06.29" AND wp_elo=2369 AND bp_elo=2374);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "w", "r1b1k2r/pp2bppp/4pn2/2q5/8/3B1N2/PPPB1PPP/R2QK2R w KQkq - 0 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nc3 d5 3. Bg5 e6 4. e4 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 Be7 8. Bd3 Nd7 9. Qe2 b6 10. O-O-O 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 2 2"),
@@ -994,7 +994,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "w", "r1bqk2r/pppnbppp/4p3/8/3PN3/3B1N2/PPP2PPP/R2QK2R w KQkq - 4 9"),
 (@game_id, 9, "b", "r1bqk2r/pppnbppp/4p3/8/3PN3/3B1N2/PPP1QPPP/R3K2R b KQkq - 5 9"),
 (@game_id, 10, "w", "r1bqk2r/p1pnbppp/1p2p3/8/3PN3/3B1N2/PPP1QPPP/R3K2R w KQkq - 0 10"),
-(@game_id, 10, "b", "r1bqk2r/p1pnbppp/1p2p3/8/3PN3/3B1N2/PPP1QPPP/2KR3R b kq - 1 10");SET @game_id = (SELECT gid FROM Games WHERE event="ch-Montenegro" AND site="Bijelo Polje SCG" AND date="2004.07.20" AND wp_elo=2445 AND bp_elo=2519);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "b", "r1bqk2r/p1pnbppp/1p2p3/8/3PN3/3B1N2/PPP1QPPP/2KR3R b kq - 1 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Bh4 c5 9. c3 cxd4 10. Qxd4 Qxd4 11. Nxd4 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1015,7 +1015,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 10, "w", "r1bqkb1r/pp3pp1/4pn1p/8/3p3B/2P2N2/PP3PPP/R2QKB1R w KQkq - 0 10"),
 (@game_id, 10, "b", "r1bqkb1r/pp3pp1/4pn1p/8/3Q3B/2P2N2/PP3PPP/R3KB1R b KQkq - 0 10"),
 (@game_id, 11, "w", "r1b1kb1r/pp3pp1/4pn1p/8/3q3B/2P2N2/PP3PPP/R3KB1R w KQkq - 0 11"),
-(@game_id, 11, "b", "r1b1kb1r/pp3pp1/4pn1p/8/3N3B/2P5/PP3PPP/R3KB1R b KQkq - 0 11");SET @game_id = (SELECT gid FROM Games WHERE event="Lushki A" AND site="Serpukhov RUS" AND date="2004.11.29" AND wp_elo=2434 AND bp_elo=2392);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "b", "r1b1kb1r/pp3pp1/4pn1p/8/3N3B/2P5/PP3PPP/R3KB1R b KQkq - 0 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nxf6+ Qxf6 8. Nf3 O-O 9. Bd3 Nd7 10. O-O e5 11. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1035,7 +1035,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "b", "rnb2rk1/ppp2ppp/4pq2/8/3P4/3B1N2/PPP2PPP/R2QK2R b KQ - 3 9"),
 (@game_id, 10, "w", "r1b2rk1/pppn1ppp/4pq2/8/3P4/3B1N2/PPP2PPP/R2QK2R w KQ - 4 10"),
 (@game_id, 10, "b", "r1b2rk1/pppn1ppp/4pq2/8/3P4/3B1N2/PPP2PPP/R2Q1RK1 b - - 5 10"),
-(@game_id, 11, "w", "r1b2rk1/pppn1ppp/5q2/4p3/3P4/3B1N2/PPP2PPP/R2Q1RK1 w - - 0 11");SET @game_id = (SELECT gid FROM Games WHERE event="Region Champ" AND site="Voronezh RUS" AND date="2004.12.06" AND wp_elo=2387 AND bp_elo=2396);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "w", "r1b2rk1/pppn1ppp/5q2/4p3/3P4/3B1N2/PPP2PPP/R2Q1RK1 w - - 0 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 Bd7 8. Bd3 Bc6 9. Qe2 Bxd4 10. O-O-O Bf6 11. g4 Qd5 12. c4 Qa5 13. Nxf6+ 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1060,7 +1060,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "w", "rn2k2r/ppp2ppp/2b1pb2/3q4/4N1P1/3B1N2/PPP1QP1P/2KR3R w kq - 1 12"),
 (@game_id, 12, "b", "rn2k2r/ppp2ppp/2b1pb2/3q4/2P1N1P1/3B1N2/PP2QP1P/2KR3R b kq - 0 12"),
 (@game_id, 13, "w", "rn2k2r/ppp2ppp/2b1pb2/q7/2P1N1P1/3B1N2/PP2QP1P/2KR3R w kq - 1 13"),
-(@game_id, 13, "b", "rn2k2r/ppp2ppp/2b1pN2/q7/2P3P1/3B1N2/PP2QP1P/2KR3R b kq - 0 13");SET @game_id = (SELECT gid FROM Games WHERE event="Norwegian Open" AND site="Oslo NOR" AND date="2005.03.26" AND wp_elo=2159 AND bp_elo=1966);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "rn2k2r/ppp2ppp/2b1pN2/q7/2P3P1/3B1N2/PP2QP1P/2KR3R b kq - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Nxf6+ Bxf6 7. Bxf6 Qxf6 8. Nf3 c5 9. Bb5+ Bd7 10. Bxd7+ Nxd7 11. c3 O-O 12. O-O 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1083,7 +1083,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 11, "w", "r3k2r/pp1n1ppp/4pq2/2p5/3P4/5N2/PPP2PPP/R2QK2R w KQkq - 0 11"),
 (@game_id, 11, "b", "r3k2r/pp1n1ppp/4pq2/2p5/3P4/2P2N2/PP3PPP/R2QK2R b KQkq - 0 11"),
 (@game_id, 12, "w", "r4rk1/pp1n1ppp/4pq2/2p5/3P4/2P2N2/PP3PPP/R2QK2R w KQ - 1 12"),
-(@game_id, 12, "b", "r4rk1/pp1n1ppp/4pq2/2p5/3P4/2P2N2/PP3PPP/R2Q1RK1 b - - 2 12");SET @game_id = (SELECT gid FROM Games WHERE event="ch-CUB GpA" AND site="Santa Clara CUB" AND date="2005.04.08" AND wp_elo=2420 AND bp_elo=2395);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "b", "r4rk1/pp1n1ppp/4pq2/2p5/3P4/2P2N2/PP3PPP/R2Q1RK1 b - - 2 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 f5 8. Nc3 Bf6 9. Qd2 c5 10. Bb5+ Bd7 11. dxc5 a6 12. Bxd7+ Nxd7 13. O-O-O Qc7 14. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1109,7 +1109,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "b", "rn1qk2r/1p1B1p1p/p3pb2/2P2p2/8/2N2N2/PPPQ1PPP/R3K2R b KQkq - 0 12"),
 (@game_id, 13, "w", "r2qk2r/1p1n1p1p/p3pb2/2P2p2/8/2N2N2/PPPQ1PPP/R3K2R w KQkq - 0 13"),
 (@game_id, 13, "b", "r2qk2r/1p1n1p1p/p3pb2/2P2p2/8/2N2N2/PPPQ1PPP/2KR3R b kq - 1 13"),
-(@game_id, 14, "w", "r3k2r/1pqn1p1p/p3pb2/2P2p2/8/2N2N2/PPPQ1PPP/2KR3R w kq - 2 14");SET @game_id = (SELECT gid FROM Games WHERE event="ch-RSA" AND site="Johannesburg RSA" AND date="2005.04.17" AND wp_elo=2087 AND bp_elo=2332);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "w", "r3k2r/1pqn1p1p/p3pb2/2P2p2/8/2N2N2/PPPQ1PPP/2KR3R w kq - 2 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. c4 f5 8. Nc3 Bf6 9. Nf3 c5 10. d5 e5 11. Qc2 O-O 12. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1131,7 +1131,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 10, "b", "rnbqk2r/pp3p1p/4pb2/2pP1p2/2P5/2N2N2/PP3PPP/R2QKB1R b KQkq - 0 10"),
 (@game_id, 11, "w", "rnbqk2r/pp3p1p/5b2/2pPpp2/2P5/2N2N2/PP3PPP/R2QKB1R w KQkq - 0 11"),
 (@game_id, 11, "b", "rnbqk2r/pp3p1p/5b2/2pPpp2/2P5/2N2N2/PPQ2PPP/R3KB1R b KQkq - 1 11"),
-(@game_id, 12, "w", "rnbq1rk1/pp3p1p/5b2/2pPpp2/2P5/2N2N2/PPQ2PPP/R3KB1R w KQ - 2 12");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-RUS" AND site="Sochi RUS" AND date="2005.04.24" AND wp_elo=2571 AND bp_elo=2565);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "w", "rnbq1rk1/pp3p1p/5b2/2pPpp2/2P5/2N2N2/PPQ2PPP/R3KB1R w KQ - 2 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 f5 8. Nc3 a6 9. g4 fxg4 10. Ne5 c5 11. d5 exd5 12. Qxd5 Qxd5 13. Nxd5 Bd8 14. h3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1158,7 +1158,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "w", "rnb1k2r/1p2bp1p/p7/2pqN3/6p1/2N5/PPP2P1P/R3KB1R w KQkq - 0 13"),
 (@game_id, 13, "b", "rnb1k2r/1p2bp1p/p7/2pNN3/6p1/8/PPP2P1P/R3KB1R b KQkq - 0 13"),
 (@game_id, 14, "w", "rnbbk2r/1p3p1p/p7/2pNN3/6p1/8/PPP2P1P/R3KB1R w KQkq - 1 14"),
-(@game_id, 14, "b", "rnbbk2r/1p3p1p/p7/2pNN3/6p1/7P/PPP2P2/R3KB1R b KQkq - 0 14");SET @game_id = (SELECT gid FROM Games WHERE event="ch-FRA National 1" AND site="Lille FRA" AND date="2005.05.06" AND wp_elo=2482 AND bp_elo=2524);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "rnbbk2r/1p3p1p/p7/2pNN3/6p1/7P/PPP2P2/R3KB1R b KQkq - 0 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 Be7 7. Nxf6+ Bxf6 8. Bxf6 Nxf6 9. c3 O-O 10. Be2 b6 11. Ne5 Bb7 12. Bf3 Bxf3 13. Qxf3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1183,7 +1183,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "w", "r2q1rk1/pbp2ppp/1p2pn2/4N3/3P4/2P5/PP2BPPP/R2QK2R w KQ - 2 12"),
 (@game_id, 12, "b", "r2q1rk1/pbp2ppp/1p2pn2/4N3/3P4/2P2B2/PP3PPP/R2QK2R b KQ - 3 12"),
 (@game_id, 13, "w", "r2q1rk1/p1p2ppp/1p2pn2/4N3/3P4/2P2b2/PP3PPP/R2QK2R w KQ - 0 13"),
-(@game_id, 13, "b", "r2q1rk1/p1p2ppp/1p2pn2/4N3/3P4/2P2Q2/PP3PPP/R3K2R b KQ - 0 13");SET @game_id = (SELECT gid FROM Games WHERE event="15th ETC" AND site="Gothenburg SWE" AND date="2005.07.31" AND wp_elo=2594 AND bp_elo=2688);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r2q1rk1/p1p2ppp/1p2pn2/4N3/3P4/2P2Q2/PP3PPP/R3K2R b KQ - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 O-O 8. Qd2 Be7 9. Bd3 Nd7 10. O-O-O b6 11. Neg5 Bxg5 12. Nxg5 Nf6 13. Nf3 Bb7 14. Ne5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1210,7 +1210,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "w", "r1bq1rk1/p1p2ppp/1p2pn2/6N1/3P4/3B4/PPPQ1PPP/2KR3R w - - 1 13"),
 (@game_id, 13, "b", "r1bq1rk1/p1p2ppp/1p2pn2/8/3P4/3B1N2/PPPQ1PPP/2KR3R b - - 2 13"),
 (@game_id, 14, "w", "r2q1rk1/pbp2ppp/1p2pn2/8/3P4/3B1N2/PPPQ1PPP/2KR3R w - - 3 14"),
-(@game_id, 14, "b", "r2q1rk1/pbp2ppp/1p2pn2/4N3/3P4/3B4/PPPQ1PPP/2KR3R b - - 4 14");SET @game_id = (SELECT gid FROM Games WHERE event="15th ETC" AND site="Gothenburg SWE" AND date="2005.08.07" AND wp_elo=2579 AND bp_elo=2584);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "r2q1rk1/pbp2ppp/1p2pn2/4N3/3P4/3B4/PPPQ1PPP/2KR3R b - - 4 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 b6 8. Bd3 Bb7 9. Qe2 Nd7 10. O-O f5 11. Nc3 O-O 12. d5 Nc5 13. Bc4 Kh8 14. Rad1 Bd6 15. Ne5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1239,7 +1239,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 14, "w", "r2q1r1k/pbp1bp1p/1p2p3/2nP1p2/2B5/2N2N2/PPP1QPPP/R4RK1 w - - 3 14"),
 (@game_id, 14, "b", "r2q1r1k/pbp1bp1p/1p2p3/2nP1p2/2B5/2N2N2/PPP1QPPP/3R1RK1 b - - 4 14"),
 (@game_id, 15, "w", "r2q1r1k/pbp2p1p/1p1bp3/2nP1p2/2B5/2N2N2/PPP1QPPP/3R1RK1 w - - 5 15"),
-(@game_id, 15, "b", "r2q1r1k/pbp2p1p/1p1bp3/2nPNp2/2B5/2N5/PPP1QPPP/3R1RK1 b - - 6 15");SET @game_id = (SELECT gid FROM Games WHERE event="It" AND site="Platja de Muro ESP" AND date="2005.10.16" AND wp_elo=2450 AND bp_elo=2478);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "r2q1r1k/pbp2p1p/1p1bp3/2nPNp2/2B5/2N5/PPP1QPPP/3R1RK1 b - - 6 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nxf6+ Nxf6 7. Nf3 h6 8. Bxf6 Qxf6 9. Bb5+ c6 10. Bd3 Bd6 11. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1259,7 +1259,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "b", "r1b1kb1r/ppp2pp1/4pq1p/1B6/3P4/5N2/PPP2PPP/R2QK2R b KQkq - 1 9"),
 (@game_id, 10, "w", "r1b1kb1r/pp3pp1/2p1pq1p/1B6/3P4/5N2/PPP2PPP/R2QK2R w KQkq - 0 10"),
 (@game_id, 10, "b", "r1b1kb1r/pp3pp1/2p1pq1p/8/3P4/3B1N2/PPP2PPP/R2QK2R b KQkq - 1 10"),
-(@game_id, 11, "w", "r1b1k2r/pp3pp1/2pbpq1p/8/3P4/3B1N2/PPP2PPP/R2QK2R w KQkq - 2 11");SET @game_id = (SELECT gid FROM Games WHERE event="ch-RUS Superfinal" AND site="Moscow RUS" AND date="2005.12.21" AND wp_elo=2653 AND bp_elo=2675);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "w", "r1b1k2r/pp3pp1/2pbpq1p/8/3P4/3B1N2/PPP2PPP/R2QK2R w KQkq - 2 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Bh4 c5 9. Bc4 cxd4 10. O-O Be7 11. Qe2 O-O 12. Rad1 Qb6 13. Nxd4 Qxb2 14. Nf5 exf5 15. Qxe7 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1288,7 +1288,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 14, "w", "r1b2rk1/pp2bpp1/4pn1p/8/2BN3B/8/PqP1QPPP/3R1RK1 w - - 0 14"),
 (@game_id, 14, "b", "r1b2rk1/pp2bpp1/4pn1p/5N2/2B4B/8/PqP1QPPP/3R1RK1 b - - 1 14"),
 (@game_id, 15, "w", "r1b2rk1/pp2bpp1/5n1p/5p2/2B4B/8/PqP1QPPP/3R1RK1 w - - 0 15"),
-(@game_id, 15, "b", "r1b2rk1/pp2Qpp1/5n1p/5p2/2B4B/8/PqP2PPP/3R1RK1 b - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE event="EU-chT Seniors" AND site="Dresden GER" AND date="2006.02.24" AND wp_elo=2166 AND bp_elo=2173);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "r1b2rk1/pp2Qpp1/5n1p/5p2/2B4B/8/PqP2PPP/3R1RK1 b - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 d5 2. Nc3 Nf6 3. Bg5 e6 4. e4 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 Nd7 8. c3 O-O 9. Nxf6+ Qxf6 10. Bd3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/ppp1pppp/8/3p4/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 1 2"),
@@ -1307,7 +1307,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "w", "r1bq1rk1/pppn1ppp/4pb2/8/3PN3/2P2N2/PP3PPP/R2QKB1R w KQ - 1 9"),
 (@game_id, 9, "b", "r1bq1rk1/pppn1ppp/4pN2/8/3P4/2P2N2/PP3PPP/R2QKB1R b KQ - 0 9"),
 (@game_id, 10, "w", "r1b2rk1/pppn1ppp/4pq2/8/3P4/2P2N2/PP3PPP/R2QKB1R w KQ - 0 10"),
-(@game_id, 10, "b", "r1b2rk1/pppn1ppp/4pq2/8/3P4/2PB1N2/PP3PPP/R2QK2R b KQ - 1 10");SET @game_id = (SELECT gid FROM Games WHERE event="ch-LTU" AND site="Vilnius LTU" AND date="2006.03.19" AND wp_elo=2309 AND bp_elo=2464);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "b", "r1b2rk1/pppn1ppp/4pq2/8/3P4/2PB1N2/PP3PPP/R2QK2R b KQ - 1 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 O-O 8. Qd2 b6 9. O-O-O 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1324,7 +1324,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 8, "w", "rnbq1rk1/ppp2ppp/4pb2/8/3PN3/5N2/PPP2PPP/R2QKB1R w KQ - 2 8"),
 (@game_id, 8, "b", "rnbq1rk1/ppp2ppp/4pb2/8/3PN3/5N2/PPPQ1PPP/R3KB1R b KQ - 3 8"),
 (@game_id, 9, "w", "rnbq1rk1/p1p2ppp/1p2pb2/8/3PN3/5N2/PPPQ1PPP/R3KB1R w KQ - 0 9"),
-(@game_id, 9, "b", "rnbq1rk1/p1p2ppp/1p2pb2/8/3PN3/5N2/PPPQ1PPP/2KR1B1R b - - 1 9");SET @game_id = (SELECT gid FROM Games WHERE event="VIII Rector Cup" AND site="Kharkiv UKR" AND date="2006.03.29" AND wp_elo=2513 AND bp_elo=2410);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 9, "b", "rnbq1rk1/p1p2ppp/1p2pb2/8/3PN3/5N2/PPPQ1PPP/2KR1B1R b - - 1 9");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 a6 8. g3 b5 9. Bg2 Bb7 10. Qe2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1343,7 +1343,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "w", "rnbqk2r/2p1bp1p/p3pp2/1p6/3PN3/5NP1/PPP2P1P/R2QKB1R w KQkq - 0 9"),
 (@game_id, 9, "b", "rnbqk2r/2p1bp1p/p3pp2/1p6/3PN3/5NP1/PPP2PBP/R2QK2R b KQkq - 1 9"),
 (@game_id, 10, "w", "rn1qk2r/1bp1bp1p/p3pp2/1p6/3PN3/5NP1/PPP2PBP/R2QK2R w KQkq - 2 10"),
-(@game_id, 10, "b", "rn1qk2r/1bp1bp1p/p3pp2/1p6/3PN3/5NP1/PPP1QPBP/R3K2R b KQkq - 3 10");SET @game_id = (SELECT gid FROM Games WHERE event="10th Heraclion Open" AND site="Athens GRE" AND date="2006.06.17" AND wp_elo=2288 AND bp_elo=2191);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "b", "rn1qk2r/1bp1bp1p/p3pp2/1p6/3PN3/5NP1/PPP1QPBP/R3K2R b KQkq - 3 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 Nd7 8. c3 O-O 9. Bd3 e5 10. O-O exd4 11. Nxf6+ Nxf6 12. Nxd4 c6 13. Nf5 Be6 14. Ne3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1370,7 +1370,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "w", "r1bq1rk1/pp3ppp/2p2n2/8/3N4/2PB4/PP3PPP/R2Q1RK1 w - - 0 13"),
 (@game_id, 13, "b", "r1bq1rk1/pp3ppp/2p2n2/5N2/8/2PB4/PP3PPP/R2Q1RK1 b - - 1 13"),
 (@game_id, 14, "w", "r2q1rk1/pp3ppp/2p1bn2/5N2/8/2PB4/PP3PPP/R2Q1RK1 w - - 2 14"),
-(@game_id, 14, "b", "r2q1rk1/pp3ppp/2p1bn2/8/8/2PBN3/PP3PPP/R2Q1RK1 b - - 3 14");SET @game_id = (SELECT gid FROM Games WHERE event="Open" AND site="Kiel GER" AND date="2006.07.28" AND wp_elo=2187 AND bp_elo=2075);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "r2q1rk1/pp3ppp/2p1bn2/8/8/2PBN3/PP3PPP/R2Q1RK1 b - - 3 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 Nd7 8. Qd2 O-O 9. O-O-O b6 10. Bd3 Bb7 11. Qf4 c5 12. dxc5 bxc5 13. Nxf6+ Qxf6 14. Qe3 Rab8 15. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1398,7 +1398,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "b", "r2q1rk1/pb1n1ppp/4pN2/2p5/5Q2/3B1N2/PPP2PPP/2KR3R b - - 0 13"),
 (@game_id, 14, "w", "r4rk1/pb1n1ppp/4pq2/2p5/5Q2/3B1N2/PPP2PPP/2KR3R w - - 0 14"),
 (@game_id, 14, "b", "r4rk1/pb1n1ppp/4pq2/2p5/8/3BQN2/PPP2PPP/2KR3R b - - 1 14"),
-(@game_id, 15, "w", "1r3rk1/pb1n1ppp/4pq2/2p5/8/3BQN2/PPP2PPP/2KR3R w - - 2 15");SET @game_id = (SELECT gid FROM Games WHERE event="1st TCH-MNE" AND site="Herceg Novi MNE" AND date="2006.09.24" AND wp_elo=2253 AND bp_elo=2119);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "w", "1r3rk1/pb1n1ppp/4pq2/2p5/8/3BQN2/PPP2PPP/2KR3R w - - 2 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 Nd7 8. Qd2 O-O 9. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1414,7 +1414,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 7, "b", "rnbqk2r/ppp2ppp/4pb2/8/3PN3/5N2/PPP2PPP/R2QKB1R b KQkq - 1 7"),
 (@game_id, 8, "w", "r1bqk2r/pppn1ppp/4pb2/8/3PN3/5N2/PPP2PPP/R2QKB1R w KQkq - 2 8"),
 (@game_id, 8, "b", "r1bqk2r/pppn1ppp/4pb2/8/3PN3/5N2/PPPQ1PPP/R3KB1R b KQkq - 3 8"),
-(@game_id, 9, "w", "r1bq1rk1/pppn1ppp/4pb2/8/3PN3/5N2/PPPQ1PPP/R3KB1R w KQ - 4 9");SET @game_id = (SELECT gid FROM Games WHERE event="14th Open Valle d'Aosta" AND site="Saint Vincent ITA" AND date="2006.10.07" AND wp_elo=2470 AND bp_elo=2435);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 9, "w", "r1bq1rk1/pppn1ppp/4pb2/8/3PN3/5N2/PPPQ1PPP/R3KB1R w KQ - 4 9");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 a6 8. g3 b5 9. Bg2 Bb7 10. Qe2 Nd7 11. O-O Bd5 12. Rfd1 c6 13. Nc3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1439,7 +1439,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "w", "r2qk2r/2pnbp1p/p3pp2/1p1b4/3PN3/5NP1/PPP1QPBP/R4RK1 w kq - 6 12"),
 (@game_id, 12, "b", "r2qk2r/2pnbp1p/p3pp2/1p1b4/3PN3/5NP1/PPP1QPBP/R2R2K1 b kq - 7 12"),
 (@game_id, 13, "w", "r2qk2r/3nbp1p/p1p1pp2/1p1b4/3PN3/5NP1/PPP1QPBP/R2R2K1 w kq - 0 13"),
-(@game_id, 13, "b", "r2qk2r/3nbp1p/p1p1pp2/1p1b4/3P4/2N2NP1/PPP1QPBP/R2R2K1 b kq - 1 13");SET @game_id = (SELECT gid FROM Games WHERE event="FSIM October" AND site="Budapest HUN" AND date="2006.10.19" AND wp_elo=2184 AND bp_elo=2275);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r2qk2r/3nbp1p/p1p1pp2/1p1b4/3P4/2N2NP1/PPP1QPBP/R2R2K1 b kq - 1 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nxf6+ Nxf6 7. Nf3 h6 8. Be3 Nd5 9. Qd2 Bd6 10. O-O-O Qe7 11. Ne5 Bd7 12. f4 Bxe5 13. dxe5 Nxe3 14. Qxe3 Bc6 15. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1467,7 +1467,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "b", "r3k2r/pppbqpp1/4p2p/3nP3/5P2/4B3/PPPQ2PP/2KR1B1R b kq - 0 13"),
 (@game_id, 14, "w", "r3k2r/pppbqpp1/4p2p/4P3/5P2/4n3/PPPQ2PP/2KR1B1R w kq - 0 14"),
 (@game_id, 14, "b", "r3k2r/pppbqpp1/4p2p/4P3/5P2/4Q3/PPP3PP/2KR1B1R b kq - 0 14"),
-(@game_id, 15, "w", "r3k2r/ppp1qpp1/2b1p2p/4P3/5P2/4Q3/PPP3PP/2KR1B1R w kq - 1 15");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-ROM Divizia A Masculin" AND site="Predeal ROM" AND date="2006.11.09" AND wp_elo=2467 AND bp_elo=2622);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "w", "r3k2r/ppp1qpp1/2b1p2p/4P3/5P2/4Q3/PPP3PP/2KR1B1R w kq - 1 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Bh4 c5 9. Ne5 Qa5+ 10. c3 cxd4 11. Qxd4 Bc5 12. Qf4 Bd6 13. Bg3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1492,7 +1492,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "w", "r1b1k2r/pp3pp1/4pn1p/q1b1N3/3Q3B/2P5/PP3PPP/R3KB1R w KQkq - 1 12"),
 (@game_id, 12, "b", "r1b1k2r/pp3pp1/4pn1p/q1b1N3/5Q1B/2P5/PP3PPP/R3KB1R b KQkq - 2 12"),
 (@game_id, 13, "w", "r1b1k2r/pp3pp1/3bpn1p/q3N3/5Q1B/2P5/PP3PPP/R3KB1R w KQkq - 3 13"),
-(@game_id, 13, "b", "r1b1k2r/pp3pp1/3bpn1p/q3N3/5Q2/2P3B1/PP3PPP/R3KB1R b KQkq - 4 13");SET @game_id = (SELECT gid FROM Games WHERE event="ch-Kyiv" AND site="Kyiv UKR" AND date="2007.01.23" AND wp_elo=2147 AND bp_elo=2180);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r1b1k2r/pp3pp1/3bpn1p/q3N3/5Q2/2P3B1/PP3PPP/R3KB1R b KQkq - 4 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nc3 d5 3. Bg5 e6 4. e4 dxe4 5. Bxf6 Qxf6 6. Nxe4 Qd8 7. Nf3 Be7 8. Bd3 O-O 9. c3 h6 10. Qe2 Nd7 11. Rd1 b6 12. Nd6 cxd6 13. Qe4 Nf6 14. Qxa8 Qc7 15. 0-1");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 2 2"),
@@ -1520,7 +1520,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "b", "r1bq1rk1/p2nbpp1/1p1pp2p/8/3PQ3/2PB1N2/PP3PPP/3RK2R b K - 1 13"),
 (@game_id, 14, "w", "r1bq1rk1/p3bpp1/1p1ppn1p/8/3PQ3/2PB1N2/PP3PPP/3RK2R w K - 2 14"),
 (@game_id, 14, "b", "Q1bq1rk1/p3bpp1/1p1ppn1p/8/3P4/2PB1N2/PP3PPP/3RK2R b K - 0 14"),
-(@game_id, 15, "w", "Q1b2rk1/p1q1bpp1/1p1ppn1p/8/3P4/2PB1N2/PP3PPP/3RK2R w K - 1 15");SET @game_id = (SELECT gid FROM Games WHERE event="ch-GER" AND site="Koenigshofen GER" AND date="2007.01.26" AND wp_elo=2561 AND bp_elo=2580);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "w", "Q1b2rk1/p1q1bpp1/1p1ppn1p/8/3P4/2PB1N2/PP3PPP/3RK2R w K - 1 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. c4 f5 8. Nc3 Bf6 9. Nf3 Nc6 10. d5 Ne7 11. Qd2 O-O 12. O-O-O exd5 13. cxd5 c6 14. dxc6 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1547,7 +1547,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "w", "r1bq1rk1/ppp1np1p/5b2/3p1p2/2P5/2N2N2/PP1Q1PPP/2KR1B1R w - - 0 13"),
 (@game_id, 13, "b", "r1bq1rk1/ppp1np1p/5b2/3P1p2/8/2N2N2/PP1Q1PPP/2KR1B1R b - - 0 13"),
 (@game_id, 14, "w", "r1bq1rk1/pp2np1p/2p2b2/3P1p2/8/2N2N2/PP1Q1PPP/2KR1B1R w - - 0 14"),
-(@game_id, 14, "b", "r1bq1rk1/pp2np1p/2P2b2/5p2/8/2N2N2/PP1Q1PPP/2KR1B1R b - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE event="5th I Platonov Mem" AND site="Kyiv UKR" AND date="2007.02.06" AND wp_elo=2384 AND bp_elo=2526);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "r1bq1rk1/pp2np1p/2P2b2/5p2/8/2N2N2/PP1Q1PPP/2KR1B1R b - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Bh4 c5 9. dxc5 Qa5+ 10. Qd2 Qxd2+ 11. Nxd2 Bxc5 12. Bxf6 gxf6 13. Ne4 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1572,7 +1572,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "w", "r1b1k2r/pp3pp1/4pn1p/2b5/7B/8/PPPN1PPP/R3KB1R w KQkq - 0 12"),
 (@game_id, 12, "b", "r1b1k2r/pp3pp1/4pB1p/2b5/8/8/PPPN1PPP/R3KB1R b KQkq - 0 12"),
 (@game_id, 13, "w", "r1b1k2r/pp3p2/4pp1p/2b5/8/8/PPPN1PPP/R3KB1R w KQkq - 0 13"),
-(@game_id, 13, "b", "r1b1k2r/pp3p2/4pp1p/2b5/4N3/8/PPP2PPP/R3KB1R b KQkq - 1 13");SET @game_id = (SELECT gid FROM Games WHERE event="Easter Open" AND site="Oberhausen GER" AND date="2007.04.08" AND wp_elo=2282 AND bp_elo=2381);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r1b1k2r/pp3p2/4pp1p/2b5/4N3/8/PPP2PPP/R3KB1R b KQkq - 1 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nxf6+ Nxf6 7. Nf3 h6 8. Be3 Nd5 9. Qd2 Bd6 10. O-O-O Bd7 11. Kb1 Bc6 12. c4 Nb4 13. d5 1-0");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1597,7 +1597,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "w", "r2qk2r/ppp2pp1/2bbp2p/3n4/3P4/4BN2/PPPQ1PPP/1K1R1B1R w kq - 8 12"),
 (@game_id, 12, "b", "r2qk2r/ppp2pp1/2bbp2p/3n4/2PP4/4BN2/PP1Q1PPP/1K1R1B1R b kq - 0 12"),
 (@game_id, 13, "w", "r2qk2r/ppp2pp1/2bbp2p/8/1nPP4/4BN2/PP1Q1PPP/1K1R1B1R w kq - 1 13"),
-(@game_id, 13, "b", "r2qk2r/ppp2pp1/2bbp2p/3P4/1nP5/4BN2/PP1Q1PPP/1K1R1B1R b kq - 0 13");SET @game_id = (SELECT gid FROM Games WHERE event="ch-UZB" AND site="Tashkent UZB" AND date="2007.05.12" AND wp_elo=2425 AND bp_elo=2521);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r2qk2r/ppp2pp1/2bbp2p/3P4/1nP5/4BN2/PP1Q1PPP/1K1R1B1R b kq - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Bxf6 Qxf6 9. Bb5+ c6 10. Bd3 Bd7 11. c3 O-O-O 12. b4 Bd6 13. Qe2 e5 14. dxe5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1624,7 +1624,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "w", "2kr3r/pp1b1pp1/2pbpq1p/8/1P1P4/2PB1N2/P4PPP/R2QK2R w KQ - 1 13"),
 (@game_id, 13, "b", "2kr3r/pp1b1pp1/2pbpq1p/8/1P1P4/2PB1N2/P3QPPP/R3K2R b KQ - 2 13"),
 (@game_id, 14, "w", "2kr3r/pp1b1pp1/2pb1q1p/4p3/1P1P4/2PB1N2/P3QPPP/R3K2R w KQ - 0 14"),
-(@game_id, 14, "b", "2kr3r/pp1b1pp1/2pb1q1p/4P3/1P6/2PB1N2/P3QPPP/R3K2R b KQ - 0 14");SET @game_id = (SELECT gid FROM Games WHERE event="42nd Capablanca Mem Elite" AND site="Havana CUB" AND date="2007.05.28" AND wp_elo=2644 AND bp_elo=2552);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "2kr3r/pp1b1pp1/2pb1q1p/4P3/1P6/2PB1N2/P3QPPP/R3K2R b KQ - 0 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 Nd7 8. Bd3 c5 9. Qe2 Qa5+ 10. c3 cxd4 11. Nxf6+ Nxf6 12. Nxd4 O-O 13. O-O e5 14. Nb5 Rd8 15. Rad1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1653,7 +1653,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 14, "w", "r1b2rk1/pp3ppp/5n2/q3p3/3N4/2PB4/PP2QPPP/R4RK1 w - - 0 14"),
 (@game_id, 14, "b", "r1b2rk1/pp3ppp/5n2/qN2p3/8/2PB4/PP2QPPP/R4RK1 b - - 1 14"),
 (@game_id, 15, "w", "r1br2k1/pp3ppp/5n2/qN2p3/8/2PB4/PP2QPPP/R4RK1 w - - 2 15"),
-(@game_id, 15, "b", "r1br2k1/pp3ppp/5n2/qN2p3/8/2PB4/PP2QPPP/3R1RK1 b - - 3 15");SET @game_id = (SELECT gid FROM Games WHERE event="1st Serbian League Men" AND site="Zlatibor SRB" AND date="2007.08.21" AND wp_elo=2590 AND bp_elo=2505);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "r1br2k1/pp3ppp/5n2/qN2p3/8/2PB4/PP2QPPP/3R1RK1 b - - 3 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 b6 8. Bc4 Bb7 9. Qe2 Nd7 10. O-O-O c6 11. Rhe1 Qc7 12. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1675,7 +1675,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 10, "b", "r2qk2r/pbpnbp1p/1p2pp2/8/2BPN3/5N2/PPP1QPPP/2KR3R b kq - 5 10"),
 (@game_id, 11, "w", "r2qk2r/pb1nbp1p/1pp1pp2/8/2BPN3/5N2/PPP1QPPP/2KR3R w kq - 0 11"),
 (@game_id, 11, "b", "r2qk2r/pb1nbp1p/1pp1pp2/8/2BPN3/5N2/PPP1QPPP/2KRR3 b kq - 1 11"),
-(@game_id, 12, "w", "r3k2r/pbqnbp1p/1pp1pp2/8/2BPN3/5N2/PPP1QPPP/2KRR3 w kq - 2 12");SET @game_id = (SELECT gid FROM Games WHERE event="60th ch-RUS Higher League" AND site="Krasnoyarsk RUS" AND date="2007.09.06" AND wp_elo=2598 AND bp_elo=2608);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "w", "r3k2r/pbqnbp1p/1pp1pp2/8/2BPN3/5N2/PPP1QPPP/2KRR3 w kq - 2 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Be3 Nd5 9. Qd2 Bb4 10. c3 Bd6 11. Bd3 Qe7 12. O-O-O Bd7 13. Ne5 Ba4 14. Bc2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1702,7 +1702,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "w", "r3k2r/pppbqpp1/3bp2p/3n4/3P4/2PBBN2/PP1Q1PPP/2KR3R w kq - 5 13"),
 (@game_id, 13, "b", "r3k2r/pppbqpp1/3bp2p/3nN3/3P4/2PBB3/PP1Q1PPP/2KR3R b kq - 6 13"),
 (@game_id, 14, "w", "r3k2r/ppp1qpp1/3bp2p/3nN3/b2P4/2PBB3/PP1Q1PPP/2KR3R w kq - 7 14"),
-(@game_id, 14, "b", "r3k2r/ppp1qpp1/3bp2p/3nN3/b2P4/2P1B3/PPBQ1PPP/2KR3R b kq - 8 14");SET @game_id = (SELECT gid FROM Games WHERE event="IV Open" AND site="Calvia ESP" AND date="2007.10.16" AND wp_elo=2420 AND bp_elo=2603);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "r3k2r/ppp1qpp1/3bp2p/3nN3/b2P4/2P1B3/PPBQ1PPP/2KR3R b kq - 8 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 f5 8. Nc3 a6 9. g3 b5 10. Bg2 Bb7 11. Qe2 b4 12. Na4 Qd5 13. O-O Qb5 14. Qe5 Qxe5 15. Nxe5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1731,7 +1731,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 14, "w", "rn2k2r/1bp1bp1p/p3p3/1q3p2/Np1P4/5NP1/PPP1QPBP/R4RK1 w kq - 4 14"),
 (@game_id, 14, "b", "rn2k2r/1bp1bp1p/p3p3/1q2Qp2/Np1P4/5NP1/PPP2PBP/R4RK1 b kq - 5 14"),
 (@game_id, 15, "w", "rn2k2r/1bp1bp1p/p3p3/4qp2/Np1P4/5NP1/PPP2PBP/R4RK1 w kq - 0 15"),
-(@game_id, 15, "b", "rn2k2r/1bp1bp1p/p3p3/4Np2/Np1P4/6P1/PPP2PBP/R4RK1 b kq - 0 15");SET @game_id = (SELECT gid FROM Games WHERE event="20th Belgrade Trophy" AND site="Belgrade SRB" AND date="2007.11.28" AND wp_elo=1775 AND bp_elo=1967);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "rn2k2r/1bp1bp1p/p3p3/4Np2/Np1P4/6P1/PPP2PBP/R4RK1 b kq - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 a6 8. Bc4 f5 9. Nc3 b5 10. Bb3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1750,7 +1750,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "w", "rnbqk2r/1pp1bp1p/p3p3/5p2/2BPN3/5N2/PPP2PPP/R2QK2R w KQkq - 0 9"),
 (@game_id, 9, "b", "rnbqk2r/1pp1bp1p/p3p3/5p2/2BP4/2N2N2/PPP2PPP/R2QK2R b KQkq - 1 9"),
 (@game_id, 10, "w", "rnbqk2r/2p1bp1p/p3p3/1p3p2/2BP4/2N2N2/PPP2PPP/R2QK2R w KQkq - 0 10"),
-(@game_id, 10, "b", "rnbqk2r/2p1bp1p/p3p3/1p3p2/3P4/1BN2N2/PPP2PPP/R2QK2R b KQkq - 1 10");SET @game_id = (SELECT gid FROM Games WHERE event="XXIII Open" AND site="Reykjavik ISL" AND date="2008.03.04" AND wp_elo=2457 AND bp_elo=2600);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "b", "rnbqk2r/2p1bp1p/p3p3/1p3p2/3P4/1BN2N2/PPP2PPP/R2QK2R b KQkq - 1 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Nxf6+ Bxf6 7. Bxf6 Qxf6 8. c3 O-O 9. Nf3 b6 10. g3 Bb7 11. Bg2 Nd7 12. O-O Rad8 13. Qe2 c5 14. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1776,7 +1776,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "b", "r4rk1/pbpn1ppp/1p2pq2/8/3P4/2P2NP1/PP3PBP/R2Q1RK1 b - - 4 12"),
 (@game_id, 13, "w", "3r1rk1/pbpn1ppp/1p2pq2/8/3P4/2P2NP1/PP3PBP/R2Q1RK1 w - - 5 13"),
 (@game_id, 13, "b", "3r1rk1/pbpn1ppp/1p2pq2/8/3P4/2P2NP1/PP2QPBP/R4RK1 b - - 6 13"),
-(@game_id, 14, "w", "3r1rk1/pb1n1ppp/1p2pq2/2p5/3P4/2P2NP1/PP2QPBP/R4RK1 w - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE event="10th Open" AND site="Dubai UAE" AND date="2008.04.12" AND wp_elo=2285 AND bp_elo=2352);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "w", "3r1rk1/pb1n1ppp/1p2pq2/2p5/3P4/2P2NP1/PP2QPBP/R4RK1 w - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 Nd7 8. Bd3 c5 9. O-O cxd4 10. Nxf6+ Qxf6 11. Bb5 a6 12. Bxd7+ Bxd7 13. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1800,7 +1800,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 11, "b", "r1b1k2r/pp1n1ppp/4pq2/1B6/3p4/5N2/PPP2PPP/R2Q1RK1 b kq - 1 11"),
 (@game_id, 12, "w", "r1b1k2r/1p1n1ppp/p3pq2/1B6/3p4/5N2/PPP2PPP/R2Q1RK1 w kq - 0 12"),
 (@game_id, 12, "b", "r1b1k2r/1p1B1ppp/p3pq2/8/3p4/5N2/PPP2PPP/R2Q1RK1 b kq - 0 12"),
-(@game_id, 13, "w", "r3k2r/1p1b1ppp/p3pq2/8/3p4/5N2/PPP2PPP/R2Q1RK1 w kq - 0 13");SET @game_id = (SELECT gid FROM Games WHERE event="ENCI Limburg Open" AND site="Maastricht NED" AND date="2008.05.12" AND wp_elo=2000 AND bp_elo=2158);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "r3k2r/1p1b1ppp/p3pq2/8/3p4/5N2/PPP2PPP/R2Q1RK1 w kq - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Nxf6+ gxf6 7. Bf4 c5 8. dxc5 Qa5+ 9. Qd2 Qxd2+ 10. Bxd2 Bxc5 11. Bc3 Be7 12. Nf3 O-O 13. Bd3 Bd7 14. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1826,7 +1826,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "b", "rnb1k2r/pp2bp1p/4pp2/8/8/2B2N2/PPP2PPP/R3KB1R b KQkq - 3 12"),
 (@game_id, 13, "w", "rnb2rk1/pp2bp1p/4pp2/8/8/2B2N2/PPP2PPP/R3KB1R w KQ - 4 13"),
 (@game_id, 13, "b", "rnb2rk1/pp2bp1p/4pp2/8/8/2BB1N2/PPP2PPP/R3K2R b KQ - 5 13"),
-(@game_id, 14, "w", "rn3rk1/pp1bbp1p/4pp2/8/8/2BB1N2/PPP2PPP/R3K2R w KQ - 6 14");SET @game_id = (SELECT gid FROM Games WHERE event="4th Pivdenny Bank Chess Cup" AND site="Odessa UKR" AND date="2008.05.30" AND wp_elo=2474 AND bp_elo=2581);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "w", "rn3rk1/pp1bbp1p/4pp2/8/8/2BB1N2/PPP2PPP/R3K2R w KQ - 6 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Nxf6+ Bxf6 7. Bxf6 Qxf6 8. Qd2 c5 9. O-O-O cxd4 10. Nf3 Nc6 11. Bb5 Bd7 12. Nxd4 Qxd4 13. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1850,7 +1850,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 11, "b", "r1b1k2r/pp3ppp/2n1pq2/1B6/3p4/5N2/PPPQ1PPP/2KR3R b kq - 3 11"),
 (@game_id, 12, "w", "r3k2r/pp1b1ppp/2n1pq2/1B6/3p4/5N2/PPPQ1PPP/2KR3R w kq - 4 12"),
 (@game_id, 12, "b", "r3k2r/pp1b1ppp/2n1pq2/1B6/3N4/8/PPPQ1PPP/2KR3R b kq - 0 12"),
-(@game_id, 13, "w", "r3k2r/pp1b1ppp/2n1p3/1B6/3q4/8/PPPQ1PPP/2KR3R w kq - 0 13");SET @game_id = (SELECT gid FROM Games WHERE event="XXVII Open" AND site="Zalakarosi HUN" AND date="2008.05.30" AND wp_elo=2507 AND bp_elo=2453);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "r3k2r/pp1b1ppp/2n1p3/1B6/3q4/8/PPPQ1PPP/2KR3R w kq - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 a6 8. Qe2 f5 9. Nc3 b5 10. O-O-O b4 11. Na4 Qd5 12. Qc4 Qxc4 13. Bxc4 Rg8 14. Rhg1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1877,7 +1877,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "w", "rnb1k2r/2p1bp1p/p3p3/5p2/NpqP4/5N2/PPP2PPP/2KR1B1R w kq - 0 13"),
 (@game_id, 13, "b", "rnb1k2r/2p1bp1p/p3p3/5p2/NpBP4/5N2/PPP2PPP/2KR3R b kq - 0 13"),
 (@game_id, 14, "w", "rnb1k1r1/2p1bp1p/p3p3/5p2/NpBP4/5N2/PPP2PPP/2KR3R w q - 1 14"),
-(@game_id, 14, "b", "rnb1k1r1/2p1bp1p/p3p3/5p2/NpBP4/5N2/PPP2PPP/2KR2R1 b q - 2 14");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-BIH" AND site="Neum BIH" AND date="2008.06.07" AND wp_elo=2530 AND bp_elo=2500);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "rnb1k1r1/2p1bp1p/p3p3/5p2/NpBP4/5N2/PPP2PPP/2KR2R1 b q - 2 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Be3 Nd5 9. Bd2 c5 10. Bb5+ Bd7 11. Bxd7+ Qxd7 12. c4 Nb6 13. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1901,7 +1901,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 11, "b", "r2qkb1r/pp1B1pp1/4p2p/2pn4/3P4/5N2/PPPB1PPP/R2QK2R b KQkq - 0 11"),
 (@game_id, 12, "w", "r3kb1r/pp1q1pp1/4p2p/2pn4/3P4/5N2/PPPB1PPP/R2QK2R w KQkq - 0 12"),
 (@game_id, 12, "b", "r3kb1r/pp1q1pp1/4p2p/2pn4/2PP4/5N2/PP1B1PPP/R2QK2R b KQkq - 0 12"),
-(@game_id, 13, "w", "r3kb1r/pp1q1pp1/1n2p2p/2p5/2PP4/5N2/PP1B1PPP/R2QK2R w KQkq - 1 13");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-BIH" AND site="Neum BIH" AND date="2008.06.12" AND wp_elo=2386 AND bp_elo=2429);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "r3kb1r/pp1q1pp1/1n2p2p/2p5/2PP4/5N2/PP1B1PPP/R2QK2R w KQkq - 1 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 O-O 8. Qd2 b6 9. c3 Bb7 10. Bd3 Nd7 11. O-O c5 12. Rfe1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1924,7 +1924,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 11, "w", "r2q1rk1/pbpn1ppp/1p2pb2/8/3PN3/2PB1N2/PP1Q1PPP/R3K2R w KQ - 3 11"),
 (@game_id, 11, "b", "r2q1rk1/pbpn1ppp/1p2pb2/8/3PN3/2PB1N2/PP1Q1PPP/R4RK1 b - - 4 11"),
 (@game_id, 12, "w", "r2q1rk1/pb1n1ppp/1p2pb2/2p5/3PN3/2PB1N2/PP1Q1PPP/R4RK1 w - - 0 12"),
-(@game_id, 12, "b", "r2q1rk1/pb1n1ppp/1p2pb2/2p5/3PN3/2PB1N2/PP1Q1PPP/R3R1K1 b - - 1 12");SET @game_id = (SELECT gid FROM Games WHERE event="60th ch-MNE" AND site="Cetinje MNE" AND date="2008.07.11" AND wp_elo=2436 AND bp_elo=2516);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "b", "r2q1rk1/pb1n1ppp/1p2pb2/2p5/3PN3/2PB1N2/PP1Q1PPP/R3R1K1 b - - 1 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Be3 a6 9. Be2 b6 10. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1942,7 +1942,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 8, "b", "r1bqkb1r/ppp2pp1/4pn1p/8/3P4/4BN2/PPP2PPP/R2QKB1R b KQkq - 1 8"),
 (@game_id, 9, "w", "r1bqkb1r/1pp2pp1/p3pn1p/8/3P4/4BN2/PPP2PPP/R2QKB1R w KQkq - 0 9"),
 (@game_id, 9, "b", "r1bqkb1r/1pp2pp1/p3pn1p/8/3P4/4BN2/PPP1BPPP/R2QK2R b KQkq - 1 9"),
-(@game_id, 10, "w", "r1bqkb1r/2p2pp1/pp2pn1p/8/3P4/4BN2/PPP1BPPP/R2QK2R w KQkq - 0 10");SET @game_id = (SELECT gid FROM Games WHERE event="Sun Pawn B" AND site="Illichevsk UKR" AND date="2008.07.24" AND wp_elo=2251 AND bp_elo=2351);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "w", "r1bqkb1r/2p2pp1/pp2pn1p/8/3P4/4BN2/PPP1BPPP/R2QK2R w KQkq - 0 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 d5 2. Nc3 Nf6 3. Bg5 e6 4. e4 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 a6 8. g3 b5 9. Bg2 Bb7 10. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/ppp1pppp/8/3p4/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 1 2"),
@@ -1960,7 +1960,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 8, "b", "rnbqk2r/1pp1bp1p/p3pp2/8/3PN3/5NP1/PPP2P1P/R2QKB1R b KQkq - 0 8"),
 (@game_id, 9, "w", "rnbqk2r/2p1bp1p/p3pp2/1p6/3PN3/5NP1/PPP2P1P/R2QKB1R w KQkq - 0 9"),
 (@game_id, 9, "b", "rnbqk2r/2p1bp1p/p3pp2/1p6/3PN3/5NP1/PPP2PBP/R2QK2R b KQkq - 1 9"),
-(@game_id, 10, "w", "rn1qk2r/1bp1bp1p/p3pp2/1p6/3PN3/5NP1/PPP2PBP/R2QK2R w KQkq - 2 10");SET @game_id = (SELECT gid FROM Games WHERE event="35th Open" AND site="Manresa ESP" AND date="2008.08.12" AND wp_elo=2592 AND bp_elo=1974);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "w", "rn1qk2r/1bp1bp1p/p3pp2/1p6/3PN3/5NP1/PPP2PBP/R2QK2R w KQkq - 2 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 Nd7 8. Qd2 b6 9. Bb5 Bb7 10. Qf4 Be7 11. Ne5 1-0");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1981,7 +1981,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 10, "w", "r2qk2r/pbpn1ppp/1p2pb2/1B6/3PN3/5N2/PPPQ1PPP/R3K2R w KQkq - 2 10"),
 (@game_id, 10, "b", "r2qk2r/pbpn1ppp/1p2pb2/1B6/3PNQ2/5N2/PPP2PPP/R3K2R b KQkq - 3 10"),
 (@game_id, 11, "w", "r2qk2r/pbpnbppp/1p2p3/1B6/3PNQ2/5N2/PPP2PPP/R3K2R w KQkq - 4 11"),
-(@game_id, 11, "b", "r2qk2r/pbpnbppp/1p2p3/1B2N3/3PNQ2/8/PPP2PPP/R3K2R b KQkq - 5 11");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-MNE Premier" AND site="Herceg Novi MNE" AND date="2008.08.31" AND wp_elo=2309 AND bp_elo=2403);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "b", "r2qk2r/pbpnbppp/1p2p3/1B2N3/3PNQ2/8/PPP2PPP/R3K2R b KQkq - 5 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 Be7 7. Nxf6+ Bxf6 8. Bxf6 Qxf6 9. Bd3 c5 10. c3 O-O 11. Qe2 cxd4 12. Nxd4 Qe5 13. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2005,7 +2005,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 11, "b", "r1b2rk1/pp1n1ppp/4pq2/2p5/3P4/2PB1N2/PP2QPPP/R3K2R b KQ - 2 11"),
 (@game_id, 12, "w", "r1b2rk1/pp1n1ppp/4pq2/8/3p4/2PB1N2/PP2QPPP/R3K2R w KQ - 0 12"),
 (@game_id, 12, "b", "r1b2rk1/pp1n1ppp/4pq2/8/3N4/2PB4/PP2QPPP/R3K2R b KQ - 0 12"),
-(@game_id, 13, "w", "r1b2rk1/pp1n1ppp/4p3/4q3/3N4/2PB4/PP2QPPP/R3K2R w KQ - 1 13");SET @game_id = (SELECT gid FROM Games WHERE event="I Liga Seniorow" AND site="Ustron POL" AND date="2008.09.09" AND wp_elo=2304 AND bp_elo=2396);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "r1b2rk1/pp1n1ppp/4p3/4q3/3N4/2PB4/PP2QPPP/R3K2R w KQ - 1 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Bxf6 Nxf6 8. Bd3 Bd6 9. Qd2 Bd7 10. O-O-O Qe7 11. Kb1 O-O-O 12. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2027,7 +2027,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 10, "b", "r2qk2r/pppb1pp1/3bpn1p/8/3PN3/3B1N2/PPPQ1PPP/2KR3R b kq - 5 10"),
 (@game_id, 11, "w", "r3k2r/pppbqpp1/3bpn1p/8/3PN3/3B1N2/PPPQ1PPP/2KR3R w kq - 6 11"),
 (@game_id, 11, "b", "r3k2r/pppbqpp1/3bpn1p/8/3PN3/3B1N2/PPPQ1PPP/1K1R3R b kq - 7 11"),
-(@game_id, 12, "w", "2kr3r/pppbqpp1/3bpn1p/8/3PN3/3B1N2/PPPQ1PPP/1K1R3R w - - 8 12");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-AUT 1st Bundesliga 2008-9" AND site="St Veit AUT" AND date="2008.11.09" AND wp_elo=2448 AND bp_elo=2532);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "w", "2kr3r/pppbqpp1/3bpn1p/8/3PN3/3B1N2/PPPQ1PPP/1K1R3R w - - 8 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 Be7 7. Nxf6+ Bxf6 8. Bxf6 Nxf6 9. Bb5+ Bd7 10. Qe2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2046,7 +2046,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "w", "r1bqk2r/ppp2ppp/4pn2/8/3P4/5N2/PPP2PPP/R2QKB1R w KQkq - 0 9"),
 (@game_id, 9, "b", "r1bqk2r/ppp2ppp/4pn2/1B6/3P4/5N2/PPP2PPP/R2QK2R b KQkq - 1 9"),
 (@game_id, 10, "w", "r2qk2r/pppb1ppp/4pn2/1B6/3P4/5N2/PPP2PPP/R2QK2R w KQkq - 2 10"),
-(@game_id, 10, "b", "r2qk2r/pppb1ppp/4pn2/1B6/3P4/5N2/PPP1QPPP/R3K2R b KQkq - 3 10");SET @game_id = (SELECT gid FROM Games WHERE event="15th Croatian Open A" AND site="Zadar CRO" AND date="2008.12.19" AND wp_elo=2323 AND bp_elo=2507);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "b", "r2qk2r/pppb1ppp/4pn2/1B6/3P4/5N2/PPP1QPPP/R3K2R b KQkq - 3 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Bxf6 Qxf6 9. Bd3 Bd6 10. O-O 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2065,7 +2065,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "w", "r1b1kb1r/ppp2pp1/4pq1p/8/3P4/5N2/PPP2PPP/R2QKB1R w KQkq - 0 9"),
 (@game_id, 9, "b", "r1b1kb1r/ppp2pp1/4pq1p/8/3P4/3B1N2/PPP2PPP/R2QK2R b KQkq - 1 9"),
 (@game_id, 10, "w", "r1b1k2r/ppp2pp1/3bpq1p/8/3P4/3B1N2/PPP2PPP/R2QK2R w KQkq - 2 10"),
-(@game_id, 10, "b", "r1b1k2r/ppp2pp1/3bpq1p/8/3P4/3B1N2/PPP2PPP/R2Q1RK1 b kq - 3 10");SET @game_id = (SELECT gid FROM Games WHERE event="6th ch-Mediterranean" AND site="Antalya TUR" AND date="2009.01.13" AND wp_elo=2526 AND bp_elo=2624);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "b", "r1b1k2r/ppp2pp1/3bpq1p/8/3P4/3B1N2/PPP2PPP/R2Q1RK1 b kq - 3 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Bh4 c5 9. Bb5+ Bd7 10. Bxd7+ Qxd7 11. Qe2 Be7 12. dxc5 O-O 13. O-O Bxc5 14. c4 Rfd8 15. Rad1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2094,7 +2094,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 14, "w", "r4rk1/pp1q1pp1/4pn1p/2b5/7B/5N2/PPP1QPPP/R4RK1 w - - 0 14"),
 (@game_id, 14, "b", "r4rk1/pp1q1pp1/4pn1p/2b5/2P4B/5N2/PP2QPPP/R4RK1 b - - 0 14"),
 (@game_id, 15, "w", "r2r2k1/pp1q1pp1/4pn1p/2b5/2P4B/5N2/PP2QPPP/R4RK1 w - - 1 15"),
-(@game_id, 15, "b", "r2r2k1/pp1q1pp1/4pn1p/2b5/2P4B/5N2/PP2QPPP/3R1RK1 b - - 2 15");SET @game_id = (SELECT gid FROM Games WHERE event="11th Dubai Open" AND site="Dubai UAE" AND date="2009.05.02" AND wp_elo=2555 AND bp_elo=2610);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "r2r2k1/pp1q1pp1/4pn1p/2b5/2P4B/5N2/PP2QPPP/3R1RK1 b - - 2 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Be3 Nd5 9. Qd2 Bd6 10. O-O-O Qe7 11. Bd3 Bd7 12. Ne5 O-O-O 13. f4 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2119,7 +2119,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "w", "r3k2r/pppbqpp1/3bp2p/3n4/3P4/3BBN2/PPPQ1PPP/2KR3R w kq - 8 12"),
 (@game_id, 12, "b", "r3k2r/pppbqpp1/3bp2p/3nN3/3P4/3BB3/PPPQ1PPP/2KR3R b kq - 9 12"),
 (@game_id, 13, "w", "2kr3r/pppbqpp1/3bp2p/3nN3/3P4/3BB3/PPPQ1PPP/2KR3R w - - 10 13"),
-(@game_id, 13, "b", "2kr3r/pppbqpp1/3bp2p/3nN3/3P1P2/3BB3/PPPQ2PP/2KR3R b - - 0 13");SET @game_id = (SELECT gid FROM Games WHERE event="32nd Taminco Open" AND site="Ghent BEL" AND date="2009.07.21" AND wp_elo=1941 AND bp_elo=2198);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "2kr3r/pppbqpp1/3bp2p/3nN3/3P1P2/3BB3/PPPQ2PP/2KR3R b - - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 Nd7 8. c3 Be7 9. Bc4 O-O 10. O-O c5 11. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2139,7 +2139,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "b", "r1bqk2r/pppnbppp/4p3/8/2BPN3/2P2N2/PP3PPP/R2QK2R b KQkq - 2 9"),
 (@game_id, 10, "w", "r1bq1rk1/pppnbppp/4p3/8/2BPN3/2P2N2/PP3PPP/R2QK2R w KQ - 3 10"),
 (@game_id, 10, "b", "r1bq1rk1/pppnbppp/4p3/8/2BPN3/2P2N2/PP3PPP/R2Q1RK1 b - - 4 10"),
-(@game_id, 11, "w", "r1bq1rk1/pp1nbppp/4p3/2p5/2BPN3/2P2N2/PP3PPP/R2Q1RK1 w - - 0 11");SET @game_id = (SELECT gid FROM Games WHERE event="25th ECC" AND site="Ohrid MKD" AND date="2009.10.10" AND wp_elo=2334 AND bp_elo=2379);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "w", "r1bq1rk1/pp1nbppp/4p3/2p5/2BPN3/2P2N2/PP3PPP/R2Q1RK1 w - - 0 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nc3 d5 3. Bg5 e6 4. e4 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 Nd7 8. Qd2 Be7 9. O-O-O 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 2 2"),
@@ -2156,7 +2156,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 8, "w", "r1bqk2r/pppn1ppp/4pb2/8/3PN3/5N2/PPP2PPP/R2QKB1R w KQkq - 2 8"),
 (@game_id, 8, "b", "r1bqk2r/pppn1ppp/4pb2/8/3PN3/5N2/PPPQ1PPP/R3KB1R b KQkq - 3 8"),
 (@game_id, 9, "w", "r1bqk2r/pppnbppp/4p3/8/3PN3/5N2/PPPQ1PPP/R3KB1R w KQkq - 4 9"),
-(@game_id, 9, "b", "r1bqk2r/pppnbppp/4p3/8/3PN3/5N2/PPPQ1PPP/2KR1B1R b kq - 5 9");SET @game_id = (SELECT gid FROM Games WHERE event="17th TCh-Eur" AND site="Novi Sad SRB" AND date="2009.10.30" AND wp_elo=2529 AND bp_elo=2495);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 9, "b", "r1bqk2r/pppnbppp/4p3/8/3PN3/5N2/PPPQ1PPP/2KR1B1R b kq - 5 9");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Be3 a6 9. Bd3 b6 10. Qe2 Bb7 11. O-O-O Bd6 12. Ne5 Qe7 13. h4 c6 14. Nc4 Bc7 15. 1-0");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2184,7 +2184,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "b", "r3k2r/1bp1qpp1/pp1bpn1p/4N3/3P3P/3BB3/PPP1QPP1/2KR3R b kq - 0 13"),
 (@game_id, 14, "w", "r3k2r/1b2qpp1/pppbpn1p/4N3/3P3P/3BB3/PPP1QPP1/2KR3R w kq - 0 14"),
 (@game_id, 14, "b", "r3k2r/1b2qpp1/pppbpn1p/8/2NP3P/3BB3/PPP1QPP1/2KR3R b kq - 1 14"),
-(@game_id, 15, "w", "r3k2r/1bb1qpp1/ppp1pn1p/8/2NP3P/3BB3/PPP1QPP1/2KR3R w kq - 2 15");SET @game_id = (SELECT gid FROM Games WHERE event="FSGM May" AND site="Budapest HUN" AND date="2010.05.02" AND wp_elo=2479 AND bp_elo=2518);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "w", "r3k2r/1bb1qpp1/ppp1pn1p/8/2NP3P/3BB3/PPP1QPP1/2KR3R w kq - 2 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nxf6+ Nxf6 7. Nf3 c5 8. c3 cxd4 9. Qxd4 Qxd4 10. Nxd4 Bc5 11. O-O-O O-O 12. f3 h6 13. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2208,7 +2208,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 11, "b", "r1b1k2r/pp3ppp/4pn2/2b3B1/3N4/2P5/PP3PPP/2KR1B1R b kq - 2 11"),
 (@game_id, 12, "w", "r1b2rk1/pp3ppp/4pn2/2b3B1/3N4/2P5/PP3PPP/2KR1B1R w - - 3 12"),
 (@game_id, 12, "b", "r1b2rk1/pp3ppp/4pn2/2b3B1/3N4/2P2P2/PP4PP/2KR1B1R b - - 0 12"),
-(@game_id, 13, "w", "r1b2rk1/pp3pp1/4pn1p/2b3B1/3N4/2P2P2/PP4PP/2KR1B1R w - - 0 13");SET @game_id = (SELECT gid FROM Games WHERE event="11th Karpov" AND site="Poikovsky RUS" AND date="2010.06.06" AND wp_elo=2668 AND bp_elo=2674);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "r1b2rk1/pp3pp1/4pn1p/2b3B1/3N4/2P2P2/PP4PP/2KR1B1R w - - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Bh4 c5 9. c3 cxd4 10. Bb5+ Bd7 11. Bxd7+ Qxd7 12. Bxf6 gxf6 13. Qxd4 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2233,7 +2233,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "w", "r3kb1r/pp1q1pp1/4pn1p/8/3p3B/2P2N2/PP3PPP/R2QK2R w KQkq - 0 12"),
 (@game_id, 12, "b", "r3kb1r/pp1q1pp1/4pB1p/8/3p4/2P2N2/PP3PPP/R2QK2R b KQkq - 0 12"),
 (@game_id, 13, "w", "r3kb1r/pp1q1p2/4pp1p/8/3p4/2P2N2/PP3PPP/R2QK2R w KQkq - 0 13"),
-(@game_id, 13, "b", "r3kb1r/pp1q1p2/4pp1p/8/3Q4/2P2N2/PP3PPP/R3K2R b KQkq - 0 13");SET @game_id = (SELECT gid FROM Games WHERE event="5th XtraCon Open" AND site="Borup DEN" AND date="2010.09.11" AND wp_elo=2039 AND bp_elo=1940);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r3kb1r/pp1q1p2/4pp1p/8/3Q4/2P2N2/PP3PPP/R3K2R b KQkq - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Nxf6+ Bxf6 7. Bxf6 Qxf6 8. Nf3 b6 9. Bb5+ c6 10. Be2 Nd7 11. Qd2 O-O 12. Qg5 Qxg5 13. Nxg5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2258,7 +2258,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "w", "r1b2rk1/p2n1ppp/1pp1pq2/8/3P4/5N2/PPPQBPPP/R3K2R w KQ - 4 12"),
 (@game_id, 12, "b", "r1b2rk1/p2n1ppp/1pp1pq2/6Q1/3P4/5N2/PPP1BPPP/R3K2R b KQ - 5 12"),
 (@game_id, 13, "w", "r1b2rk1/p2n1ppp/1pp1p3/6q1/3P4/5N2/PPP1BPPP/R3K2R w KQ - 0 13"),
-(@game_id, 13, "b", "r1b2rk1/p2n1ppp/1pp1p3/6N1/3P4/8/PPP1BPPP/R3K2R b KQ - 0 13");SET @game_id = (SELECT gid FROM Games WHERE event="Tatry Open" AND site="Tatranske Zruby CZE" AND date="2010.10.06" AND wp_elo=2122 AND bp_elo=2293);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r1b2rk1/p2n1ppp/1pp1p3/6N1/3P4/8/PPP1BPPP/R3K2R b KQ - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nxf6+ Nxf6 7. Nf3 Be7 8. Bd3 O-O 9. Qe2 c5 10. dxc5 Qa5+ 11. c3 Qxc5 12. O-O 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2281,7 +2281,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 11, "w", "r1b2rk1/pp2bppp/4pn2/q1P3B1/8/3B1N2/PPP1QPPP/R3K2R w KQ - 1 11"),
 (@game_id, 11, "b", "r1b2rk1/pp2bppp/4pn2/q1P3B1/8/2PB1N2/PP2QPPP/R3K2R b KQ - 0 11"),
 (@game_id, 12, "w", "r1b2rk1/pp2bppp/4pn2/2q3B1/8/2PB1N2/PP2QPPP/R3K2R w KQ - 0 12"),
-(@game_id, 12, "b", "r1b2rk1/pp2bppp/4pn2/2q3B1/8/2PB1N2/PP2QPPP/R4RK1 b - - 1 12");SET @game_id = (SELECT gid FROM Games WHERE event="Stanitsa Winter 2010" AND site="Stanitsa-Luganskaya UKR" AND date="2010.12.20" AND wp_elo=2489 AND bp_elo=2360);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "b", "r1b2rk1/pp2bppp/4pn2/2q3B1/8/2PB1N2/PP2QPPP/R4RK1 b - - 1 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nxf6+ Nxf6 7. Nf3 h6 8. Bxf6 Qxf6 9. Bb5+ c6 10. Bd3 Bd7 11. Ne5 Bd6 12. Qe2 O-O-O 13. O-O c5 14. c3 Kb8 15. Rfd1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2310,7 +2310,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 14, "w", "2kr3r/pp1b1pp1/3bpq1p/2p1N3/3P4/3B4/PPP1QPPP/R4RK1 w - - 0 14"),
 (@game_id, 14, "b", "2kr3r/pp1b1pp1/3bpq1p/2p1N3/3P4/2PB4/PP2QPPP/R4RK1 b - - 0 14"),
 (@game_id, 15, "w", "1k1r3r/pp1b1pp1/3bpq1p/2p1N3/3P4/2PB4/PP2QPPP/R4RK1 w - - 1 15"),
-(@game_id, 15, "b", "1k1r3r/pp1b1pp1/3bpq1p/2p1N3/3P4/2PB4/PP2QPPP/R2R2K1 b - - 2 15");SET @game_id = (SELECT gid FROM Games WHERE event="II Controceni Women" AND site="Bucharest ROU" AND date="2011.03.06" AND wp_elo=2446 AND bp_elo=2499);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "1k1r3r/pp1b1pp1/3bpq1p/2p1N3/3P4/2PB4/PP2QPPP/R2R2K1 b - - 2 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Bd3 Be7 7. Nxf6+ Bxf6 8. Bxf6 Nxf6 9. Nf3 O-O 10. Qd2 b6 11. O-O-O Bb7 12. Qf4 Bxf3 13. Qxf3 Qd5 14. Qxd5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2337,7 +2337,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "w", "r2q1rk1/p1p2ppp/1p2pn2/8/3P1Q2/3B1b2/PPP2PPP/2KR3R w - - 0 13"),
 (@game_id, 13, "b", "r2q1rk1/p1p2ppp/1p2pn2/8/3P4/3B1Q2/PPP2PPP/2KR3R b - - 0 13"),
 (@game_id, 14, "w", "r4rk1/p1p2ppp/1p2pn2/3q4/3P4/3B1Q2/PPP2PPP/2KR3R w - - 1 14"),
-(@game_id, 14, "b", "r4rk1/p1p2ppp/1p2pn2/3Q4/3P4/3B4/PPP2PPP/2KR3R b - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE event="49th National Challengers ch-IND" AND site="Aurangabad IND" AND date="2011.06.19" AND wp_elo=2348 AND bp_elo=2412);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "r4rk1/p1p2ppp/1p2pn2/3Q4/3P4/3B4/PPP2PPP/2KR3R b - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Nxf6+ Bxf6 7. Bxf6 Qxf6 8. Nf3 Bd7 9. Be2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2354,7 +2354,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 8, "w", "rnb1k2r/ppp2ppp/4pq2/8/3P4/8/PPP2PPP/R2QKBNR w KQkq - 0 8"),
 (@game_id, 8, "b", "rnb1k2r/ppp2ppp/4pq2/8/3P4/5N2/PPP2PPP/R2QKB1R b KQkq - 1 8"),
 (@game_id, 9, "w", "rn2k2r/pppb1ppp/4pq2/8/3P4/5N2/PPP2PPP/R2QKB1R w KQkq - 2 9"),
-(@game_id, 9, "b", "rn2k2r/pppb1ppp/4pq2/8/3P4/5N2/PPP1BPPP/R2QK2R b KQkq - 3 9");SET @game_id = (SELECT gid FROM Games WHERE event="XXVI Tadeusza Gniota" AND site="Police POL" AND date="2011.07.09" AND wp_elo=2141 AND bp_elo=2398);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 9, "b", "rn2k2r/pppb1ppp/4pq2/8/3P4/5N2/PPP1BPPP/R2QK2R b KQkq - 3 9");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Bxf6 Nxf6 8. Nxf6+ Qxf6 9. Bb5+ c6 10. Bd3 Bd6 11. O-O Bd7 12. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2376,7 +2376,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 10, "b", "r1b1kb1r/pp3pp1/2p1pq1p/8/3P4/3B1N2/PPP2PPP/R2QK2R b KQkq - 1 10"),
 (@game_id, 11, "w", "r1b1k2r/pp3pp1/2pbpq1p/8/3P4/3B1N2/PPP2PPP/R2QK2R w KQkq - 2 11"),
 (@game_id, 11, "b", "r1b1k2r/pp3pp1/2pbpq1p/8/3P4/3B1N2/PPP2PPP/R2Q1RK1 b kq - 3 11"),
-(@game_id, 12, "w", "r3k2r/pp1b1pp1/2pbpq1p/8/3P4/3B1N2/PPP2PPP/R2Q1RK1 w kq - 4 12");SET @game_id = (SELECT gid FROM Games WHERE event="ch-FRA National B" AND site="Caen FRA" AND date="2011.08.19" AND wp_elo=2480 AND bp_elo=2536);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "w", "r3k2r/pp1b1pp1/2pbpq1p/8/3P4/3B1N2/PPP2PPP/R2Q1RK1 w kq - 4 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Bxf6 Qxf6 9. Bd3 Bd6 10. Qe2 Bd7 11. O-O-O O-O-O 12. Be4 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2399,7 +2399,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 11, "w", "r3k2r/pppb1pp1/3bpq1p/8/3P4/3B1N2/PPP1QPPP/R3K2R w KQkq - 4 11"),
 (@game_id, 11, "b", "r3k2r/pppb1pp1/3bpq1p/8/3P4/3B1N2/PPP1QPPP/2KR3R b kq - 5 11"),
 (@game_id, 12, "w", "2kr3r/pppb1pp1/3bpq1p/8/3P4/3B1N2/PPP1QPPP/2KR3R w - - 6 12"),
-(@game_id, 12, "b", "2kr3r/pppb1pp1/3bpq1p/8/3PB3/5N2/PPP1QPPP/2KR3R b - - 7 12");SET @game_id = (SELECT gid FROM Games WHERE event="ch-FRA National B" AND site="Caen FRA" AND date="2011.08.24" AND wp_elo=2492 AND bp_elo=2568);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "b", "2kr3r/pppb1pp1/3bpq1p/8/3PB3/5N2/PPP1QPPP/2KR3R b - - 7 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 f5 8. Nc3 a6 9. g3 b5 10. Bg2 Bb7 11. O-O O-O 12. Ne5 Bxg2 13. Kxg2 b4 14. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2425,7 +2425,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "b", "rn1q1rk1/1bp1bp1p/p3p3/1p2Np2/3P4/2N3P1/PPP2PBP/R2Q1RK1 b - - 5 12"),
 (@game_id, 13, "w", "rn1q1rk1/2p1bp1p/p3p3/1p2Np2/3P4/2N3P1/PPP2PbP/R2Q1RK1 w - - 0 13"),
 (@game_id, 13, "b", "rn1q1rk1/2p1bp1p/p3p3/1p2Np2/3P4/2N3P1/PPP2PKP/R2Q1R2 b - - 0 13"),
-(@game_id, 14, "w", "rn1q1rk1/2p1bp1p/p3p3/4Np2/1p1P4/2N3P1/PPP2PKP/R2Q1R2 w - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-ISL Div1 2011-12" AND site="Reykjavik ISL" AND date="2011.10.08" AND wp_elo=2562 AND bp_elo=2612);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "w", "rn1q1rk1/2p1bp1p/p3p3/4Np2/1p1P4/2N3P1/PPP2PKP/R2Q1R2 w - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 Nd7 8. Bd3 c5 9. Nxf6+ 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2442,7 +2442,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 8, "w", "r1bqk2r/pppn1ppp/4pb2/8/3PN3/5N2/PPP2PPP/R2QKB1R w KQkq - 2 8"),
 (@game_id, 8, "b", "r1bqk2r/pppn1ppp/4pb2/8/3PN3/3B1N2/PPP2PPP/R2QK2R b KQkq - 3 8"),
 (@game_id, 9, "w", "r1bqk2r/pp1n1ppp/4pb2/2p5/3PN3/3B1N2/PPP2PPP/R2QK2R w KQkq - 0 9"),
-(@game_id, 9, "b", "r1bqk2r/pp1n1ppp/4pN2/2p5/3P4/3B1N2/PPP2PPP/R2QK2R b KQkq - 0 9");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-MNE 1st League" AND site="Tivat MNE" AND date="2011.10.12" AND wp_elo=2420 AND bp_elo=2495);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 9, "b", "r1bqk2r/pp1n1ppp/4pN2/2p5/3P4/3B1N2/PPP2PPP/R2QK2R b KQkq - 0 9");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 Be7 7. Nxf6+ Bxf6 8. Bxf6 Qxf6 9. Be2 O-O 10. O-O e5 11. dxe5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2463,7 +2463,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 10, "w", "r1b2rk1/pppn1ppp/4pq2/8/3P4/5N2/PPP1BPPP/R2QK2R w KQ - 2 10"),
 (@game_id, 10, "b", "r1b2rk1/pppn1ppp/4pq2/8/3P4/5N2/PPP1BPPP/R2Q1RK1 b - - 3 10"),
 (@game_id, 11, "w", "r1b2rk1/pppn1ppp/5q2/4p3/3P4/5N2/PPP1BPPP/R2Q1RK1 w - - 0 11"),
-(@game_id, 11, "b", "r1b2rk1/pppn1ppp/5q2/4P3/8/5N2/PPP1BPPP/R2Q1RK1 b - - 0 11");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-HUN 2011-12" AND site="Heviz HUN" AND date="2011.11.13" AND wp_elo=2492 AND bp_elo=2552);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "b", "r1b2rk1/pppn1ppp/5q2/4P3/8/5N2/PPP1BPPP/R2Q1RK1 b - - 0 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Be3 Nd5 9. Bd3 Nxe3 10. fxe3 Bd6 11. c3 Qe7 12. O-O O-O 13. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2487,7 +2487,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 11, "b", "r1bqk2r/ppp2pp1/3bp2p/8/3P4/2PBPN2/PP4PP/R2QK2R b KQkq - 0 11"),
 (@game_id, 12, "w", "r1b1k2r/ppp1qpp1/3bp2p/8/3P4/2PBPN2/PP4PP/R2QK2R w KQkq - 1 12"),
 (@game_id, 12, "b", "r1b1k2r/ppp1qpp1/3bp2p/8/3P4/2PBPN2/PP4PP/R2Q1RK1 b kq - 2 12"),
-(@game_id, 13, "w", "r1b2rk1/ppp1qpp1/3bp2p/8/3P4/2PBPN2/PP4PP/R2Q1RK1 w - - 3 13");SET @game_id = (SELECT gid FROM Games WHERE event="Russian Cup Final KO" AND site="Magnitogorsk RUS" AND date="2011.11.16" AND wp_elo=2619 AND bp_elo=2632);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "r1b2rk1/ppp1qpp1/3bp2p/8/3P4/2PBPN2/PP4PP/R2Q1RK1 w - - 3 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Be3 Bd6 9. Bd3 b6 10. Ne5 O-O 11. Qf3 Nd5 12. Bd2 Bb7 13. Qe4 f5 14. Qe2 c5 15. dxc5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2516,7 +2516,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 14, "w", "r2q1rk1/pbp3p1/1p1bp2p/3nNp2/3PQ3/3B4/PPPB1PPP/R3K2R w KQ - 0 14"),
 (@game_id, 14, "b", "r2q1rk1/pbp3p1/1p1bp2p/3nNp2/3P4/3B4/PPPBQPPP/R3K2R b KQ - 1 14"),
 (@game_id, 15, "w", "r2q1rk1/pb4p1/1p1bp2p/2pnNp2/3P4/3B4/PPPBQPPP/R3K2R w KQ - 0 15"),
-(@game_id, 15, "b", "r2q1rk1/pb4p1/1p1bp2p/2PnNp2/8/3B4/PPPBQPPP/R3K2R b KQ - 0 15");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-SVK Extraliga 2011-12" AND site="Slovakia SVK" AND date="2011.11.27" AND wp_elo=2267 AND bp_elo=2351);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "r2q1rk1/pb4p1/1p1bp2p/2PnNp2/8/3B4/PPPBQPPP/R3K2R b KQ - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Bh4 c5 8. Nxf6+ Nxf6 9. Bb5+ Bd7 10. Bxd7+ Qxd7 11. Bxf6 gxf6 12. O-O 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2539,7 +2539,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 11, "w", "r3kb1r/pp1q1pp1/4pn1p/2p5/3P3B/5N2/PPP2PPP/R2QK2R w KQkq - 0 11"),
 (@game_id, 11, "b", "r3kb1r/pp1q1pp1/4pB1p/2p5/3P4/5N2/PPP2PPP/R2QK2R b KQkq - 0 11"),
 (@game_id, 12, "w", "r3kb1r/pp1q1p2/4pp1p/2p5/3P4/5N2/PPP2PPP/R2QK2R w KQkq - 0 12"),
-(@game_id, 12, "b", "r3kb1r/pp1q1p2/4pp1p/2p5/3P4/5N2/PPP2PPP/R2Q1RK1 b kq - 1 12");SET @game_id = (SELECT gid FROM Games WHERE event="14th Padova Open" AND site="Padova ITA" AND date="2011.12.18" AND wp_elo=2409 AND bp_elo=2502);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "b", "r3kb1r/pp1q1p2/4pp1p/2p5/3P4/5N2/PPP2PPP/R2Q1RK1 b kq - 1 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nxf6+ Nxf6 7. Nf3 h6 8. Bh4 c5 9. Bb5+ Bd7 10. Qe2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2558,7 +2558,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "w", "r1bqkb1r/pp3pp1/4pn1p/2p5/3P3B/5N2/PPP2PPP/R2QKB1R w KQkq - 0 9"),
 (@game_id, 9, "b", "r1bqkb1r/pp3pp1/4pn1p/1Bp5/3P3B/5N2/PPP2PPP/R2QK2R b KQkq - 1 9"),
 (@game_id, 10, "w", "r2qkb1r/pp1b1pp1/4pn1p/1Bp5/3P3B/5N2/PPP2PPP/R2QK2R w KQkq - 2 10"),
-(@game_id, 10, "b", "r2qkb1r/pp1b1pp1/4pn1p/1Bp5/3P3B/5N2/PPP1QPPP/R3K2R b KQkq - 3 10");SET @game_id = (SELECT gid FROM Games WHERE event="XXIII Carlos Torre Magistral" AND site="Merida MEX" AND date="2011.12.19" AND wp_elo=2578 AND bp_elo=2538);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "b", "r2qkb1r/pp1b1pp1/4pn1p/1Bp5/3P3B/5N2/PPP1QPPP/R3K2R b KQkq - 3 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Nxf6+ Bxf6 7. Bxf6 Qxf6 8. Nf3 O-O 9. Bd3 c5 10. Qe2 Nc6 11. dxc5 Qxb2 12. O-O Nd4 13. Nxd4 Qxd4 14. Qe4 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2585,7 +2585,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "w", "r1b2rk1/pp3ppp/4p3/2P5/3n4/3B1N2/PqP1QPPP/R4RK1 w - - 2 13"),
 (@game_id, 13, "b", "r1b2rk1/pp3ppp/4p3/2P5/3N4/3B4/PqP1QPPP/R4RK1 b - - 0 13"),
 (@game_id, 14, "w", "r1b2rk1/pp3ppp/4p3/2P5/3q4/3B4/P1P1QPPP/R4RK1 w - - 0 14"),
-(@game_id, 14, "b", "r1b2rk1/pp3ppp/4p3/2P5/3qQ3/3B4/P1P2PPP/R4RK1 b - - 1 14");SET @game_id = (SELECT gid FROM Games WHERE event="Albena Masters Open 2012" AND site="Albena BUL" AND date="2012.05.30" AND wp_elo=2142 AND bp_elo=2254);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "r1b2rk1/pp3ppp/4p3/2P5/3qQ3/3B4/P1P2PPP/R4RK1 b - - 1 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nxf6+ Nxf6 7. c3 h6 8. Bh4 c5 9. Bxf6 gxf6 10. Qf3 Be7 11. Bb5+ Kf8 12. dxc5 Qa5 13. a4 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2610,7 +2610,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "w", "r1bq1k1r/pp2bp2/4pp1p/1Bp5/3P4/2P2Q2/PP3PPP/R3K1NR w KQ - 4 12"),
 (@game_id, 12, "b", "r1bq1k1r/pp2bp2/4pp1p/1BP5/8/2P2Q2/PP3PPP/R3K1NR b KQ - 0 12"),
 (@game_id, 13, "w", "r1b2k1r/pp2bp2/4pp1p/qBP5/8/2P2Q2/PP3PPP/R3K1NR w KQ - 1 13"),
-(@game_id, 13, "b", "r1b2k1r/pp2bp2/4pp1p/qBP5/P7/2P2Q2/1P3PPP/R3K1NR b KQ - 0 13");SET @game_id = (SELECT gid FROM Games WHERE event="11th ROC Nova Open" AND site="Haarlem NED" AND date="2012.07.07" AND wp_elo=2358 AND bp_elo=2569);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r1b2k1r/pp2bp2/4pp1p/qBP5/P7/2P2Q2/1P3PPP/R3K1NR b KQ - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 b6 8. Bb5+ c6 9. Bd3 Bb7 10. Qe2 Qc7 11. O-O-O Nd7 12. Kb1 O-O-O 13. Ba6 Bxa6 14. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2636,7 +2636,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "b", "r3k2r/pbqnbp1p/1pp1pp2/8/3PN3/3B1N2/PPP1QPPP/1K1R3R b kq - 7 12"),
 (@game_id, 13, "w", "2kr3r/pbqnbp1p/1pp1pp2/8/3PN3/3B1N2/PPP1QPPP/1K1R3R w - - 8 13"),
 (@game_id, 13, "b", "2kr3r/pbqnbp1p/Bpp1pp2/8/3PN3/5N2/PPP1QPPP/1K1R3R b - - 9 13"),
-(@game_id, 14, "w", "2kr3r/p1qnbp1p/bpp1pp2/8/3PN3/5N2/PPP1QPPP/1K1R3R w - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE event="FSFMA2 July 2012" AND site="Budapest HUN" AND date="2012.07.09" AND wp_elo=2144 AND bp_elo=2106);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "w", "2kr3r/p1qnbp1p/bpp1pp2/8/3PN3/5N2/PPP1QPPP/1K1R3R w - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 Be7 7. Nxf6+ Bxf6 8. Bxf6 Qxf6 9. Bd3 c5 10. c3 cxd4 11. cxd4 O-O 12. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2658,7 +2658,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 10, "b", "r1b1k2r/pp1n1ppp/4pq2/2p5/3P4/2PB1N2/PP3PPP/R2QK2R b KQkq - 0 10"),
 (@game_id, 11, "w", "r1b1k2r/pp1n1ppp/4pq2/8/3p4/2PB1N2/PP3PPP/R2QK2R w KQkq - 0 11"),
 (@game_id, 11, "b", "r1b1k2r/pp1n1ppp/4pq2/8/3P4/3B1N2/PP3PPP/R2QK2R b KQkq - 0 11"),
-(@game_id, 12, "w", "r1b2rk1/pp1n1ppp/4pq2/8/3P4/3B1N2/PP3PPP/R2QK2R w KQ - 1 12");SET @game_id = (SELECT gid FROM Games WHERE event="ch-MNE 2012" AND site="Cetinje MNE" AND date="2012.07.17" AND wp_elo=2420 AND bp_elo=2536);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "w", "r1b2rk1/pp1n1ppp/4pq2/8/3P4/3B1N2/PP3PPP/R2QK2R w KQ - 1 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 Be7 7. Nxf6+ Bxf6 8. Bxf6 Qxf6 9. Qd2 c5 10. O-O-O 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2677,7 +2677,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "w", "r1b1k2r/pppn1ppp/4pq2/8/3P4/5N2/PPP2PPP/R2QKB1R w KQkq - 0 9"),
 (@game_id, 9, "b", "r1b1k2r/pppn1ppp/4pq2/8/3P4/5N2/PPPQ1PPP/R3KB1R b KQkq - 1 9"),
 (@game_id, 10, "w", "r1b1k2r/pp1n1ppp/4pq2/2p5/3P4/5N2/PPPQ1PPP/R3KB1R w KQkq - 0 10"),
-(@game_id, 10, "b", "r1b1k2r/pp1n1ppp/4pq2/2p5/3P4/5N2/PPPQ1PPP/2KR1B1R b kq - 1 10");SET @game_id = (SELECT gid FROM Games WHERE event="FSFMA2 August 2012" AND site="Budapest HUN" AND date="2012.08.05" AND wp_elo=1798 AND bp_elo=2157);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "b", "r1b1k2r/pp1n1ppp/4pq2/2p5/3P4/5N2/PPPQ1PPP/2KR1B1R b kq - 1 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 d5 2. Nc3 Nf6 3. Bg5 e6 4. e4 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 b6 8. c3 Bb7 9. Bd3 Nd7 10. Qc2 O-O 11. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/ppp1pppp/8/3p4/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 1 2"),
@@ -2697,7 +2697,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "b", "rn1qk2r/pbp2ppp/1p2pb2/8/3PN3/2PB1N2/PP3PPP/R2QK2R b KQkq - 2 9"),
 (@game_id, 10, "w", "r2qk2r/pbpn1ppp/1p2pb2/8/3PN3/2PB1N2/PP3PPP/R2QK2R w KQkq - 3 10"),
 (@game_id, 10, "b", "r2qk2r/pbpn1ppp/1p2pb2/8/3PN3/2PB1N2/PPQ2PPP/R3K2R b KQkq - 4 10"),
-(@game_id, 11, "w", "r2q1rk1/pbpn1ppp/1p2pb2/8/3PN3/2PB1N2/PPQ2PPP/R3K2R w KQ - 5 11");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-DEN XtraCon 2012-13" AND site="Denmark DEN" AND date="2012.10.28" AND wp_elo=2330 AND bp_elo=2340);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "w", "r2q1rk1/pbpn1ppp/1p2pb2/8/3PN3/2PB1N2/PPQ2PPP/R3K2R w KQ - 5 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Qd3 Nc6 8. Nf3 b6 9. Nc3 Bb7 10. O-O-O Nb4 11. Qb5+ c6 12. Qh5 Qc7 13. Kb1 h6 14. Ne4 Nd5 15. g3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2726,7 +2726,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 14, "w", "r3k2r/pbq1bp2/1pp1pp1p/7Q/1n1P4/2N2N2/PPP2PPP/1K1R1B1R w kq - 0 14"),
 (@game_id, 14, "b", "r3k2r/pbq1bp2/1pp1pp1p/7Q/1n1PN3/5N2/PPP2PPP/1K1R1B1R b kq - 1 14"),
 (@game_id, 15, "w", "r3k2r/pbq1bp2/1pp1pp1p/3n3Q/3PN3/5N2/PPP2PPP/1K1R1B1R w kq - 2 15"),
-(@game_id, 15, "b", "r3k2r/pbq1bp2/1pp1pp1p/3n3Q/3PN3/5NP1/PPP2P1P/1K1R1B1R b kq - 0 15");SET @game_id = (SELECT gid FROM Games WHERE event="17th Lienz Open 2013" AND site="Lienz AUT" AND date="2013.02.09" AND wp_elo=1842 AND bp_elo=2608);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "r3k2r/pbq1bp2/1pp1pp1p/3n3Q/3PN3/5NP1/PPP2P1P/1K1R1B1R b kq - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Bxf6 gxf6 6. Nxe4 f5 7. Nc3 Bg7 8. Nf3 a6 9. Bc4 c5 10. Ne2 b5 11. Bd3 c4 12. 0-1");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2748,7 +2748,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 10, "b", "rnbqk2r/1p3pbp/p3p3/2p2p2/2BP4/5N2/PPP1NPPP/R2QK2R b KQkq - 1 10"),
 (@game_id, 11, "w", "rnbqk2r/5pbp/p3p3/1pp2p2/2BP4/5N2/PPP1NPPP/R2QK2R w KQkq - 0 11"),
 (@game_id, 11, "b", "rnbqk2r/5pbp/p3p3/1pp2p2/3P4/3B1N2/PPP1NPPP/R2QK2R b KQkq - 1 11"),
-(@game_id, 12, "w", "rnbqk2r/5pbp/p3p3/1p3p2/2pP4/3B1N2/PPP1NPPP/R2QK2R w KQkq - 0 12");SET @game_id = (SELECT gid FROM Games WHERE event="29th Spring Festival" AND site="Budapest HUN" AND date="2013.03.25" AND wp_elo=2010 AND bp_elo=2029);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "w", "rnbqk2r/5pbp/p3p3/1p3p2/2pP4/3B1N2/PPP1NPPP/R2QK2R w KQkq - 0 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Nxf6+ Bxf6 7. Bxf6 Qxf6 8. Nf3 O-O 9. Bd3 c5 10. c3 cxd4 11. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2768,7 +2768,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "b", "rnb2rk1/ppp2ppp/4pq2/8/3P4/3B1N2/PPP2PPP/R2QK2R b KQ - 3 9"),
 (@game_id, 10, "w", "rnb2rk1/pp3ppp/4pq2/2p5/3P4/3B1N2/PPP2PPP/R2QK2R w KQ - 0 10"),
 (@game_id, 10, "b", "rnb2rk1/pp3ppp/4pq2/2p5/3P4/2PB1N2/PP3PPP/R2QK2R b KQ - 0 10"),
-(@game_id, 11, "w", "rnb2rk1/pp3ppp/4pq2/8/3p4/2PB1N2/PP3PPP/R2QK2R w KQ - 0 11");SET @game_id = (SELECT gid FROM Games WHERE event="III Joao Pessoa IM 2013" AND site="Joao Pessoa BRA" AND date="2013.08.14" AND wp_elo=2368 AND bp_elo=2422);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "w", "rnb2rk1/pp3ppp/4pq2/8/3p4/2PB1N2/PP3PPP/R2QK2R w KQ - 0 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nc3 e6 3. Bg5 d5 4. e4 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 Nd7 8. Bd3 O-O 9. Qe2 b6 10. O-O-O Bb7 11. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 2 2"),
@@ -2788,7 +2788,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "b", "r1bq1rk1/pppn1ppp/4pb2/8/3PN3/3B1N2/PPP1QPPP/R3K2R b KQ - 5 9"),
 (@game_id, 10, "w", "r1bq1rk1/p1pn1ppp/1p2pb2/8/3PN3/3B1N2/PPP1QPPP/R3K2R w KQ - 0 10"),
 (@game_id, 10, "b", "r1bq1rk1/p1pn1ppp/1p2pb2/8/3PN3/3B1N2/PPP1QPPP/2KR3R b - - 1 10"),
-(@game_id, 11, "w", "r2q1rk1/pbpn1ppp/1p2pb2/8/3PN3/3B1N2/PPP1QPPP/2KR3R w - - 2 11");SET @game_id = (SELECT gid FROM Games WHERE event="6th Jessie Gilbert Open 2013" AND site="Coulsdon ENG" AND date="2013.08.20" AND wp_elo=2475 AND bp_elo=2546);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "w", "r2q1rk1/pbpn1ppp/1p2pb2/8/3PN3/3B1N2/PPP1QPPP/2KR3R w - - 2 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Bh4 Be7 8. Nxf6+ Bxf6 9. Bxf6 Qxf6 10. Bd3 c5 11. Qe2 cxd4 12. O-O-O O-O 13. Qe4 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2813,7 +2813,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "w", "r1b1k2r/pp1n1pp1/4pq1p/8/3p4/3B1N2/PPP1QPPP/R3K2R w KQkq - 0 12"),
 (@game_id, 12, "b", "r1b1k2r/pp1n1pp1/4pq1p/8/3p4/3B1N2/PPP1QPPP/2KR3R b kq - 1 12"),
 (@game_id, 13, "w", "r1b2rk1/pp1n1pp1/4pq1p/8/3p4/3B1N2/PPP1QPPP/2KR3R w - - 2 13"),
-(@game_id, 13, "b", "r1b2rk1/pp1n1pp1/4pq1p/8/3pQ3/3B1N2/PPP2PPP/2KR3R b - - 3 13");SET @game_id = (SELECT gid FROM Games WHERE event="Caissa GM Aug 2013" AND site="Kecskemet HUN" AND date="2013.08.22" AND wp_elo=2358 AND bp_elo=2469);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r1b2rk1/pp1n1pp1/4pq1p/8/3pQ3/3B1N2/PPP2PPP/2KR3R b - - 3 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Bh4 c5 9. c3 cxd4 10. Nxd4 Bc5 11. Nb3 Be7 12. Qxd8+ Bxd8 13. Rd1 Bd7 14. Be2 Be7 15. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2841,7 +2841,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "b", "r1bbk2r/pp3pp1/4pn1p/8/7B/1NP5/PP3PPP/3RKB1R b Kkq - 1 13"),
 (@game_id, 14, "w", "r2bk2r/pp1b1pp1/4pn1p/8/7B/1NP5/PP3PPP/3RKB1R w Kkq - 2 14"),
 (@game_id, 14, "b", "r2bk2r/pp1b1pp1/4pn1p/8/7B/1NP5/PP2BPPP/3RK2R b Kkq - 3 14"),
-(@game_id, 15, "w", "r3k2r/pp1bbpp1/4pn1p/8/7B/1NP5/PP2BPPP/3RK2R w Kkq - 4 15");SET @game_id = (SELECT gid FROM Games WHERE event="33rd Bratto Open" AND site="Bratto ITA" AND date="2013.08.24" AND wp_elo=2430 AND bp_elo=2577);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "w", "r3k2r/pp1bbpp1/4pn1p/8/7B/1NP5/PP2BPPP/3RK2R w Kkq - 4 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Be3 Bd6 9. Bd3 O-O 10. Qd2 Nd5 11. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2861,7 +2861,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "b", "r1bqk2r/ppp2pp1/3bpn1p/8/3P4/3BBN2/PPP2PPP/R2QK2R b KQkq - 3 9"),
 (@game_id, 10, "w", "r1bq1rk1/ppp2pp1/3bpn1p/8/3P4/3BBN2/PPP2PPP/R2QK2R w KQ - 4 10"),
 (@game_id, 10, "b", "r1bq1rk1/ppp2pp1/3bpn1p/8/3P4/3BBN2/PPPQ1PPP/R3K2R b KQ - 5 10"),
-(@game_id, 11, "w", "r1bq1rk1/ppp2pp1/3bp2p/3n4/3P4/3BBN2/PPPQ1PPP/R3K2R w KQ - 6 11");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-SRB 1st League 2013" AND site="Kragujevac SRB" AND date="2013.08.29" AND wp_elo=2493 AND bp_elo=2565);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "w", "r1bq1rk1/ppp2pp1/3bp2p/3n4/3P4/3BBN2/PPPQ1PPP/R3K2R w KQ - 6 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Nxf6+ Bxf6 7. Bxf6 Qxf6 8. Nf3 c5 9. Bb5+ Bd7 10. Qe2 cxd4 11. Bxd7+ Nxd7 12. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2883,7 +2883,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 10, "b", "rn2k2r/pp1b1ppp/4pq2/1Bp5/3P4/5N2/PPP1QPPP/R3K2R b KQkq - 3 10"),
 (@game_id, 11, "w", "rn2k2r/pp1b1ppp/4pq2/1B6/3p4/5N2/PPP1QPPP/R3K2R w KQkq - 0 11"),
 (@game_id, 11, "b", "rn2k2r/pp1B1ppp/4pq2/8/3p4/5N2/PPP1QPPP/R3K2R b KQkq - 0 11"),
-(@game_id, 12, "w", "r3k2r/pp1n1ppp/4pq2/8/3p4/5N2/PPP1QPPP/R3K2R w KQkq - 0 12");SET @game_id = (SELECT gid FROM Games WHERE event="ch-GER Rapid 2013" AND site="Gladenbach GER" AND date="2013.09.28" AND wp_elo=2344 AND bp_elo=2429);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "w", "r3k2r/pp1n1ppp/4pq2/8/3p4/5N2/PPP1QPPP/R3K2R w KQkq - 0 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Qd2 f5 8. Nc3 Bf6 9. O-O-O c5 10. d5 O-O 11. h4 Kh8 12. Nf3 Qa5 13. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2907,7 +2907,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 11, "b", "rnbq1rk1/pp3p1p/4pb2/2pP1p2/7P/2N5/PPPQ1PP1/2KR1BNR b - - 0 11"),
 (@game_id, 12, "w", "rnbq1r1k/pp3p1p/4pb2/2pP1p2/7P/2N5/PPPQ1PP1/2KR1BNR w - - 1 12"),
 (@game_id, 12, "b", "rnbq1r1k/pp3p1p/4pb2/2pP1p2/7P/2N2N2/PPPQ1PP1/2KR1B1R b - - 2 12"),
-(@game_id, 13, "w", "rnb2r1k/pp3p1p/4pb2/q1pP1p2/7P/2N2N2/PPPQ1PP1/2KR1B1R w - - 3 13");SET @game_id = (SELECT gid FROM Games WHERE event="2nd Crimea Autumn 2013" AND site="Simferopol UKR" AND date="2013.11.16" AND wp_elo=2463 AND bp_elo=2337);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "rnb2r1k/pp3p1p/4pb2/q1pP1p2/7P/2N2N2/PPPQ1PP1/2KR1B1R w - - 3 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 f5 8. Nc3 a6 9. g3 b5 10. Bg2 Bb7 11. O-O c5 12. dxc5 Bxc5 13. Qxd8+ Kxd8 14. Ne5 Bxg2 15. Kxg2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2936,7 +2936,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 14, "w", "rn1k3r/1b3p1p/p3p3/1pb2p2/8/2N2NP1/PPP2PBP/R4RK1 w - - 0 14"),
 (@game_id, 14, "b", "rn1k3r/1b3p1p/p3p3/1pb1Np2/8/2N3P1/PPP2PBP/R4RK1 b - - 1 14"),
 (@game_id, 15, "w", "rn1k3r/5p1p/p3p3/1pb1Np2/8/2N3P1/PPP2PbP/R4RK1 w - - 0 15"),
-(@game_id, 15, "b", "rn1k3r/5p1p/p3p3/1pb1Np2/8/2N3P1/PPP2PKP/R4R2 b - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS 2014" AND site="Melbourne AUS" AND date="2014.01.09" AND wp_elo=2369 AND bp_elo=2405);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "rn1k3r/5p1p/p3p3/1pb1Np2/8/2N3P1/PPP2PKP/R4R2 b - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 Be7 7. Nxf6+ Bxf6 8. Bxf6 Qxf6 9. Bb5 O-O 10. Bxd7 Bxd7 11. Ne5 Rad8 12. Qe2 c5 13. dxc5 Ba4 14. O-O Bxc2 15. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2964,7 +2964,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "b", "3r1rk1/pp1b1ppp/4pq2/2P1N3/8/8/PPP1QPPP/R3K2R b KQ - 0 13"),
 (@game_id, 14, "w", "3r1rk1/pp3ppp/4pq2/2P1N3/b7/8/PPP1QPPP/R3K2R w KQ - 1 14"),
 (@game_id, 14, "b", "3r1rk1/pp3ppp/4pq2/2P1N3/b7/8/PPP1QPPP/R4RK1 b - - 2 14"),
-(@game_id, 15, "w", "3r1rk1/pp3ppp/4pq2/2P1N3/8/8/PPb1QPPP/R4RK1 w - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE event="25th Czech Open A 2014" AND site="Pardubice CZE" AND date="2014.07.25" AND wp_elo=2394 AND bp_elo=2510);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "w", "3r1rk1/pp3ppp/4pq2/2P1N3/8/8/PPb1QPPP/R4RK1 w - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 Be7 7. Nxf6+ Bxf6 8. Bxf6 Qxf6 9. Qd2 O-O 10. O-O-O Rd8 11. Bd3 b6 12. Be4 Rb8 13. Qe3 Bb7 14. Bxb7 Rxb7 15. Ne5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -2993,7 +2993,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 14, "w", "1r1r2k1/pbpn1ppp/1p2pq2/8/3PB3/4QN2/PPP2PPP/2KR3R w - - 4 14"),
 (@game_id, 14, "b", "1r1r2k1/pBpn1ppp/1p2pq2/8/3P4/4QN2/PPP2PPP/2KR3R b - - 0 14"),
 (@game_id, 15, "w", "3r2k1/prpn1ppp/1p2pq2/8/3P4/4QN2/PPP2PPP/2KR3R w - - 0 15"),
-(@game_id, 15, "b", "3r2k1/prpn1ppp/1p2pq2/4N3/3P4/4Q3/PPP2PPP/2KR3R b - - 1 15");SET @game_id = (SELECT gid FROM Games WHERE event="29th Schwarzacher Open" AND site="Schwarzach AUT" AND date="2014.08.18" AND wp_elo=2560 AND bp_elo=2494);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "3r2k1/prpn1ppp/1p2pq2/4N3/3P4/4Q3/PPP2PPP/2KR3R b - - 1 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Qd2 a6 8. O-O-O b5 9. Qe3 Bb7 10. f4 f5 11. Nc3 b4 12. Na4 Qd5 13. b3 Nd7 14. Nf3 Bf6 15. Nc5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3022,7 +3022,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 14, "w", "r3k2r/1bpnbp1p/p3p3/3q1p2/Np1P1P2/1P2Q3/P1P3PP/2KR1BNR w kq - 1 14"),
 (@game_id, 14, "b", "r3k2r/1bpnbp1p/p3p3/3q1p2/Np1P1P2/1P2QN2/P1P3PP/2KR1B1R b kq - 2 14"),
 (@game_id, 15, "w", "r3k2r/1bpn1p1p/p3pb2/3q1p2/Np1P1P2/1P2QN2/P1P3PP/2KR1B1R w kq - 3 15"),
-(@game_id, 15, "b", "r3k2r/1bpn1p1p/p3pb2/2Nq1p2/1p1P1P2/1P2QN2/P1P3PP/2KR1B1R b kq - 4 15");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-Central Serbia 2014" AND site="Kraljevo SRB" AND date="2014.09.13" AND wp_elo=2442 AND bp_elo=2415);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "r3k2r/1bpn1p1p/p3pb2/2Nq1p2/1p1P1P2/1P2QN2/P1P3PP/2KR1B1R b kq - 4 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 e6 2. e4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 f5 8. Nc3 a6 9. g3 b5 10. Bg2 Bb7 11. O-O O-O 12. Ne5 Bxg2 13. Kxg2 b4 14. Ne2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3049,7 +3049,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "w", "rn1q1rk1/2p1bp1p/p3p3/1p2Np2/3P4/2N3P1/PPP2PbP/R2Q1RK1 w - - 0 13"),
 (@game_id, 13, "b", "rn1q1rk1/2p1bp1p/p3p3/1p2Np2/3P4/2N3P1/PPP2PKP/R2Q1R2 b - - 0 13"),
 (@game_id, 14, "w", "rn1q1rk1/2p1bp1p/p3p3/4Np2/1p1P4/2N3P1/PPP2PKP/R2Q1R2 w - - 0 14"),
-(@game_id, 14, "b", "rn1q1rk1/2p1bp1p/p3p3/4Np2/1p1P4/6P1/PPP1NPKP/R2Q1R2 b - - 1 14");SET @game_id = (SELECT gid FROM Games WHERE event="Tseshkovsky Mem 2014" AND site="Sochi RUS" AND date="2014.09.24" AND wp_elo=2022 AND bp_elo=2175);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "rn1q1rk1/2p1bp1p/p3p3/4Np2/1p1P4/6P1/PPP1NPKP/R2Q1R2 b - - 1 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 Be7 7. Nxf6+ Nxf6 8. Bd3 b6 9. Bb5+ Bd7 10. Bxd7+ Nxd7 11. Bxe7 Qxe7 12. O-O O-O 13. c3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3074,7 +3074,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "w", "r3k2r/p1pnqppp/1p2p3/8/3P4/5N2/PPP2PPP/R2QK2R w KQkq - 0 12"),
 (@game_id, 12, "b", "r3k2r/p1pnqppp/1p2p3/8/3P4/5N2/PPP2PPP/R2Q1RK1 b kq - 1 12"),
 (@game_id, 13, "w", "r4rk1/p1pnqppp/1p2p3/8/3P4/5N2/PPP2PPP/R2Q1RK1 w - - 2 13"),
-(@game_id, 13, "b", "r4rk1/p1pnqppp/1p2p3/8/3P4/2P2N2/PP3PPP/R2Q1RK1 b - - 0 13");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-CAT Final GpB 2015" AND site="Barcelona ESP" AND date="2015.03.14" AND wp_elo=2234 AND bp_elo=2140);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r4rk1/p1pnqppp/1p2p3/8/3P4/2P2N2/PP3PPP/R2Q1RK1 b - - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 Nd7 8. Bd3 c5 9. Qd2 O-O 10. O-O-O cxd4 11. h4 Re8 12. Nxf6+ Nxf6 13. Nxd4 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3099,7 +3099,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "w", "r1bqr1k1/pp1n1ppp/4pb2/8/3pN2P/3B1N2/PPPQ1PP1/2KR3R w - - 1 12"),
 (@game_id, 12, "b", "r1bqr1k1/pp1n1ppp/4pN2/8/3p3P/3B1N2/PPPQ1PP1/2KR3R b - - 0 12"),
 (@game_id, 13, "w", "r1bqr1k1/pp3ppp/4pn2/8/3p3P/3B1N2/PPPQ1PP1/2KR3R w - - 0 13"),
-(@game_id, 13, "b", "r1bqr1k1/pp3ppp/4pn2/8/3N3P/3B4/PPPQ1PP1/2KR3R b - - 0 13");SET @game_id = (SELECT gid FROM Games WHERE event="14th Kesarovski-Stanchev" AND site="Sunny Beach BUL" AND date="2015.09.08" AND wp_elo=2272 AND bp_elo=2428);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r1bqr1k1/pp3ppp/4pn2/8/3N3P/3B4/PPPQ1PP1/2KR3R b - - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nc3 d5 3. Bg5 e6 4. e4 dxe4 5. Nxe4 Be7 6. Nxf6+ Bxf6 7. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 2 2"),
@@ -3111,7 +3111,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 5, "b", "rnbqkb1r/ppp2ppp/4pn2/6B1/3PN3/8/PPP2PPP/R2QKBNR b KQkq - 0 5"),
 (@game_id, 6, "w", "rnbqk2r/ppp1bppp/4pn2/6B1/3PN3/8/PPP2PPP/R2QKBNR w KQkq - 1 6"),
 (@game_id, 6, "b", "rnbqk2r/ppp1bppp/4pN2/6B1/3P4/8/PPP2PPP/R2QKBNR b KQkq - 0 6"),
-(@game_id, 7, "w", "rnbqk2r/ppp2ppp/4pb2/6B1/3P4/8/PPP2PPP/R2QKBNR w KQkq - 0 7");SET @game_id = (SELECT gid FROM Games WHERE event="6th Biella Open 2015" AND site="Biella ITA" AND date="2015.09.27" AND wp_elo=2125 AND bp_elo=2433);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 7, "w", "rnbqk2r/ppp2ppp/4pb2/6B1/3P4/8/PPP2PPP/R2QKBNR w KQkq - 0 7");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 a6 8. Bd3 b5 9. Qe2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3128,7 +3128,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 8, "w", "rnbqk2r/1pp1bp1p/p3pp2/8/3PN3/5N2/PPP2PPP/R2QKB1R w KQkq - 0 8"),
 (@game_id, 8, "b", "rnbqk2r/1pp1bp1p/p3pp2/8/3PN3/3B1N2/PPP2PPP/R2QK2R b KQkq - 1 8"),
 (@game_id, 9, "w", "rnbqk2r/2p1bp1p/p3pp2/1p6/3PN3/3B1N2/PPP2PPP/R2QK2R w KQkq - 0 9"),
-(@game_id, 9, "b", "rnbqk2r/2p1bp1p/p3pp2/1p6/3PN3/3B1N2/PPP1QPPP/R3K2R b KQkq - 1 9");SET @game_id = (SELECT gid FROM Games WHERE event="XTRACON GM 2015" AND site="Koge DEN" AND date="2015.10.15" AND wp_elo=2109 AND bp_elo=1866);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 9, "b", "rnbqk2r/2p1bp1p/p3pp2/1p6/3PN3/3B1N2/PPP1QPPP/R3K2R b KQkq - 1 9");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nc3 d5 3. Bg5 e6 4. e4 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nxf6+ Qxf6 8. Nf3 b6 9. Bb5+ c6 10. Bd3 O-O 11. O-O Nd7 12. Qe2 c5 13. Qe4 1-0");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 2 2"),
@@ -3153,7 +3153,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "w", "r1b2rk1/p2n1ppp/1pp1pq2/8/3P4/3B1N2/PPP2PPP/R2Q1RK1 w - - 4 12"),
 (@game_id, 12, "b", "r1b2rk1/p2n1ppp/1pp1pq2/8/3P4/3B1N2/PPP1QPPP/R4RK1 b - - 5 12"),
 (@game_id, 13, "w", "r1b2rk1/p2n1ppp/1p2pq2/2p5/3P4/3B1N2/PPP1QPPP/R4RK1 w - - 0 13"),
-(@game_id, 13, "b", "r1b2rk1/p2n1ppp/1p2pq2/2p5/3PQ3/3B1N2/PPP2PPP/R4RK1 b - - 1 13");SET @game_id = (SELECT gid FROM Games WHERE event="Riga Tech Open A 2016" AND site="Riga LAT" AND date="2016.08.11" AND wp_elo=2488 AND bp_elo=2646);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r1b2rk1/p2n1ppp/1p2pq2/2p5/3PQ3/3B1N2/PPP2PPP/R4RK1 b - - 1 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 a6 8. c4 f5 9. Nc3 Bf6 10. Qd3 c5 11. d5 e5 12. Nd2 e4 13. Qc2 h5 14. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3179,7 +3179,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "b", "rnbqk2r/1p3p1p/p4b2/2pPpp2/2P5/2NQ4/PP1N1PPP/R3KB1R b KQkq - 1 12"),
 (@game_id, 13, "w", "rnbqk2r/1p3p1p/p4b2/2pP1p2/2P1p3/2NQ4/PP1N1PPP/R3KB1R w KQkq - 0 13"),
 (@game_id, 13, "b", "rnbqk2r/1p3p1p/p4b2/2pP1p2/2P1p3/2N5/PPQN1PPP/R3KB1R b KQkq - 1 13"),
-(@game_id, 14, "w", "rnbqk2r/1p3p2/p4b2/2pP1p1p/2P1p3/2N5/PPQN1PPP/R3KB1R w KQkq - 0 14");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-ROU Superliga 2016" AND site="Calimanesti-Caciulata ROU" AND date="2016.11.26" AND wp_elo=2600 AND bp_elo=2621);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "w", "rnbqk2r/1p3p2/p4b2/2pP1p1p/2P1p3/2N5/PPQN1PPP/R3KB1R w KQkq - 0 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Bh4 Be7 8. Nxf6+ Bxf6 9. Bxf6 Nxf6 10. Qd2 O-O 11. O-O-O b6 12. Bd3 Bb7 13. Ne5 Re8 14. Rhe1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3206,7 +3206,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "w", "r2q1rk1/pbp2pp1/1p2pn1p/8/3P4/3B1N2/PPPQ1PPP/2KR3R w - - 2 13"),
 (@game_id, 13, "b", "r2q1rk1/pbp2pp1/1p2pn1p/4N3/3P4/3B4/PPPQ1PPP/2KR3R b - - 3 13"),
 (@game_id, 14, "w", "r2qr1k1/pbp2pp1/1p2pn1p/4N3/3P4/3B4/PPPQ1PPP/2KR3R w - - 4 14"),
-(@game_id, 14, "b", "r2qr1k1/pbp2pp1/1p2pn1p/4N3/3P4/3B4/PPPQ1PPP/2KRR3 b - - 5 14");SET @game_id = (SELECT gid FROM Games WHERE event="Turkish Cup 2017" AND site="Antalya TUR" AND date="2017.01.28" AND wp_elo=1916 AND bp_elo=1530);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "r2qr1k1/pbp2pp1/1p2pn1p/4N3/3P4/3B4/PPPQ1PPP/2KRR3 b - - 5 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. c3 Nd7 8. Nf3 O-O 9. Bd3 b6 10. O-O Bb7 11. 1-0");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3226,7 +3226,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "b", "r1bq1rk1/pppn1ppp/4pb2/8/3PN3/2PB1N2/PP3PPP/R2QK2R b KQ - 4 9"),
 (@game_id, 10, "w", "r1bq1rk1/p1pn1ppp/1p2pb2/8/3PN3/2PB1N2/PP3PPP/R2QK2R w KQ - 0 10"),
 (@game_id, 10, "b", "r1bq1rk1/p1pn1ppp/1p2pb2/8/3PN3/2PB1N2/PP3PPP/R2Q1RK1 b - - 1 10"),
-(@game_id, 11, "w", "r2q1rk1/pbpn1ppp/1p2pb2/8/3PN3/2PB1N2/PP3PPP/R2Q1RK1 w - - 2 11");SET @game_id = (SELECT gid FROM Games WHERE event="Mayors Cup Yerevan KO" AND site="Yerevan ARM" AND date="2017.01.31" AND wp_elo=2571 AND bp_elo=2422);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "w", "r2q1rk1/pbpn1ppp/1p2pb2/8/3PN3/2PB1N2/PP3PPP/R2Q1RK1 w - - 2 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Be3 Be7 9. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3242,7 +3242,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 7, "b", "r1bqkb1r/pppn1pp1/4pN1p/6B1/3P4/5N2/PPP2PPP/R2QKB1R b KQkq - 0 7"),
 (@game_id, 8, "w", "r1bqkb1r/ppp2pp1/4pn1p/6B1/3P4/5N2/PPP2PPP/R2QKB1R w KQkq - 0 8"),
 (@game_id, 8, "b", "r1bqkb1r/ppp2pp1/4pn1p/8/3P4/4BN2/PPP2PPP/R2QKB1R b KQkq - 1 8"),
-(@game_id, 9, "w", "r1bqk2r/ppp1bpp1/4pn1p/8/3P4/4BN2/PPP2PPP/R2QKB1R w KQkq - 2 9");SET @game_id = (SELECT gid FROM Games WHERE event="ISEM URLA GM 2017" AND site="Izmir TUR" AND date="2017.03.10" AND wp_elo=2439 AND bp_elo=2547);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 9, "w", "r1bqk2r/ppp1bpp1/4pn1p/8/3P4/4BN2/PPP2PPP/R2QKB1R w KQkq - 2 9");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Nxf6+ Bxf6 7. Bxf6 Qxf6 8. Nf3 O-O 9. c3 Nd7 10. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3260,7 +3260,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 8, "b", "rnb1k2r/ppp2ppp/4pq2/8/3P4/5N2/PPP2PPP/R2QKB1R b KQkq - 1 8"),
 (@game_id, 9, "w", "rnb2rk1/ppp2ppp/4pq2/8/3P4/5N2/PPP2PPP/R2QKB1R w KQ - 2 9"),
 (@game_id, 9, "b", "rnb2rk1/ppp2ppp/4pq2/8/3P4/2P2N2/PP3PPP/R2QKB1R b KQ - 0 9"),
-(@game_id, 10, "w", "r1b2rk1/pppn1ppp/4pq2/8/3P4/2P2N2/PP3PPP/R2QKB1R w KQ - 1 10");SET @game_id = (SELECT gid FROM Games WHERE event="ch-ROU w 2017" AND site="Calimanesti-Caciulata ROU" AND date="2017.03.31" AND wp_elo=1806 AND bp_elo=2029);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "w", "r1b2rk1/pppn1ppp/4pq2/8/3P4/2P2N2/PP3PPP/R2QKB1R w KQ - 1 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nc3 d5 3. Bg5 e6 4. e4 dxe4 5. Nxe4 Be7 6. Nxf6+ Bxf6 7. Be3 Qe7 8. c3 e5 9. dxe5 Bxe5 10. Nf3 Bf4 11. Qa4+ Nc6 12. Qxf4 h6 13. Bb5 g5 14. Qe5 1-0");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 2 2"),
@@ -3287,7 +3287,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "w", "r1b1k2r/ppp1qpp1/2n4p/8/5Q2/2P1BN2/PP3PPP/R3KB1R w KQkq - 0 13"),
 (@game_id, 13, "b", "r1b1k2r/ppp1qpp1/2n4p/1B6/5Q2/2P1BN2/PP3PPP/R3K2R b KQkq - 1 13"),
 (@game_id, 14, "w", "r1b1k2r/ppp1qp2/2n4p/1B4p1/5Q2/2P1BN2/PP3PPP/R3K2R w KQkq - 0 14"),
-(@game_id, 14, "b", "r1b1k2r/ppp1qp2/2n4p/1B2Q1p1/8/2P1BN2/PP3PPP/R3K2R b KQkq - 1 14");SET @game_id = (SELECT gid FROM Games WHERE event="Silver Lake Open 2017" AND site="Veliko Gradiste SRB" AND date="2017.06.24" AND wp_elo=2390 AND bp_elo=2281);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "r1b1k2r/ppp1qp2/2n4p/1B2Q1p1/8/2P1BN2/PP3PPP/R3K2R b KQkq - 1 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. g3 f5 8. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3301,7 +3301,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 6, "b", "rnbqk2r/ppp1bppp/4pB2/8/3PN3/8/PPP2PPP/R2QKBNR b KQkq - 0 6"),
 (@game_id, 7, "w", "rnbqk2r/ppp1bp1p/4pp2/8/3PN3/8/PPP2PPP/R2QKBNR w KQkq - 0 7"),
 (@game_id, 7, "b", "rnbqk2r/ppp1bp1p/4pp2/8/3PN3/6P1/PPP2P1P/R2QKBNR b KQkq - 0 7"),
-(@game_id, 8, "w", "rnbqk2r/ppp1bp1p/4p3/5p2/3PN3/6P1/PPP2P1P/R2QKBNR w KQkq - 0 8");SET @game_id = (SELECT gid FROM Games WHERE event="El Aguila Masters 2017" AND site="Utebo ESP" AND date="2017.07.18" AND wp_elo=2501 AND bp_elo=2600);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 8, "w", "rnbqk2r/ppp1bp1p/4p3/5p2/3PN3/6P1/PPP2P1P/R2QKBNR w KQkq - 0 8");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Bxf6 Qxf6 9. Bb5+ c6 10. Bd3 Bd6 11. Qe2 Bd7 12. O-O O-O 13. Ne5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3326,7 +3326,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "w", "r3k2r/pp1b1pp1/2pbpq1p/8/3P4/3B1N2/PPP1QPPP/R3K2R w KQkq - 4 12"),
 (@game_id, 12, "b", "r3k2r/pp1b1pp1/2pbpq1p/8/3P4/3B1N2/PPP1QPPP/R4RK1 b kq - 5 12"),
 (@game_id, 13, "w", "r4rk1/pp1b1pp1/2pbpq1p/8/3P4/3B1N2/PPP1QPPP/R4RK1 w - - 6 13"),
-(@game_id, 13, "b", "r4rk1/pp1b1pp1/2pbpq1p/4N3/3P4/3B4/PPP1QPPP/R4RK1 b - - 7 13");SET @game_id = (SELECT gid FROM Games WHERE event="Mitropa Cup 2017" AND site="Balatonszarszo HUN" AND date="2017.09.20" AND wp_elo=2534 AND bp_elo=2503);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r4rk1/pp1b1pp1/2pbpq1p/4N3/3P4/3B4/PPP1QPPP/R4RK1 b - - 7 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 f5 8. Nc3 a6 9. g3 b5 10. Bg2 Bb7 11. O-O c5 12. dxc5 Bxc5 13. Ne5 Bxg2 14. Kxg2 Nd7 15. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3354,7 +3354,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "b", "rn1qk2r/1b3p1p/p3p3/1pb1Np2/8/2N3P1/PPP2PBP/R2Q1RK1 b kq - 1 13"),
 (@game_id, 14, "w", "rn1qk2r/5p1p/p3p3/1pb1Np2/8/2N3P1/PPP2PbP/R2Q1RK1 w kq - 0 14"),
 (@game_id, 14, "b", "rn1qk2r/5p1p/p3p3/1pb1Np2/8/2N3P1/PPP2PKP/R2Q1R2 b kq - 0 14"),
-(@game_id, 15, "w", "r2qk2r/3n1p1p/p3p3/1pb1Np2/8/2N3P1/PPP2PKP/R2Q1R2 w kq - 1 15");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-CZE 1 Liga Vychod" AND site="Czech Republic CZE" AND date="2017.11.26" AND wp_elo=2319 AND bp_elo=2393);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "w", "r2qk2r/3n1p1p/p3p3/1pb1Np2/8/2N3P1/PPP2PKP/R2Q1R2 w kq - 1 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. c4 f5 8. Nc3 Bf6 9. Nf3 c5 10. d5 Bxc3+ 11. bxc3 Qf6 12. Qd2 O-O 13. Qg5+ Qxg5 14. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3380,7 +3380,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "b", "rnb1k2r/pp3p1p/4pq2/2pP1p2/2P5/2P2N2/P2Q1PPP/R3KB1R b KQkq - 2 12"),
 (@game_id, 13, "w", "rnb2rk1/pp3p1p/4pq2/2pP1p2/2P5/2P2N2/P2Q1PPP/R3KB1R w KQ - 3 13"),
 (@game_id, 13, "b", "rnb2rk1/pp3p1p/4pq2/2pP1pQ1/2P5/2P2N2/P4PPP/R3KB1R b KQ - 4 13"),
-(@game_id, 14, "w", "rnb2rk1/pp3p1p/4p3/2pP1pq1/2P5/2P2N2/P4PPP/R3KB1R w KQ - 0 14");SET @game_id = (SELECT gid FROM Games WHERE event="55th Groningen Open 2017" AND site="Groningen NED" AND date="2017.12.27" AND wp_elo=2356 AND bp_elo=2440);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "w", "rnb2rk1/pp3p1p/4p3/2pP1pq1/2P5/2P2N2/P4PPP/R3KB1R w KQ - 0 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 Nd7 8. c3 O-O 9. Bd3 e5 10. Nxf6+ Qxf6 11. O-O exd4 12. Nxd4 g6 13. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3404,7 +3404,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 11, "b", "r1b2rk1/pppn1ppp/5q2/4p3/3P4/2PB1N2/PP3PPP/R2Q1RK1 b - - 1 11"),
 (@game_id, 12, "w", "r1b2rk1/pppn1ppp/5q2/8/3p4/2PB1N2/PP3PPP/R2Q1RK1 w - - 0 12"),
 (@game_id, 12, "b", "r1b2rk1/pppn1ppp/5q2/8/3N4/2PB4/PP3PPP/R2Q1RK1 b - - 0 12"),
-(@game_id, 13, "w", "r1b2rk1/pppn1p1p/5qp1/8/3N4/2PB4/PP3PPP/R2Q1RK1 w - - 0 13");SET @game_id = (SELECT gid FROM Games WHERE event="2nd Bundesliga Sud 2017-18" AND site="Germany GER" AND date="2018.02.25" AND wp_elo=2516 AND bp_elo=2565);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "r1b2rk1/pppn1p1p/5qp1/8/3N4/2PB4/PP3PPP/R2Q1RK1 w - - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Qd2 c5 8. Nxc5 Bxc5 9. dxc5 Qxd2+ 10. Kxd2 Ke7 11. c3 Rd8+ 12. Kc2 a5 13. Nf3 Bd7 14. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3430,7 +3430,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "b", "rnbr4/pp2kp1p/4pp2/2P5/8/2P5/PPK2PPP/R4BNR b - - 2 12"),
 (@game_id, 13, "w", "rnbr4/1p2kp1p/4pp2/p1P5/8/2P5/PPK2PPP/R4BNR w - - 0 13"),
 (@game_id, 13, "b", "rnbr4/1p2kp1p/4pp2/p1P5/8/2P2N2/PPK2PPP/R4B1R b - - 1 13"),
-(@game_id, 14, "w", "rn1r4/1p1bkp1p/4pp2/p1P5/8/2P2N2/PPK2PPP/R4B1R w - - 2 14");SET @game_id = (SELECT gid FROM Games WHERE event="Brazil Pocos de Caldas Op" AND site="Pocos de Caldas BRA" AND date="2018.03.04" AND wp_elo=1934 AND bp_elo=2057);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "w", "rn1r4/1p1bkp1p/4pp2/p1P5/8/2P2N2/PPK2PPP/R4B1R w - - 2 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 f5 8. Ng3 c5 9. Bd3 Nc6 10. dxc5 Bxc5 11. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3450,7 +3450,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "b", "rnbqk2r/pp2bp1p/4p3/2p2p2/3P4/3B1NN1/PPP2PPP/R2QK2R b KQkq - 1 9"),
 (@game_id, 10, "w", "r1bqk2r/pp2bp1p/2n1p3/2p2p2/3P4/3B1NN1/PPP2PPP/R2QK2R w KQkq - 2 10"),
 (@game_id, 10, "b", "r1bqk2r/pp2bp1p/2n1p3/2P2p2/8/3B1NN1/PPP2PPP/R2QK2R b KQkq - 0 10"),
-(@game_id, 11, "w", "r1bqk2r/pp3p1p/2n1p3/2b2p2/8/3B1NN1/PPP2PPP/R2QK2R w KQkq - 0 11");SET @game_id = (SELECT gid FROM Games WHERE event="Polar Capital Jersey Open" AND site="St Clement Bay JCI" AND date="2018.04.01" AND wp_elo=2402 AND bp_elo=2501);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "w", "r1bqk2r/pp3p1p/2n1p3/2b2p2/8/3B1NN1/PPP2PPP/R2QK2R w KQkq - 0 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Be3 Bd6 9. Bd3 Bd7 10. O-O Bc6 11. Qe2 Ng4 12. Bb5 Bd7 13. Bd2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3475,7 +3475,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "w", "r2qk2r/ppp2pp1/2bbp2p/8/3P2n1/3BBN2/PPP1QPPP/R4RK1 w kq - 8 12"),
 (@game_id, 12, "b", "r2qk2r/ppp2pp1/2bbp2p/1B6/3P2n1/4BN2/PPP1QPPP/R4RK1 b kq - 9 12"),
 (@game_id, 13, "w", "r2qk2r/pppb1pp1/3bp2p/1B6/3P2n1/4BN2/PPP1QPPP/R4RK1 w kq - 10 13"),
-(@game_id, 13, "b", "r2qk2r/pppb1pp1/3bp2p/1B6/3P2n1/5N2/PPPBQPPP/R4RK1 b kq - 11 13");SET @game_id = (SELECT gid FROM Games WHERE event="Silver Lake Open 2018" AND site="Veliko Gradiste SRB" AND date="2018.06.22" AND wp_elo=2355 AND bp_elo=2032);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r2qk2r/pppb1pp1/3bp2p/1B6/3P2n1/5N2/PPPBQPPP/R4RK1 b kq - 11 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nc3 d5 3. Bg5 e6 4. e4 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 f5 8. Nc3 c6 9. Qd2 Nd7 10. O-O-O Nf6 11. 1-0");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 2 2"),
@@ -3495,7 +3495,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "b", "rnbqk2r/pp2bp1p/2p1p3/5p2/3P4/2N2N2/PPPQ1PPP/R3KB1R b KQkq - 1 9"),
 (@game_id, 10, "w", "r1bqk2r/pp1nbp1p/2p1p3/5p2/3P4/2N2N2/PPPQ1PPP/R3KB1R w KQkq - 2 10"),
 (@game_id, 10, "b", "r1bqk2r/pp1nbp1p/2p1p3/5p2/3P4/2N2N2/PPPQ1PPP/2KR1B1R b kq - 3 10"),
-(@game_id, 11, "w", "r1bqk2r/pp2bp1p/2p1pn2/5p2/3P4/2N2N2/PPPQ1PPP/2KR1B1R w kq - 4 11");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-SRB Premier 2018" AND site="Valjevo SRB" AND date="2018.09.06" AND wp_elo=2439 AND bp_elo=2494);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "w", "r1bqk2r/pp2bp1p/2p1pn2/5p2/3P4/2N2N2/PPPQ1PPP/2KR1B1R w kq - 4 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 f5 8. Nc3 a6 9. g3 b5 10. Bg2 Bb7 11. O-O Bf6 12. Ne2 c5 13. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3519,7 +3519,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 11, "b", "rn1qk2r/1bp1bp1p/p3p3/1p3p2/3P4/2N2NP1/PPP2PBP/R2Q1RK1 b kq - 3 11"),
 (@game_id, 12, "w", "rn1qk2r/1bp2p1p/p3pb2/1p3p2/3P4/2N2NP1/PPP2PBP/R2Q1RK1 w kq - 4 12"),
 (@game_id, 12, "b", "rn1qk2r/1bp2p1p/p3pb2/1p3p2/3P4/5NP1/PPP1NPBP/R2Q1RK1 b kq - 5 12"),
-(@game_id, 13, "w", "rn1qk2r/1b3p1p/p3pb2/1pp2p2/3P4/5NP1/PPP1NPBP/R2Q1RK1 w kq - 0 13");SET @game_id = (SELECT gid FROM Games WHERE event="13th ch-SRB 2019" AND site="Belgrade SRB" AND date="2019.04.07" AND wp_elo=2507 AND bp_elo=2454);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "rn1qk2r/1b3p1p/p3pb2/1pp2p2/3P4/5NP1/PPP1NPBP/R2Q1RK1 w kq - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Qd2 c5 8. Nxc5 Bxc5 9. dxc5 Qxd2+ 10. Kxd2 Ke7 11. Nf3 Rd8+ 12. Ke3 Nd7 13. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3543,7 +3543,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 11, "b", "rnb4r/pp2kp1p/4pp2/2P5/8/5N2/PPPK1PPP/R4B1R b - - 2 11"),
 (@game_id, 12, "w", "rnbr4/pp2kp1p/4pp2/2P5/8/5N2/PPPK1PPP/R4B1R w - - 3 12"),
 (@game_id, 12, "b", "rnbr4/pp2kp1p/4pp2/2P5/8/4KN2/PPP2PPP/R4B1R b - - 4 12"),
-(@game_id, 13, "w", "r1br4/pp1nkp1p/4pp2/2P5/8/4KN2/PPP2PPP/R4B1R w - - 5 13");SET @game_id = (SELECT gid FROM Games WHERE event="49th Bosna Open 2019" AND site="Sarajevo BIH" AND date="2019.04.29" AND wp_elo=2331 AND bp_elo=2104);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "r1br4/pp1nkp1p/4pp2/2P5/8/4KN2/PPP2PPP/R4B1R w - - 5 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Nxf6+ Bxf6 7. Bxf6 Qxf6 8. Qd2 O-O 9. O-O-O Rd8 10. Nf3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3562,7 +3562,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "w", "rnb2rk1/ppp2ppp/4pq2/8/3P4/8/PPPQ1PPP/R3KBNR w KQ - 2 9"),
 (@game_id, 9, "b", "rnb2rk1/ppp2ppp/4pq2/8/3P4/8/PPPQ1PPP/2KR1BNR b - - 3 9"),
 (@game_id, 10, "w", "rnbr2k1/ppp2ppp/4pq2/8/3P4/8/PPPQ1PPP/2KR1BNR w - - 4 10"),
-(@game_id, 10, "b", "rnbr2k1/ppp2ppp/4pq2/8/3P4/5N2/PPPQ1PPP/2KR1B1R b - - 5 10");SET @game_id = (SELECT gid FROM Games WHERE event="13th Leiden Crown Group" AND site="Leiden NED" AND date="2019.07.15" AND wp_elo=2435 AND bp_elo=2439);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "b", "rnbr2k1/ppp2ppp/4pq2/8/3P4/5N2/PPPQ1PPP/2KR1B1R b - - 5 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Nxf6+ Bxf6 7. Bxf6 Qxf6 8. Nf3 c5 9. Qd3 Nc6 10. O-O-O cxd4 11. Qe4 Bd7 12. Nxd4 Nxd4 13. Rxd4 Bc6 14. Qe3 O-O 15. f3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3591,7 +3591,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 14, "w", "r3k2r/pp3ppp/2b1pq2/8/3RQ3/8/PPP2PPP/2K2B1R w kq - 1 14"),
 (@game_id, 14, "b", "r3k2r/pp3ppp/2b1pq2/8/3R4/4Q3/PPP2PPP/2K2B1R b kq - 2 14"),
 (@game_id, 15, "w", "r4rk1/pp3ppp/2b1pq2/8/3R4/4Q3/PPP2PPP/2K2B1R w - - 3 15"),
-(@game_id, 15, "b", "r4rk1/pp3ppp/2b1pq2/8/3R4/4QP2/PPP3PP/2K2B1R b - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE event="5th Manojlovica Mem 2019" AND site="Valjevo SRB" AND date="2019.08.11" AND wp_elo=2430 AND bp_elo=2483);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "r4rk1/pp3ppp/2b1pq2/8/3R4/4QP2/PPP3PP/2K2B1R b - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Bd3 h6 7. Nxf6+ Nxf6 8. Bh4 c5 9. dxc5 Bxc5 10. Nf3 O-O 11. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3611,7 +3611,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 9, "b", "r1bqkb1r/pp3pp1/4pn1p/2P5/7B/3B4/PPP2PPP/R2QK1NR b KQkq - 0 9"),
 (@game_id, 10, "w", "r1bqk2r/pp3pp1/4pn1p/2b5/7B/3B4/PPP2PPP/R2QK1NR w KQkq - 0 10"),
 (@game_id, 10, "b", "r1bqk2r/pp3pp1/4pn1p/2b5/7B/3B1N2/PPP2PPP/R2QK2R b KQkq - 1 10"),
-(@game_id, 11, "w", "r1bq1rk1/pp3pp1/4pn1p/2b5/7B/3B1N2/PPP2PPP/R2QK2R w KQ - 2 11");SET @game_id = (SELECT gid FROM Games WHERE event="Serbian League 2019" AND site="Subotica SRB" AND date="2019.08.29" AND wp_elo=2581 AND bp_elo=2475);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "w", "r1bq1rk1/pp3pp1/4pn1p/2b5/7B/3B1N2/PPP2PPP/R2QK2R w KQ - 2 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Be3 Bd6 9. Bd3 O-O 10. Qe2 b6 11. Rg1 Bb7 12. O-O-O Nd5 13. Kb1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3636,7 +3636,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "w", "r2q1rk1/pbp2pp1/1p1bpn1p/8/3P4/3BBN2/PPP1QPPP/R3K1R1 w Q - 2 12"),
 (@game_id, 12, "b", "r2q1rk1/pbp2pp1/1p1bpn1p/8/3P4/3BBN2/PPP1QPPP/2KR2R1 b - - 3 12"),
 (@game_id, 13, "w", "r2q1rk1/pbp2pp1/1p1bp2p/3n4/3P4/3BBN2/PPP1QPPP/2KR2R1 w - - 4 13"),
-(@game_id, 13, "b", "r2q1rk1/pbp2pp1/1p1bp2p/3n4/3P4/3BBN2/PPP1QPPP/1K1R2R1 b - - 5 13");SET @game_id = (SELECT gid FROM Games WHERE event="Petah Tikva Autumn 1 2019" AND site="Petah Tikva ISR" AND date="2019.11.03" AND wp_elo=2203 AND bp_elo=2454);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r2q1rk1/pbp2pp1/1p1bp2p/3n4/3P4/3BBN2/PPP1QPPP/1K1R2R1 b - - 5 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 b6 8. Bd3 Bb7 9. Qe2 Nd7 10. O-O-O c6 11. Kb1 Qc7 12. Rhe1 O-O-O 13. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3660,7 +3660,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 11, "b", "r2qk2r/pb1nbp1p/1pp1pp2/8/3PN3/3B1N2/PPP1QPPP/1K1R3R b kq - 1 11"),
 (@game_id, 12, "w", "r3k2r/pbqnbp1p/1pp1pp2/8/3PN3/3B1N2/PPP1QPPP/1K1R3R w kq - 2 12"),
 (@game_id, 12, "b", "r3k2r/pbqnbp1p/1pp1pp2/8/3PN3/3B1N2/PPP1QPPP/1K1RR3 b kq - 3 12"),
-(@game_id, 13, "w", "2kr3r/pbqnbp1p/1pp1pp2/8/3PN3/3B1N2/PPP1QPPP/1K1RR3 w - - 4 13");SET @game_id = (SELECT gid FROM Games WHERE event="Pavlodar Open 2019" AND site="Pavlodar KAZ" AND date="2019.11.25" AND wp_elo=2504 AND bp_elo=2613);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "2kr3r/pbqnbp1p/1pp1pp2/8/3PN3/3B1N2/PPP1QPPP/1K1RR3 w - - 4 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Bxf6 Qxf6 9. Bd3 Bd6 10. Qe2 Bd7 11. O-O O-O-O 12. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3682,7 +3682,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 10, "b", "r1b1k2r/ppp2pp1/3bpq1p/8/3P4/3B1N2/PPP1QPPP/R3K2R b KQkq - 3 10"),
 (@game_id, 11, "w", "r3k2r/pppb1pp1/3bpq1p/8/3P4/3B1N2/PPP1QPPP/R3K2R w KQkq - 4 11"),
 (@game_id, 11, "b", "r3k2r/pppb1pp1/3bpq1p/8/3P4/3B1N2/PPP1QPPP/R4RK1 b kq - 5 11"),
-(@game_id, 12, "w", "2kr3r/pppb1pp1/3bpq1p/8/3P4/3B1N2/PPP1QPPP/R4RK1 w - - 6 12");SET @game_id = (SELECT gid FROM Games WHERE event="Titled Tuesday 16th June" AND site="chess.com INT" AND date="2020.06.16" AND wp_elo=2464 AND bp_elo=2278);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "w", "2kr3r/pppb1pp1/3bpq1p/8/3P4/3B1N2/PPP1QPPP/R4RK1 w - - 6 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nc3 d5 3. Bg5 e6 4. e4 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nf3 O-O 8. Nxf6+ Qxf6 9. Bd3 Nc6 10. O-O h6 11. Re1 b6 12. Be4 Bb7 13. Ne5 Nxe5 14. dxe5 1-0");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 2 2"),
@@ -3709,7 +3709,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "w", "r4rk1/pbp2pp1/1pn1pq1p/8/3PB3/5N2/PPP2PPP/R2QR1K1 w - - 2 13"),
 (@game_id, 13, "b", "r4rk1/pbp2pp1/1pn1pq1p/4N3/3PB3/8/PPP2PPP/R2QR1K1 b - - 3 13"),
 (@game_id, 14, "w", "r4rk1/pbp2pp1/1p2pq1p/4n3/3PB3/8/PPP2PPP/R2QR1K1 w - - 0 14"),
-(@game_id, 14, "b", "r4rk1/pbp2pp1/1p2pq1p/4P3/4B3/8/PPP2PPP/R2QR1K1 b - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE event="Speed Chess Super Swiss" AND site="chess.com INT" AND date="2020.10.03" AND wp_elo=2460 AND bp_elo=2545);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "r4rk1/pbp2pp1/1p2pq1p/4P3/4B3/8/PPP2PPP/R2QR1K1 b - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Bxf6 Nxf6 8. Bd3 Be7 9. Qe2 Nd5 10. g3 c5 11. dxc5 Bxc5 12. Bb5+ 1-0");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3732,7 +3732,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 11, "w", "r1bqk2r/pp2bpp1/4p2p/2pn4/3PN3/3B1NP1/PPP1QP1P/R3K2R w KQkq - 0 11"),
 (@game_id, 11, "b", "r1bqk2r/pp2bpp1/4p2p/2Pn4/4N3/3B1NP1/PPP1QP1P/R3K2R b KQkq - 0 11"),
 (@game_id, 12, "w", "r1bqk2r/pp3pp1/4p2p/2bn4/4N3/3B1NP1/PPP1QP1P/R3K2R w KQkq - 0 12"),
-(@game_id, 12, "b", "r1bqk2r/pp3pp1/4p2p/1Bbn4/4N3/5NP1/PPP1QP1P/R3K2R b KQkq - 1 12");SET @game_id = (SELECT gid FROM Games WHERE event="Titled Tuesday 2nd Mar" AND site="chess.com INT" AND date="2021.03.02" AND wp_elo=2274 AND bp_elo=2124);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "b", "r1bqk2r/pp3pp1/4p2p/1Bbn4/4N3/5NP1/PPP1QP1P/R3K2R b KQkq - 1 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Bg5 e6 3. e4 d5 4. Nc3 dxe4 5. Nxe4 Be7 6. Bxf6 Bf8 7. Bxd8 Be7 8. Bxe7 Kxe7 9. 1-0");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/6B1/3P4/8/PPP1PPPP/RN1QKBNR b KQkq - 2 2"),
@@ -3748,7 +3748,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 7, "b", "rnbBkb1r/ppp2ppp/4p3/8/3PN3/8/PPP2PPP/R2QKBNR b KQkq - 0 7"),
 (@game_id, 8, "w", "rnbBk2r/ppp1bppp/4p3/8/3PN3/8/PPP2PPP/R2QKBNR w KQkq - 1 8"),
 (@game_id, 8, "b", "rnb1k2r/ppp1Bppp/4p3/8/3PN3/8/PPP2PPP/R2QKBNR b KQkq - 0 8"),
-(@game_id, 9, "w", "rnb4r/ppp1kppp/4p3/8/3PN3/8/PPP2PPP/R2QKBNR w KQ - 0 9");SET @game_id = (SELECT gid FROM Games WHERE event="Titled Tuesday 1st June" AND site="chess.com INT" AND date="2021.06.01" AND wp_elo=2215 AND bp_elo=2317);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 9, "w", "rnb4r/ppp1kppp/4p3/8/3PN3/8/PPP2PPP/R2QKBNR w KQ - 0 9");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 f5 8. Ned2 c5 9. Bb5+ Nc6 10. dxc5 Bxc5 11. Nb3 Qxd1+ 12. Rxd1 Bb6 13. Ne5 a6 14. Ba4 Bd7 15. Nxd7 1-0");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3777,7 +3777,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 14, "w", "r1b1k2r/1p3p1p/pbn1p3/1B2Np2/8/1N6/PPP2PPP/3RK2R w Kkq - 0 14"),
 (@game_id, 14, "b", "r1b1k2r/1p3p1p/pbn1p3/4Np2/B7/1N6/PPP2PPP/3RK2R b Kkq - 1 14"),
 (@game_id, 15, "w", "r3k2r/1p1b1p1p/pbn1p3/4Np2/B7/1N6/PPP2PPP/3RK2R w Kkq - 2 15"),
-(@game_id, 15, "b", "r3k2r/1p1N1p1p/pbn1p3/5p2/B7/1N6/PPP2PPP/3RK2R b Kkq - 0 15");SET @game_id = (SELECT gid FROM Games WHERE event="Jana Maciei Mem 2021" AND site="Warsaw POL" AND date="2021.07.09" AND wp_elo=2373 AND bp_elo=1709);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "r3k2r/1p1N1p1p/pbn1p3/5p2/B7/1N6/PPP2PPP/3RK2R b Kkq - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 f5 8. Ned2 c5 9. Bb5+ Bd7 10. Qe2 Bxb5 11. Qxb5+ Qd7 12. Qxd7+ Nxd7 13. O-O-O 1-0");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3802,7 +3802,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 12, "w", "rn2k2r/pp1qbp1p/4p3/1Qp2p2/3P4/5N2/PPPN1PPP/R3K2R w KQkq - 1 12"),
 (@game_id, 12, "b", "rn2k2r/pp1Qbp1p/4p3/2p2p2/3P4/5N2/PPPN1PPP/R3K2R b KQkq - 0 12"),
 (@game_id, 13, "w", "r3k2r/pp1nbp1p/4p3/2p2p2/3P4/5N2/PPPN1PPP/R3K2R w KQkq - 0 13"),
-(@game_id, 13, "b", "r3k2r/pp1nbp1p/4p3/2p2p2/3P4/5N2/PPPN1PPP/2KR3R b kq - 1 13");SET @game_id = (SELECT gid FROM Games WHERE event="Akva Gold 3 IM 2021" AND site="Arandjelovac SRB" AND date="2021.08.01" AND wp_elo=2232 AND bp_elo=2247);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r3k2r/pp1nbp1p/4p3/2p2p2/3P4/5N2/PPPN1PPP/2KR3R b kq - 1 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. Nc3 d5 2. d4 Nf6 3. Bg5 e6 4. e4 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 b6 8. Bb5+ c6 9. Bd3 Bb7 10. Qe2 Qc7 11. O-O-O Nd7 12. Kb1 O-O-O 13. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/8/2N5/PPPPPPPP/R1BQKBNR b KQkq - 1 1"),
 (@game_id, 2, "w", "rnbqkbnr/ppp1pppp/8/3p4/8/2N5/PPPPPPPP/R1BQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/ppp1pppp/8/3p4/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 0 2"),
@@ -3826,7 +3826,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 11, "b", "rn2k2r/pbq1bp1p/1pp1pp2/8/3PN3/3B1N2/PPP1QPPP/2KR3R b kq - 5 11"),
 (@game_id, 12, "w", "r3k2r/pbqnbp1p/1pp1pp2/8/3PN3/3B1N2/PPP1QPPP/2KR3R w kq - 6 12"),
 (@game_id, 12, "b", "r3k2r/pbqnbp1p/1pp1pp2/8/3PN3/3B1N2/PPP1QPPP/1K1R3R b kq - 7 12"),
-(@game_id, 13, "w", "2kr3r/pbqnbp1p/1pp1pp2/8/3PN3/3B1N2/PPP1QPPP/1K1R3R w - - 8 13");SET @game_id = (SELECT gid FROM Games WHERE event="Kerkinitida Rapid 2021" AND site="Yevpatoria UKR" AND date="2021.10.29" AND wp_elo=2554 AND bp_elo=2570);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "2kr3r/pbqnbp1p/1pp1pp2/8/3PN3/3B1N2/PPP1QPPP/1K1R3R w - - 8 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nf3 h6 7. Nxf6+ Nxf6 8. Be3 Bd6 9. Bd3 b6 10. Ne5 Bb7 11. Bb5+ Kf8 12. O-O c5 13. c4 Qc7 14. f4 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3853,7 +3853,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 13, "w", "r2q1k1r/pb3pp1/1p1bpn1p/1Bp1N3/3P4/4B3/PPP2PPP/R2Q1RK1 w - - 0 13"),
 (@game_id, 13, "b", "r2q1k1r/pb3pp1/1p1bpn1p/1Bp1N3/2PP4/4B3/PP3PPP/R2Q1RK1 b - - 0 13"),
 (@game_id, 14, "w", "r4k1r/pbq2pp1/1p1bpn1p/1Bp1N3/2PP4/4B3/PP3PPP/R2Q1RK1 w - - 1 14"),
-(@game_id, 14, "b", "r4k1r/pbq2pp1/1p1bpn1p/1Bp1N3/2PP1P2/4B3/PP4PP/R2Q1RK1 b - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE event="ASK Mix 2 2021" AND site="Arandjelovac SRB" AND date="2021.11.10" AND wp_elo=2478 AND bp_elo=2440);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "r4k1r/pbq2pp1/1p1bpn1p/1Bp1N3/2PP1P2/4B3/PP4PP/R2Q1RK1 b - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 Bxf6 7. Nxf6+ Qxf6 8. Bd3 Nc6 9. c3 Bd7 10. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -3871,7 +3871,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="ch-AUS" AND site="Mingara NSW
 (@game_id, 8, "b", "rnb1k2r/ppp2ppp/4pq2/8/3P4/3B4/PPP2PPP/R2QK1NR b KQkq - 1 8"),
 (@game_id, 9, "w", "r1b1k2r/ppp2ppp/2n1pq2/8/3P4/3B4/PPP2PPP/R2QK1NR w KQkq - 2 9"),
 (@game_id, 9, "b", "r1b1k2r/ppp2ppp/2n1pq2/8/3P4/2PB4/PP3PPP/R2QK1NR b KQkq - 0 9"),
-(@game_id, 10, "w", "r3k2r/pppb1ppp/2n1pq2/8/3P4/2PB4/PP3PPP/R2QK1NR w KQkq - 1 10");SET @game_id = (SELECT gid FROM Games WHERE event="ASK Mix 2 2021" AND site="Arandjelovac SRB" AND date="2021.11.15" AND wp_elo=2339 AND bp_elo=2440);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "w", "r3k2r/pppb1ppp/2n1pq2/8/3P4/2PB4/PP3PPP/R2QK1NR w KQkq - 1 10");SET @game_id = (SELECT gid FROM Games WHERE game="");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2"),

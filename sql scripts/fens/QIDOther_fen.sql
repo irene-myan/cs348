@@ -1,4 +1,4 @@
-SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" AND site="Santa Clara CUB" AND date="2000.06.09" AND wp_elo=2408 AND bp_elo=2413);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. Bg5 Bb4+ 5. Nbd2 h6 6. Bxf6 Qxf6 7. g3 Bb7 8. Bg2 O-O 9. O-O Bxd2 10. Qxd2 d6 11. Rfc1 c5 12. b4 Rd8 13. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -22,7 +22,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 11, "b", "rn3rk1/pbp2pp1/1p1ppq1p/8/2PP4/5NP1/PP1QPPBP/R1R3K1 b - - 1 11"),
 (@game_id, 12, "w", "rn3rk1/pb3pp1/1p1ppq1p/2p5/2PP4/5NP1/PP1QPPBP/R1R3K1 w - - 0 12"),
 (@game_id, 12, "b", "rn3rk1/pb3pp1/1p1ppq1p/2p5/1PPP4/5NP1/P2QPPBP/R1R3K1 b - - 0 12"),
-(@game_id, 13, "w", "rn1r2k1/pb3pp1/1p1ppq1p/2p5/1PPP4/5NP1/P2QPPBP/R1R3K1 w - - 1 13");SET @game_id = (SELECT gid FROM Games WHERE event="ch-Serbia" AND site="Leskovac YUG" AND date="2002.02.20" AND wp_elo=2456 AND bp_elo=2469);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "rn1r2k1/pb3pp1/1p1ppq1p/2p5/1PPP4/5NP1/P2QPPBP/R1R3K1 w - - 1 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. Bf4 Bb7 5. e3 Be7 6. Nc3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -33,7 +33,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 5, "w", "rn1qkb1r/pbpp1ppp/1p2pn2/8/2PP1B2/5N2/PP2PPPP/RN1QKB1R w KQkq - 2 5"),
 (@game_id, 5, "b", "rn1qkb1r/pbpp1ppp/1p2pn2/8/2PP1B2/4PN2/PP3PPP/RN1QKB1R b KQkq - 0 5"),
 (@game_id, 6, "w", "rn1qk2r/pbppbppp/1p2pn2/8/2PP1B2/4PN2/PP3PPP/RN1QKB1R w KQkq - 1 6"),
-(@game_id, 6, "b", "rn1qk2r/pbppbppp/1p2pn2/8/2PP1B2/2N1PN2/PP3PPP/R2QKB1R b KQkq - 2 6");SET @game_id = (SELECT gid FROM Games WHERE event="10th WDB Easter Open" AND site="Essen GER" AND date="2004.04.10" AND wp_elo=2335 AND bp_elo=2299);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 6, "b", "rn1qk2r/pbppbppp/1p2pn2/8/2PP1B2/2N1PN2/PP3PPP/R2QKB1R b KQkq - 2 6");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 e6 2. c4 Nf6 3. Nf3 b6 4. Bf4 Bb7 5. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -41,7 +41,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 3, "b", "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/5N2/PP2PPPP/RNBQKB1R b KQkq - 2 3"),
 (@game_id, 4, "w", "rnbqkb1r/p1pp1ppp/1p2pn2/8/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq - 0 4"),
 (@game_id, 4, "b", "rnbqkb1r/p1pp1ppp/1p2pn2/8/2PP1B2/5N2/PP2PPPP/RN1QKB1R b KQkq - 1 4"),
-(@game_id, 5, "w", "rn1qkb1r/pbpp1ppp/1p2pn2/8/2PP1B2/5N2/PP2PPPP/RN1QKB1R w KQkq - 2 5");SET @game_id = (SELECT gid FROM Games WHERE event="FSGM September" AND site="Budapest HUN" AND date="2004.09.10" AND wp_elo=2448 AND bp_elo=2351);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 5, "w", "rn1qkb1r/pbpp1ppp/1p2pn2/8/2PP1B2/5N2/PP2PPPP/RN1QKB1R w KQkq - 2 5");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Bf4 Bb7 5. e3 Be7 6. h3 O-O 7. Nc3 d5 8. cxd5 Nxd5 9. Nxd5 Qxd5 10. a3 c5 11. dxc5 Bxc5 12. Qxd5 Bxd5 13. Bd3 Nd7 14. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -67,7 +67,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 12, "b", "rn3rk1/pb3ppp/1p2p3/2bQ4/5B2/P3PN1P/1P3PP1/R3KB1R b KQ - 0 12"),
 (@game_id, 13, "w", "rn3rk1/p4ppp/1p2p3/2bb4/5B2/P3PN1P/1P3PP1/R3KB1R w KQ - 0 13"),
 (@game_id, 13, "b", "rn3rk1/p4ppp/1p2p3/2bb4/5B2/P2BPN1P/1P3PP1/R3K2R b KQ - 1 13"),
-(@game_id, 14, "w", "r4rk1/p2n1ppp/1p2p3/2bb4/5B2/P2BPN1P/1P3PP1/R3K2R w KQ - 2 14");SET @game_id = (SELECT gid FROM Games WHERE event="Monarch Assurance" AND site="Port Erin IOM" AND date="2004.10.01" AND wp_elo=2427 AND bp_elo=2555);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "w", "r4rk1/p2n1ppp/1p2p3/2bb4/5B2/P2BPN1P/1P3PP1/R3K2R w KQ - 2 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Bg5 Bb7 5. Nc3 Be7 6. Qc2 c5 7. dxc5 bxc5 8. e3 d6 9. Rd1 Nbd7 10. Be2 O-O 11. O-O a6 12. Rd2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -90,7 +90,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 11, "w", "r2q1rk1/pb1nbppp/3ppn2/2p3B1/2P5/2N1PN2/PPQ1BPPP/3RK2R w K - 4 11"),
 (@game_id, 11, "b", "r2q1rk1/pb1nbppp/3ppn2/2p3B1/2P5/2N1PN2/PPQ1BPPP/3R1RK1 b - - 5 11"),
 (@game_id, 12, "w", "r2q1rk1/1b1nbppp/p2ppn2/2p3B1/2P5/2N1PN2/PPQ1BPPP/3R1RK1 w - - 0 12"),
-(@game_id, 12, "b", "r2q1rk1/1b1nbppp/p2ppn2/2p3B1/2P5/2N1PN2/PPQRBPPP/5RK1 b - - 1 12");SET @game_id = (SELECT gid FROM Games WHERE event="36th Olympiad" AND site="Calvia ESP" AND date="2004.10.28" AND wp_elo=2599 AND bp_elo=2652);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "b", "r2q1rk1/1b1nbppp/p2ppn2/2p3B1/2P5/2N1PN2/PPQRBPPP/5RK1 b - - 1 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Bg5 Bb7 5. Nc3 h6 6. Bh4 Be7 7. e3 Ne4 8. Nxe4 Bxe4 9. Bg3 O-O 10. Nd2 Bb7 11. Bd3 c5 12. dxc5 bxc5 13. O-O Qb6 14. Qc2 Nc6 15. a3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -119,7 +119,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 14, "w", "rn3rk1/pb1pbpp1/1q2p2p/2p5/2P5/3BP1B1/PP1N1PPP/R2Q1RK1 w - - 2 14"),
 (@game_id, 14, "b", "rn3rk1/pb1pbpp1/1q2p2p/2p5/2P5/3BP1B1/PPQN1PPP/R4RK1 b - - 3 14"),
 (@game_id, 15, "w", "r4rk1/pb1pbpp1/1qn1p2p/2p5/2P5/3BP1B1/PPQN1PPP/R4RK1 w - - 4 15"),
-(@game_id, 15, "b", "r4rk1/pb1pbpp1/1qn1p2p/2p5/2P5/P2BP1B1/1PQN1PPP/R4RK1 b - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE event="37th Olympiad w" AND site="Turin ITA" AND date="2006.05.31" AND wp_elo=2281 AND bp_elo=2334);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "r4rk1/pb1pbpp1/1qn1p2p/2p5/2P5/P2BP1B1/1PQN1PPP/R4RK1 b - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Bf4 Bb7 5. e3 Be7 6. Bd3 O-O 7. h3 d5 8. O-O 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -134,7 +134,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 7, "w", "rn1q1rk1/pbppbppp/1p2pn2/8/2PP1B2/3BPN2/PP3PPP/RN1QK2R w KQ - 3 7"),
 (@game_id, 7, "b", "rn1q1rk1/pbppbppp/1p2pn2/8/2PP1B2/3BPN1P/PP3PP1/RN1QK2R b KQ - 0 7"),
 (@game_id, 8, "w", "rn1q1rk1/pbp1bppp/1p2pn2/3p4/2PP1B2/3BPN1P/PP3PP1/RN1QK2R w KQ - 0 8"),
-(@game_id, 8, "b", "rn1q1rk1/pbp1bppp/1p2pn2/3p4/2PP1B2/3BPN1P/PP3PP1/RN1Q1RK1 b - - 1 8");SET @game_id = (SELECT gid FROM Games WHERE event="ch-NED" AND site="Hilversum NED" AND date="2006.06.22" AND wp_elo=2676 AND bp_elo=2669);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 8, "b", "rn1q1rk1/pbp1bppp/1p2pn2/3p4/2PP1B2/3BPN1P/PP3PP1/RN1Q1RK1 b - - 1 8");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Bf4 Bb7 5. e3 Bb4+ 6. Nbd2 Be7 7. Bd3 c5 8. O-O O-O 9. Qc2 Nc6 10. a3 h6 11. dxc5 bxc5 12. Ne4 Nxe4 13. Bxe4 d6 14. Rfd1 f5 15. Bxc6 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -163,7 +163,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 14, "w", "r2q1rk1/pb2bpp1/2npp2p/2p5/2P1BB2/P3PN2/1PQ2PPP/R4RK1 w - - 0 14"),
 (@game_id, 14, "b", "r2q1rk1/pb2bpp1/2npp2p/2p5/2P1BB2/P3PN2/1PQ2PPP/R2R2K1 b - - 1 14"),
 (@game_id, 15, "w", "r2q1rk1/pb2b1p1/2npp2p/2p2p2/2P1BB2/P3PN2/1PQ2PPP/R2R2K1 w - - 0 15"),
-(@game_id, 15, "b", "r2q1rk1/pb2b1p1/2Bpp2p/2p2p2/2P2B2/P3PN2/1PQ2PPP/R2R2K1 b - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE event="14th Chigorin Mem B" AND site="St-Petersburg RUS" AND date="2006.10.25" AND wp_elo=2174 AND bp_elo=2277);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "r2q1rk1/pb2b1p1/2Bpp2p/2p2p2/2P2B2/P3PN2/1PQ2PPP/R2R2K1 b - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Bg5 Bb7 5. Nc3 d5 6. e3 Nbd7 7. cxd5 exd5 8. Bd3 Be7 9. O-O O-O 10. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -181,7 +181,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 8, "b", "r2qkb1r/pbpn1ppp/1p3n2/3p2B1/3P4/2NBPN2/PP3PPP/R2QK2R b KQkq - 1 8"),
 (@game_id, 9, "w", "r2qk2r/pbpnbppp/1p3n2/3p2B1/3P4/2NBPN2/PP3PPP/R2QK2R w KQkq - 2 9"),
 (@game_id, 9, "b", "r2qk2r/pbpnbppp/1p3n2/3p2B1/3P4/2NBPN2/PP3PPP/R2Q1RK1 b kq - 3 9"),
-(@game_id, 10, "w", "r2q1rk1/pbpnbppp/1p3n2/3p2B1/3P4/2NBPN2/PP3PPP/R2Q1RK1 w - - 4 10");SET @game_id = (SELECT gid FROM Games WHERE event="WJun" AND site="Yerevan ARM" AND date="2007.10.12" AND wp_elo=2434 AND bp_elo=2567);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "w", "r2q1rk1/pbpnbppp/1p3n2/3p2B1/3P4/2NBPN2/PP3PPP/R2Q1RK1 w - - 4 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Bg5 Bb7 5. Nc3 Bb4 6. Nd2 h6 7. Bh4 Be7 8. e4 O-O 9. Bg3 d6 10. Be2 Nc6 11. Nf3 d5 12. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -203,7 +203,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 10, "b", "rn1q1rk1/pbp1bpp1/1p1ppn1p/8/2PPP3/2N3B1/PP1NBPPP/R2QK2R b KQ - 1 10"),
 (@game_id, 11, "w", "r2q1rk1/pbp1bpp1/1pnppn1p/8/2PPP3/2N3B1/PP1NBPPP/R2QK2R w KQ - 2 11"),
 (@game_id, 11, "b", "r2q1rk1/pbp1bpp1/1pnppn1p/8/2PPP3/2N2NB1/PP2BPPP/R2QK2R b KQ - 3 11"),
-(@game_id, 12, "w", "r2q1rk1/pbp1bpp1/1pn1pn1p/3p4/2PPP3/2N2NB1/PP2BPPP/R2QK2R w KQ - 0 12");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-AUT 2nd Bundesliga Ost 2008-9" AND site="Austria AUT" AND date="2008.10.04" AND wp_elo=2506 AND bp_elo=2553);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "w", "r2q1rk1/pbp1bpp1/1pn1pn1p/3p4/2PPP3/2N2NB1/PP2BPPP/R2QK2R w KQ - 0 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Bf4 Bb7 5. e3 Be7 6. Nc3 Nh5 7. Bg3 d6 8. Bd3 Nd7 9. Qe2 h6 10. O-O O-O 11. Rac1 Re8 12. Rfd1 Nxg3 13. hxg3 Bf8 14. Bc2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -230,7 +230,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 13, "w", "r2qr1k1/pbpnbpp1/1p1pp2p/8/2PP4/2NBPNn1/PP2QPPP/2RR2K1 w - - 0 13"),
 (@game_id, 13, "b", "r2qr1k1/pbpnbpp1/1p1pp2p/8/2PP4/2NBPNP1/PP2QPP1/2RR2K1 b - - 0 13"),
 (@game_id, 14, "w", "r2qrbk1/pbpn1pp1/1p1pp2p/8/2PP4/2NBPNP1/PP2QPP1/2RR2K1 w - - 1 14"),
-(@game_id, 14, "b", "r2qrbk1/pbpn1pp1/1p1pp2p/8/2PP4/2N1PNP1/PPB1QPP1/2RR2K1 b - - 2 14");SET @game_id = (SELECT gid FROM Games WHERE event="Genset Cup" AND site="Szombathely HUN" AND date="2009.04.02" AND wp_elo=2369 AND bp_elo=2214);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "r2qrbk1/pbpn1pp1/1p1pp2p/8/2PP4/2N1PNP1/PPB1QPP1/2RR2K1 b - - 2 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Bf4 Bb7 5. e3 d5 6. Nc3 Bd6 7. Bg3 O-O 8. Rc1 Ne4 9. Qb3 c5 10. Bxd6 Qxd6 11. Nxe4 dxe4 12. dxc5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -253,7 +253,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 11, "w", "rn3rk1/pb3ppp/1p1qp3/2pp4/2PPn3/1QN1PN2/PP3PPP/2R1KB1R w K - 0 11"),
 (@game_id, 11, "b", "rn3rk1/pb3ppp/1p1qp3/2pp4/2PPN3/1Q2PN2/PP3PPP/2R1KB1R b K - 0 11"),
 (@game_id, 12, "w", "rn3rk1/pb3ppp/1p1qp3/2p5/2PPp3/1Q2PN2/PP3PPP/2R1KB1R w K - 0 12"),
-(@game_id, 12, "b", "rn3rk1/pb3ppp/1p1qp3/2P5/2P1p3/1Q2PN2/PP3PPP/2R1KB1R b K - 0 12");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-POL" AND site="Lublin POL" AND date="2009.09.20" AND wp_elo=2466 AND bp_elo=2527);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "b", "rn3rk1/pb3ppp/1p1qp3/2P5/2P1p3/1Q2PN2/PP3PPP/2R1KB1R b K - 0 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. Bf4 Bb7 5. e3 Bb4+ 6. Nfd2 O-O 7. a3 Be7 8. Nc3 d6 9. Bd3 e5 10. Bg3 exd4 11. exd4 d5 12. O-O dxc4 13. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -277,7 +277,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 11, "b", "rn1q1rk1/pbp1bppp/1p1p1n2/8/2PP4/P1NB2B1/1P1N1PPP/R2QK2R b KQ - 0 11"),
 (@game_id, 12, "w", "rn1q1rk1/pbp1bppp/1p3n2/3p4/2PP4/P1NB2B1/1P1N1PPP/R2QK2R w KQ - 0 12"),
 (@game_id, 12, "b", "rn1q1rk1/pbp1bppp/1p3n2/3p4/2PP4/P1NB2B1/1P1N1PPP/R2Q1RK1 b - - 1 12"),
-(@game_id, 13, "w", "rn1q1rk1/pbp1bppp/1p3n2/8/2pP4/P1NB2B1/1P1N1PPP/R2Q1RK1 w - - 0 13");SET @game_id = (SELECT gid FROM Games WHERE event="Politiken Cup" AND site="Helsingor DEN" AND date="2011.08.07" AND wp_elo=1756 AND bp_elo=1981);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "rn1q1rk1/pbp1bppp/1p3n2/8/2pP4/P1NB2B1/1P1N1PPP/R2Q1RK1 w - - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Bg5 h6 5. Bh4 Bb4+ 6. Nc3 Bb7 7. e3 O-O 8. Be2 d6 9. O-O Bxc3 10. bxc3 Nbd7 11. Nd2 Qe8 12. Bf3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -300,7 +300,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 11, "w", "r2q1rk1/pbpn1pp1/1p1ppn1p/8/2PP3B/2P1PN2/P3BPPP/R2Q1RK1 w - - 1 11"),
 (@game_id, 11, "b", "r2q1rk1/pbpn1pp1/1p1ppn1p/8/2PP3B/2P1P3/P2NBPPP/R2Q1RK1 b - - 2 11"),
 (@game_id, 12, "w", "r3qrk1/pbpn1pp1/1p1ppn1p/8/2PP3B/2P1P3/P2NBPPP/R2Q1RK1 w - - 3 12"),
-(@game_id, 12, "b", "r3qrk1/pbpn1pp1/1p1ppn1p/8/2PP3B/2P1PB2/P2N1PPP/R2Q1RK1 b - - 4 12");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-Central Serbia 2011" AND site="Kraljevo SRB" AND date="2011.09.24" AND wp_elo=2396 AND bp_elo=2303);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "b", "r3qrk1/pbpn1pp1/1p1ppn1p/8/2PP3B/2P1PB2/P2N1PPP/R2Q1RK1 b - - 4 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. Bg5 Bb7 5. Nc3 Bb4 6. Nd2 Bxc3 7. bxc3 O-O 8. e4 h6 9. Bh4 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -317,7 +317,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 8, "w", "rn1q1rk1/pbpp1ppp/1p2pn2/6B1/2PP4/2P5/P2NPPPP/R2QKB1R w KQ - 1 8"),
 (@game_id, 8, "b", "rn1q1rk1/pbpp1ppp/1p2pn2/6B1/2PPP3/2P5/P2N1PPP/R2QKB1R b KQ - 0 8"),
 (@game_id, 9, "w", "rn1q1rk1/pbpp1pp1/1p2pn1p/6B1/2PPP3/2P5/P2N1PPP/R2QKB1R w KQ - 0 9"),
-(@game_id, 9, "b", "rn1q1rk1/pbpp1pp1/1p2pn1p/8/2PPP2B/2P5/P2N1PPP/R2QKB1R b KQ - 1 9");SET @game_id = (SELECT gid FROM Games WHERE event="Vietnam National Masters Women 2012" AND site="Ho Chi Minh City VIE" AND date="2012.12.04" AND wp_elo=1991 AND bp_elo=1944);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 9, "b", "rn1q1rk1/pbpp1pp1/1p2pn1p/8/2PPP2B/2P5/P2N1PPP/R2QKB1R b KQ - 1 9");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Bf4 Bb7 5. e3 Bb4+ 6. Nc3 Bxc3+ 7. bxc3 O-O 8. Bd3 d6 9. O-O Nbd7 10. h3 h6 11. Re1 Qe7 12. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -339,7 +339,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 10, "b", "r2q1rk1/pbpn1ppp/1p1ppn2/8/2PP1B2/2PBPN1P/P4PP1/R2Q1RK1 b - - 0 10"),
 (@game_id, 11, "w", "r2q1rk1/pbpn1pp1/1p1ppn1p/8/2PP1B2/2PBPN1P/P4PP1/R2Q1RK1 w - - 0 11"),
 (@game_id, 11, "b", "r2q1rk1/pbpn1pp1/1p1ppn1p/8/2PP1B2/2PBPN1P/P4PP1/R2QR1K1 b - - 1 11"),
-(@game_id, 12, "w", "r4rk1/pbpnqpp1/1p1ppn1p/8/2PP1B2/2PBPN1P/P4PP1/R2QR1K1 w - - 2 12");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-ROU Superliga 2015" AND site="Mamaia ROU" AND date="2015.10.11" AND wp_elo=2322 AND bp_elo=2424);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "w", "r4rk1/pbpnqpp1/1p1ppn1p/8/2PP1B2/2PBPN1P/P4PP1/R2QR1K1 w - - 2 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. Nf3 Nf6 2. c4 e6 3. d4 b6 4. Bg5 Bb4+ 5. Nc3 Bb7 6. Rc1 h6 7. Bxf6 Qxf6 8. e3 O-O 9. Be2 d6 10. O-O Bxc3 11. Rxc3 Nd7 12. Nd2 Rfd8 13. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 2 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2P5/5N2/PP1PPPPP/RNBQKB1R b KQkq - 0 2"),
@@ -363,7 +363,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 11, "b", "rn3rk1/pbp2pp1/1p1ppq1p/8/2PP4/2R1PN2/PP2BPPP/3Q1RK1 b - - 0 11"),
 (@game_id, 12, "w", "r4rk1/pbpn1pp1/1p1ppq1p/8/2PP4/2R1PN2/PP2BPPP/3Q1RK1 w - - 1 12"),
 (@game_id, 12, "b", "r4rk1/pbpn1pp1/1p1ppq1p/8/2PP4/2R1P3/PP1NBPPP/3Q1RK1 b - - 2 12"),
-(@game_id, 13, "w", "r2r2k1/pbpn1pp1/1p1ppq1p/8/2PP4/2R1P3/PP1NBPPP/3Q1RK1 w - - 3 13");SET @game_id = (SELECT gid FROM Games WHERE event="16th Mediterranean Flower" AND site="Rijeka CRO" AND date="2016.03.11" AND wp_elo=2039 AND bp_elo=2276);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "r2r2k1/pbpn1pp1/1p1ppq1p/8/2PP4/2R1P3/PP1NBPPP/3Q1RK1 w - - 3 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. Bf4 Bb7 5. e3 Bb4+ 6. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -373,7 +373,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 4, "b", "rnbqkb1r/p1pp1ppp/1p2pn2/8/2PP1B2/5N2/PP2PPPP/RN1QKB1R b KQkq - 1 4"),
 (@game_id, 5, "w", "rn1qkb1r/pbpp1ppp/1p2pn2/8/2PP1B2/5N2/PP2PPPP/RN1QKB1R w KQkq - 2 5"),
 (@game_id, 5, "b", "rn1qkb1r/pbpp1ppp/1p2pn2/8/2PP1B2/4PN2/PP3PPP/RN1QKB1R b KQkq - 0 5"),
-(@game_id, 6, "w", "rn1qk2r/pbpp1ppp/1p2pn2/8/1bPP1B2/4PN2/PP3PPP/RN1QKB1R w KQkq - 1 6");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-CZE Extraliga 2015-16" AND site="Czech Republic CZE" AND date="2016.04.16" AND wp_elo=2430 AND bp_elo=2506);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 6, "w", "rn1qk2r/pbpp1ppp/1p2pn2/8/1bPP1B2/4PN2/PP3PPP/RN1QKB1R w KQkq - 1 6");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Bf4 Bb7 5. e3 Be7 6. Nc3 Nh5 7. Bd3 Nxf4 8. exf4 O-O 9. O-O g6 10. Re1 Bf6 11. Rc1 Bg7 12. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -395,7 +395,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 10, "b", "rn1q1rk1/pbppbp1p/1p2p1p1/8/2PP1P2/2NB1N2/PP3PPP/R2QR1K1 b - - 1 10"),
 (@game_id, 11, "w", "rn1q1rk1/pbpp1p1p/1p2pbp1/8/2PP1P2/2NB1N2/PP3PPP/R2QR1K1 w - - 2 11"),
 (@game_id, 11, "b", "rn1q1rk1/pbpp1p1p/1p2pbp1/8/2PP1P2/2NB1N2/PP3PPP/2RQR1K1 b - - 3 11"),
-(@game_id, 12, "w", "rn1q1rk1/pbpp1pbp/1p2p1p1/8/2PP1P2/2NB1N2/PP3PPP/2RQR1K1 w - - 4 12");SET @game_id = (SELECT gid FROM Games WHERE event="16th Amantea Open 2018" AND site="Amantea ITA" AND date="2018.09.11" AND wp_elo=2268 AND bp_elo=2429);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "w", "rn1q1rk1/pbpp1pbp/1p2p1p1/8/2PP1P2/2NB1N2/PP3PPP/2RQR1K1 w - - 4 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Bf4 Bb7 5. e3 Bb4+ 6. Nfd2 O-O 7. a3 Be7 8. Nc3 d5 9. cxd5 Nxd5 10. Nxd5 exd5 11. Bd3 c5 12. dxc5 bxc5 13. O-O Nd7 14. Qc2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -422,7 +422,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 13, "w", "rn1q1rk1/pb2bppp/8/2pp4/5B2/P2BP3/1P1N1PPP/R2QK2R w KQ - 0 13"),
 (@game_id, 13, "b", "rn1q1rk1/pb2bppp/8/2pp4/5B2/P2BP3/1P1N1PPP/R2Q1RK1 b - - 1 13"),
 (@game_id, 14, "w", "r2q1rk1/pb1nbppp/8/2pp4/5B2/P2BP3/1P1N1PPP/R2Q1RK1 w - - 2 14"),
-(@game_id, 14, "b", "r2q1rk1/pb1nbppp/8/2pp4/5B2/P2BP3/1PQN1PPP/R4RK1 b - - 3 14");SET @game_id = (SELECT gid FROM Games WHERE event="St Louis Inv GM 2019" AND site="Saint Louis USA" AND date="2019.11.23" AND wp_elo=2409 AND bp_elo=2533);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "r2q1rk1/pb1nbppp/8/2pp4/5B2/P2BP3/1PQN1PPP/R4RK1 b - - 3 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. Bf4 b6 4. c4 Bb7 5. e3 Be7 6. Nc3 Nh5 7. Bd3 d6 8. O-O Nd7 9. Re1 c5 10. h3 Nxf4 11. exf4 O-O 12. d5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -445,7 +445,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 11, "w", "r2qk2r/pb1nbppp/1p1pp3/2p5/2PP1n2/2NBPN1P/PP3PP1/R2QR1K1 w kq - 0 11"),
 (@game_id, 11, "b", "r2qk2r/pb1nbppp/1p1pp3/2p5/2PP1P2/2NB1N1P/PP3PP1/R2QR1K1 b kq - 0 11"),
 (@game_id, 12, "w", "r2q1rk1/pb1nbppp/1p1pp3/2p5/2PP1P2/2NB1N1P/PP3PP1/R2QR1K1 w - - 1 12"),
-(@game_id, 12, "b", "r2q1rk1/pb1nbppp/1p1pp3/2pP4/2P2P2/2NB1N1P/PP3PP1/R2QR1K1 b - - 0 12");SET @game_id = (SELECT gid FROM Games WHERE event="31st Carlos Torre Mem" AND site="Merida MEX" AND date="2019.12.15" AND wp_elo=2589 AND bp_elo=2463);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "b", "r2q1rk1/pb1nbppp/1p1pp3/2pP4/2P2P2/2NB1N1P/PP3PP1/R2QR1K1 b - - 0 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Bf4 Bb7 5. e3 Bb4+ 6. Nbd2 O-O 7. Be2 d6 8. O-O Bxd2 9. Nxd2 Nbd7 10. h3 e5 11. Bh2 a5 12. c5 dxc5 13. Rc1 Qe7 14. Bf3 e4 15. Bg4 0-1");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -474,7 +474,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 14, "w", "r4rk1/1bpnqppp/1p3n2/p1p1p3/3P4/4P2P/PP1NBPPB/2RQ1RK1 w - - 2 14"),
 (@game_id, 14, "b", "r4rk1/1bpnqppp/1p3n2/p1p1p3/3P4/4PB1P/PP1N1PPB/2RQ1RK1 b - - 3 14"),
 (@game_id, 15, "w", "r4rk1/1bpnqppp/1p3n2/p1p5/3Pp3/4PB1P/PP1N1PPB/2RQ1RK1 w - - 0 15"),
-(@game_id, 15, "b", "r4rk1/1bpnqppp/1p3n2/p1p5/3Pp1B1/4P2P/PP1N1PPB/2RQ1RK1 b - - 1 15");SET @game_id = (SELECT gid FROM Games WHERE event="10th Sharjah Women's Cup" AND site="Sharjah UAE" AND date="2020.01.08" AND wp_elo=2333 AND bp_elo=2446);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "r4rk1/1bpnqppp/1p3n2/p1p5/3Pp1B1/4P2P/PP1N1PPB/2RQ1RK1 b - - 1 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. Bf4 Bb7 5. e3 Bb4+ 6. Nfd2 O-O 7. a3 Be7 8. Nc3 d6 9. e4 Nfd7 10. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -492,7 +492,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 8, "b", "rn1q1rk1/pbppbppp/1p2pn2/8/2PP1B2/P1N1P3/1P1N1PPP/R2QKB1R b KQ - 2 8"),
 (@game_id, 9, "w", "rn1q1rk1/pbp1bppp/1p1ppn2/8/2PP1B2/P1N1P3/1P1N1PPP/R2QKB1R w KQ - 0 9"),
 (@game_id, 9, "b", "rn1q1rk1/pbp1bppp/1p1ppn2/8/2PPPB2/P1N5/1P1N1PPP/R2QKB1R b KQ - 0 9"),
-(@game_id, 10, "w", "rn1q1rk1/pbpnbppp/1p1pp3/8/2PPPB2/P1N5/1P1N1PPP/R2QKB1R w KQ - 1 10");SET @game_id = (SELECT gid FROM Games WHERE event="36th ChessOrg Open" AND site="Bad Woerishofen GER" AND date="2020.03.11" AND wp_elo=2534 AND bp_elo=2493);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "w", "rn1q1rk1/pbpnbppp/1p1pp3/8/2PPPB2/P1N5/1P1N1PPP/R2QKB1R w KQ - 1 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 e6 2. Nf3 Nf6 3. c4 b6 4. Bf4 Bb7 5. e3 Bb4+ 6. Nfd2 O-O 7. a3 Be7 8. Nc3 d5 9. cxd5 Nxd5 10. Nxd5 exd5 11. b4 c5 12. bxc5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 1 2"),
@@ -515,7 +515,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 11, "w", "rn1q1rk1/pbp1bppp/1p6/3p4/3P1B2/P3P3/1P1N1PPP/R2QKB1R w KQ - 0 11"),
 (@game_id, 11, "b", "rn1q1rk1/pbp1bppp/1p6/3p4/1P1P1B2/P3P3/3N1PPP/R2QKB1R b KQ - 0 11"),
 (@game_id, 12, "w", "rn1q1rk1/pb2bppp/1p6/2pp4/1P1P1B2/P3P3/3N1PPP/R2QKB1R w KQ - 0 12"),
-(@game_id, 12, "b", "rn1q1rk1/pb2bppp/1p6/2Pp4/3P1B2/P3P3/3N1PPP/R2QKB1R b KQ - 0 12");SET @game_id = (SELECT gid FROM Games WHERE event="Euro Online +2300 Day 2" AND site="chess.com INT" AND date="2020.05.30" AND wp_elo=2456 AND bp_elo=2277);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "b", "rn1q1rk1/pb2bppp/1p6/2Pp4/3P1B2/P3P3/3N1PPP/R2QKB1R b KQ - 0 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Bf4 Bb7 5. Nbd2 Be7 6. e3 O-O 7. h3 d6 8. Be2 c5 9. O-O cxd4 10. exd4 d5 11. Rc1 dxc4 12. Nxc4 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -538,7 +538,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 11, "w", "rn1q1rk1/pb2bppp/1p2pn2/3p4/2PP1B2/5N1P/PP1NBPP1/R2Q1RK1 w - - 0 11"),
 (@game_id, 11, "b", "rn1q1rk1/pb2bppp/1p2pn2/3p4/2PP1B2/5N1P/PP1NBPP1/2RQ1RK1 b - - 1 11"),
 (@game_id, 12, "w", "rn1q1rk1/pb2bppp/1p2pn2/8/2pP1B2/5N1P/PP1NBPP1/2RQ1RK1 w - - 0 12"),
-(@game_id, 12, "b", "rn1q1rk1/pb2bppp/1p2pn2/8/2NP1B2/5N1P/PP2BPP1/2RQ1RK1 b - - 0 12");SET @game_id = (SELECT gid FROM Games WHERE event="Women's Speed Chess Q4" AND site="chess.com INT" AND date="2020.06.21" AND wp_elo=2270 AND bp_elo=2353);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "b", "rn1q1rk1/pb2bppp/1p2pn2/8/2NP1B2/5N1P/PP2BPP1/2RQ1RK1 b - - 0 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Bf4 Bb7 5. e3 d6 6. Nc3 Nbd7 7. Be2 h6 8. Qc2 g5 9. Bg3 Bg7 10. O-O-O Nh5 11. d5 Nxg3 12. hxg3 Qf6 13. Nb5 Rc8 14. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -564,7 +564,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 12, "b", "r2qk2r/pbpn1pb1/1p1pp2p/3P2p1/2P5/2N1PNP1/PPQ1BPP1/2KR3R b kq - 0 12"),
 (@game_id, 13, "w", "r3k2r/pbpn1pb1/1p1ppq1p/3P2p1/2P5/2N1PNP1/PPQ1BPP1/2KR3R w kq - 1 13"),
 (@game_id, 13, "b", "r3k2r/pbpn1pb1/1p1ppq1p/1N1P2p1/2P5/4PNP1/PPQ1BPP1/2KR3R b kq - 2 13"),
-(@game_id, 14, "w", "2r1k2r/pbpn1pb1/1p1ppq1p/1N1P2p1/2P5/4PNP1/PPQ1BPP1/2KR3R w k - 3 14");SET @game_id = (SELECT gid FROM Games WHERE event="Titled Tue 25th Aug" AND site="chess.com INT" AND date="2020.08.25" AND wp_elo=2346 AND bp_elo=2356);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "w", "2r1k2r/pbpn1pb1/1p1ppq1p/1N1P2p1/2P5/4PNP1/PPQ1BPP1/2KR3R w k - 3 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. Bf4 Bb7 5. e3 Bb4+ 6. Nfd2 O-O 7. a3 Be7 8. Nc3 d5 9. cxd5 Nxd5 10. Nxd5 Bxd5 11. Qc2 c5 12. 0-1");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -586,7 +586,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 10, "b", "rn1q1rk1/pbp1bppp/1p2p3/3N4/3P1B2/P3P3/1P1N1PPP/R2QKB1R b KQ - 0 10"),
 (@game_id, 11, "w", "rn1q1rk1/p1p1bppp/1p2p3/3b4/3P1B2/P3P3/1P1N1PPP/R2QKB1R w KQ - 0 11"),
 (@game_id, 11, "b", "rn1q1rk1/p1p1bppp/1p2p3/3b4/3P1B2/P3P3/1PQN1PPP/R3KB1R b KQ - 1 11"),
-(@game_id, 12, "w", "rn1q1rk1/p3bppp/1p2p3/2pb4/3P1B2/P3P3/1PQN1PPP/R3KB1R w KQ - 0 12");SET @game_id = (SELECT gid FROM Games WHERE event="Titled Tuesday 3rd Nov" AND site="chess.com INT" AND date="2020.11.03" AND wp_elo=2431 AND bp_elo=2121);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "w", "rn1q1rk1/p3bppp/1p2p3/2pb4/3P1B2/P3P3/1PQN1PPP/R3KB1R w KQ - 0 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Bf4 Bb7 5. e3 Bb4+ 6. Nfd2 O-O 7. a3 d5 8. axb4 Nbd7 9. Nc3 c6 10. Bd3 Qe7 11. c5 bxc5 12. bxc5 a5 13. Bd6 1-0");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -611,7 +611,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 12, "w", "r4rk1/pb1nqppp/2p1pn2/2pp4/1P1P1B2/2NBP3/1P1N1PPP/R2QK2R w KQ - 0 12"),
 (@game_id, 12, "b", "r4rk1/pb1nqppp/2p1pn2/2Pp4/3P1B2/2NBP3/1P1N1PPP/R2QK2R b KQ - 0 12"),
 (@game_id, 13, "w", "r4rk1/1b1nqppp/2p1pn2/p1Pp4/3P1B2/2NBP3/1P1N1PPP/R2QK2R w KQ - 0 13"),
-(@game_id, 13, "b", "r4rk1/1b1nqppp/2pBpn2/p1Pp4/3P4/2NBP3/1P1N1PPP/R2QK2R b KQ - 1 13");SET @game_id = (SELECT gid FROM Games WHERE event="TCh-EUR Senior +65 2021" AND site="Prague CZE" AND date="2021.09.07" AND wp_elo=2352 AND bp_elo=2385);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r4rk1/1b1nqppp/2pBpn2/p1Pp4/3P4/2NBP3/1P1N1PPP/R2QK2R b KQ - 1 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. Bf4 Bb7 5. e3 c5 6. dxc5 Bxc5 7. Nc3 O-O 8. Bd3 Be7 9. O-O 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -628,7 +628,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 8, "w", "rn1q1rk1/pb1p1ppp/1p2pn2/2b5/2P2B2/2N1PN2/PP3PPP/R2QKB1R w KQ - 2 8"),
 (@game_id, 8, "b", "rn1q1rk1/pb1p1ppp/1p2pn2/2b5/2P2B2/2NBPN2/PP3PPP/R2QK2R b KQ - 3 8"),
 (@game_id, 9, "w", "rn1q1rk1/pb1pbppp/1p2pn2/8/2P2B2/2NBPN2/PP3PPP/R2QK2R w KQ - 4 9"),
-(@game_id, 9, "b", "rn1q1rk1/pb1pbppp/1p2pn2/8/2P2B2/2NBPN2/PP3PPP/R2Q1RK1 b - - 5 9");SET @game_id = (SELECT gid FROM Games WHERE event="Women's World Team Pool B" AND site="Sitges ESP" AND date="2021.09.29" AND wp_elo=2385 AND bp_elo=2489);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 9, "b", "rn1q1rk1/pb1pbppp/1p2pn2/8/2P2B2/2NBPN2/PP3PPP/R2Q1RK1 b - - 5 9");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Bf4 Bb7 5. e3 Bb4+ 6. Nfd2 O-O 7. a3 Be7 8. Nc3 d5 9. cxd5 Nxd5 10. Nxd5 Bxd5 11. Qc2 Bd6 12. Bg3 Nd7 13. Nc4 Nf6 14. Bd3 h6 15. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -656,7 +656,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 13, "b", "r2q1rk1/p1pn1ppp/1p1bp3/3b4/2NP4/P3P1B1/1PQ2PPP/R3KB1R b KQ - 5 13"),
 (@game_id, 14, "w", "r2q1rk1/p1p2ppp/1p1bpn2/3b4/2NP4/P3P1B1/1PQ2PPP/R3KB1R w KQ - 6 14"),
 (@game_id, 14, "b", "r2q1rk1/p1p2ppp/1p1bpn2/3b4/2NP4/P2BP1B1/1PQ2PPP/R3K2R b KQ - 7 14"),
-(@game_id, 15, "w", "r2q1rk1/p1p2pp1/1p1bpn1p/3b4/2NP4/P2BP1B1/1PQ2PPP/R3K2R w KQ - 0 15");SET @game_id = (SELECT gid FROM Games WHERE event="Scerbin D.S. Mem 2021" AND site="Yekaterinburg RUS" AND date="2021.12.18" AND wp_elo=2517 AND bp_elo=2503);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "w", "r2q1rk1/p1p2pp1/1p1bpn1p/3b4/2NP4/P2BP1B1/1PQ2PPP/R3K2R w KQ - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Bf4 Bb7 5. e3 Bb4+ 6. Nbd2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -667,7 +667,7 @@ SET @game_id = (SELECT gid FROM Games WHERE event="Guillermo Garcia Premier I" A
 (@game_id, 5, "w", "rn1qkb1r/pbpp1ppp/1p2pn2/8/2PP1B2/5N2/PP2PPPP/RN1QKB1R w KQkq - 2 5"),
 (@game_id, 5, "b", "rn1qkb1r/pbpp1ppp/1p2pn2/8/2PP1B2/4PN2/PP3PPP/RN1QKB1R b KQkq - 0 5"),
 (@game_id, 6, "w", "rn1qk2r/pbpp1ppp/1p2pn2/8/1bPP1B2/4PN2/PP3PPP/RN1QKB1R w KQkq - 1 6"),
-(@game_id, 6, "b", "rn1qk2r/pbpp1ppp/1p2pn2/8/1bPP1B2/4PN2/PP1N1PPP/R2QKB1R b KQkq - 2 6");SET @game_id = (SELECT gid FROM Games WHERE event="28th Klatovy Open 2022" AND site="Klatovy CZE" AND date="2022.07.10" AND wp_elo=2090 AND bp_elo=2134);INSERT INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 6, "b", "rn1qk2r/pbpp1ppp/1p2pn2/8/1bPP1B2/4PN2/PP1N1PPP/R2QKB1R b KQkq - 2 6");SET @game_id = (SELECT gid FROM Games WHERE game="");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
