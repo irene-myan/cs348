@@ -3,6 +3,7 @@ import "../css/home-page.css";
 import axios from "axios";
 import { DataGrid } from "@mui/x-data-grid";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { GetGames } from "../apiFunctions";
 
 const darkTheme = createTheme({
   palette: {
@@ -50,7 +51,7 @@ const Home = () => {
             <DataGrid
               disableColumnSelector
               rows={games}
-              getRowId={(row) => {
+              getRowId={() => {
                 row_id++;
                 return row_id;
               }}
@@ -60,7 +61,7 @@ const Home = () => {
                   paginationModel: { page: 0, pageSize: 5 },
                 },
               }}
-              pageSizeOptions={[5, 10]}
+              pageSizeOptions={[5, 10, 20, 50]}
             />
           </ThemeProvider>
         </div>

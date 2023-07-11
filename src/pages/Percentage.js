@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import TextField from "@mui/material/TextField";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { GetPercentage } from "../apiFunctions";
 
 const darkTheme = createTheme({
   palette: {
@@ -11,18 +12,7 @@ const darkTheme = createTheme({
 
 const Percentage = () => {
   const [percentage, setPercentage] = useState(null);
-  async function fetchPercentage(fen) {
-    try {
-      const response = await axios.get("http://localhost:8000/plist/", {
-        params: {
-          fen,
-        },
-      });
-      setPercentage(response.data);
-    } catch (error) {
-      console.error("Error fetching percentage:", error);
-    }
-  }
+
   return (
     <div>
       <h1>Percentage won/draw/lost from given fen</h1>
@@ -33,7 +23,7 @@ const Percentage = () => {
           variant="standard"
           onKeyPress={(e) => {
             if (e.key === "Enter") {
-              alert(e.target.value);
+              GetPercentage(e.target.value, setPercentage)
             }
           }}
         />
