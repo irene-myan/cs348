@@ -8,7 +8,8 @@
 Run ```npm start``` in repo dir
 
 ## Backend
-Run ```python3 -m uvicorn backend_main:app --host 0.0.0.0 --port 8000 --reload```
+Run ```python3 -m uvicorn backend_main:app --host 0.0.0.0 --port 8000 --reload``` in repo dir
+Or run the script ```./run-backend``` in the root directory
 
 ## Sample SQL in/out
 - Inside the test_sql_queries directory has all features sample/prod with the SQL command and the text file.
