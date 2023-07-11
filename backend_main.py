@@ -7,18 +7,6 @@ from datetime import date, datetime
 SQLALCHEMY_DATABASE_URL = "mysql+mysqlconnector://root:Password123@localhost/testDB"
 from fastapi.middleware.cors import CORSMiddleware
 
-# Played games subquery
-played_games = (
-        "WITH playedgames_temp (pid, gid, color, elo) as "
-        " ((SELECT p.pid as pid, g.gid as gid, 'w' as color, g.wp_elo as elo "
-        " FROM players p, games g "
-        " WHERE p.pid = g.wp_id) "
-        " UNION "
-        " (SELECT p.pid as pid, g.gid as gid, 'b' as color, g.bp_elo as elo "
-        " FROM players p, games g "
-        " WHERE p.pid = g.bp_id)) "
-    )
-
 # Password123
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL
@@ -97,23 +85,15 @@ def get_items(date_start: Optional[date] = None, date_end: Optional[date] = None
         date_end = date(9999,9,9)
 
     query = (
-        "WITH playerelos AS ("
-        "  SELECT player_id, MAX(elo) AS max_elo "
-        "  FROM ( "
-        "    SELECT wp_id AS player_id, wp_elo AS elo, date FROM Games WHERE date BETWEEN :start_date AND :end_date "
-        "    UNION ALL "
-        "    SELECT bp_id AS player_id, bp_elo AS elo, date FROM Games WHERE date BETWEEN :start_date AND :end_date "
-        "  ) AS TotalPlayers "
-        "  GROUP BY player_id "
-        "), "
-        "topids AS ("
-        "  SELECT player_id "
-        "  FROM playerelos p"
-        "  WHERE p.max_elo = (SELECT MAX(max_elo) FROM playerelos) "
+        "WITH topids AS ( "
+        "  SELECT pid "
+        "  FROM playedgames p "
+        "  JOIN Games g on g.gid = p.gid "
+        "  WHERE p.elo = (SELECT MAX(elo) FROM playedgames pa JOIN Games ga on ga.gid = pa.gid WHERE ga.date BETWEEN :start_date AND :end_date)"
         ") "
-        "SELECT *"
+        "SELECT * "
         "FROM Games g "
-        "WHERE g.wp_id = (SELECT player_id FROM topids) or g.bp_id = (SELECT player_id FROM topids);"
+        "WHERE g.wp_id = (SELECT pid FROM topids) or g.bp_id = (SELECT pid FROM topids);"
     )
 
     result = db.execute(
@@ -152,10 +132,9 @@ def get_items(date_start: Optional[date] = None, date_end: Optional[date] = None
     if not date_end:
         date_end = date(9999,9,9)
     query = (
-        f"{played_games} "
         "SELECT DISTINCT p.pid as pid, p.name as name, MAX(pg.elo) as max_elo "
         "FROM players p "
-        "JOIN playedgames_temp pg ON p.pid = pg.pid "
+        "JOIN playedgames pg ON p.pid = pg.pid "
         "JOIN games g ON pg.gid = g.gid "
         "WHERE g.date BETWEEN :start_date AND :end_date "
         "GROUP BY p.pid, p.name "
@@ -172,9 +151,8 @@ def get_items(date_start: Optional[date] = None, date_end: Optional[date] = None
 @app.get('/players_opening_count/')
 def get_items(eco: str, db: Session = Depends(get_db)):
     query = (
-        f"{played_games} "
         "SELECT COUNT(*) as play_count, p.pid as pid, p.name as name, o.name as opening_name, o.startingMoves as starting_moves "
-        "FROM players p, playedgames_temp pg, games g, openings o "
+        "FROM players p, playedgames pg, games g, openings o "
         "WHERE p.pid = pg.pid "
         "and pg.gid = g.gid "
         "and o.eco = g.eco "
