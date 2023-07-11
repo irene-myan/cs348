@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "../css/home-page.css";
-import axios from "axios";
 import { DataGrid } from "@mui/x-data-grid";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { GetGames } from "../apiFunctions";
