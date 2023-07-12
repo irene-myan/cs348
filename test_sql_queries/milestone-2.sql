@@ -42,42 +42,22 @@ SELECT * FROM Games ORDER BY date DESC;
 SELECT '--- End of Feature 4 ---';
 
 -- Feature 5
-WITH playedgames_temp (pid, gid, color, elo) as 
-(
-    (SELECT p.pid as pid, g.gid as gid, 'w' as color, g.wp_elo as elo 
-        FROM players p, games g 
-        WHERE p.pid = g.wp_id) 
-    UNION 
-    (SELECT p.pid as pid, g.gid as gid, 'b' as color, g.bp_elo as elo 
-        FROM players p, games g 
-        WHERE p.pid = g.bp_id)
-)
 SELECT DISTINCT p.pid as pid, p.name as name, MAX(pg.elo) as max_elo 
 FROM players p 
-JOIN playedgames_temp pg ON p.pid = pg.pid 
+JOIN playedgames pg ON p.pid = pg.pid 
 JOIN games g ON pg.gid = g.gid 
-WHERE g.date BETWEEN 1990-01-01 AND 9999-99-99
+WHERE g.date BETWEEN 1990-01-01 AND 9999-99-99 
 GROUP BY p.pid, p.name 
 ORDER BY max_elo DESC;
 SELECT '--- End of Feature 5 ---';
 
 -- Feature 6
-WITH playedgames_temp (pid, gid, color, elo) as 
-(
-    (SELECT p.pid as pid, g.gid as gid, 'w' as color, g.wp_elo as elo 
-        FROM players p, games g 
-        WHERE p.pid = g.wp_id) 
-    UNION 
-    (SELECT p.pid as pid, g.gid as gid, 'b' as color, g.bp_elo as elo 
-        FROM players p, games g 
-        WHERE p.pid = g.bp_id)
-)
 SELECT COUNT(*) as play_count, p.pid as pid, p.name as name, o.name as opening_name, o.startingMoves as starting_moves 
-FROM players p, playedgames_temp pg, games g, openings o 
+FROM players p, playedgames pg, games g, openings o 
 WHERE p.pid = pg.pid 
 and pg.gid = g.gid 
 and o.eco = g.eco 
-and o.eco = "A12" 
+and o.eco = "D11"
 GROUP BY p.pid, p.name, o.name, o.startingMoves 
 ORDER BY play_count DESC;
 SELECT '--- End of Feature 6 ---';

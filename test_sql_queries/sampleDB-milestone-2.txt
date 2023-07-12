@@ -128,14 +128,14 @@ pid	name	max_elo
 6	Seres,L	2465
 109	Jovanic,O	2461
 38	Abergel,T	2457
-20	Genov,Peta	2447
 33	Cubas,Jo	2447
+20	Genov,Peta	2447
 77	Shetty,A	2437
 107	Grabarczyk,B	2437
 83	Ionescu,Co	2436
 85	Grinberg,E	2431
-95	Orlov,Va	2430
 16	Raetsky,A	2430
+95	Orlov,Va	2430
 28	Peng,Li Min	2428
 10	Schneider,Bernd1	2424
 8	Bodo,No1	2414
@@ -202,5 +202,8 @@ pid	name	max_elo
 12	Sliwicka,Weronika	1264
 --- End of Feature 5 ---
 --- End of Feature 5 ---
+play_count	pid	name	opening_name	starting_moves
+1	1	Popchev,M	Queen's Gambit Declined Slav	1 d4 d5 2 c4 c6 3 Nf3
+1	93	Moroz,A	Queen's Gambit Declined Slav	1 d4 d5 2 c4 c6 3 Nf3
 --- End of Feature 6 ---
 --- End of Feature 6 ---
