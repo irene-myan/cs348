@@ -1,0 +1,206 @@
+--- End of Feature 1 ---
+--- End of Feature 1 ---
+gid	event	site	round	date	wp_id	wp_elo	bp_id	bp_elo	eco	moves	result	game
+29996	1st Panama Open	Panama City PAN	8	2011.11.06	29	2553	92	2650	E17	14	1/2-1/2	d4 Nf6 c4 e6 Nf3 b6 g3 Bb7 Bg2 Be7 Qc2 c5 dxc5 1/2-1/2
+--- End of Feature 2 ---
+--- End of Feature 2 ---
+name	frequency_played
+Alekhine's Defense	1
+Benoni, 6.e4	1
+Bogo-Indian Defense	1
+Caro-Kann	1
+Caro-Kann Defense	1
+Catalan, Open, Classical line	1
+English, Caro-Kann Defensive System	1
+English	1
+English	1
+English	1
+English	1
+Four Knights	1
+French, Exchange	1
+French Defense	1
+French, Tarrasch	1
+Grunfeld, 5.Bg5	1
+King's Indian, Averbakh, Main line	1
+King's Indian, Samisch, Panno Main line	1
+Robatsch	1
+Benoni, Classical, 8.Bg5	1
+Nimzo-Indian, Classical	1
+Nimzo-Indian	1
+Petrov, Modern Attack	1
+Pirc, Classical	1
+Pirc	1
+Queen's Gambit Accepted, Classical	1
+Queen's Gambit Declined, Exchange, Positional line, 6.Qc2	1
+Queen's Gambit Declined	1
+Queen's Indian	1
+Queen's Gambit Declined Slav	1
+King's Indian Attack	1
+Ruy Lopez	1
+Ruy Lopez, Closed	1
+Scandinavian	1
+Queen's Gambit Declined Semi-Slav	1
+Sicilian, Accelerated Fianchetto	1
+Sicilian, Alapin	2
+Sicilian, Closed	1
+Sicilian, Kan, 5.Nc3	1
+Sicilian, Canal-Sokolsky (Rossolimo) Attack	1
+Sicilian, Scheveningen	2
+Sicilian	1
+Queen's Gambit Declined Slav	1
+Queen's Gambit Declined Slav, Dutch	1
+Queen's Pawn Game	1
+Queen's Pawn Game	1
+--- End of Feature 3 ---
+--- End of Feature 3 ---
+gid	event	site	round	date	wp_id	wp_elo	bp_id	bp_elo	eco	moves	result	game
+27996	TCh-SRB Druga 2022	Vrnjacka Banja SRB	2	2022.11.04	27	2203	90	2239	D36	26	1/2-1/2	d4 d5 c4 e6 Nc3 Nf6 cxd5 exd5 Bg5 c6 Qc2 Be7 e3 Bg4 Bd3 Bh5 Nge2 Bg6 O-O Nbd7 Rab1 Bxd3 Qxd3 a5 a3 1/2-1/2
+49996	Titled Tuesday 16th Nov	chess.com INT	2	2021.11.16	47	2185	111	2357	A45	26	1-0	d4 Nf6 Bg5 d5 Nd2 c6 e3 Nbd7 f4 e6 Bd3 h6 Bh4 Be7 Ngf3 Qb6 b3 c5 c3 a5 Ne5 Ng8 Bf2 f6 Qh5+ 1-0
+8996	73rd ch-MNE 2021	Podgorica MNE	8	2021.05.09	9	1898	72	1956	A16	16	1/2-1/2	c4 Nf6 Nc3 g6 g3 Bg7 Bg2 O-O e4 d6 d3 Nc6 Nge2 h6 O-O 1/2-1/2
+13996	Titled Tuesday 26th Jan	chess.com INT	8	2021.01.26	14	2565	77	2437	C00	30	1-0	e4 e6 b3 d5 Bb2 dxe4 Nc3 Nf6 Qe2 Nbd7 O-O-O b6 g4 Bb7 g5 Nd5 Nxe4 Nf4 Qe3 Nc5 Qxf4 Nxe4 Bb5+ Ke7 d3 Nd6 Qf6+ gxf6 gxf6+ 1-0
+11996	ch-POL Women's Blitz 2020	Bydgoszcz POL	4	2020.12.12	12	1264	75	1389	C48	25	0-1	e4 e5 Nf3 Nf6 Nc3 Nc6 Bb5 Bc5 Bxc6 dxc6 Nxe5 Bxf2+ Kxf2 Qd4+ Ke1 Qxe5 d4 Qe7 Bg5 h6 Bxf6 gxf6 Qf3 f5 0-1
+28996	89th ch-UKR 2020	Kremenchug UKR	9	2020.11.25	28	2428	91	2544	D31	29	1/2-1/2	d4 d5 c4 e6 Nc3 c6 e4 dxe4 Nxe4 Bb4+ Bd2 Qxd4 Bxb4 Qxe4+ Be2 Na6 Ba5 f6 Qd8+ Kf7 O-O-O b6 Bc3 e5 Bf3 Qxc4 Rd6 Nb4 1/2-1/2
+31996	Ricany Open A 2020	Ricany CZE	8	2020.08.28	30	1996	94	1949	A07	25	1/2-1/2	Nf3 d5 g3 e6 Bg2 f5 O-O Nf6 d3 Bd6 Nc3 O-O e4 dxe4 dxe4 Nc6 Qe2 e5 exf5 Bxf5 Ng5 Nd4 Qc4+ Kh8 1/2-1/2
+48996	Titled Tuesday 7th July	chess.com INT	7	2020.07.07	46	2004	110	2478	A46	29	0-1	d4 Nf6 Nf3 e6 Bg5 c5 Bxf6 Qxf6 e3 d5 Bd3 Nc6 c3 Bd7 O-O Bd6 Nbd2 cxd4 exd4 g5 Qe2 g4 Ne5 Nxe5 dxe5 Qxe5 Qxg4 Qxh2+ 0-1
+26996	2nd Bundesliga Nord 19-20	Germany GER	9	2020.02.09	26	2118	89	2195	D27	21	1/2-1/2	d4 d5 c4 dxc4 Nf3 a6 a4 Nf6 e3 e6 Bxc4 c5 O-O Nc6 Nc3 Be7 dxc5 Qxd1 Rxd1 Bxc5 1/2-1/2
+18996	Skalica Open 2019	Skalica SVK	7	2019.08.29	19	2235	82	2366	B06	24	1/2-1/2	e4 g6 d4 Bg7 Nc3 c6 f4 d5 e5 h5 Nf3 Nh6 Be3 a5 Bd3 Bf5 Be2 Bg4 h3 Bxf3 Bxf3 h4 Bf2 1/2-1/2
+39996	ch-ROU U18 2019	Calimanesti-Caciulata ROU	5	2019.04.17	37	2005	101	1918	B22	17	1/2-1/2	e4 c5 c3 Nc6 f4 g6 Nf3 Bg7 Bc4 d6 O-O e6 d3 Nge7 Qe1 O-O 1/2-1/2
+996	2nd Innsbruck Open 2018	Innsbruck AUT	9	2018.09.01	2	2068	65	2036	A65	28	1/2-1/2	d4 Nf6 c4 c5 d5 e6 Nc3 exd5 cxd5 d6 e4 g6 f3 Bg7 Nge2 O-O Ng3 Nbd7 Be2 Ne5 O-O a6 a4 Qc7 f4 Ned7 Be3 1/2-1/2
+2996	3rd HSK Weihnachtsopen	Hamburg GER	8	2017.12.30	4	2205	67	2042	B10	22	1-0	c4 c6 e4 d5 exd5 cxd5 cxd5 Nf6 Nc3 Nxd5 Nf3 Nxc3 bxc3 g6 d4 Bg7 Bd3 O-O O-O Nc6 Re1 1-0
+6996	21st Cesenatico Open 2017	Cesenatico ITA	6	2017.09.06	7	2332	70	2074	A11	18	1/2-1/2	c4 c6 g3 d5 Bg2 Nf6 Nf3 g6 Qa4 Nbd7 cxd5 Nb6 Qa5 Qxd5 Qxd5 Nfxd5 Nc3 1/2-1/2
+40996	91st ch-Paris IdF 2016	Paris FRA	6	2016.07.14	38	2457	102	2299	B23	25	1/2-1/2	e4 c5 Nc3 Nc6 Bb5 Nd4 Bc4 e6 Nf3 Ne7 O-O Nec6 d3 Be7 Nxd4 cxd4 Ne2 O-O Bb3 b5 c3 Bc5 Kh1 a5 1/2-1/2
+21996	European U18 Teams Open	Celje SLO	1	2016.07.10	22	2250	85	2431	E46	15	0-1	d4 Nf6 c4 e6 Nc3 Bb4 e3 O-O Ne2 c6 a3 Ba5 b4 Bc7 0-1
+20996	19th Zenica Masters 2016	Zenica BIH	4	2016.05.11	21	1966	84	2222	E32	15	1/2-1/2	d4 Nf6 c4 e6 Nc3 Bb4 Qc2 O-O Nf3 b6 Bg5 h6 Bxf6 Qxf6 1/2-1/2
+44996	Cetinje Open 2016	Cetinje MNE	2	2016.05.05	42	2079	106	2172	B30	11	1/2-1/2	e4 c5 Nf3 Nc6 Bb5 d6 d4 cxd4 Nxd4 Bd7 1/2-1/2
+10996	10th ch-SRB w 2016	Kragujevac SRB	9	2016.04.28	11	2250	74	2125	A36	21	1/2-1/2	c4 c5 Nc3 Nc6 g3 g6 Bg2 Bg7 d3 d6 Nf3 Nf6 O-O O-O a3 a6 Bd2 Rb8 Rb1 Bd7 1/2-1/2
+14996	Bolton Easter 2015	Bolton ENG	5	2015.04.05	15	2036	78	1950	C06	20	1/2-1/2	e4 e6 d4 d5 Nd2 Nf6 e5 Nfd7 Bd3 c5 c3 cxd4 cxd4 Nc6 Ne2 f6 exf6 Nxf6 Nf3 1/2-1/2
+12996	ch-CRO w 2015	Dakovo CRO	4	2015.03.11	13	2152	76	2224	C01	14	1/2-1/2	e4 e6 d4 d5 exd5 exd5 Nf3 Bd6 Bd3 Nc6 c3 Nge7 O-O 1/2-1/2
+33996	V Mendeleev Rtg 2014	Tyumen RUS	8	2014.11.08	32	2364	96	2391	C91	29	1/2-1/2	e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 d4 Bb7 h3 Re8 Ng5 Rf8 Nf3 Re8 Ng5 Rf8 Nf3 Re8 1/2-1/2
+42996	18th Unive Open 2014	Hoogeveen NED	9	2014.10.17	40	2314	104	2381	B52	30	1/2-1/2	e4 c5 Nf3 d6 Bb5+ Bd7 Bxd7+ Qxd7 O-O Nf6 Re1 Nc6 c3 e6 d4 cxd4 cxd4 d5 e5 Ne4 Nbd2 Nxd2 Bxd2 Be7 Rc1 O-O Qb3 Rfc8 Rc2 1/2-1/2
+47996	16th Trieste Open 2014	Trieste ITA	8	2014.09.05	45	2490	109	2461	D18	22	1/2-1/2	Nf3 Nf6 c4 c6 Nc3 d5 d4 dxc4 a4 Bf5 e3 e6 Bxc4 Nbd7 O-O Bb4 Nh4 O-O Nxf5 exf5 Qc2 1/2-1/2
+25996	21st TCh-CRO 1b 2012	Sibenik CRO	6	2012.09.28	25	2138	88	2182	B07	15	1/2-1/2	d4 d6 e4 Nf6 Nc3 g6 Be3 c6 f3 Nbd7 Nge2 Qa5 Qd2 Bg7 1/2-1/2
+29996	1st Panama Open	Panama City PAN	8	2011.11.06	29	2553	92	2650	E17	14	1/2-1/2	d4 Nf6 c4 e6 Nf3 b6 g3 Bb7 Bg2 Be7 Qc2 c5 dxc5 1/2-1/2
+19996	TCh-ROU Superliga 2011	Brasov ROU	9	2011.10.15	20	2447	83	2436	A71	27	1/2-1/2	d4 Nf6 c4 e6 Nf3 c5 d5 d6 Nc3 exd5 cxd5 g6 e4 Bg7 Bg5 O-O Nd2 Re8 Be2 Na6 O-O Nc7 a4 b6 f4 h6 1/2-1/2
+16996	XIV Republica	Villa Martelli ARG	4	2010.08.08	17	2319	80	2329	E75	19	1/2-1/2	d4 Nf6 c4 g6 Nc3 Bg7 e4 d6 Be2 O-O Bg5 c5 d5 e6 Qd2 exd5 exd5 a6 1/2-1/2
+3996	5th Geller Mem Open A	Odessa UKR	8	2009.08.27	5	2209	68	2270	B12	28	1/2-1/2	e4 c6 d4 d5 e5 Bf5 Nc3 e6 g4 Bg6 Nge2 c5 h4 h5 Nf4 Bh7 Nxh5 Nc6 Bb5 Qc7 Bxc6+ Qxc6 Be3 O-O-O Qd2 c4 Ng3 1/2-1/2
+7996	8th Savaria Summer IM	Szombathely HUN	5	2008.08.18	8	2414	71	2371	A17	26	1/2-1/2	c4 Nf6 Nf3 e6 Nc3 Bb4 g3 O-O Bg2 d5 a3 Be7 cxd5 exd5 d4 c6 O-O Bf5 Bf4 Nbd7 Nh4 Be6 Qc2 g6 Nf3 1/2-1/2
+23996	Open	Teplice CZE	5	2008.06.18	23	1893	86	2096	C43	25	0-1	e4 e5 Nf3 Nf6 d4 Nxe4 Bd3 d5 Nxe5 Bd6 Nd2 Bxe5 dxe5 Nc5 Nf3 Bg4 Bg5 Bxf3 Qd2 Nxd3+ cxd3 f6 exf6 gxf6 0-1
+45996	XXII Tadeusz Gniota Mem	Police POL	6	2007.07.16	43	2389	107	2437	B80	21	1/2-1/2	e4 c5 Nf3 e6 d4 cxd4 Nxd4 Nc6 Nc3 d6 Be3 Nf6 f3 d5 exd5 Nxd5 Nxd5 Qxd5 Nxc6 bxc6 1/2-1/2
+34996	VI It	Sao Jose do Rio Preto ARG	6	2007.04.24	33	2447	97	2403	B01	30	1/2-1/2	e4 d5 exd5 Qxd5 Nc3 Qd6 d4 Nf6 Bc4 a6 Nf3 e6 Bb3 Be7 O-O O-O Qe2 Nc6 Rd1 Na5 Bg5 b6 Ne5 Nxb3 axb3 Bb7 Rd3 Rfd8 Rad1 1/2-1/2
+38996	10th Essent Open	Hoogeveen NED	6	2006.10.25	36	2122	100	2359	B22	19	0-1	e4 c5 c3 d5 exd5 Qxd5 Nf3 Nc6 Na3 Bg4 Be2 e5 O-O O-O-O Qa4 e4 d3 Bxf3 0-1
+1996	93rd ch-GBR	Swansea WLS	3	2006.08.09	3	2291	66	2488	E11	20	1/2-1/2	d4 Nf6 Nf3 e6 c4 Bb4+ Bd2 a5 e3 b6 Bd3 Bb7 Bxb4 axb4 Nbd2 d6 O-O O-O Qc2 1/2-1/2
+17996	Open A	Balatonlelle HUN	4	2006.06.20	18	2214	81	2309	E84	24	1/2-1/2	d4 Nf6 c4 g6 Nc3 Bg7 e4 d6 f3 O-O Be3 Nc6 Nge2 a6 Qd2 Rb8 Nc1 Re8 Nb3 Bd7 Be2 e6 O-O 1/2-1/2
+37996	SAP IM	Walldorf GER	7	2006.04.17	35	2296	99	2298	B37	24	1/2-1/2	Nf3 g6 e4 c5 d4 cxd4 Nxd4 Bg7 c4 Nc6 Nc2 d6 Be2 Be6 O-O Rc8 Nba3 Nh6 Rb1 f5 exf5 Nxf5 b3 1/2-1/2
+43996	33rd World Open	Philadelphia USA	1	2005.06.28	41	2466	105	2162	B80	27	1-0	e4 c5 Nf3 d6 d4 Nf6 Nc3 cxd4 Nxd4 a6 f3 e6 Be3 b5 g4 Nfd7 Qd2 Nb6 O-O-O N8d7 Ndxb5 axb5 Nxb5 Ne5 Qc3 Na4 1-0
+32996	White Nights	St Petersburg RUS	7	2005.06.24	31	2293	95	2430	C78	30	1/2-1/2	e4 e5 Nf3 Nc6 Bb5 Bc5 O-O Nf6 Nxe5 Nxe5 d4 a6 Ba4 Nxe4 Re1 Be7 Rxe4 Ng6 c4 O-O Nc3 c6 Re1 b5 Bb3 d6 Qf3 Bd7 Be3 1/2-1/2
+15996	4th Rohde Open	Sautron FRA	5	2004.10.27	16	2430	79	2484	D91	29	1/2-1/2	d4 Nf6 c4 g6 Nc3 d5 Nf3 Bg7 Bg5 Ne4 cxd5 Nxg5 Nxg5 e6 Nf3 exd5 b4 Qd6 Qb3 O-O e3 Be6 Be2 c6 O-O Nd7 Rac1 Rfc8 1/2-1/2
+41996	Lindsborg Open	Kansas USA	8	2003.12.22	39	2480	103	2605	B43	21	1/2-1/2	e4 c5 Nf3 e6 Nc3 a6 d4 cxd4 Nxd4 Qc7 Bd3 Bc5 Nb3 Be7 O-O d6 f4 Nd7 Qe2 Ngf6 1/2-1/2
+9996	ch-Solingen	Solingen GER	6	2003.06.09	10	2424	73	2488	A22	15	1/2-1/2	c4 Nf6 Nc3 e5 g3 Bb4 Bg2 O-O Nf3 Re8 O-O Bxc3 bxc3 d6 1/2-1/2
+4996	Europe Chess GM	Eger HUN	9	2002.03.28	6	2465	69	2539	E05	14	1/2-1/2	d4 Nf6 c4 e6 g3 Be7 Bg2 d5 Nf3 O-O O-O dxc4 Qc2 1/2-1/2
+30996	It	Antalya TUR	4	2001.04.04	1	2482	93	2525	D11	30	1/2-1/2	Nf3 d5 g3 c6 Bg2 Bg4 b3 e6 Bb2 Nd7 O-O Ngf6 c4 Bd6 d4 O-O Nbd2 Qe7 Re1 Ba3 Bxa3 Qxa3 Qc1 Qe7 e4 dxe4 Nxe4 Nxe4 Rxe4 1/2-1/2
+46996	34th Olympiad	Istanbul TUR	14	2000.11.12	44	2641	108	2627	D15	25	1/2-1/2	Nf3 d5 d4 Nf6 c4 c6 cxd5 cxd5 Nc3 a6 Bf4 Qb6 Na4 Qa5+ Bd2 Qd8 Rc1 Nbd7 Bf4 Qa5+ Bd2 Qd8 Bf4 Qa5+ 1/2-1/2
+35996	ch-EST	Tallinn EST	3	2000.05.01	34	2499	98	2542	D45	14	1/2-1/2	d4 Nf6 c4 c6 Nc3 d5 e3 e6 Nf3 Nbd7 Qc2 Bd6 Bd3 1/2-1/2
+24996	Open	Dubai UAE	2	2000.04.29	24	2134	87	2344	B08	23	1/2-1/2	e4 d6 d4 Nf6 Nc3 c6 Nf3 g6 Be2 Bg7 O-O O-O h3 Qc7 Be3 Nbd7 Qd2 b5 a3 Bb7 Bh6 e5 1/2-1/2
+1	2nd Novak Nikolic mem	Belgrade YUG	9	2000.02.11	1	2510	64	2471	B02	20	1/2-1/2	e4 Nf6 Nc3 d5 e5 Nfd7 f4 e6 Nf3 c5 g3 Nc6 Bg2 Be7 O-O O-O d3 Rb8 Ne2 1/2-1/2
+--- End of Feature 4 ---
+--- End of Feature 4 ---
+pid	name	max_elo
+92	Tiviakov,S	2650
+44	Andersson,U	2641
+108	Ehlvest,J	2627
+103	Agrest,E	2605
+14	Paichadze,L	2565
+29	Ortiz Suarez,I	2553
+91	Solodovnichenko,Y	2544
+98	Rytshagov,M	2542
+69	Koneru,H	2539
+93	Moroz,A	2525
+1	Popchev,M	2510
+34	Kulaots,K	2499
+45	Tratar,M	2490
+66	Lalic,B	2488
+73	Podzielny,KH	2488
+79	Sulypa,A	2484
+39	Nedev,T	2480
+110	Rasulov,Vu	2478
+64	Zhukova,N	2471
+41	Schneider,Dm	2466
+6	Seres,L	2465
+109	Jovanic,O	2461
+38	Abergel,T	2457
+20	Genov,Peta	2447
+33	Cubas,Jo	2447
+77	Shetty,A	2437
+107	Grabarczyk,B	2437
+83	Ionescu,Co	2436
+85	Grinberg,E	2431
+95	Orlov,Va	2430
+16	Raetsky,A	2430
+28	Peng,Li Min	2428
+10	Schneider,Bernd1	2424
+8	Bodo,No1	2414
+97	Crosa Coll,M	2403
+96	Egorov,E	2391
+43	Owczarzak,J	2389
+104	Guramishvili,S	2381
+71	Kiss,At	2371
+82	Komliakov,V	2366
+32	Makhnyov,Denis	2364
+100	Van der Elburg,F	2359
+111	Karolczuk,Iwo	2357
+87	Hamed,Ah	2344
+7	Schacher,G	2332
+80	Barreto Filho,C	2329
+17	Trois,F	2319
+40	Rudolf,An	2314
+81	Ganaus,H	2309
+102	Hemant,S2	2299
+99	Zuse,KP	2298
+35	Bach,E	2296
+31	Golovchenko,G	2293
+3	Sherwin,J	2291
+68	Litvak,M	2270
+22	Asenov,Pavel	2250
+11	Chelushkina,I	2250
+90	Kopasz,R	2239
+19	Istona,Martin	2235
+76	Medic,Mir	2224
+84	Terzic,S	2222
+18	Fodor,I2	2214
+5	Shagbazyan,Tar	2209
+4	Kahlert,T	2205
+27	Stamenkovic,A	2203
+89	Mitscherling,A	2195
+47	Hoffmann,As	2185
+88	Nikolic,E	2182
+106	Popadic,Dr	2172
+105	Tayar,J	2162
+13	Solic,K	2152
+25	Ivankovic,I	2138
+24	Alya,H	2134
+74	Djukic,Sa	2125
+36	Potze,R	2122
+26	Bachmann,V	2118
+86	Krejci,Jan1	2096
+42	Cerovic,Z	2079
+70	Fuochi,Tommaso	2074
+2	Tafertshofer,M	2068
+67	Pubantz,Jan	2042
+65	Schnabl,A	2036
+15	Owen,D	2036
+37	Iustin,Silviu	2005
+46	Sava,Ch	2004
+30	Petras,Mi	1996
+21	Cunjalo,Faris	1966
+72	Jeknic,V	1956
+78	Olbison,Philip J	1950
+94	Ocelak,Jakub	1949
+101	Stan,Andrei-Mihaita	1918
+9	Lazarevic,Zoran	1898
+23	Rutter,L	1893
+75	Karkowska,Ewa	1389
+12	Sliwicka,Weronika	1264
+--- End of Feature 5 ---
+--- End of Feature 5 ---
+--- End of Feature 6 ---
+--- End of Feature 6 ---

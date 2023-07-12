@@ -1,5 +1,3 @@
-use testDB;
-
 -- Feature 1
 WITH games_including_fen AS (
     SELECT gid
