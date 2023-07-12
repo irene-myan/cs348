@@ -1,11 +1,11 @@
 import os, subprocess
 
 # Set up the MySQL command
-mysql_command = "mysql -u root -pIrene2002 testDB"
+mysql_command = "mysql -u root -pPassword123 sampleDB"
 
 # List of SQL files in order
 sql_files = [
-    "createTables.sql",
+    "createTables_sample.sql",
     "populateOpenings.sql",
 ]
 
@@ -19,7 +19,7 @@ for pgn_file in os.listdir(df):
     if pgn_file[0] == ".": continue
     sql_files.append("fens/" + pgn_file)
 
-sql_files.append("updateTables.sql")
+sql_files.append("updateTables_sample.sql")
 
 # Loop through the SQL files and execute them in order
 for sql_file in sql_files:
