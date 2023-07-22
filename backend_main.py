@@ -6,6 +6,9 @@ from sqlalchemy.ext.automap import automap_base
 from datetime import date, datetime
 SQLALCHEMY_DATABASE_URL = "mysql+mysqlconnector://root:Password123@localhost/testDB"
 from fastapi.middleware.cors import CORSMiddleware
+import subprocess
+import regex as re
+import time
 
 # Password123
 engine = create_engine(
@@ -168,6 +171,114 @@ def get_items(eco: str, db: Session = Depends(get_db)):
 
     return generate_result_from_query(result)
 
+@app.get('/get_next_moves/')
+def get_items(fen: str, db: Session = Depends(get_db)):
+    query = (
+        "WITH next_games as ( "
+        "  SELECT m.gid, g.movenum + 1 as movenum"
+        "  FROM moves m "
+        "  WHERE m.fen = :fen "
+        ") "
+        "SELECT COUNT(*) as play_count, m.move"
+        "FROM next_games ng, moves m "
+        "WHERE ng.gid = m.gid and ng.movenum = m.movenum "
+        "GROUP BY m.move "
+    )
+
+    result = db.execute(
+        text(query),
+        {"fen": fen}
+        )
+
+    return generate_result_from_query(result)
+
+@app.get('/get_fens_from_gid/')
+def get_items(fen: str, db: Session = Depends(get_db)):
+    query = (
+        "WITH next_games as ( "
+        "  SELECT m.gid, g.movenum + 1 as movenum"
+        "  FROM moves m "
+        "  WHERE m.fen = :fen "
+        ") "
+        "SELECT COUNT(*) as play_count, m.move"
+        "FROM next_games ng, moves m "
+        "WHERE ng.gid = m.gid and ng.movenum = m.movenum "
+        "GROUP BY m.move "
+    )
+
+    result = db.execute(
+        text(query),
+        {"fen": fen}
+        )
+
+    return generate_result_from_query(result)
+
+@app.get('/get_games_from_fen/')
+def get_items(fen: str, db: Session = Depends(get_db)):
+    query = (
+        "WITH games_fen as ( "
+        "  SELECT m.gid"
+        "  FROM moves m "
+        "  WHERE m.fen = :fen "
+        ") "
+        "SELECT *"
+        "FROM games_fen gf, games g "
+        "WHERE gf.gid = g.gid "
+    )
+
+    result = db.execute(
+        text(query),
+        {"fen": fen}
+        )
+
+    return generate_result_from_query(result)
+
+def run_uci_command(app_path, commands, timeout, debug=False):
+    process = subprocess.Popen(app_path, stdin=subprocess.PIPE, stdout=subprocess.PIPE, bufsize=1, universal_newlines=True)
+
+    for cmd in commands:
+        process.stdin.write(cmd + "\n")
+    process.stdin.flush()
+
+    output_lines = []
+    start_time = time.time()
+    for line in process.stdout:
+        if time.time() - start_time > timeout:
+            break
+        line = line.strip()
+        output_lines.append(line)
+        if debug:
+            print(line)
+        if "bestmove" in line:
+            break
+
+    process.stdin.close()
+    process.terminate()
+
+    return output_lines
+
+
+
+def extract_score(input_string):
+    pattern = r'(cp|mate) (-?\d+)'
+    match = re.search(pattern, input_string)
+
+    if match:
+        return int(match.group(2)), match.group(1)
+    else:
+        return None, None
+
+
+@app.get('/get_stockfish_eval/')
+def get_items(fen: str, time_to_think_ms: int, timeout_ms: int=-1, db: Session = Depends(get_db)):
+    if timeout_ms == -1:
+        timeout_ms = time_to_think_ms * 2 + 250
+
+    output = run_uci_command("stockfish-windows-x86-64-avx2.exe", [f"position fen {fen}", f"go movetime {time_to_think_ms}"], timeout=timeout_ms/1000.0, debug=True)
+    score_value, score_type = extract_score(output[-2])
+    result = output[-1].split()[1]
+
+    return {'best_move': result, 'score_value': score_value, 'score_type': score_type}
 
 @app.get("/test/")
 def get_items(db: Session = Depends(get_db)):
