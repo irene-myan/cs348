@@ -179,7 +179,7 @@ def get_items(fen: str, db: Session = Depends(get_db)):
         "  FROM moves m "
         "  WHERE m.fen = :fen "
         ") "
-        "SELECT COUNT(*) as play_count, m.move"
+        "SELECT COUNT(*) as play_count, m.move, m.fen"
         "FROM next_games ng, moves m "
         "WHERE ng.gid = m.gid and ng.movenum = m.movenum "
         "GROUP BY m.move "
