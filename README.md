@@ -2,7 +2,7 @@
 - - -
 ## Database
 - Runs on a local MySQL, password must be manually entered into the backend_main.py script
-- Load database data by running, from within the 'sql scripts' directory, ```python3 updateDB.py```
+- Load database data by running, from within the 'sql scripts' directory, ```python3 createDB.py```
 
 ## Frontend
 Run ```npm start``` in repo dir

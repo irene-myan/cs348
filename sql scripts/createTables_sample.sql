@@ -1,4 +1,4 @@
-USE sampleDB;
+-- USE sampleDB;
 
 DROP TABLE IF EXISTS GameOpenings;
 DROP TABLE IF EXISTS PlayedGames;
