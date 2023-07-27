@@ -1,6 +1,5 @@
-
-import React, { useEffect, useState } from "react";
-import Chess from 'chess.js';
+import React, { useState } from "react";
+import Chess from "chess.js";
 import "../css/chess-page.css";
 import { Chessboard } from "react-chessboard";
 
@@ -154,7 +153,7 @@ const PlayChess = () => {
   }
 
   function onSquareRightClick(square) {
-    const colour = "rgba(0, 0, 255, 0.4)";
+    const colour = "rgba(0, 0, 0, 0.4)";
     setRightClickedSquares({
       ...rightClickedSquares,
       [square]:
@@ -176,7 +175,7 @@ const PlayChess = () => {
         onSquareClick={onSquareClick}
         onSquareRightClick={onSquareRightClick}
         onPromotionPieceSelect={onPromotionPieceSelect}
-        boardWidth="400" 
+        boardWidth="400"
         customBoardStyle={{
           borderRadius: "4px",
           boxShadow: "0 2px 10px rgba(0, 0, 0, 0.5)",
@@ -218,6 +217,6 @@ const PlayChess = () => {
       </button>
     </div>
   );
-}
+};
 
 export default PlayChess;

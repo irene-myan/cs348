@@ -3,3 +3,4 @@ fastapi==0.98.0
 SQLAlchemy==2.0.16
 tqdm==4.65.0
 mysql-connector-python
+regex
