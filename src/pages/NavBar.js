@@ -52,6 +52,15 @@ const NavBar = () => {
               World Ranking
             </Link>
           </li>
+          <li>
+            <Link
+              onClick={() => handleLink('/play-chess')}
+              to="/play-chess"
+              className={curPath === '/play-chess' ? 'active' : ''}
+            >
+              Play
+            </Link>
+          </li>
         </ul>
       </div>
     );

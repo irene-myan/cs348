@@ -7,6 +7,7 @@ import BookOpenings from './pages/BookOpenings';
 import WorldRanking from './pages/WorldRanking';
 import './css/main.css';
 import NavBar from './pages/NavBar';
+import PlayChess from './pages/PlayChess';
 
 function Router () {
   return (
@@ -19,6 +20,7 @@ function Router () {
               <Route path="/percentage" element={<Percentage />} />
               <Route path="/book-openings" element={<BookOpenings />} />
               <Route path="/top-elo-players" element={<WorldRanking />} />
+              <Route path="/play-chess" element={<PlayChess />} />
           </Routes>
         </div>
       </div>

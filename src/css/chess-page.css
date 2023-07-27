@@ -1,0 +1,14 @@
+
+
+#main-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-game h1 {
+    margin-bottom: 20px; 
+}
