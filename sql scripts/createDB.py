@@ -1,7 +1,7 @@
 import os, subprocess
 
 # Set up the MySQL command
-mysql_command = "mysql -u root -pPassword123 testDB"
+mysql_command = "mysql -u root -pIrene2002 testDB"
 
 # List of SQL files in order
 sql_files = [
@@ -30,16 +30,3 @@ for sql_file in sql_files:
 
     # Execute the command using subprocess
     subprocess.run(full_command, shell=True)
-
-# i = 0
-# for pgn_file in os.listdir(df):
-#     # if i == 3:
-#     #     break
-#     if pgn_file[0] == ".": continue
-#     i += 1
-#     pgn_file = "fens/" + pgn_file
-#     print(pgn_file)
-#     lines = open(pgn_file, "rt").readlines()
-#     with open(pgn_file, "wt") as fout:
-#         for line in lines:
-#             fout.write(line.replace("INSERT ", 'INSERT IGNORE '))

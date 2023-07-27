@@ -63,6 +63,7 @@ CREATE TABLE Moves(
     movenum INT NOT NULL,
     color VARCHAR(1),
     fen VARCHAR(100),
+    move VARCHAR(7),
     FOREIGN KEY(gid) REFERENCES Games(gid),
     PRIMARY KEY(gid, movenum, color)
 );

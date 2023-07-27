@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/nav-bar.css";
 
@@ -59,6 +59,34 @@ const NavBar = () => {
             className={curPath === "/next-move" ? "active" : ""}
           >
             Moves Probability
+          </Link>
+        </li>
+
+        <li>
+          <Link
+            onClick={() => handleLink("/play-chess")}
+            to="/play-chess"
+            className={curPath === "/play-chess" ? "active" : ""}
+          >
+            Random
+          </Link>
+        </li>
+        <li>
+          <Link
+            onClick={() => handleLink("/two-player")}
+            to="/two-player"
+            className={curPath === "/two-player" ? "active" : ""}
+          >
+            Two Player
+          </Link>
+        </li>
+        <li>
+          <Link
+            onClick={() => handleLink("/stock-fish")}
+            to="/stock-fish"
+            className={curPath === "/stock-fish" ? "active" : ""}
+          >
+            Stock Fish
           </Link>
         </li>
       </ul>

@@ -3,12 +3,24 @@ import chess.pgn
 import io, os
 import sys
 
-fields = ["gid", "movenum", "color", "fen"]
+fields = ["gid", "movenum", "color", "fen", "move"]
 
-def values_row(fen):
+def values_row(fen, move):
     movenum = fen.split(" ")[-1]
     color = fen.split(" ")[-5]
-    return f"(@game_id, {movenum}, \"{color}\", \"{fen}\")"
+    return f"(@game_id, {movenum}, \"{color}\", \"{fen}\", \"{move}\")"
+
+# bc the moves format in game is different from the moves in the games database
+def removeNums(moves):
+  a = moves.split(" ")
+  r = []
+  k = -1
+  for i in a:
+    k += 1
+    if k % 3 == 0:
+      continue
+    r.append(i)
+  return r
 
 
 def one_pgn(file_name, fen_gened):
@@ -33,15 +45,24 @@ def one_pgn(file_name, fen_gened):
                 continue
 
 
+        
+        moves = pgn.split('\n')
+        while moves[-1] == "" or moves[-1][0] != "1": 
+            moves.pop()
+        moves = removeNums(moves[-1])
+        if moves == []: 
+            print(pgn) 
+            return
         # SET GAME ID
-        moves = pgn.split('\n')[-1]
-        f.write(f"SET @game_id = (SELECT gid FROM Games WHERE game=\"{moves}\");") 
-        # AND site=\"{mygame2.headers['Site']}\" AND date=\"{mygame2.headers['Date']}\" AND wp_elo={mygame2.headers['WhiteElo']} AND bp_elo={mygame2.headers['BlackElo']});")
-        # print fens
+        f.write(f"\nSET @game_id = (SELECT gid FROM Games WHERE game=\"{' '.join(moves)}\");\n")
         f.write('INSERT IGNORE INTO Moves(' + ', '.join(fields) + ') VALUES ')
         s = ""
-        for fen in fens:
-            s += "\n" + values_row(fen) + ","
+        for j in range(len(fens)):
+            if j >= len(moves):
+                print(pgn)
+                print(pgn.split('\n'))
+                break
+            s += "\n" + values_row(fens[j], moves[j]) + ","
         s = s[:-1]
         f.write(s + ";")
     f.close()
@@ -57,3 +78,5 @@ for pgn_file in os.listdir(dr):
     if not os.path.exists(dw + "/" + fen_gened):
         print(dw + "/" + fen_gened)
         one_pgn(dr + "/" + pgn_file, dw + "/" + fen_gened)
+
+print("yay done")

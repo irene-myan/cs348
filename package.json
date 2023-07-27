@@ -20,7 +20,7 @@
     "react-dom": "^18.2.0",
     "react-router": "^6.13.0",
     "react-router-dom": "^6.13.0",
-    "react-scripts": "^1.1.5",
+    "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -46,5 +46,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.0.1",
+    "svg-url-loader": "^8.0.0"
   }
 }
