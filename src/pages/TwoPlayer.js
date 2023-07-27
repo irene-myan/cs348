@@ -4,7 +4,7 @@ import Chess from 'chess.js';
 import "../css/chess-page.css";
 import { Chessboard } from "react-chessboard";
 
-const PlayChess = () => {
+const TwoPlayer = () => {
   const [game, setGame] = useState(new Chess());
   const [moveFrom, setMoveFrom] = useState("");
   const [moveTo, setMoveTo] = useState(null);
@@ -48,19 +48,6 @@ const PlayChess = () => {
     };
     setOptionSquares(newSquares);
     return true;
-  }
-
-  function makeRandomMove() {
-    const possibleMoves = game.moves();
-
-    // exit if the game is over
-    if (game.game_over() || game.in_draw() || possibleMoves.length === 0)
-      return;
-
-    const randomIndex = Math.floor(Math.random() * possibleMoves.length);
-    safeGameMutate((game) => {
-      game.move(possibleMoves[randomIndex]);
-    });
   }
 
   function onSquareClick(square) {
@@ -125,7 +112,6 @@ const PlayChess = () => {
 
       setGame(gameCopy);
 
-      setTimeout(makeRandomMove, 300);
       setMoveFrom("");
       setMoveTo(null);
       setOptionSquares({});
@@ -143,7 +129,6 @@ const PlayChess = () => {
         promotion: piece[1].toLowerCase() ?? "q",
       });
       setGame(gameCopy);
-      setTimeout(makeRandomMove, 300);
     }
 
     setMoveFrom("");
@@ -165,9 +150,13 @@ const PlayChess = () => {
     });
   }
 
+  function flipBoard() {
+    setGame(game.flipBoard());
+  }
+
   return (
     <div id="main-game">
-      <h1>Player VS Random</h1>
+      <h1>Player VS Player</h1>
       <Chessboard
         id="ClickToMove"
         animationDuration={200}
@@ -207,7 +196,6 @@ const PlayChess = () => {
         onClick={() => {
           safeGameMutate((game) => {
             game.undo();
-            game.undo();
           });
           setMoveSquares({});
           setOptionSquares({});
@@ -220,4 +208,4 @@ const PlayChess = () => {
   );
 }
 
-export default PlayChess;
+export default TwoPlayer;

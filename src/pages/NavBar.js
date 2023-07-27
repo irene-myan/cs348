@@ -58,7 +58,16 @@ const NavBar = () => {
               to="/play-chess"
               className={curPath === '/play-chess' ? 'active' : ''}
             >
-              Play
+              Random
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => handleLink('/two-player')}
+              to="/two-player"
+              className={curPath === '/two-player' ? 'active' : ''}
+            >
+              Two Player
             </Link>
           </li>
         </ul>

@@ -8,6 +8,7 @@ import WorldRanking from './pages/WorldRanking';
 import './css/main.css';
 import NavBar from './pages/NavBar';
 import PlayChess from './pages/PlayChess';
+import TwoPlayer from './pages/TwoPlayer';
 
 function Router () {
   return (
@@ -21,6 +22,7 @@ function Router () {
               <Route path="/book-openings" element={<BookOpenings />} />
               <Route path="/top-elo-players" element={<WorldRanking />} />
               <Route path="/play-chess" element={<PlayChess />} />
+              <Route path="/two-player" element={<TwoPlayer />} />
           </Routes>
         </div>
       </div>
