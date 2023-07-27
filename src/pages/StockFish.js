@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Chess from "chess.js";
 import "../css/chess-page.css";
 import { Chessboard } from "react-chessboard";
@@ -20,7 +20,11 @@ const StockFish = () => {
   const [game, setGame] = useState(new Chess());
   const [squares, setSquares] = useState({});
   const [fen, setFen] = useState(game.fen());
-  const [stockEval, setStockEval] = useState(null);
+  const [stockEval, setStockEval] = useState({
+    best_move: null,
+    score_type: "",
+    score_value: 0,
+  });
 
   if (fen !== game.fen()) {
     setFen(game.fen());
@@ -82,11 +86,11 @@ const StockFish = () => {
             <button
               className="add-button"
               onClick={() => {
+                console.log(game.board());
                 game.put(
                   { type: p.type, color: p.color },
                   Object.keys(squares)[0]
                 );
-                console.log("Clicked on:", p.id);
                 setSquares({});
               }}
             >
@@ -98,7 +102,7 @@ const StockFish = () => {
     );
   };
 
-  function onSquareClick(square) {
+  const onSquareClick = (square) => {
     const colour = "rgba(0, 0, 0, 0.4)";
     setSquares({
       [square]:
@@ -106,24 +110,61 @@ const StockFish = () => {
           ? undefined
           : { backgroundColor: colour },
     });
-  }
+  };
 
-  useEffect(() => {
-    GetStockFishEval(fen, setStockEval);
-  }, [fen]);
+  const onPieceDrop = (from, to, id) => {
+    const gameCopy = { ...game };
+
+    gameCopy.move({
+      from: from,
+      to: to,
+    });
+
+    const piece = [...id];
+
+    gameCopy.remove(to);
+    gameCopy.remove(from);
+    gameCopy.put(
+      {
+        type: piece[1].toLowerCase(),
+        color: piece[0],
+      },
+      to
+    );
+    console.log(to);
+
+    setGame(gameCopy);
+
+    return true;
+  };
 
   return (
-    <div id="main-game" style={{ display: "flex", flexDirection: "row" }}>
-      {renderAddPieceButtons(pieces[0])}
-      <Chessboard
-        id="CustomSquare"
-        animationDuration={200}
-        position={game.fen()}
-        boardWidth="400"
-        onSquareClick={onSquareClick}
-        customSquareStyles={{ ...squares }}
-      />
-      {renderAddPieceButtons(pieces[1])}
+    <div className="container">
+      <div className="eval-bar">
+        <div> Best Move: {stockEval.best_move} </div>
+        <div> Score Type: {stockEval.score_type} </div>
+        <div> Score Value: {stockEval.score_value / 100} </div>
+      </div>
+      <div className="stockfish-board">
+        {renderAddPieceButtons(pieces[0])}
+        <Chessboard
+          id="CustomSquare"
+          animationDuration={200}
+          position={game.fen()}
+          boardWidth="400"
+          onSquareClick={onSquareClick}
+          customSquareStyles={{ ...squares }}
+          onPieceDrop={onPieceDrop}
+        />
+        {renderAddPieceButtons(pieces[1])}
+      </div>
+      <button
+        onClick={() => {
+          GetStockFishEval(fen, setStockEval);
+        }}
+      >
+        Evaluate
+      </button>
     </div>
   );
 };

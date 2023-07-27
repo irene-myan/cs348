@@ -66,7 +66,7 @@ export async function GetTopElo(setTopElo, dateStart, dateEnd) {
   }
 }
 
-export async function GetStockFishEval(fen, setStockEval, timeToThink = 3000) {
+export async function GetStockFishEval(fen, setStockEval, timeToThink = 10000) {
   try {
     const response = await axios.get(
       "http://localhost:8000/get_stockfish_eval/",
@@ -78,6 +78,7 @@ export async function GetStockFishEval(fen, setStockEval, timeToThink = 3000) {
       }
     );
     console.log(response.data);
+    setStockEval(response.data);
   } catch (error) {
     console.error("Error fetching stockfix:", error);
   }
