@@ -193,28 +193,36 @@ def get_items(fen: str, db: Session = Depends(get_db)):
     return generate_result_from_query(result)
 
 @app.get('/get_fens_from_gid/')
-def get_items(fen: str, db: Session = Depends(get_db)):
+def get_items(gid: str, db: Session = Depends(get_db)):
     query = (
-        "WITH next_games as ( "
-        "  SELECT m.gid, g.movenum + 1 as movenum"
-        "  FROM moves m "
-        "  WHERE m.fen = :fen "
-        ") "
-        "SELECT COUNT(*) as play_count, m.move"
-        "FROM next_games ng, moves m "
-        "WHERE ng.gid = m.gid and ng.movenum = m.movenum "
-        "GROUP BY m.move "
+        "SELECT m.fen, m.movenum "
+        "FROM moves m, games g "
+        "WHERE m.gid = g.gid AND g.gid = :gid "
     )
+    # query = (
+    #     "WITH next_games as ( "
+    #     "  SELECT m.gid, g.movenum + 1 as movenum"
+    #     "  FROM moves m "
+    #     "  WHERE m.fen = :fen "
+    #     ") "
+    #     "SELECT COUNT(*) as play_count, m.move"
+    #     "FROM next_games ng, moves m "
+    #     "WHERE ng.gid = m.gid and ng.movenum = m.movenum "
+    #     "GROUP BY m.move "
+    # )
 
     result = db.execute(
         text(query),
-        {"fen": fen}
+        {"gid": gid}
         )
 
     return generate_result_from_query(result)
 
 @app.get('/get_games_from_fen/')
 def get_items(fen: str, db: Session = Depends(get_db)):
+    '''
+    Returns all the moves, fen, move num associated with a fen
+    '''
     query = (
         "WITH games_fen as ( "
         "  SELECT m.gid"
