@@ -65,3 +65,20 @@ export async function GetTopElo(setTopElo, dateStart, dateEnd) {
     console.error("Error fetching top-elo players:", error);
   }
 }
+
+export async function GetStockFishEval(fen, setStockEval, timeToThink = 3000) {
+  try {
+    const response = await axios.get(
+      "http://localhost:8000/get_stockfish_eval/",
+      {
+        params: {
+          fen: fen,
+          time_to_think_ms: timeToThink,
+        },
+      }
+    );
+    console.log(response.data);
+  } catch (error) {
+    console.error("Error fetching stockfix:", error);
+  }
+}

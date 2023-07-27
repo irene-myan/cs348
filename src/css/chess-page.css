@@ -1,12 +1,27 @@
 
 
 #main-game {
-    justify-content: center;
-    align-items: center;
-    padding: 20px; 
-    align-items: center;
+	justify-content: center;
+	align-items: center;
+	padding: 20px; 
+	align-items: center;
 }
 
 #main-game h1 {
-    margin-bottom: 20px; 
+	margin-bottom: 20px; 
+}
+
+.add-button {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.buttons-layout {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
 }
