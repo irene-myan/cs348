@@ -9,6 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import subprocess
 import regex as re
 import time
+import platform
 
 # Password123
 engine = create_engine(
@@ -282,7 +283,8 @@ def get_items(fen: str, time_to_think_ms: int, timeout_ms: int=-1, db: Session =
     if timeout_ms == -1:
         timeout_ms = time_to_think_ms * 2 + 250
 
-    output = run_uci_command("stockfish-windows-x86-64-avx2.exe", [f"position fen {fen}", f"go movetime {time_to_think_ms}"], timeout=timeout_ms/1000.0, debug=True)
+    os = platform.system();
+    output = run_uci_command("stockfish-windows-x86-64-avx2.exe" if os == 'Windows' else "stockfish", [f"position fen {fen}", f"go movetime {time_to_think_ms}"], timeout=timeout_ms/1000.0, debug=True)
     score_value, score_type = extract_score(output[-2])
     result = output[-1].split()[1]
 
