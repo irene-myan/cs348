@@ -10,6 +10,20 @@ def values_row(fen):
     color = fen.split(" ")[-5]
     return f"(@game_id, {movenum}, \"{color}\", \"{fen}\")"
 
+# bc the moves format in game is different from the moves in the games database
+def removeNums(moves):
+  a = moves.split(" ")
+  r = ""
+  k = -1
+  for i in a:
+    k += 1
+    if k % 3 == 0:
+      continue
+    r += i
+    r += " "
+    
+  return r[:-1]
+
 
 def one_pgn(file_name, fen_gened):
     with open(file_name, encoding='latin-1') as f:
@@ -35,9 +49,7 @@ def one_pgn(file_name, fen_gened):
 
         # SET GAME ID
         moves = pgn.split('\n')[-1]
-        f.write(f"SET @game_id = (SELECT gid FROM Games WHERE game=\"{moves}\");") 
-        # AND site=\"{mygame2.headers['Site']}\" AND date=\"{mygame2.headers['Date']}\" AND wp_elo={mygame2.headers['WhiteElo']} AND bp_elo={mygame2.headers['BlackElo']});")
-        # print fens
+        f.write(f"\nSET @game_id = (SELECT gid FROM Games WHERE game=\"{removeNums(moves)}\");\n")
         f.write('INSERT IGNORE INTO Moves(' + ', '.join(fields) + ') VALUES ')
         s = ""
         for fen in fens:
@@ -57,3 +69,5 @@ for pgn_file in os.listdir(dr):
     if not os.path.exists(dw + "/" + fen_gened):
         print(dw + "/" + fen_gened)
         one_pgn(dr + "/" + pgn_file, dw + "/" + fen_gened)
+
+print("yay done")

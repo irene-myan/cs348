@@ -1,4 +1,6 @@
-SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 Be7 6. O-O O-O 7. b3 d5 8. Bb2 c5 9. Nc3 Nc6 10. Rc1 Rc8 11. dxc5 dxc4 12. Bxc4 Bxc5 13. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 Be7 O-O O-O b3 d5 Bb2 c5 Nc3 Nc6 Rc1 Rc8 dxc5 dxc4 Bxc4 Bxc5 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -22,7 +24,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 11, "b", "2rq1rk1/pb2bppp/1pn1pn2/2Pp4/2P5/1PNBPN2/PB3PPP/2RQ1RK1 b - - 0 11"),
 (@game_id, 12, "w", "2rq1rk1/pb2bppp/1pn1pn2/2P5/2p5/1PNBPN2/PB3PPP/2RQ1RK1 w - - 0 12"),
 (@game_id, 12, "b", "2rq1rk1/pb2bppp/1pn1pn2/2P5/2B5/1PN1PN2/PB3PPP/2RQ1RK1 b - - 0 12"),
-(@game_id, 13, "w", "2rq1rk1/pb3ppp/1pn1pn2/2b5/2B5/1PN1PN2/PB3PPP/2RQ1RK1 w - - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. O-O dxc4 7. Bxc4 a6 8. a3 c5 9. Nc3 Nbd7 10. d5 exd5 11. Nxd5 b5 12. Nxf6+ Nxf6 13. Qxd8+ Rxd8 14. Be2 Bd6 15. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "2rq1rk1/pb3ppp/1pn1pn2/2b5/2B5/1PN1PN2/PB3PPP/2RQ1RK1 w - - 0 13");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 O-O dxc4 Bxc4 a6 a3 c5 Nc3 Nbd7 d5 exd5 Nxd5 b5 Nxf6+ Nxf6 Qxd8+ Rxd8 Be2 Bd6 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -50,7 +54,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 13, "b", "r2Qkb1r/1b3ppp/p4n2/1pp5/2B5/P3PN2/1P3PPP/R1B2RK1 b kq - 0 13"),
 (@game_id, 14, "w", "3rkb1r/1b3ppp/p4n2/1pp5/2B5/P3PN2/1P3PPP/R1B2RK1 w k - 0 14"),
 (@game_id, 14, "b", "3rkb1r/1b3ppp/p4n2/1pp5/8/P3PN2/1P2BPPP/R1B2RK1 b k - 1 14"),
-(@game_id, 15, "w", "3rk2r/1b3ppp/p2b1n2/1pp5/8/P3PN2/1P2BPPP/R1B2RK1 w k - 2 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. O-O Bd6 7. b3 O-O 8. Bb2 Nbd7 9. Nc3 a6 10. Qe2 Qe7 11. Rad1 Ne4 12. Qc2 f5 13. Ne2 dxc4 14. bxc4 c5 15. Ne5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "w", "3rk2r/1b3ppp/p2b1n2/1pp5/8/P3PN2/1P2BPPP/R1B2RK1 w k - 2 15");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 O-O Bd6 b3 O-O Bb2 Nbd7 Nc3 a6 Qe2 Qe7 Rad1 Ne4 Qc2 f5 Ne2 dxc4 bxc4 c5 Ne5 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -79,7 +85,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 14, "w", "r4rk1/1bpnq1pp/pp1bp3/5p2/2pPn3/1P1BPN2/PBQ1NPPP/3R1RK1 w - - 0 14"),
 (@game_id, 14, "b", "r4rk1/1bpnq1pp/pp1bp3/5p2/2PPn3/3BPN2/PBQ1NPPP/3R1RK1 b - - 0 14"),
 (@game_id, 15, "w", "r4rk1/1b1nq1pp/pp1bp3/2p2p2/2PPn3/3BPN2/PBQ1NPPP/3R1RK1 w - - 0 15"),
-(@game_id, 15, "b", "r4rk1/1b1nq1pp/pp1bp3/2p1Np2/2PPn3/3BP3/PBQ1NPPP/3R1RK1 b - - 1 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Bd3 d5 6. O-O Nbd7 7. Nc3 Bd6 8. Qe2 O-O 9. e4 dxe4 10. Nxe4 Nxe4 11. Bxe4 Bxe4 12. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "r4rk1/1b1nq1pp/pp1bp3/2p1Np2/2PPn3/3BP3/PBQ1NPPP/3R1RK1 b - - 1 15");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Bd3 d5 O-O Nbd7 Nc3 Bd6 Qe2 O-O e4 dxe4 Nxe4 Nxe4 Bxe4 Bxe4 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -101,7 +109,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 10, "b", "r2q1rk1/pbpn1ppp/1p1bpn2/8/2PPN3/3B1N2/PP2QPPP/R1B2RK1 b - - 0 10"),
 (@game_id, 11, "w", "r2q1rk1/pbpn1ppp/1p1bp3/8/2PPn3/3B1N2/PP2QPPP/R1B2RK1 w - - 0 11"),
 (@game_id, 11, "b", "r2q1rk1/pbpn1ppp/1p1bp3/8/2PPB3/5N2/PP2QPPP/R1B2RK1 b - - 0 11"),
-(@game_id, 12, "w", "r2q1rk1/p1pn1ppp/1p1bp3/8/2PPb3/5N2/PP2QPPP/R1B2RK1 w - - 0 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 c5 6. O-O Be7 7. Nc3 cxd4 8. exd4 d5 9. cxd5 Nxd5 10. Ne5 O-O 11. Qh5 Nf6 12. Qh4 Nc6 13. Bg5 g6 14. Ba6 Nxe5 15. dxe5 1-0");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "w", "r2q1rk1/p1pn1ppp/1p1bp3/8/2PPb3/5N2/PP2QPPP/R1B2RK1 w - - 0 12");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 c5 O-O Be7 Nc3 cxd4 exd4 d5 cxd5 Nxd5 Ne5 O-O Qh5 Nf6 Qh4 Nc6 Bg5 g6 Ba6 Nxe5 dxe5 1-0");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -130,7 +140,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 14, "w", "r2q1rk1/pb2bp1p/1pn1pnp1/4N1B1/3P3Q/2NB4/PP3PPP/R4RK1 w - - 0 14"),
 (@game_id, 14, "b", "r2q1rk1/pb2bp1p/Bpn1pnp1/4N1B1/3P3Q/2N5/PP3PPP/R4RK1 b - - 1 14"),
 (@game_id, 15, "w", "r2q1rk1/pb2bp1p/Bp2pnp1/4n1B1/3P3Q/2N5/PP3PPP/R4RK1 w - - 0 15"),
-(@game_id, 15, "b", "r2q1rk1/pb2bp1p/Bp2pnp1/4P1B1/7Q/2N5/PP3PPP/R4RK1 b - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Bd3 d5 6. O-O Bd6 7. Nc3 O-O 8. cxd5 exd5 9. b3 Nbd7 10. Bb2 a6 11. Rc1 Qe7 12. Ne2 Ne4 13. Qc2 Rac8 14. Rfe1 f5 15. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "r2q1rk1/pb2bp1p/Bp2pnp1/4P1B1/7Q/2N5/PP3PPP/R4RK1 b - - 0 15");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Bd3 d5 O-O Bd6 Nc3 O-O cxd5 exd5 b3 Nbd7 Bb2 a6 Rc1 Qe7 Ne2 Ne4 Qc2 Rac8 Rfe1 f5 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -158,7 +170,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 13, "b", "r4rk1/1bpnqppp/pp1b4/3p4/3Pn3/1P1BPN2/PBQ1NPPP/2R2RK1 b - - 5 13"),
 (@game_id, 14, "w", "2r2rk1/1bpnqppp/pp1b4/3p4/3Pn3/1P1BPN2/PBQ1NPPP/2R2RK1 w - - 6 14"),
 (@game_id, 14, "b", "2r2rk1/1bpnqppp/pp1b4/3p4/3Pn3/1P1BPN2/PBQ1NPPP/2R1R1K1 b - - 7 14"),
-(@game_id, 15, "w", "2r2rk1/1bpnq1pp/pp1b4/3p1p2/3Pn3/1P1BPN2/PBQ1NPPP/2R1R1K1 w - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Nc3 d5 6. cxd5 exd5 7. Bb5+ c6 8. Bd3 Nbd7 9. O-O Be7 10. b3 O-O 11. Bb2 Bd6 12. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "w", "2r2rk1/1bpnq1pp/pp1b4/3p1p2/3Pn3/1P1BPN2/PBQ1NPPP/2R1R1K1 w - - 0 15");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Nc3 d5 cxd5 exd5 Bb5+ c6 Bd3 Nbd7 O-O Be7 b3 O-O Bb2 Bd6 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -180,14 +194,18 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 10, "b", "r2qk2r/pb1nbppp/1pp2n2/3p4/3P4/1PNBPN2/P4PPP/R1BQ1RK1 b kq - 0 10"),
 (@game_id, 11, "w", "r2q1rk1/pb1nbppp/1pp2n2/3p4/3P4/1PNBPN2/P4PPP/R1BQ1RK1 w - - 1 11"),
 (@game_id, 11, "b", "r2q1rk1/pb1nbppp/1pp2n2/3p4/3P4/1PNBPN2/PB3PPP/R2Q1RK1 b - - 2 11"),
-(@game_id, 12, "w", "r2q1rk1/pb1n1ppp/1ppb1n2/3p4/3P4/1PNBPN2/PB3PPP/R2Q1RK1 w - - 3 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "w", "r2q1rk1/pb1n1ppp/1ppb1n2/3p4/3P4/1PNBPN2/PB3PPP/R2Q1RK1 w - - 3 12");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
 (@game_id, 3, "w", "rnbqkb1r/pppp1ppp/4pn2/8/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 0 3"),
 (@game_id, 3, "b", "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/5N2/PP2PPPP/RNBQKB1R b KQkq - 0 3"),
 (@game_id, 4, "w", "rnbqkb1r/p1pp1ppp/1p2pn2/8/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq - 0 4"),
-(@game_id, 4, "b", "rnbqkb1r/p1pp1ppp/1p2pn2/8/2PP4/4PN2/PP3PPP/RNBQKB1R b KQkq - 0 4");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 c5 6. O-O cxd4 7. exd4 d5 8. b3 Nc6 9. Bb2 Nb4 10. Be2 Be7 11. Nbd2 O-O 12. Ne5 Rc8 13. f4 dxc4 14. bxc4 b5 15. c5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 4, "b", "rnbqkb1r/p1pp1ppp/1p2pn2/8/2PP4/4PN2/PP3PPP/RNBQKB1R b KQkq - 0 4");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 c5 O-O cxd4 exd4 d5 b3 Nc6 Bb2 Nb4 Be2 Be7 Nbd2 O-O Ne5 Rc8 f4 dxc4 bxc4 b5 c5 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -216,7 +234,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 14, "w", "2rq1rk1/pb2bppp/1p2pn2/4N3/1npP1P2/1P6/PB1NB1PP/R2Q1RK1 w - - 0 14"),
 (@game_id, 14, "b", "2rq1rk1/pb2bppp/1p2pn2/4N3/1nPP1P2/8/PB1NB1PP/R2Q1RK1 b - - 0 14"),
 (@game_id, 15, "w", "2rq1rk1/pb2bppp/4pn2/1p2N3/1nPP1P2/8/PB1NB1PP/R2Q1RK1 w - - 0 15"),
-(@game_id, 15, "b", "2rq1rk1/pb2bppp/4pn2/1pP1N3/1n1P1P2/8/PB1NB1PP/R2Q1RK1 b - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Bd3 c5 6. O-O d6 7. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "2rq1rk1/pb2bppp/4pn2/1pP1N3/1n1P1P2/8/PB1NB1PP/R2Q1RK1 b - - 0 15");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Bd3 c5 O-O d6 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -228,7 +248,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 5, "b", "rn1qkb1r/pbpp1ppp/1p2pn2/8/2PP4/3BPN2/PP3PPP/RNBQK2R b KQkq - 2 5"),
 (@game_id, 6, "w", "rn1qkb1r/pb1p1ppp/1p2pn2/2p5/2PP4/3BPN2/PP3PPP/RNBQK2R w KQkq - 0 6"),
 (@game_id, 6, "b", "rn1qkb1r/pb1p1ppp/1p2pn2/2p5/2PP4/3BPN2/PP3PPP/RNBQ1RK1 b kq - 1 6"),
-(@game_id, 7, "w", "rn1qkb1r/pb3ppp/1p1ppn2/2p5/2PP4/3BPN2/PP3PPP/RNBQ1RK1 w kq - 0 7");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. cxd5 exd5 7. O-O Bd6 8. Ne5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 7, "w", "rn1qkb1r/pb3ppp/1p1ppn2/2p5/2PP4/3BPN2/PP3PPP/RNBQ1RK1 w kq - 0 7");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 cxd5 exd5 O-O Bd6 Ne5 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -243,7 +265,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 7, "w", "rn1qkb1r/pbp2ppp/1p3n2/3p4/3P4/3BPN2/PP3PPP/RNBQK2R w KQkq - 0 7"),
 (@game_id, 7, "b", "rn1qkb1r/pbp2ppp/1p3n2/3p4/3P4/3BPN2/PP3PPP/RNBQ1RK1 b kq - 1 7"),
 (@game_id, 8, "w", "rn1qk2r/pbp2ppp/1p1b1n2/3p4/3P4/3BPN2/PP3PPP/RNBQ1RK1 w kq - 2 8"),
-(@game_id, 8, "b", "rn1qk2r/pbp2ppp/1p1b1n2/3pN3/3P4/3BP3/PP3PPP/RNBQ1RK1 b kq - 3 8");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. O-O Bd6 7. Nc3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 8, "b", "rn1qk2r/pbp2ppp/1p1b1n2/3pN3/3P4/3BP3/PP3PPP/RNBQ1RK1 b kq - 3 8");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 O-O Bd6 Nc3 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -256,7 +280,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 6, "w", "rn1qkb1r/pbp2ppp/1p2pn2/3p4/2PP4/3BPN2/PP3PPP/RNBQK2R w KQkq - 0 6"),
 (@game_id, 6, "b", "rn1qkb1r/pbp2ppp/1p2pn2/3p4/2PP4/3BPN2/PP3PPP/RNBQ1RK1 b kq - 1 6"),
 (@game_id, 7, "w", "rn1qk2r/pbp2ppp/1p1bpn2/3p4/2PP4/3BPN2/PP3PPP/RNBQ1RK1 w kq - 2 7"),
-(@game_id, 7, "b", "rn1qk2r/pbp2ppp/1p1bpn2/3p4/2PP4/2NBPN2/PP3PPP/R1BQ1RK1 b kq - 3 7");SET @game_id = (SELECT gid FROM Games WHERE game="1. Nf3 Nf6 2. c4 b6 3. d4 e6 4. e3 Bb7 5. Bd3 Be7 6. O-O O-O 7. Nc3 d5 8. b3 Nbd7 9. Bb2 c5 10. Qe2 Qc7 11. Rac1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 7, "b", "rn1qk2r/pbp2ppp/1p1bpn2/3p4/2PP4/2NBPN2/PP3PPP/R1BQ1RK1 b kq - 3 7");
+SET @game_id = (SELECT gid FROM Games WHERE game="Nf3 Nf6 c4 b6 d4 e6 e3 Bb7 Bd3 Be7 O-O O-O Nc3 d5 b3 Nbd7 Bb2 c5 Qe2 Qc7 Rac1 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 2 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2P5/5N2/PP1PPPPP/RNBQKB1R b KQkq - 0 2"),
@@ -277,7 +303,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 10, "w", "r2q1rk1/pb1nbppp/1p2pn2/2pp4/2PP4/1PNBPN2/PB3PPP/R2Q1RK1 w - - 0 10"),
 (@game_id, 10, "b", "r2q1rk1/pb1nbppp/1p2pn2/2pp4/2PP4/1PNBPN2/PB2QPPP/R4RK1 b - - 1 10"),
 (@game_id, 11, "w", "r4rk1/pbqnbppp/1p2pn2/2pp4/2PP4/1PNBPN2/PB2QPPP/R4RK1 w - - 2 11"),
-(@game_id, 11, "b", "r4rk1/pbqnbppp/1p2pn2/2pp4/2PP4/1PNBPN2/PB2QPPP/2R2RK1 b - - 3 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Bd3 Bb4+ 6. Bd2 Bxd2+ 7. Nbxd2 O-O 8. O-O c5 9. Qe2 d6 10. Rfd1 Nbd7 11. Rac1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "b", "r4rk1/pbqnbppp/1p2pn2/2pp4/2PP4/1PNBPN2/PB2QPPP/2R2RK1 b - - 3 11");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Bd3 Bb4+ Bd2 Bxd2+ Nbxd2 O-O O-O c5 Qe2 d6 Rfd1 Nbd7 Rac1 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -298,7 +326,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 10, "w", "rn1q1rk1/pb3ppp/1p1ppn2/2p5/2PP4/3BPN2/PP1NQPPP/R4RK1 w - - 0 10"),
 (@game_id, 10, "b", "rn1q1rk1/pb3ppp/1p1ppn2/2p5/2PP4/3BPN2/PP1NQPPP/R2R2K1 b - - 1 10"),
 (@game_id, 11, "w", "r2q1rk1/pb1n1ppp/1p1ppn2/2p5/2PP4/3BPN2/PP1NQPPP/R2R2K1 w - - 2 11"),
-(@game_id, 11, "b", "r2q1rk1/pb1n1ppp/1p1ppn2/2p5/2PP4/3BPN2/PP1NQPPP/2RR2K1 b - - 3 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 c5 6. O-O a6 7. b3 Be7 8. Bb2 d6 9. Qe2 Nbd7 10. Nc3 O-O 11. Rac1 Re8 12. e4 cxd4 13. Nxd4 Bf8 14. Bb1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "b", "r2q1rk1/pb1n1ppp/1p1ppn2/2p5/2PP4/3BPN2/PP1NQPPP/2RR2K1 b - - 3 11");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 c5 O-O a6 b3 Be7 Bb2 d6 Qe2 Nbd7 Nc3 O-O Rac1 Re8 e4 cxd4 Nxd4 Bf8 Bb1 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -325,7 +355,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 13, "w", "r2qr1k1/1b1nbppp/pp1ppn2/8/2PpP3/1PNB1N2/PB2QPPP/2R2RK1 w - - 0 13"),
 (@game_id, 13, "b", "r2qr1k1/1b1nbppp/pp1ppn2/8/2PNP3/1PNB4/PB2QPPP/2R2RK1 b - - 0 13"),
 (@game_id, 14, "w", "r2qrbk1/1b1n1ppp/pp1ppn2/8/2PNP3/1PNB4/PB2QPPP/2R2RK1 w - - 1 14"),
-(@game_id, 14, "b", "r2qrbk1/1b1n1ppp/pp1ppn2/8/2PNP3/1PN5/PB2QPPP/1BR2RK1 b - - 2 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. O-O Nbd7 7. Nc3 Be7 8. b3 O-O 9. Bb2 c5 10. Qe2 Ne4 11. cxd5 Nxc3 12. Bxc3 Bxd5 13. Rfd1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "r2qrbk1/1b1n1ppp/pp1ppn2/8/2PNP3/1PN5/PB2QPPP/1BR2RK1 b - - 2 14");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 O-O Nbd7 Nc3 Be7 b3 O-O Bb2 c5 Qe2 Ne4 cxd5 Nxc3 Bxc3 Bxd5 Rfd1 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -350,7 +382,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 12, "w", "r2q1rk1/pb1nbppp/1p2p3/2pP4/3P4/1PnBPN2/PB2QPPP/R4RK1 w - - 0 12"),
 (@game_id, 12, "b", "r2q1rk1/pb1nbppp/1p2p3/2pP4/3P4/1PBBPN2/P3QPPP/R4RK1 b - - 0 12"),
 (@game_id, 13, "w", "r2q1rk1/p2nbppp/1p2p3/2pb4/3P4/1PBBPN2/P3QPPP/R4RK1 w - - 0 13"),
-(@game_id, 13, "b", "r2q1rk1/p2nbppp/1p2p3/2pb4/3P4/1PBBPN2/P3QPPP/R2R2K1 b - - 1 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 b6 3. c4 e6 4. e3 Bb7 5. Bd3 d5 6. O-O dxc4 7. Bxc4 a6 8. Nc3 b5 9. Bb3 c5 10. Qe2 Nbd7 11. Rd1 Qc7 12. e4 cxd4 13. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r2q1rk1/p2nbppp/1p2p3/2pb4/3P4/1PBBPN2/P3QPPP/R2R2K1 b - - 1 13");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 b6 c4 e6 e3 Bb7 Bd3 d5 O-O dxc4 Bxc4 a6 Nc3 b5 Bb3 c5 Qe2 Nbd7 Rd1 Qc7 e4 cxd4 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -374,7 +408,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 11, "b", "r2qkb1r/1b1n1ppp/p3pn2/1pp5/3P4/1BN1PN2/PP2QPPP/R1BR2K1 b kq - 3 11"),
 (@game_id, 12, "w", "r3kb1r/1bqn1ppp/p3pn2/1pp5/3P4/1BN1PN2/PP2QPPP/R1BR2K1 w kq - 4 12"),
 (@game_id, 12, "b", "r3kb1r/1bqn1ppp/p3pn2/1pp5/3PP3/1BN2N2/PP2QPPP/R1BR2K1 b kq - 0 12"),
-(@game_id, 13, "w", "r3kb1r/1bqn1ppp/p3pn2/1p6/3pP3/1BN2N2/PP2QPPP/R1BR2K1 w kq - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. O-O Bd6 7. Nbd2 O-O 8. Qe2 Ne4 9. b3 Nd7 10. Bb2 a5 11. a3 Qe7 12. Rfd1 f5 13. Nf1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "r3kb1r/1bqn1ppp/p3pn2/1p6/3pP3/1BN2N2/PP2QPPP/R1BR2K1 w kq - 0 13");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 O-O Bd6 Nbd2 O-O Qe2 Ne4 b3 Nd7 Bb2 a5 a3 Qe7 Rfd1 f5 Nf1 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -399,7 +435,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 12, "w", "r4rk1/1bpnqppp/1p1bp3/p2p4/2PPn3/PP1BPN2/1B1NQPPP/R4RK1 w - - 1 12"),
 (@game_id, 12, "b", "r4rk1/1bpnqppp/1p1bp3/p2p4/2PPn3/PP1BPN2/1B1NQPPP/R2R2K1 b - - 2 12"),
 (@game_id, 13, "w", "r4rk1/1bpnq1pp/1p1bp3/p2p1p2/2PPn3/PP1BPN2/1B1NQPPP/R2R2K1 w - - 0 13"),
-(@game_id, 13, "b", "r4rk1/1bpnq1pp/1p1bp3/p2p1p2/2PPn3/PP1BPN2/1B2QPPP/R2R1NK1 b - - 1 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. c4 Nf6 2. Nf3 e6 3. d4 b6 4. e3 Bb7 5. Bd3 Be7 6. O-O c5 7. Nc3 cxd4 8. exd4 d5 9. cxd5 Nxd5 10. Ne5 O-O 11. Qh5 Nf6 12. Qh4 Ne4 13. Qh5 Nf6 14. Qh4 Ne4 15. Qh5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r4rk1/1bpnq1pp/1p1bp3/p2p1p2/2PPn3/PP1BPN2/1B2QPPP/R2R1NK1 b - - 1 13");
+SET @game_id = (SELECT gid FROM Games WHERE game="c4 Nf6 Nf3 e6 d4 b6 e3 Bb7 Bd3 Be7 O-O c5 Nc3 cxd4 exd4 d5 cxd5 Nxd5 Ne5 O-O Qh5 Nf6 Qh4 Ne4 Qh5 Nf6 Qh4 Ne4 Qh5 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2P5/5N2/PP1PPPPP/RNBQKB1R b KQkq - 2 2"),
@@ -428,7 +466,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 14, "w", "rn1q1rk1/pb2bppp/1p2pn2/4N2Q/3P4/2NB4/PP3PPP/R1B2RK1 w - - 8 14"),
 (@game_id, 14, "b", "rn1q1rk1/pb2bppp/1p2pn2/4N3/3P3Q/2NB4/PP3PPP/R1B2RK1 b - - 9 14"),
 (@game_id, 15, "w", "rn1q1rk1/pb2bppp/1p2p3/4N3/3Pn2Q/2NB4/PP3PPP/R1B2RK1 w - - 10 15"),
-(@game_id, 15, "b", "rn1q1rk1/pb2bppp/1p2p3/4N2Q/3Pn3/2NB4/PP3PPP/R1B2RK1 b - - 11 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Bd3 g6 6. Nc3 d5 7. cxd5 exd5 8. Qa4+ Bc6 9. Qc2 Be7 10. a3 O-O 11. b4 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "rn1q1rk1/pb2bppp/1p2p3/4N2Q/3Pn3/2NB4/PP3PPP/R1B2RK1 b - - 11 15");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Bd3 g6 Nc3 d5 cxd5 exd5 Qa4+ Bc6 Qc2 Be7 a3 O-O b4 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -449,7 +489,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 10, "w", "rn1qk2r/p1p1bp1p/1pb2np1/3p4/3P4/2NBPN2/PPQ2PPP/R1B1K2R w KQkq - 4 10"),
 (@game_id, 10, "b", "rn1qk2r/p1p1bp1p/1pb2np1/3p4/3P4/P1NBPN2/1PQ2PPP/R1B1K2R b KQkq - 0 10"),
 (@game_id, 11, "w", "rn1q1rk1/p1p1bp1p/1pb2np1/3p4/3P4/P1NBPN2/1PQ2PPP/R1B1K2R w KQ - 1 11"),
-(@game_id, 11, "b", "rn1q1rk1/p1p1bp1p/1pb2np1/3p4/1P1P4/P1NBPN2/2Q2PPP/R1B1K2R b KQ - 0 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. Nf3 Nf6 2. c4 b6 3. d4 e6 4. e3 Bb7 5. Bd3 d5 6. b3 Bd6 7. Bb2 Nbd7 8. Nc3 a6 9. O-O O-O 10. Rc1 Re8 11. cxd5 exd5 12. Ne2 Ne4 13. Ng3 g6 14. Qc2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "b", "rn1q1rk1/p1p1bp1p/1pb2np1/3p4/1P1P4/P1NBPN2/2Q2PPP/R1B1K2R b KQ - 0 11");
+SET @game_id = (SELECT gid FROM Games WHERE game="Nf3 Nf6 c4 b6 d4 e6 e3 Bb7 Bd3 d5 b3 Bd6 Bb2 Nbd7 Nc3 a6 O-O O-O Rc1 Re8 cxd5 exd5 Ne2 Ne4 Ng3 g6 Qc2 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 2 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2P5/5N2/PP1PPPPP/RNBQKB1R b KQkq - 0 2"),
@@ -476,7 +518,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 13, "w", "r2qr1k1/1bpn1ppp/pp1b4/3p4/3Pn3/1P1BPN2/PB2NPPP/2RQ1RK1 w - - 2 13"),
 (@game_id, 13, "b", "r2qr1k1/1bpn1ppp/pp1b4/3p4/3Pn3/1P1BPNN1/PB3PPP/2RQ1RK1 b - - 3 13"),
 (@game_id, 14, "w", "r2qr1k1/1bpn1p1p/pp1b2p1/3p4/3Pn3/1P1BPNN1/PB3PPP/2RQ1RK1 w - - 0 14"),
-(@game_id, 14, "b", "r2qr1k1/1bpn1p1p/pp1b2p1/3p4/3Pn3/1P1BPNN1/PBQ2PPP/2R2RK1 b - - 1 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. O-O Bd6 7. cxd5 exd5 8. b4 O-O 9. Qb3 Qe7 10. b5 c5 11. bxc6 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "r2qr1k1/1bpn1p1p/pp1b2p1/3p4/3Pn3/1P1BPNN1/PBQ2PPP/2R2RK1 b - - 1 14");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 O-O Bd6 cxd5 exd5 b4 O-O Qb3 Qe7 b5 c5 bxc6 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -497,7 +541,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 10, "w", "rn3rk1/pbp1qppp/1p1b1n2/3p4/1P1P4/1Q1BPN2/P4PPP/RNB2RK1 w - - 3 10"),
 (@game_id, 10, "b", "rn3rk1/pbp1qppp/1p1b1n2/1P1p4/3P4/1Q1BPN2/P4PPP/RNB2RK1 b - - 0 10"),
 (@game_id, 11, "w", "rn3rk1/pb2qppp/1p1b1n2/1Ppp4/3P4/1Q1BPN2/P4PPP/RNB2RK1 w - c6 0 11"),
-(@game_id, 11, "b", "rn3rk1/pb2qppp/1pPb1n2/3p4/3P4/1Q1BPN2/P4PPP/RNB2RK1 b - - 0 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Nc3 Bb4 6. Bd2 O-O 7. Bd3 c5 8. a3 Bxc3 9. Bxc3 d6 10. dxc5 dxc5 11. Qc2 Nbd7 12. O-O-O Qc7 13. Ng5 h6 14. Ne4 Bxe4 15. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "b", "rn3rk1/pb2qppp/1pPb1n2/3p4/3P4/1Q1BPN2/P4PPP/RNB2RK1 b - - 0 11");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Nc3 Bb4 Bd2 O-O Bd3 c5 a3 Bxc3 Bxc3 d6 dxc5 dxc5 Qc2 Nbd7 O-O-O Qc7 Ng5 h6 Ne4 Bxe4 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -525,7 +571,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 13, "b", "r4rk1/pbqn1ppp/1p2pn2/2p3N1/2P5/P1BBP3/1PQ2PPP/2KR3R b - - 5 13"),
 (@game_id, 14, "w", "r4rk1/pbqn1pp1/1p2pn1p/2p3N1/2P5/P1BBP3/1PQ2PPP/2KR3R w - - 0 14"),
 (@game_id, 14, "b", "r4rk1/pbqn1pp1/1p2pn1p/2p5/2P1N3/P1BBP3/1PQ2PPP/2KR3R b - - 1 14"),
-(@game_id, 15, "w", "r4rk1/p1qn1pp1/1p2pn1p/2p5/2P1b3/P1BBP3/1PQ2PPP/2KR3R w - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. O-O dxc4 7. Bxc4 a6 8. Qe2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "w", "r4rk1/p1qn1pp1/1p2pn1p/2p5/2P1b3/P1BBP3/1PQ2PPP/2KR3R w - - 0 15");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 O-O dxc4 Bxc4 a6 Qe2 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -540,7 +588,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 7, "w", "rn1qkb1r/pbp2ppp/1p2pn2/8/2pP4/3BPN2/PP3PPP/RNBQ1RK1 w kq - 0 7"),
 (@game_id, 7, "b", "rn1qkb1r/pbp2ppp/1p2pn2/8/2BP4/4PN2/PP3PPP/RNBQ1RK1 b kq - 0 7"),
 (@game_id, 8, "w", "rn1qkb1r/1bp2ppp/pp2pn2/8/2BP4/4PN2/PP3PPP/RNBQ1RK1 w kq - 0 8"),
-(@game_id, 8, "b", "rn1qkb1r/1bp2ppp/pp2pn2/8/2BP4/4PN2/PP2QPPP/RNB2RK1 b kq - 1 8");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 c5 6. O-O cxd4 7. exd4 d5 8. b3 Nbd7 9. Bb2 Be7 10. Nbd2 Ne4 11. Re1 Nxd2 12. Nxd2 O-O 13. Qc2 Nf6 14. c5 a5 15. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 8, "b", "rn1qkb1r/1bp2ppp/pp2pn2/8/2BP4/4PN2/PP2QPPP/RNB2RK1 b kq - 1 8");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 c5 O-O cxd4 exd4 d5 b3 Nbd7 Bb2 Be7 Nbd2 Ne4 Re1 Nxd2 Nxd2 O-O Qc2 Nf6 c5 a5 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -568,7 +618,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 13, "b", "r2q1rk1/pb1nbppp/1p2p3/3p4/2PP4/1P1B4/PBQN1PPP/R3R1K1 b - - 2 13"),
 (@game_id, 14, "w", "r2q1rk1/pb2bppp/1p2pn2/3p4/2PP4/1P1B4/PBQN1PPP/R3R1K1 w - - 3 14"),
 (@game_id, 14, "b", "r2q1rk1/pb2bppp/1p2pn2/2Pp4/3P4/1P1B4/PBQN1PPP/R3R1K1 b - - 0 14"),
-(@game_id, 15, "w", "r2q1rk1/1b2bppp/1p2pn2/p1Pp4/3P4/1P1B4/PBQN1PPP/R3R1K1 w - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 Bb4+ 6. Nbd2 O-O 7. O-O d5 8. b3 Nbd7 9. Qc2 c5 10. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "w", "r2q1rk1/1b2bppp/1p2pn2/p1Pp4/3P4/1P1B4/PBQN1PPP/R3R1K1 w - - 0 15");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 Bb4+ Nbd2 O-O O-O d5 b3 Nbd7 Qc2 c5 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -586,7 +638,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 8, "b", "rn1q1rk1/pbp2ppp/1p2pn2/3p4/1bPP4/1P1BPN2/P2N1PPP/R1BQ1RK1 b - - 0 8"),
 (@game_id, 9, "w", "r2q1rk1/pbpn1ppp/1p2pn2/3p4/1bPP4/1P1BPN2/P2N1PPP/R1BQ1RK1 w - - 1 9"),
 (@game_id, 9, "b", "r2q1rk1/pbpn1ppp/1p2pn2/3p4/1bPP4/1P1BPN2/P1QN1PPP/R1B2RK1 b - - 2 9"),
-(@game_id, 10, "w", "r2q1rk1/pb1n1ppp/1p2pn2/2pp4/1bPP4/1P1BPN2/P1QN1PPP/R1B2RK1 w - - 0 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 Be7 6. O-O O-O 7. Nc3 d5 8. Qe2 c5 9. Rd1 cxd4 10. Nxd4 dxc4 11. Bxc4 Qc8 12. Bd2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "w", "r2q1rk1/pb1n1ppp/1p2pn2/2pp4/1bPP4/1P1BPN2/P1QN1PPP/R1B2RK1 w - - 0 10");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 Be7 O-O O-O Nc3 d5 Qe2 c5 Rd1 cxd4 Nxd4 dxc4 Bxc4 Qc8 Bd2 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -609,7 +663,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 11, "w", "rn1q1rk1/pb2bppp/1p2pn2/8/2pN4/2NBP3/PP2QPPP/R1BR2K1 w - - 0 11"),
 (@game_id, 11, "b", "rn1q1rk1/pb2bppp/1p2pn2/8/2BN4/2N1P3/PP2QPPP/R1BR2K1 b - - 0 11"),
 (@game_id, 12, "w", "rnq2rk1/pb2bppp/1p2pn2/8/2BN4/2N1P3/PP2QPPP/R1BR2K1 w - - 1 12"),
-(@game_id, 12, "b", "rnq2rk1/pb2bppp/1p2pn2/8/2BN4/2N1P3/PP1BQPPP/R2R2K1 b - - 2 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Bd3 Bd6 6. O-O O-O 7. Nbd2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "b", "rnq2rk1/pb2bppp/1p2pn2/8/2BN4/2N1P3/PP1BQPPP/R2R2K1 b - - 2 12");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Bd3 Bd6 O-O O-O Nbd2 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -622,7 +678,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 6, "w", "rn1qk2r/pbpp1ppp/1p1bpn2/8/2PP4/3BPN2/PP3PPP/RNBQK2R w KQkq - 3 6"),
 (@game_id, 6, "b", "rn1qk2r/pbpp1ppp/1p1bpn2/8/2PP4/3BPN2/PP3PPP/RNBQ1RK1 b kq - 4 6"),
 (@game_id, 7, "w", "rn1q1rk1/pbpp1ppp/1p1bpn2/8/2PP4/3BPN2/PP3PPP/RNBQ1RK1 w - - 5 7"),
-(@game_id, 7, "b", "rn1q1rk1/pbpp1ppp/1p1bpn2/8/2PP4/3BPN2/PP1N1PPP/R1BQ1RK1 b - - 6 7");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 Be7 6. O-O O-O 7. b3 c5 8. Bb2 d5 9. Nbd2 Nbd7 10. Rc1 cxd4 11. exd4 Rc8 12. Re1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 7, "b", "rn1q1rk1/pbpp1ppp/1p1bpn2/8/2PP4/3BPN2/PP1N1PPP/R1BQ1RK1 b - - 6 7");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 Be7 O-O O-O b3 c5 Bb2 d5 Nbd2 Nbd7 Rc1 cxd4 exd4 Rc8 Re1 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -645,7 +703,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 11, "w", "r2q1rk1/pb1nbppp/1p2pn2/3p4/2Pp4/1P1BPN2/PB1N1PPP/2RQ1RK1 w - - 0 11"),
 (@game_id, 11, "b", "r2q1rk1/pb1nbppp/1p2pn2/3p4/2PP4/1P1B1N2/PB1N1PPP/2RQ1RK1 b - - 0 11"),
 (@game_id, 12, "w", "2rq1rk1/pb1nbppp/1p2pn2/3p4/2PP4/1P1B1N2/PB1N1PPP/2RQ1RK1 w - - 1 12"),
-(@game_id, 12, "b", "2rq1rk1/pb1nbppp/1p2pn2/3p4/2PP4/1P1B1N2/PB1N1PPP/2RQR1K1 b - - 2 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. b3 Bd6 7. Nbd2 Nbd7 8. O-O O-O 9. Bb2 Ne4 10. Qc2 f5 11. Rad1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "b", "2rq1rk1/pb1nbppp/1p2pn2/3p4/2PP4/1P1B1N2/PB1N1PPP/2RQR1K1 b - - 2 12");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 b3 Bd6 Nbd2 Nbd7 O-O O-O Bb2 Ne4 Qc2 f5 Rad1 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -666,7 +726,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 10, "w", "r2q1rk1/pbpn1ppp/1p1bp3/3p4/2PPn3/1P1BPN2/PB1N1PPP/R2Q1RK1 w - - 7 10"),
 (@game_id, 10, "b", "r2q1rk1/pbpn1ppp/1p1bp3/3p4/2PPn3/1P1BPN2/PBQN1PPP/R4RK1 b - - 8 10"),
 (@game_id, 11, "w", "r2q1rk1/pbpn2pp/1p1bp3/3p1p2/2PPn3/1P1BPN2/PBQN1PPP/R4RK1 w - - 0 11"),
-(@game_id, 11, "b", "r2q1rk1/pbpn2pp/1p1bp3/3p1p2/2PPn3/1P1BPN2/PBQN1PPP/3R1RK1 b - - 1 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Bd3 Be7 6. O-O O-O 7. Nc3 d5 8. b3 Nbd7 9. Bb2 c5 10. Rc1 Rc8 11. Qe2 Ne4 12. Rfd1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "b", "r2q1rk1/pbpn2pp/1p1bp3/3p1p2/2PPn3/1P1BPN2/PBQN1PPP/3R1RK1 b - - 1 11");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Bd3 Be7 O-O O-O Nc3 d5 b3 Nbd7 Bb2 c5 Rc1 Rc8 Qe2 Ne4 Rfd1 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -689,7 +751,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 11, "w", "2rq1rk1/pb1nbppp/1p2pn2/2pp4/2PP4/1PNBPN2/PB3PPP/2RQ1RK1 w - - 2 11"),
 (@game_id, 11, "b", "2rq1rk1/pb1nbppp/1p2pn2/2pp4/2PP4/1PNBPN2/PB2QPPP/2R2RK1 b - - 3 11"),
 (@game_id, 12, "w", "2rq1rk1/pb1nbppp/1p2p3/2pp4/2PPn3/1PNBPN2/PB2QPPP/2R2RK1 w - - 4 12"),
-(@game_id, 12, "b", "2rq1rk1/pb1nbppp/1p2p3/2pp4/2PPn3/1PNBPN2/PB2QPPP/2RR2K1 b - - 5 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. cxd5 exd5 7. O-O Bd6 8. Nc3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "b", "2rq1rk1/pb1nbppp/1p2p3/2pp4/2PPn3/1PNBPN2/PB2QPPP/2RR2K1 b - - 5 12");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 cxd5 exd5 O-O Bd6 Nc3 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -704,7 +768,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 7, "w", "rn1qkb1r/pbp2ppp/1p3n2/3p4/3P4/3BPN2/PP3PPP/RNBQK2R w KQkq - 0 7"),
 (@game_id, 7, "b", "rn1qkb1r/pbp2ppp/1p3n2/3p4/3P4/3BPN2/PP3PPP/RNBQ1RK1 b kq - 1 7"),
 (@game_id, 8, "w", "rn1qk2r/pbp2ppp/1p1b1n2/3p4/3P4/3BPN2/PP3PPP/RNBQ1RK1 w kq - 2 8"),
-(@game_id, 8, "b", "rn1qk2r/pbp2ppp/1p1b1n2/3p4/3P4/2NBPN2/PP3PPP/R1BQ1RK1 b kq - 3 8");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. O-O Bd6 7. Nc3 O-O 8. b3 Nbd7 9. Bb2 c5 10. cxd5 Nxd5 11. Nxd5 Bxd5 12. Qe2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 8, "b", "rn1qk2r/pbp2ppp/1p1b1n2/3p4/3P4/2NBPN2/PP3PPP/R1BQ1RK1 b kq - 3 8");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 O-O Bd6 Nc3 O-O b3 Nbd7 Bb2 c5 cxd5 Nxd5 Nxd5 Bxd5 Qe2 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -727,7 +793,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 11, "w", "r2q1rk1/pb1n1ppp/1p1bp3/2pn4/3P4/1PNBPN2/PB3PPP/R2Q1RK1 w - - 0 11"),
 (@game_id, 11, "b", "r2q1rk1/pb1n1ppp/1p1bp3/2pN4/3P4/1P1BPN2/PB3PPP/R2Q1RK1 b - - 0 11"),
 (@game_id, 12, "w", "r2q1rk1/p2n1ppp/1p1bp3/2pb4/3P4/1P1BPN2/PB3PPP/R2Q1RK1 w - - 0 12"),
-(@game_id, 12, "b", "r2q1rk1/p2n1ppp/1p1bp3/2pb4/3P4/1P1BPN2/PB2QPPP/R4RK1 b - - 1 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Ba6 5. Bd3 Bb4+ 6. Nbd2 O-O 7. O-O c5 8. e4 Bxd2 9. Bxd2 d5 10. Bg5 h6 11. Bh4 e5 12. Bxf6 gxf6 13. exd5 exd4 14. Nxd4 Bxc4 15. Nf5 1-0");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "b", "r2q1rk1/p2n1ppp/1p1bp3/2pb4/3P4/1P1BPN2/PB2QPPP/R4RK1 b - - 1 12");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Ba6 Bd3 Bb4+ Nbd2 O-O O-O c5 e4 Bxd2 Bxd2 d5 Bg5 h6 Bh4 e5 Bxf6 gxf6 exd5 exd4 Nxd4 Bxc4 Nf5 1-0");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -756,7 +824,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 14, "w", "rn1q1rk1/p4p2/bp3p1p/2pP4/2Pp4/3B1N2/PP3PPP/R2Q1RK1 w - - 0 14"),
 (@game_id, 14, "b", "rn1q1rk1/p4p2/bp3p1p/2pP4/2PN4/3B4/PP3PPP/R2Q1RK1 b - - 0 14"),
 (@game_id, 15, "w", "rn1q1rk1/p4p2/1p3p1p/2pP4/2bN4/3B4/PP3PPP/R2Q1RK1 w - - 0 15"),
-(@game_id, 15, "b", "rn1q1rk1/p4p2/1p3p1p/2pP1N2/2b5/3B4/PP3PPP/R2Q1RK1 b - - 1 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 c5 6. Nc3 Be7 7. O-O cxd4 8. exd4 d6 9. d5 e5 10. Ng5 Nbd7 11. f4 h6 12. Ne6 fxe6 13. dxe6 O-O 14. exd7 Qxd7 15. Qc2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "rn1q1rk1/p4p2/1p3p1p/2pP1N2/2b5/3B4/PP3PPP/R2Q1RK1 b - - 1 15");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 c5 Nc3 Be7 O-O cxd4 exd4 d6 d5 e5 Ng5 Nbd7 f4 h6 Ne6 fxe6 dxe6 O-O exd7 Qxd7 Qc2 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -785,7 +855,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 14, "w", "r2q1rk1/pb1nb1p1/1p1pPn1p/4p3/2P2P2/2NB4/PP4PP/R1BQ1RK1 w - - 1 14"),
 (@game_id, 14, "b", "r2q1rk1/pb1Pb1p1/1p1p1n1p/4p3/2P2P2/2NB4/PP4PP/R1BQ1RK1 b - - 0 14"),
 (@game_id, 15, "w", "r4rk1/pb1qb1p1/1p1p1n1p/4p3/2P2P2/2NB4/PP4PP/R1BQ1RK1 w - - 0 15"),
-(@game_id, 15, "b", "r4rk1/pb1qb1p1/1p1p1n1p/4p3/2P2P2/2NB4/PPQ3PP/R1B2RK1 b - - 1 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Bd3 Be7 6. O-O O-O 7. Nc3 d5 8. cxd5 exd5 9. Qc2 Nbd7 10. Ne5 c5 11. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "r4rk1/pb1qb1p1/1p1p1n1p/4p3/2P2P2/2NB4/PPQ3PP/R1B2RK1 b - - 1 15");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Bd3 Be7 O-O O-O Nc3 d5 cxd5 exd5 Qc2 Nbd7 Ne5 c5 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -805,7 +877,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 9, "b", "rn1q1rk1/pbp1bppp/1p3n2/3p4/3P4/2NBPN2/PPQ2PPP/R1B2RK1 b - - 1 9"),
 (@game_id, 10, "w", "r2q1rk1/pbpnbppp/1p3n2/3p4/3P4/2NBPN2/PPQ2PPP/R1B2RK1 w - - 2 10"),
 (@game_id, 10, "b", "r2q1rk1/pbpnbppp/1p3n2/3pN3/3P4/2NBP3/PPQ2PPP/R1B2RK1 b - - 3 10"),
-(@game_id, 11, "w", "r2q1rk1/pb1nbppp/1p3n2/2ppN3/3P4/2NBP3/PPQ2PPP/R1B2RK1 w - - 0 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 Bb4+ 6. Nbd2 O-O 7. O-O c5 8. a3 Bxd2 9. Bxd2 d6 10. Bc3 Nbd7 11. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "w", "r2q1rk1/pb1nbppp/1p3n2/2ppN3/3P4/2NBP3/PPQ2PPP/R1B2RK1 w - - 0 11");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 Bb4+ Nbd2 O-O O-O c5 a3 Bxd2 Bxd2 d6 Bc3 Nbd7 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -825,7 +899,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 9, "b", "rn1q1rk1/pb1p1ppp/1p2pn2/2p5/2PP4/P2BPN2/1P1B1PPP/R2Q1RK1 b - - 0 9"),
 (@game_id, 10, "w", "rn1q1rk1/pb3ppp/1p1ppn2/2p5/2PP4/P2BPN2/1P1B1PPP/R2Q1RK1 w - - 0 10"),
 (@game_id, 10, "b", "rn1q1rk1/pb3ppp/1p1ppn2/2p5/2PP4/P1BBPN2/1P3PPP/R2Q1RK1 b - - 1 10"),
-(@game_id, 11, "w", "r2q1rk1/pb1n1ppp/1p1ppn2/2p5/2PP4/P1BBPN2/1P3PPP/R2Q1RK1 w - - 2 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. O-O Bd6 7. b3 O-O 8. Bb2 Nbd7 9. Nbd2 c5 10. cxd5 exd5 11. Ne5 Qe7 12. Ndf3 Rfd8 13. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "w", "r2q1rk1/pb1n1ppp/1p1ppn2/2p5/2PP4/P1BBPN2/1P3PPP/R2Q1RK1 w - - 2 11");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 O-O Bd6 b3 O-O Bb2 Nbd7 Nbd2 c5 cxd5 exd5 Ne5 Qe7 Ndf3 Rfd8 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -849,7 +925,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 11, "b", "r2q1rk1/pb1n1ppp/1p1b1n2/2ppN3/3P4/1P1BP3/PB1N1PPP/R2Q1RK1 b - - 1 11"),
 (@game_id, 12, "w", "r4rk1/pb1nqppp/1p1b1n2/2ppN3/3P4/1P1BP3/PB1N1PPP/R2Q1RK1 w - - 2 12"),
 (@game_id, 12, "b", "r4rk1/pb1nqppp/1p1b1n2/2ppN3/3P4/1P1BPN2/PB3PPP/R2Q1RK1 b - - 3 12"),
-(@game_id, 13, "w", "r2r2k1/pb1nqppp/1p1b1n2/2ppN3/3P4/1P1BPN2/PB3PPP/R2Q1RK1 w - - 4 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Nc3 d5 6. cxd5 exd5 7. Bb5+ c6 8. Bd3 Nbd7 9. O-O Be7 10. Ne5 Nxe5 11. dxe5 Nd7 12. f4 g6 13. e4 d4 14. Ne2 a5 15. Nxd4 1-0");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "r2r2k1/pb1nqppp/1p1b1n2/2ppN3/3P4/1P1BPN2/PB3PPP/R2Q1RK1 w - - 4 13");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Nc3 d5 cxd5 exd5 Bb5+ c6 Bd3 Nbd7 O-O Be7 Ne5 Nxe5 dxe5 Nd7 f4 g6 e4 d4 Ne2 a5 Nxd4 1-0");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -878,7 +956,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 14, "w", "r2qk2r/pb1nbp1p/1pp3p1/4P3/3pPP2/2NB4/PP4PP/R1BQ1RK1 w kq - 0 14"),
 (@game_id, 14, "b", "r2qk2r/pb1nbp1p/1pp3p1/4P3/3pPP2/3B4/PP2N1PP/R1BQ1RK1 b kq - 1 14"),
 (@game_id, 15, "w", "r2qk2r/1b1nbp1p/1pp3p1/p3P3/3pPP2/3B4/PP2N1PP/R1BQ1RK1 w kq - 0 15"),
-(@game_id, 15, "b", "r2qk2r/1b1nbp1p/1pp3p1/p3P3/3NPP2/3B4/PP4PP/R1BQ1RK1 b kq - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 b6 3. c4 e6 4. e3 Bb7 5. Bd3 c5 6. O-O d6 7. b3 Nbd7 8. Bb2 Qc7 9. Nc3 a6 10. Qe2 g6 11. Rfd1 Bg7 12. Rac1 O-O 13. a3 Rac8 14. Ng5 Qb8 15. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "r2qk2r/1b1nbp1p/1pp3p1/p3P3/3NPP2/3B4/PP4PP/R1BQ1RK1 b kq - 0 15");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 b6 c4 e6 e3 Bb7 Bd3 c5 O-O d6 b3 Nbd7 Bb2 Qc7 Nc3 a6 Qe2 g6 Rfd1 Bg7 Rac1 O-O a3 Rac8 Ng5 Qb8 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -906,7 +986,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 13, "b", "r4rk1/1bqn1pbp/pp1ppnp1/2p5/2PP4/PPNBPN2/1B2QPPP/2RR2K1 b - - 0 13"),
 (@game_id, 14, "w", "2r2rk1/1bqn1pbp/pp1ppnp1/2p5/2PP4/PPNBPN2/1B2QPPP/2RR2K1 w - - 1 14"),
 (@game_id, 14, "b", "2r2rk1/1bqn1pbp/pp1ppnp1/2p3N1/2PP4/PPNBP3/1B2QPPP/2RR2K1 b - - 2 14"),
-(@game_id, 15, "w", "1qr2rk1/1b1n1pbp/pp1ppnp1/2p3N1/2PP4/PPNBP3/1B2QPPP/2RR2K1 w - - 3 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. O-O Bd6 7. b3 O-O 8. Bb2 c5 9. Nc3 Nc6 10. cxd5 exd5 11. Rc1 cxd4 12. Nxd4 Nxd4 13. exd4 Re8 14. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "w", "1qr2rk1/1b1n1pbp/pp1ppnp1/2p3N1/2PP4/PPNBP3/1B2QPPP/2RR2K1 w - - 3 15");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 O-O Bd6 b3 O-O Bb2 c5 Nc3 Nc6 cxd5 exd5 Rc1 cxd4 Nxd4 Nxd4 exd4 Re8 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -932,7 +1014,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 12, "b", "r2q1rk1/pb3ppp/1pnb1n2/3p4/3N4/1PNBP3/PB3PPP/2RQ1RK1 b - - 0 12"),
 (@game_id, 13, "w", "r2q1rk1/pb3ppp/1p1b1n2/3p4/3n4/1PNBP3/PB3PPP/2RQ1RK1 w - - 0 13"),
 (@game_id, 13, "b", "r2q1rk1/pb3ppp/1p1b1n2/3p4/3P4/1PNB4/PB3PPP/2RQ1RK1 b - - 0 13"),
-(@game_id, 14, "w", "r2qr1k1/pb3ppp/1p1b1n2/3p4/3P4/1PNB4/PB3PPP/2RQ1RK1 w - - 1 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. b3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "w", "r2qr1k1/pb3ppp/1p1b1n2/3p4/3P4/1PNB4/PB3PPP/2RQ1RK1 w - - 1 14");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 b3 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -943,7 +1027,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 5, "w", "rn1qkb1r/pbpp1ppp/1p2pn2/8/2PP4/4PN2/PP3PPP/RNBQKB1R w KQkq - 1 5"),
 (@game_id, 5, "b", "rn1qkb1r/pbpp1ppp/1p2pn2/8/2PP4/3BPN2/PP3PPP/RNBQK2R b KQkq - 2 5"),
 (@game_id, 6, "w", "rn1qkb1r/pbp2ppp/1p2pn2/3p4/2PP4/3BPN2/PP3PPP/RNBQK2R w KQkq - 0 6"),
-(@game_id, 6, "b", "rn1qkb1r/pbp2ppp/1p2pn2/3p4/2PP4/1P1BPN2/P4PPP/RNBQK2R b KQkq - 0 6");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. b3 dxc4 7. bxc4 c5 8. O-O Nc6 9. Bb2 Be7 10. Nbd2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 6, "b", "rn1qkb1r/pbp2ppp/1p2pn2/3p4/2PP4/1P1BPN2/P4PPP/RNBQK2R b KQkq - 0 6");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 b3 dxc4 bxc4 c5 O-O Nc6 Bb2 Be7 Nbd2 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -962,7 +1048,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 9, "w", "r2qkb1r/pb3ppp/1pn1pn2/2p5/2PP4/3BPN2/P4PPP/RNBQ1RK1 w kq - 2 9"),
 (@game_id, 9, "b", "r2qkb1r/pb3ppp/1pn1pn2/2p5/2PP4/3BPN2/PB3PPP/RN1Q1RK1 b kq - 3 9"),
 (@game_id, 10, "w", "r2qk2r/pb2bppp/1pn1pn2/2p5/2PP4/3BPN2/PB3PPP/RN1Q1RK1 w kq - 4 10"),
-(@game_id, 10, "b", "r2qk2r/pb2bppp/1pn1pn2/2p5/2PP4/3BPN2/PB1N1PPP/R2Q1RK1 b kq - 5 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 Be7 6. O-O O-O 7. Nc3 d5 8. b3 Nbd7 9. Bb2 c5 10. Rc1 Rc8 11. Qe2 Qc7 12. Rfd1 Qb8 13. cxd5 exd5 14. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "b", "r2qk2r/pb2bppp/1pn1pn2/2p5/2PP4/3BPN2/PB1N1PPP/R2Q1RK1 b kq - 5 10");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 Be7 O-O O-O Nc3 d5 b3 Nbd7 Bb2 c5 Rc1 Rc8 Qe2 Qc7 Rfd1 Qb8 cxd5 exd5 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -988,7 +1076,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 12, "b", "2r2rk1/pbqnbppp/1p2pn2/2pp4/2PP4/1PNBPN2/PB2QPPP/2RR2K1 b - - 5 12"),
 (@game_id, 13, "w", "1qr2rk1/pb1nbppp/1p2pn2/2pp4/2PP4/1PNBPN2/PB2QPPP/2RR2K1 w - - 6 13"),
 (@game_id, 13, "b", "1qr2rk1/pb1nbppp/1p2pn2/2pP4/3P4/1PNBPN2/PB2QPPP/2RR2K1 b - - 0 13"),
-(@game_id, 14, "w", "1qr2rk1/pb1nbppp/1p3n2/2pp4/3P4/1PNBPN2/PB2QPPP/2RR2K1 w - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Bd3 d5 6. b3 Bd6 7. Bb2 O-O 8. Nc3 Nbd7 9. O-O a6 10. Qe2 Ne4 11. a3 Qe7 12. b4 Nxc3 13. Bxc3 dxc4 14. Bxc4 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "w", "1qr2rk1/pb1nbppp/1p3n2/2pp4/3P4/1PNBPN2/PB2QPPP/2RR2K1 w - - 0 14");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Bd3 d5 b3 Bd6 Bb2 O-O Nc3 Nbd7 O-O a6 Qe2 Ne4 a3 Qe7 b4 Nxc3 Bxc3 dxc4 Bxc4 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -1015,7 +1105,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 13, "w", "r4rk1/1bpnqppp/pp1bp3/3p4/1PPP4/P1nBPN2/1B2QPPP/R4RK1 w - - 0 13"),
 (@game_id, 13, "b", "r4rk1/1bpnqppp/pp1bp3/3p4/1PPP4/P1BBPN2/4QPPP/R4RK1 b - - 0 13"),
 (@game_id, 14, "w", "r4rk1/1bpnqppp/pp1bp3/8/1PpP4/P1BBPN2/4QPPP/R4RK1 w - - 0 14"),
-(@game_id, 14, "b", "r4rk1/1bpnqppp/pp1bp3/8/1PBP4/P1B1PN2/4QPPP/R4RK1 b - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 Be7 6. O-O O-O 7. Nc3 d5 8. b3 Nbd7 9. Bb2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "r4rk1/1bpnqppp/pp1bp3/8/1PBP4/P1B1PN2/4QPPP/R4RK1 b - - 0 14");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 Be7 O-O O-O Nc3 d5 b3 Nbd7 Bb2 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1032,7 +1124,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 8, "w", "rn1q1rk1/pbp1bppp/1p2pn2/3p4/2PP4/2NBPN2/PP3PPP/R1BQ1RK1 w - - 0 8"),
 (@game_id, 8, "b", "rn1q1rk1/pbp1bppp/1p2pn2/3p4/2PP4/1PNBPN2/P4PPP/R1BQ1RK1 b - - 0 8"),
 (@game_id, 9, "w", "r2q1rk1/pbpnbppp/1p2pn2/3p4/2PP4/1PNBPN2/P4PPP/R1BQ1RK1 w - - 1 9"),
-(@game_id, 9, "b", "r2q1rk1/pbpnbppp/1p2pn2/3p4/2PP4/1PNBPN2/PB3PPP/R2Q1RK1 b - - 2 9");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. e3 b6 4. c4 Bb7 5. Bd3 d5 6. O-O Bd6 7. Nc3 a6 8. cxd5 exd5 9. b3 O-O 10. Bb2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 9, "b", "r2q1rk1/pbpnbppp/1p2pn2/3p4/2PP4/1PNBPN2/PB3PPP/R2Q1RK1 b - - 2 9");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 e3 b6 c4 Bb7 Bd3 d5 O-O Bd6 Nc3 a6 cxd5 exd5 b3 O-O Bb2 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -1051,7 +1145,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 9, "w", "rn1qk2r/1bp2ppp/pp1b1n2/3p4/3P4/2NBPN2/PP3PPP/R1BQ1RK1 w kq - 0 9"),
 (@game_id, 9, "b", "rn1qk2r/1bp2ppp/pp1b1n2/3p4/3P4/1PNBPN2/P4PPP/R1BQ1RK1 b kq - 0 9"),
 (@game_id, 10, "w", "rn1q1rk1/1bp2ppp/pp1b1n2/3p4/3P4/1PNBPN2/P4PPP/R1BQ1RK1 w - - 1 10"),
-(@game_id, 10, "b", "rn1q1rk1/1bp2ppp/pp1b1n2/3p4/3P4/1PNBPN2/PB3PPP/R2Q1RK1 b - - 2 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. O-O Nbd7 7. b3 Bd6 8. Nc3 a6 9. Bb2 O-O 10. Rc1 Qe7 11. cxd5 exd5 12. Ne2 Ne4 13. Ng3 f5 14. Qc2 c5 15. dxc5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "b", "rn1q1rk1/1bp2ppp/pp1b1n2/3p4/3P4/1PNBPN2/PB3PPP/R2Q1RK1 b - - 2 10");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 O-O Nbd7 b3 Bd6 Nc3 a6 Bb2 O-O Rc1 Qe7 cxd5 exd5 Ne2 Ne4 Ng3 f5 Qc2 c5 dxc5 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1080,7 +1176,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 14, "w", "r4rk1/1bpnq1pp/pp1b4/3p1p2/3Pn3/1P1BPNN1/PB3PPP/2RQ1RK1 w - - 0 14"),
 (@game_id, 14, "b", "r4rk1/1bpnq1pp/pp1b4/3p1p2/3Pn3/1P1BPNN1/PBQ2PPP/2R2RK1 b - - 1 14"),
 (@game_id, 15, "w", "r4rk1/1b1nq1pp/pp1b4/2pp1p2/3Pn3/1P1BPNN1/PBQ2PPP/2R2RK1 w - - 0 15"),
-(@game_id, 15, "b", "r4rk1/1b1nq1pp/pp1b4/2Pp1p2/4n3/1P1BPNN1/PBQ2PPP/2R2RK1 b - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Nc3 Be7 6. Bd3 d5 7. cxd5 exd5 8. O-O O-O 9. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "r4rk1/1b1nq1pp/pp1b4/2Pp1p2/4n3/1P1BPNN1/PBQ2PPP/2R2RK1 b - - 0 15");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Nc3 Be7 Bd3 d5 cxd5 exd5 O-O O-O 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1096,7 +1194,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 7, "b", "rn1qk2r/pbp1bppp/1p2pn2/3P4/3P4/2NBPN2/PP3PPP/R1BQK2R b KQkq - 0 7"),
 (@game_id, 8, "w", "rn1qk2r/pbp1bppp/1p3n2/3p4/3P4/2NBPN2/PP3PPP/R1BQK2R w KQkq - 0 8"),
 (@game_id, 8, "b", "rn1qk2r/pbp1bppp/1p3n2/3p4/3P4/2NBPN2/PP3PPP/R1BQ1RK1 b kq - 1 8"),
-(@game_id, 9, "w", "rn1q1rk1/pbp1bppp/1p3n2/3p4/3P4/2NBPN2/PP3PPP/R1BQ1RK1 w - - 2 9");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Ba6 5. b3 Bb7 6. Be2 Bb4+ 7. Bd2 a5 8. O-O O-O 9. Nc3 d6 10. Qc2 Nbd7 11. Rad1 Bxc3 12. Bxc3 Be4 13. Qb2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 9, "w", "rn1q1rk1/pbp1bppp/1p3n2/3p4/3P4/2NBPN2/PP3PPP/R1BQ1RK1 w - - 2 9");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Ba6 b3 Bb7 Be2 Bb4+ Bd2 a5 O-O O-O Nc3 d6 Qc2 Nbd7 Rad1 Bxc3 Bxc3 Be4 Qb2 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1121,7 +1221,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 12, "w", "r2q1rk1/1bpn1ppp/1p1ppn2/p7/2PP4/1Pb1PN2/P1QBBPPP/3R1RK1 w - - 0 12"),
 (@game_id, 12, "b", "r2q1rk1/1bpn1ppp/1p1ppn2/p7/2PP4/1PB1PN2/P1Q1BPPP/3R1RK1 b - - 0 12"),
 (@game_id, 13, "w", "r2q1rk1/2pn1ppp/1p1ppn2/p7/2PPb3/1PB1PN2/P1Q1BPPP/3R1RK1 w - - 1 13"),
-(@game_id, 13, "b", "r2q1rk1/2pn1ppp/1p1ppn2/p7/2PPb3/1PB1PN2/PQ2BPPP/3R1RK1 b - - 2 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. O-O Bd6 7. Nc3 O-O 8. cxd5 exd5 9. Nb5 Be7 10. Qc2 Na6 11. a3 c5 12. b3 Nc7 13. Nxc7 Qxc7 14. Bb2 g6 15. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r2q1rk1/2pn1ppp/1p1ppn2/p7/2PPb3/1PB1PN2/PQ2BPPP/3R1RK1 b - - 2 13");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 O-O Bd6 Nc3 O-O cxd5 exd5 Nb5 Be7 Qc2 Na6 a3 c5 b3 Nc7 Nxc7 Qxc7 Bb2 g6 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1149,7 +1251,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 13, "b", "r2q1rk1/pbN1bppp/1p3n2/2pp4/3P4/PP1BPN2/2Q2PPP/R1B2RK1 b - - 0 13"),
 (@game_id, 14, "w", "r4rk1/pbq1bppp/1p3n2/2pp4/3P4/PP1BPN2/2Q2PPP/R1B2RK1 w - - 0 14"),
 (@game_id, 14, "b", "r4rk1/pbq1bppp/1p3n2/2pp4/3P4/PP1BPN2/1BQ2PPP/R4RK1 b - - 1 14"),
-(@game_id, 15, "w", "r4rk1/pbq1bp1p/1p3np1/2pp4/3P4/PP1BPN2/1BQ2PPP/R4RK1 w - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Nc3 d5 6. cxd5 exd5 7. Bb5+ c6 8. Bd3 Be7 9. O-O Nbd7 10. b3 O-O 11. Bb2 Re8 12. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "w", "r4rk1/pbq1bp1p/1p3np1/2pp4/3P4/PP1BPN2/1BQ2PPP/R4RK1 w - - 0 15");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Nc3 d5 cxd5 exd5 Bb5+ c6 Bd3 Be7 O-O Nbd7 b3 O-O Bb2 Re8 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1171,7 +1275,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 10, "b", "r2qk2r/pb1nbppp/1pp2n2/3p4/3P4/1PNBPN2/P4PPP/R1BQ1RK1 b kq - 0 10"),
 (@game_id, 11, "w", "r2q1rk1/pb1nbppp/1pp2n2/3p4/3P4/1PNBPN2/P4PPP/R1BQ1RK1 w - - 1 11"),
 (@game_id, 11, "b", "r2q1rk1/pb1nbppp/1pp2n2/3p4/3P4/1PNBPN2/PB3PPP/R2Q1RK1 b - - 2 11"),
-(@game_id, 12, "w", "r2qr1k1/pb1nbppp/1pp2n2/3p4/3P4/1PNBPN2/PB3PPP/R2Q1RK1 w - - 3 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb4+ 5. Bd2 a5 6. Bd3 Bb7 7. O-O O-O 8. Qe2 Ne4 9. a3 Bxd2 10. Nbxd2 Nxd2 11. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "w", "r2qr1k1/pb1nbppp/1pp2n2/3p4/3P4/1PNBPN2/PB3PPP/R2Q1RK1 w - - 3 12");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb4+ Bd2 a5 Bd3 Bb7 O-O O-O Qe2 Ne4 a3 Bxd2 Nbxd2 Nxd2 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1191,7 +1297,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 9, "b", "rn1q1rk1/1bpp1ppp/1p2p3/p7/1bPPn3/P2BPN2/1P1BQPPP/RN3RK1 b - - 0 9"),
 (@game_id, 10, "w", "rn1q1rk1/1bpp1ppp/1p2p3/p7/2PPn3/P2BPN2/1P1bQPPP/RN3RK1 w - - 0 10"),
 (@game_id, 10, "b", "rn1q1rk1/1bpp1ppp/1p2p3/p7/2PPn3/P2BPN2/1P1NQPPP/R4RK1 b - - 0 10"),
-(@game_id, 11, "w", "rn1q1rk1/1bpp1ppp/1p2p3/p7/2PP4/P2BPN2/1P1nQPPP/R4RK1 w - - 0 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Nc3 d5 6. cxd5 exd5 7. Bb5+ c6 8. Bd3 Bd6 9. O-O O-O 10. e4 dxe4 11. Nxe4 Nxe4 12. Bxe4 Be7 13. 1-0");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "w", "rn1q1rk1/1bpp1ppp/1p2p3/p7/2PP4/P2BPN2/1P1nQPPP/R4RK1 w - - 0 11");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Nc3 d5 cxd5 exd5 Bb5+ c6 Bd3 Bd6 O-O O-O e4 dxe4 Nxe4 Nxe4 Bxe4 Be7 1-0");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -1215,7 +1323,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 11, "b", "rn1q1rk1/pb3ppp/1ppb1n2/8/3PN3/3B1N2/PP3PPP/R1BQ1RK1 b - - 0 11"),
 (@game_id, 12, "w", "rn1q1rk1/pb3ppp/1ppb4/8/3Pn3/3B1N2/PP3PPP/R1BQ1RK1 w - - 0 12"),
 (@game_id, 12, "b", "rn1q1rk1/pb3ppp/1ppb4/8/3PB3/5N2/PP3PPP/R1BQ1RK1 b - - 0 12"),
-(@game_id, 13, "w", "rn1q1rk1/pb2bppp/1pp5/8/3PB3/5N2/PP3PPP/R1BQ1RK1 w - - 1 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. O-O Bd6 7. Nc3 O-O 8. b3 Nbd7 9. Bb2 c5 10. cxd5 exd5 11. Qe2 a6 12. Rac1 Re8 13. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "rn1q1rk1/pb2bppp/1pp5/8/3PB3/5N2/PP3PPP/R1BQ1RK1 w - - 1 13");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 O-O Bd6 Nc3 O-O b3 Nbd7 Bb2 c5 cxd5 exd5 Qe2 a6 Rac1 Re8 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1239,7 +1349,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 11, "b", "r2q1rk1/pb1n1ppp/1p1b1n2/2pp4/3P4/1PNBPN2/PB2QPPP/R4RK1 b - - 1 11"),
 (@game_id, 12, "w", "r2q1rk1/1b1n1ppp/pp1b1n2/2pp4/3P4/1PNBPN2/PB2QPPP/R4RK1 w - - 0 12"),
 (@game_id, 12, "b", "r2q1rk1/1b1n1ppp/pp1b1n2/2pp4/3P4/1PNBPN2/PB2QPPP/2R2RK1 b - - 1 12"),
-(@game_id, 13, "w", "r2qr1k1/1b1n1ppp/pp1b1n2/2pp4/3P4/1PNBPN2/PB2QPPP/2R2RK1 w - - 2 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Bd3 Be7 6. Nc3 d5 7. O-O O-O 8. b3 Nbd7 9. Bb2 c5 10. cxd5 Nxd5 11. Nxd5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "r2qr1k1/1b1n1ppp/pp1b1n2/2pp4/3P4/1PNBPN2/PB2QPPP/2R2RK1 w - - 2 13");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Bd3 Be7 Nc3 d5 O-O O-O b3 Nbd7 Bb2 c5 cxd5 Nxd5 Nxd5 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -1260,7 +1372,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 10, "w", "r2q1rk1/pb1nbppp/1p2pn2/2pp4/2PP4/1PNBPN2/PB3PPP/R2Q1RK1 w - - 0 10"),
 (@game_id, 10, "b", "r2q1rk1/pb1nbppp/1p2pn2/2pP4/3P4/1PNBPN2/PB3PPP/R2Q1RK1 b - - 0 10"),
 (@game_id, 11, "w", "r2q1rk1/pb1nbppp/1p2p3/2pn4/3P4/1PNBPN2/PB3PPP/R2Q1RK1 w - - 0 11"),
-(@game_id, 11, "b", "r2q1rk1/pb1nbppp/1p2p3/2pN4/3P4/1P1BPN2/PB3PPP/R2Q1RK1 b - - 0 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Nc3 d5 6. cxd5 exd5 7. Bb5+ c6 8. Bd3 Be7 9. O-O O-O 10. b3 Nbd7 11. Bb2 Bd6 12. Qe2 Qe7 13. g3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "b", "r2q1rk1/pb1nbppp/1p2p3/2pN4/3P4/1P1BPN2/PB3PPP/R2Q1RK1 b - - 0 11");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Nc3 d5 cxd5 exd5 Bb5+ c6 Bd3 Be7 O-O O-O b3 Nbd7 Bb2 Bd6 Qe2 Qe7 g3 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -1285,7 +1399,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 12, "w", "r2q1rk1/pb1n1ppp/1ppb1n2/3p4/3P4/1PNBPN2/PB3PPP/R2Q1RK1 w - - 3 12"),
 (@game_id, 12, "b", "r2q1rk1/pb1n1ppp/1ppb1n2/3p4/3P4/1PNBPN2/PB2QPPP/R4RK1 b - - 4 12"),
 (@game_id, 13, "w", "r4rk1/pb1nqppp/1ppb1n2/3p4/3P4/1PNBPN2/PB2QPPP/R4RK1 w - - 5 13"),
-(@game_id, 13, "b", "r4rk1/pb1nqppp/1ppb1n2/3p4/3P4/1PNBPNP1/PB2QP1P/R4RK1 b - - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. Nf3 Nf6 2. c4 b6 3. d4 e6 4. e3 d5 5. Nc3 Bd6 6. b3 O-O 7. Bd3 Bb7 8. O-O Nbd7 9. Nb5 Be7 10. Bb2 c5 11. cxd5 Nxd5 12. Be2 a6 13. Nc3 Nxc3 14. Bxc3 Rc8 15. Rc1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r4rk1/pb1nqppp/1ppb1n2/3p4/3P4/1PNBPNP1/PB2QP1P/R4RK1 b - - 0 13");
+SET @game_id = (SELECT gid FROM Games WHERE game="Nf3 Nf6 c4 b6 d4 e6 e3 d5 Nc3 Bd6 b3 O-O Bd3 Bb7 O-O Nbd7 Nb5 Be7 Bb2 c5 cxd5 Nxd5 Be2 a6 Nc3 Nxc3 Bxc3 Rc8 Rc1 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 2 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2P5/5N2/PP1PPPPP/RNBQKB1R b KQkq - 0 2"),
@@ -1314,7 +1430,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 14, "w", "r2q1rk1/1b1nbppp/pp2p3/2p5/3P4/1Pn1PN2/PB2BPPP/R2Q1RK1 w - - 0 14"),
 (@game_id, 14, "b", "r2q1rk1/1b1nbppp/pp2p3/2p5/3P4/1PB1PN2/P3BPPP/R2Q1RK1 b - - 0 14"),
 (@game_id, 15, "w", "2rq1rk1/1b1nbppp/pp2p3/2p5/3P4/1PB1PN2/P3BPPP/R2Q1RK1 w - - 1 15"),
-(@game_id, 15, "b", "2rq1rk1/1b1nbppp/pp2p3/2p5/3P4/1PB1PN2/P3BPPP/2RQ1RK1 b - - 2 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Be2 d5 6. O-O dxc4 7. Bxc4 a6 8. Nc3 c5 9. Qe2 b5 10. Bb3 Nbd7 11. Rd1 Qb8 12. e4 cxd4 13. Nxd4 Bd6 14. h3 O-O 15. a3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "2rq1rk1/1b1nbppp/pp2p3/2p5/3P4/1PB1PN2/P3BPPP/2RQ1RK1 b - - 2 15");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Be2 d5 O-O dxc4 Bxc4 a6 Nc3 c5 Qe2 b5 Bb3 Nbd7 Rd1 Qb8 e4 cxd4 Nxd4 Bd6 h3 O-O a3 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1343,7 +1461,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 14, "w", "rq2k2r/1b1n1ppp/p2bpn2/1p6/3NP3/1BN5/PP2QPPP/R1BR2K1 w kq - 1 14"),
 (@game_id, 14, "b", "rq2k2r/1b1n1ppp/p2bpn2/1p6/3NP3/1BN4P/PP2QPP1/R1BR2K1 b kq - 0 14"),
 (@game_id, 15, "w", "rq3rk1/1b1n1ppp/p2bpn2/1p6/3NP3/1BN4P/PP2QPP1/R1BR2K1 w - - 1 15"),
-(@game_id, 15, "b", "rq3rk1/1b1n1ppp/p2bpn2/1p6/3NP3/PBN4P/1P2QPP1/R1BR2K1 b - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Bd3 d5 6. b3 Bd6 7. O-O O-O 8. Bb2 Nbd7 9. Nc3 a6 10. Rc1 Qe7 11. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "rq3rk1/1b1n1ppp/p2bpn2/1p6/3NP3/PBN4P/1P2QPP1/R1BR2K1 b - - 0 15");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Bd3 d5 b3 Bd6 O-O O-O Bb2 Nbd7 Nc3 a6 Rc1 Qe7 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -1363,7 +1483,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 9, "b", "r2q1rk1/pbpn1ppp/1p1bpn2/3p4/2PP4/1PNBPN2/PB3PPP/R2Q1RK1 b - - 6 9"),
 (@game_id, 10, "w", "r2q1rk1/1bpn1ppp/pp1bpn2/3p4/2PP4/1PNBPN2/PB3PPP/R2Q1RK1 w - - 0 10"),
 (@game_id, 10, "b", "r2q1rk1/1bpn1ppp/pp1bpn2/3p4/2PP4/1PNBPN2/PB3PPP/2RQ1RK1 b - - 1 10"),
-(@game_id, 11, "w", "r4rk1/1bpnqppp/pp1bpn2/3p4/2PP4/1PNBPN2/PB3PPP/2RQ1RK1 w - - 2 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Bd3 c5 6. O-O Be7 7. Nc3 cxd4 8. Nxd4 Nc6 9. Nxc6 dxc6 10. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "w", "r4rk1/1bpnqppp/pp1bpn2/3p4/2PP4/1PNBPN2/PB3PPP/2RQ1RK1 w - - 2 11");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Bd3 c5 O-O Be7 Nc3 cxd4 Nxd4 Nc6 Nxc6 dxc6 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -1381,7 +1503,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 8, "b", "rn1qk2r/pb1pbppp/1p2pn2/8/2PN4/2NBP3/PP3PPP/R1BQ1RK1 b kq - 0 8"),
 (@game_id, 9, "w", "r2qk2r/pb1pbppp/1pn1pn2/8/2PN4/2NBP3/PP3PPP/R1BQ1RK1 w kq - 1 9"),
 (@game_id, 9, "b", "r2qk2r/pb1pbppp/1pN1pn2/8/2P5/2NBP3/PP3PPP/R1BQ1RK1 b kq - 0 9"),
-(@game_id, 10, "w", "r2qk2r/pb2bppp/1pp1pn2/8/2P5/2NBP3/PP3PPP/R1BQ1RK1 w kq - 0 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. e3 e6 3. Nf3 b6 4. c4 Bb7 5. Nc3 Bb4 6. Bd3 O-O 7. O-O Bxc3 8. bxc3 d6 9. Re1 Ne4 10. Nd2 Nxd2 11. Bxd2 Nd7 12. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "w", "r2qk2r/pb2bppp/1pp1pn2/8/2P5/2NBP3/PP3PPP/R1BQ1RK1 w kq - 0 10");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 e3 e6 Nf3 b6 c4 Bb7 Nc3 Bb4 Bd3 O-O O-O Bxc3 bxc3 d6 Re1 Ne4 Nd2 Nxd2 Bxd2 Nd7 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/4P3/PPP2PPP/RNBQKBNR b KQkq - 0 2"),
@@ -1403,7 +1527,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 10, "b", "rn1q1rk1/pbp2ppp/1p1pp3/8/2PPn3/2PBP3/P2N1PPP/R1BQR1K1 b - - 3 10"),
 (@game_id, 11, "w", "rn1q1rk1/pbp2ppp/1p1pp3/8/2PP4/2PBP3/P2n1PPP/R1BQR1K1 w - - 0 11"),
 (@game_id, 11, "b", "rn1q1rk1/pbp2ppp/1p1pp3/8/2PP4/2PBP3/P2B1PPP/R2QR1K1 b - - 0 11"),
-(@game_id, 12, "w", "r2q1rk1/pbpn1ppp/1p1pp3/8/2PP4/2PBP3/P2B1PPP/R2QR1K1 w - - 1 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Bd3 d5 6. Nbd2 Nbd7 7. b3 Be7 8. Bb2 O-O 9. O-O c5 10. Qe2 Ne4 11. Rfd1 cxd4 12. Nxd4 Ndf6 13. Rac1 Nxd2 14. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "w", "r2q1rk1/pbpn1ppp/1p1pp3/8/2PP4/2PBP3/P2B1PPP/R2QR1K1 w - - 1 12");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Bd3 d5 Nbd2 Nbd7 b3 Be7 Bb2 O-O O-O c5 Qe2 Ne4 Rfd1 cxd4 Nxd4 Ndf6 Rac1 Nxd2 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -1429,7 +1555,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 12, "b", "r2q1rk1/pb1nbppp/1p2p3/3p4/2PNn3/1P1BP3/PB1NQPPP/R2R2K1 b - - 0 12"),
 (@game_id, 13, "w", "r2q1rk1/pb2bppp/1p2pn2/3p4/2PNn3/1P1BP3/PB1NQPPP/R2R2K1 w - - 1 13"),
 (@game_id, 13, "b", "r2q1rk1/pb2bppp/1p2pn2/3p4/2PNn3/1P1BP3/PB1NQPPP/2RR2K1 b - - 2 13"),
-(@game_id, 14, "w", "r2q1rk1/pb2bppp/1p2pn2/3p4/2PN4/1P1BP3/PB1nQPPP/2RR2K1 w - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. e3 b6 4. c4 Bb7 5. Nc3 d5 6. cxd5 exd5 7. Bd3 Nbd7 8. O-O a6 9. Re1 Be7 10. Ne5 O-O 11. f4 c5 12. Kh1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "w", "r2q1rk1/pb2bppp/1p2pn2/3p4/2PN4/1P1BP3/PB1nQPPP/2RR2K1 w - - 0 14");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 e3 b6 c4 Bb7 Nc3 d5 cxd5 exd5 Bd3 Nbd7 O-O a6 Re1 Be7 Ne5 O-O f4 c5 Kh1 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -1452,7 +1580,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 11, "w", "r2q1rk1/1bpnbppp/pp3n2/3pN3/3P4/2NBP3/PP3PPP/R1BQR1K1 w - - 4 11"),
 (@game_id, 11, "b", "r2q1rk1/1bpnbppp/pp3n2/3pN3/3P1P2/2NBP3/PP4PP/R1BQR1K1 b - - 0 11"),
 (@game_id, 12, "w", "r2q1rk1/1b1nbppp/pp3n2/2ppN3/3P1P2/2NBP3/PP4PP/R1BQR1K1 w - - 0 12"),
-(@game_id, 12, "b", "r2q1rk1/1b1nbppp/pp3n2/2ppN3/3P1P2/2NBP3/PP4PP/R1BQR2K b - - 1 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 Bb4+ 6. Bd2 Bxd2+ 7. Nbxd2 d6 8. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "b", "r2q1rk1/1b1nbppp/pp3n2/2ppN3/3P1P2/2NBP3/PP4PP/R1BQR2K b - - 1 12");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 Bb4+ Bd2 Bxd2+ Nbxd2 d6 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1466,7 +1596,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 6, "b", "rn1qk2r/pbpp1ppp/1p2pn2/8/1bPP4/3BPN2/PP1B1PPP/RN1QK2R b KQkq - 4 6"),
 (@game_id, 7, "w", "rn1qk2r/pbpp1ppp/1p2pn2/8/2PP4/3BPN2/PP1b1PPP/RN1QK2R w KQkq - 0 7"),
 (@game_id, 7, "b", "rn1qk2r/pbpp1ppp/1p2pn2/8/2PP4/3BPN2/PP1N1PPP/R2QK2R b KQkq - 0 7"),
-(@game_id, 8, "w", "rn1qk2r/pbp2ppp/1p1ppn2/8/2PP4/3BPN2/PP1N1PPP/R2QK2R w KQkq - 0 8");SET @game_id = (SELECT gid FROM Games WHERE game="1. c4 Nf6 2. d4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 Be7 6. O-O O-O 7. Nc3 d5 8. Qe2 Nbd7 9. b3 c5 10. Rd1 Rc8 11. Bb2 Qc7 12. Rac1 Qb8 13. cxd5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 8, "w", "rn1qk2r/pbp2ppp/1p1ppn2/8/2PP4/3BPN2/PP1N1PPP/R2QK2R w KQkq - 0 8");
+SET @game_id = (SELECT gid FROM Games WHERE game="c4 Nf6 d4 e6 Nf3 b6 e3 Bb7 Bd3 Be7 O-O O-O Nc3 d5 Qe2 Nbd7 b3 c5 Rd1 Rc8 Bb2 Qc7 Rac1 Qb8 cxd5 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1491,7 +1623,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 12, "w", "2r2rk1/pbqnbppp/1p2pn2/2pp4/2PP4/1PNBPN2/PB2QPPP/R2R2K1 w - - 4 12"),
 (@game_id, 12, "b", "2r2rk1/pbqnbppp/1p2pn2/2pp4/2PP4/1PNBPN2/PB2QPPP/2RR2K1 b - - 5 12"),
 (@game_id, 13, "w", "1qr2rk1/pb1nbppp/1p2pn2/2pp4/2PP4/1PNBPN2/PB2QPPP/2RR2K1 w - - 6 13"),
-(@game_id, 13, "b", "1qr2rk1/pb1nbppp/1p2pn2/2pP4/3P4/1PNBPN2/PB2QPPP/2RR2K1 b - - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. O-O Bd6 7. b3 O-O 8. Bb2 Nbd7 9. Nc3 a6 10. Qe2 Ne4 11. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "1qr2rk1/pb1nbppp/1p2pn2/2pP4/3P4/1PNBPN2/PB2QPPP/2RR2K1 b - - 0 13");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 O-O Bd6 b3 O-O Bb2 Nbd7 Nc3 a6 Qe2 Ne4 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1511,7 +1645,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 9, "b", "r2q1rk1/pbpn1ppp/1p1bpn2/3p4/2PP4/1PNBPN2/PB3PPP/R2Q1RK1 b - - 4 9"),
 (@game_id, 10, "w", "r2q1rk1/1bpn1ppp/pp1bpn2/3p4/2PP4/1PNBPN2/PB3PPP/R2Q1RK1 w - - 0 10"),
 (@game_id, 10, "b", "r2q1rk1/1bpn1ppp/pp1bpn2/3p4/2PP4/1PNBPN2/PB2QPPP/R4RK1 b - - 1 10"),
-(@game_id, 11, "w", "r2q1rk1/1bpn1ppp/pp1bp3/3p4/2PPn3/1PNBPN2/PB2QPPP/R4RK1 w - - 2 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Be2 d5 6. cxd5 exd5 7. O-O Bd6 8. b3 O-O 9. Ba3 Bxa3 10. Nxa3 Qe7 11. Nb5 a6 12. Nc3 Nbd7 13. Rc1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "w", "r2q1rk1/1bpn1ppp/pp1bp3/3p4/2PPn3/1PNBPN2/PB2QPPP/R4RK1 w - - 2 11");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Be2 d5 cxd5 exd5 O-O Bd6 b3 O-O Ba3 Bxa3 Nxa3 Qe7 Nb5 a6 Nc3 Nbd7 Rc1 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1536,7 +1672,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 12, "w", "rn3rk1/1bp1qppp/pp3n2/1N1p4/3P4/1P2PN2/P3BPPP/R2Q1RK1 w - - 0 12"),
 (@game_id, 12, "b", "rn3rk1/1bp1qppp/pp3n2/3p4/3P4/1PN1PN2/P3BPPP/R2Q1RK1 b - - 1 12"),
 (@game_id, 13, "w", "r4rk1/1bpnqppp/pp3n2/3p4/3P4/1PN1PN2/P3BPPP/R2Q1RK1 w - - 2 13"),
-(@game_id, 13, "b", "r4rk1/1bpnqppp/pp3n2/3p4/3P4/1PN1PN2/P3BPPP/2RQ1RK1 b - - 3 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Bd3 Be7 6. Nc3 d5 7. cxd5 exd5 8. O-O O-O 9. b3 Nbd7 10. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r4rk1/1bpnqppp/pp3n2/3p4/3P4/1PN1PN2/P3BPPP/2RQ1RK1 b - - 3 13");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Bd3 Be7 Nc3 d5 cxd5 exd5 O-O O-O b3 Nbd7 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -1554,7 +1692,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 8, "b", "rn1qk2r/pbp1bppp/1p3n2/3p4/3P4/2NBPN2/PP3PPP/R1BQ1RK1 b kq - 1 8"),
 (@game_id, 9, "w", "rn1q1rk1/pbp1bppp/1p3n2/3p4/3P4/2NBPN2/PP3PPP/R1BQ1RK1 w - - 2 9"),
 (@game_id, 9, "b", "rn1q1rk1/pbp1bppp/1p3n2/3p4/3P4/1PNBPN2/P4PPP/R1BQ1RK1 b - - 0 9"),
-(@game_id, 10, "w", "r2q1rk1/pbpnbppp/1p3n2/3p4/3P4/1PNBPN2/P4PPP/R1BQ1RK1 w - - 1 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 e6 2. Nf3 Nf6 3. c4 b6 4. e3 Bb7 5. Bd3 d5 6. Nbd2 Nbd7 7. O-O Bd6 8. b3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "w", "r2q1rk1/pbpnbppp/1p3n2/3p4/3P4/1PNBPN2/P4PPP/R1BQ1RK1 w - - 1 10");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 e6 Nf3 Nf6 c4 b6 e3 Bb7 Bd3 d5 Nbd2 Nbd7 O-O Bd6 b3 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 1 2"),
@@ -1569,7 +1709,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 7, "w", "r2qkb1r/pbpn1ppp/1p2pn2/3p4/2PP4/3BPN2/PP1N1PPP/R1BQK2R w KQkq - 2 7"),
 (@game_id, 7, "b", "r2qkb1r/pbpn1ppp/1p2pn2/3p4/2PP4/3BPN2/PP1N1PPP/R1BQ1RK1 b kq - 3 7"),
 (@game_id, 8, "w", "r2qk2r/pbpn1ppp/1p1bpn2/3p4/2PP4/3BPN2/PP1N1PPP/R1BQ1RK1 w kq - 4 8"),
-(@game_id, 8, "b", "r2qk2r/pbpn1ppp/1p1bpn2/3p4/2PP4/1P1BPN2/P2N1PPP/R1BQ1RK1 b kq - 0 8");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. O-O Nbd7 7. Nc3 Be7 8. Qe2 O-O 9. e4 dxe4 10. Nxe4 c5 11. dxc5 Nxe4 12. Bxe4 Bxe4 13. Qxe4 Nxc5 14. Qe2 Bf6 15. Rd1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 8, "b", "r2qk2r/pbpn1ppp/1p1bpn2/3p4/2PP4/1P1BPN2/P2N1PPP/R1BQ1RK1 b kq - 0 8");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 O-O Nbd7 Nc3 Be7 Qe2 O-O e4 dxe4 Nxe4 c5 dxc5 Nxe4 Bxe4 Bxe4 Qxe4 Nxc5 Qe2 Bf6 Rd1 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1598,7 +1740,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 14, "w", "r2q1rk1/p3bppp/1p2p3/2n5/2P1Q3/5N2/PP3PPP/R1B2RK1 w - - 0 14"),
 (@game_id, 14, "b", "r2q1rk1/p3bppp/1p2p3/2n5/2P5/5N2/PP2QPPP/R1B2RK1 b - - 1 14"),
 (@game_id, 15, "w", "r2q1rk1/p4ppp/1p2pb2/2n5/2P5/5N2/PP2QPPP/R1B2RK1 w - - 2 15"),
-(@game_id, 15, "b", "r2q1rk1/p4ppp/1p2pb2/2n5/2P5/5N2/PP2QPPP/R1BR2K1 b - - 3 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 Be7 6. O-O O-O 7. Nc3 d5 8. cxd5 exd5 9. b3 c5 10. Bb2 Nc6 11. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "r2q1rk1/p4ppp/1p2pb2/2n5/2P5/5N2/PP2QPPP/R1BR2K1 b - - 3 15");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 Be7 O-O O-O Nc3 d5 cxd5 exd5 b3 c5 Bb2 Nc6 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1618,7 +1762,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 9, "b", "rn1q1rk1/pbp1bppp/1p3n2/3p4/3P4/1PNBPN2/P4PPP/R1BQ1RK1 b - - 0 9"),
 (@game_id, 10, "w", "rn1q1rk1/pb2bppp/1p3n2/2pp4/3P4/1PNBPN2/P4PPP/R1BQ1RK1 w - - 0 10"),
 (@game_id, 10, "b", "rn1q1rk1/pb2bppp/1p3n2/2pp4/3P4/1PNBPN2/PB3PPP/R2Q1RK1 b - - 1 10"),
-(@game_id, 11, "w", "r2q1rk1/pb2bppp/1pn2n2/2pp4/3P4/1PNBPN2/PB3PPP/R2Q1RK1 w - - 2 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. O-O Be7 7. Nc3 O-O 8. b3 Nbd7 9. Bb2 c5 10. cxd5 exd5 11. Rc1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "w", "r2q1rk1/pb2bppp/1pn2n2/2pp4/3P4/1PNBPN2/PB3PPP/R2Q1RK1 w - - 2 11");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 O-O Be7 Nc3 O-O b3 Nbd7 Bb2 c5 cxd5 exd5 Rc1 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1639,7 +1785,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 10, "w", "r2q1rk1/pb1nbppp/1p2pn2/2pp4/2PP4/1PNBPN2/PB3PPP/R2Q1RK1 w - - 0 10"),
 (@game_id, 10, "b", "r2q1rk1/pb1nbppp/1p2pn2/2pP4/3P4/1PNBPN2/PB3PPP/R2Q1RK1 b - - 0 10"),
 (@game_id, 11, "w", "r2q1rk1/pb1nbppp/1p3n2/2pp4/3P4/1PNBPN2/PB3PPP/R2Q1RK1 w - - 0 11"),
-(@game_id, 11, "b", "r2q1rk1/pb1nbppp/1p3n2/2pp4/3P4/1PNBPN2/PB3PPP/2RQ1RK1 b - - 1 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. Nf3 Nf6 2. d4 e6 3. e3 b6 4. c4 Bb7 5. Bd3 d5 6. O-O Bd6 7. Nbd2 Nbd7 8. b3 O-O 9. Bb2 c5 10. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "b", "r2q1rk1/pb1nbppp/1p3n2/2pp4/3P4/1PNBPN2/PB3PPP/2RQ1RK1 b - - 1 11");
+SET @game_id = (SELECT gid FROM Games WHERE game="Nf3 Nf6 d4 e6 e3 b6 c4 Bb7 Bd3 d5 O-O Bd6 Nbd2 Nbd7 b3 O-O Bb2 c5 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 2 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 0 2"),
@@ -1657,7 +1805,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 8, "b", "r2qk2r/pbpn1ppp/1p1bpn2/3p4/2PP4/1P1BPN2/P2N1PPP/R1BQ1RK1 b kq - 0 8"),
 (@game_id, 9, "w", "r2q1rk1/pbpn1ppp/1p1bpn2/3p4/2PP4/1P1BPN2/P2N1PPP/R1BQ1RK1 w - - 1 9"),
 (@game_id, 9, "b", "r2q1rk1/pbpn1ppp/1p1bpn2/3p4/2PP4/1P1BPN2/PB1N1PPP/R2Q1RK1 b - - 2 9"),
-(@game_id, 10, "w", "r2q1rk1/pb1n1ppp/1p1bpn2/2pp4/2PP4/1P1BPN2/PB1N1PPP/R2Q1RK1 w - - 0 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 Bb4+ 6. Nbd2 Ne4 7. O-O Nxd2 8. Bxd2 Bxd2 9. Nxd2 O-O 10. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "w", "r2q1rk1/pb1n1ppp/1p1bpn2/2pp4/2PP4/1P1BPN2/PB1N1PPP/R2Q1RK1 w - - 0 10");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 Bb4+ Nbd2 Ne4 O-O Nxd2 Bxd2 Bxd2 Nxd2 O-O 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1675,7 +1825,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 8, "b", "rn1qk2r/pbpp1ppp/1p2p3/8/1bPP4/3BPN2/PP1B1PPP/R2Q1RK1 b kq - 0 8"),
 (@game_id, 9, "w", "rn1qk2r/pbpp1ppp/1p2p3/8/2PP4/3BPN2/PP1b1PPP/R2Q1RK1 w kq - 0 9"),
 (@game_id, 9, "b", "rn1qk2r/pbpp1ppp/1p2p3/8/2PP4/3BP3/PP1N1PPP/R2Q1RK1 b kq - 0 9"),
-(@game_id, 10, "w", "rn1q1rk1/pbpp1ppp/1p2p3/8/2PP4/3BP3/PP1N1PPP/R2Q1RK1 w - - 1 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Nc3 Bb4 6. Bd2 O-O 7. Bd3 d5 8. O-O Nbd7 9. Rc1 c5 10. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "w", "rn1q1rk1/pbpp1ppp/1p2p3/8/2PP4/3BP3/PP1N1PPP/R2Q1RK1 w - - 1 10");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Nc3 Bb4 Bd2 O-O Bd3 d5 O-O Nbd7 Rc1 c5 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -1693,7 +1845,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 8, "b", "rn1q1rk1/pbp2ppp/1p2pn2/3p4/1bPP4/2NBPN2/PP1B1PPP/R2Q1RK1 b - - 1 8"),
 (@game_id, 9, "w", "r2q1rk1/pbpn1ppp/1p2pn2/3p4/1bPP4/2NBPN2/PP1B1PPP/R2Q1RK1 w - - 2 9"),
 (@game_id, 9, "b", "r2q1rk1/pbpn1ppp/1p2pn2/3p4/1bPP4/2NBPN2/PP1B1PPP/2RQ1RK1 b - - 3 9"),
-(@game_id, 10, "w", "r2q1rk1/pb1n1ppp/1p2pn2/2pp4/1bPP4/2NBPN2/PP1B1PPP/2RQ1RK1 w - - 0 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 Bb4+ 6. Bd2 Bxd2+ 7. Nbxd2 d6 8. O-O Nbd7 9. e4 e5 10. Qc2 O-O 11. d5 c6 12. Rac1 cxd5 13. cxd5 Rc8 14. Qa4 a6 15. b4 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "w", "r2q1rk1/pb1n1ppp/1p2pn2/2pp4/1bPP4/2NBPN2/PP1B1PPP/2RQ1RK1 w - - 0 10");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 Bb4+ Bd2 Bxd2+ Nbxd2 d6 O-O Nbd7 e4 e5 Qc2 O-O d5 c6 Rac1 cxd5 cxd5 Rc8 Qa4 a6 b4 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1722,7 +1876,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 14, "w", "2rq1rk1/pb1n1ppp/1p1p1n2/3Pp3/4P3/3B1N2/PPQN1PPP/2R2RK1 w - - 1 14"),
 (@game_id, 14, "b", "2rq1rk1/pb1n1ppp/1p1p1n2/3Pp3/Q3P3/3B1N2/PP1N1PPP/2R2RK1 b - - 2 14"),
 (@game_id, 15, "w", "2rq1rk1/1b1n1ppp/pp1p1n2/3Pp3/Q3P3/3B1N2/PP1N1PPP/2R2RK1 w - - 0 15"),
-(@game_id, 15, "b", "2rq1rk1/1b1n1ppp/pp1p1n2/3Pp3/QP2P3/3B1N2/P2N1PPP/2R2RK1 b - - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. O-O Nbd7 7. b3 Be7 8. Bb2 O-O 9. Nc3 a6 10. Qe2 c5 11. cxd5 exd5 12. Rad1 b5 13. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "b", "2rq1rk1/1b1n1ppp/pp1p1n2/3Pp3/QP2P3/3B1N2/P2N1PPP/2R2RK1 b - - 0 15");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 O-O Nbd7 b3 Be7 Bb2 O-O Nc3 a6 Qe2 c5 cxd5 exd5 Rad1 b5 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1746,7 +1902,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 11, "b", "r2q1rk1/1b1nbppp/pp2pn2/2pP4/3P4/1PNBPN2/PB2QPPP/R4RK1 b - - 0 11"),
 (@game_id, 12, "w", "r2q1rk1/1b1nbppp/pp3n2/2pp4/3P4/1PNBPN2/PB2QPPP/R4RK1 w - - 0 12"),
 (@game_id, 12, "b", "r2q1rk1/1b1nbppp/pp3n2/2pp4/3P4/1PNBPN2/PB2QPPP/3R1RK1 b - - 1 12"),
-(@game_id, 13, "w", "r2q1rk1/1b1nbppp/p4n2/1ppp4/3P4/1PNBPN2/PB2QPPP/3R1RK1 w - - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. e3 b6 4. c4 Bb7 5. Be2 d5 6. b3 dxc4 7. bxc4 Nbd7 8. O-O Bd6 9. Nc3 O-O 10. Qd3 c5 11. Rd1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "w", "r2q1rk1/1b1nbppp/p4n2/1ppp4/3P4/1PNBPN2/PB2QPPP/3R1RK1 w - - 0 13");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 e3 b6 c4 Bb7 Be2 d5 b3 dxc4 bxc4 Nbd7 O-O Bd6 Nc3 O-O Qd3 c5 Rd1 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -1767,7 +1925,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 10, "w", "r2q1rk1/pbpn1ppp/1p1bpn2/8/2PP4/2N1PN2/P3BPPP/R1BQ1RK1 w - - 5 10"),
 (@game_id, 10, "b", "r2q1rk1/pbpn1ppp/1p1bpn2/8/2PP4/2NQPN2/P3BPPP/R1B2RK1 b - - 6 10"),
 (@game_id, 11, "w", "r2q1rk1/pb1n1ppp/1p1bpn2/2p5/2PP4/2NQPN2/P3BPPP/R1B2RK1 w - - 0 11"),
-(@game_id, 11, "b", "r2q1rk1/pb1n1ppp/1p1bpn2/2p5/2PP4/2NQPN2/P3BPPP/R1BR2K1 b - - 1 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. O-O Nbd7 7. cxd5 exd5 8. Nc3 Bd6 9. Qc2 a6 10. b3 O-O 11. Bb2 Qe7 12. Rac1 Rfe8 13. Ne2 Ne4 14. Ne5 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "b", "r2q1rk1/pb1n1ppp/1p1bpn2/2p5/2PP4/2NQPN2/P3BPPP/R1BR2K1 b - - 1 11");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 O-O Nbd7 cxd5 exd5 Nc3 Bd6 Qc2 a6 b3 O-O Bb2 Qe7 Rac1 Rfe8 Ne2 Ne4 Ne5 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1794,7 +1954,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 13, "w", "r3r1k1/1bpnqppp/pp1b1n2/3p4/3P4/1PNBPN2/PBQ2PPP/2R2RK1 w - - 5 13"),
 (@game_id, 13, "b", "r3r1k1/1bpnqppp/pp1b1n2/3p4/3P4/1P1BPN2/PBQ1NPPP/2R2RK1 b - - 6 13"),
 (@game_id, 14, "w", "r3r1k1/1bpnqppp/pp1b4/3p4/3Pn3/1P1BPN2/PBQ1NPPP/2R2RK1 w - - 7 14"),
-(@game_id, 14, "b", "r3r1k1/1bpnqppp/pp1b4/3pN3/3Pn3/1P1BP3/PBQ1NPPP/2R2RK1 b - - 8 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Bd3 Be7 6. O-O O-O 7. Nc3 d5 8. cxd5 exd5 9. b3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "r3r1k1/1bpnqppp/pp1b4/3pN3/3Pn3/1P1BP3/PBQ1NPPP/2R2RK1 b - - 8 14");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Bd3 Be7 O-O O-O Nc3 d5 cxd5 exd5 b3 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -1811,7 +1973,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 8, "w", "rn1q1rk1/pbp1bppp/1p2pn2/3p4/2PP4/2NBPN2/PP3PPP/R1BQ1RK1 w - - 0 8"),
 (@game_id, 8, "b", "rn1q1rk1/pbp1bppp/1p2pn2/3P4/3P4/2NBPN2/PP3PPP/R1BQ1RK1 b - - 0 8"),
 (@game_id, 9, "w", "rn1q1rk1/pbp1bppp/1p3n2/3p4/3P4/2NBPN2/PP3PPP/R1BQ1RK1 w - - 0 9"),
-(@game_id, 9, "b", "rn1q1rk1/pbp1bppp/1p3n2/3p4/3P4/1PNBPN2/P4PPP/R1BQ1RK1 b - - 0 9");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 Be7 6. O-O O-O 7. Nc3 d5 8. cxd5 exd5 9. b3 Nbd7 10. Bb2 Re8 11. Rc1 a6 12. Qc2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 9, "b", "rn1q1rk1/pbp1bppp/1p3n2/3p4/3P4/1PNBPN2/P4PPP/R1BQ1RK1 b - - 0 9");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 Be7 O-O O-O Nc3 d5 cxd5 exd5 b3 Nbd7 Bb2 Re8 Rc1 a6 Qc2 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1834,7 +1998,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 11, "w", "r2qr1k1/pbpnbppp/1p3n2/3p4/3P4/1PNBPN2/PB3PPP/R2Q1RK1 w - - 3 11"),
 (@game_id, 11, "b", "r2qr1k1/pbpnbppp/1p3n2/3p4/3P4/1PNBPN2/PB3PPP/2RQ1RK1 b - - 4 11"),
 (@game_id, 12, "w", "r2qr1k1/1bpnbppp/pp3n2/3p4/3P4/1PNBPN2/PB3PPP/2RQ1RK1 w - - 0 12"),
-(@game_id, 12, "b", "r2qr1k1/1bpnbppp/pp3n2/3p4/3P4/1PNBPN2/PBQ2PPP/2R2RK1 b - - 1 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 e6 2. Nf3 Nf6 3. c4 b6 4. e3 Bb7 5. Bd3 d5 6. O-O Bd6 7. Nc3 O-O 8. b3 Nbd7 9. Bb2 dxc4 10. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "b", "r2qr1k1/1bpnbppp/pp3n2/3p4/3P4/1PNBPN2/PBQ2PPP/2R2RK1 b - - 1 12");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 e6 Nf3 Nf6 c4 b6 e3 Bb7 Bd3 d5 O-O Bd6 Nc3 O-O b3 Nbd7 Bb2 dxc4 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 1 2"),
@@ -1852,7 +2018,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 8, "b", "rn1q1rk1/pbp2ppp/1p1bpn2/3p4/2PP4/1PNBPN2/P4PPP/R1BQ1RK1 b - - 0 8"),
 (@game_id, 9, "w", "r2q1rk1/pbpn1ppp/1p1bpn2/3p4/2PP4/1PNBPN2/P4PPP/R1BQ1RK1 w - - 1 9"),
 (@game_id, 9, "b", "r2q1rk1/pbpn1ppp/1p1bpn2/3p4/2PP4/1PNBPN2/PB3PPP/R2Q1RK1 b - - 2 9"),
-(@game_id, 10, "w", "r2q1rk1/pbpn1ppp/1p1bpn2/8/2pP4/1PNBPN2/PB3PPP/R2Q1RK1 w - - 0 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. Nf3 Nf6 2. d4 e6 3. c4 b6 4. e3 Bb7 5. Bd3 d5 6. cxd5 exd5 7. O-O Bd6 8. Nc3 O-O 9. b3 a6 10. Bb2 Nbd7 11. Rc1 Qe7 12. Ne2 Ne4 13. Ng3 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "w", "r2q1rk1/pbpn1ppp/1p1bpn2/8/2pP4/1PNBPN2/PB3PPP/R2Q1RK1 w - - 0 10");
+SET @game_id = (SELECT gid FROM Games WHERE game="Nf3 Nf6 d4 e6 c4 b6 e3 Bb7 Bd3 d5 cxd5 exd5 O-O Bd6 Nc3 O-O b3 a6 Bb2 Nbd7 Rc1 Qe7 Ne2 Ne4 Ng3 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 2 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 0 2"),
@@ -1877,7 +2045,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 12, "w", "r4rk1/1bpnqppp/pp1b1n2/3p4/3P4/1PNBPN2/PB3PPP/2RQ1RK1 w - - 4 12"),
 (@game_id, 12, "b", "r4rk1/1bpnqppp/pp1b1n2/3p4/3P4/1P1BPN2/PB2NPPP/2RQ1RK1 b - - 5 12"),
 (@game_id, 13, "w", "r4rk1/1bpnqppp/pp1b4/3p4/3Pn3/1P1BPN2/PB2NPPP/2RQ1RK1 w - - 6 13"),
-(@game_id, 13, "b", "r4rk1/1bpnqppp/pp1b4/3p4/3Pn3/1P1BPNN1/PB3PPP/2RQ1RK1 b - - 7 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. e3 b6 4. c4 Bb7 5. Bd3 Be7 6. Nc3 d5 7. O-O dxc4 8. Bxc4 O-O 9. b3 c5 10. dxc5 Qxd1 11. Rxd1 Bxc5 12. Bb2 Nc6 13. Rac1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r4rk1/1bpnqppp/pp1b4/3p4/3Pn3/1P1BPNN1/PB3PPP/2RQ1RK1 b - - 7 13");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 e3 b6 c4 Bb7 Bd3 Be7 Nc3 d5 O-O dxc4 Bxc4 O-O b3 c5 dxc5 Qxd1 Rxd1 Bxc5 Bb2 Nc6 Rac1 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -1902,7 +2072,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 12, "w", "rn3rk1/pb3ppp/1p2pn2/2b5/2B5/1PN1PN2/P4PPP/R1BR2K1 w - - 0 12"),
 (@game_id, 12, "b", "rn3rk1/pb3ppp/1p2pn2/2b5/2B5/1PN1PN2/PB3PPP/R2R2K1 b - - 1 12"),
 (@game_id, 13, "w", "r4rk1/pb3ppp/1pn1pn2/2b5/2B5/1PN1PN2/PB3PPP/R2R2K1 w - - 2 13"),
-(@game_id, 13, "b", "r4rk1/pb3ppp/1pn1pn2/2b5/2B5/1PN1PN2/PB3PPP/2RR2K1 b - - 3 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Bd3 Bb4+ 6. Bd2 a5 7. O-O O-O 8. a3 Bxd2 9. Nbxd2 d6 10. Qc2 Nbd7 11. Ng5 h6 12. Nh7 Re8 13. Nxf6+ 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r4rk1/pb3ppp/1pn1pn2/2b5/2B5/1PN1PN2/PB3PPP/2RR2K1 b - - 3 13");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Bd3 Bb4+ Bd2 a5 O-O O-O a3 Bxd2 Nbxd2 d6 Qc2 Nbd7 Ng5 h6 Nh7 Re8 Nxf6+ 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -1927,7 +2099,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 12, "w", "r2q1rk1/1bpn1pp1/1p1ppn1p/p5N1/2PP4/P2BP3/1PQN1PPP/R4RK1 w - - 0 12"),
 (@game_id, 12, "b", "r2q1rk1/1bpn1ppN/1p1ppn1p/p7/2PP4/P2BP3/1PQN1PPP/R4RK1 b - - 1 12"),
 (@game_id, 13, "w", "r2qr1k1/1bpn1ppN/1p1ppn1p/p7/2PP4/P2BP3/1PQN1PPP/R4RK1 w - - 2 13"),
-(@game_id, 13, "b", "r2qr1k1/1bpn1pp1/1p1ppN1p/p7/2PP4/P2BP3/1PQN1PPP/R4RK1 b - - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. O-O Bd6 7. Nc3 O-O 8. b3 Nbd7 9. Bb2 dxc4 10. bxc4 e5 11. Bc2 a6 12. d5 Nc5 13. e4 c6 14. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r2qr1k1/1bpn1pp1/1p1ppN1p/p7/2PP4/P2BP3/1PQN1PPP/R4RK1 b - - 0 13");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 O-O Bd6 Nc3 O-O b3 Nbd7 Bb2 dxc4 bxc4 e5 Bc2 a6 d5 Nc5 e4 c6 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1953,7 +2127,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 12, "b", "r2q1rk1/1bpn1ppp/pp1b1n2/3Pp3/2P5/2N1PN2/PBB2PPP/R2Q1RK1 b - - 0 12"),
 (@game_id, 13, "w", "r2q1rk1/1bp2ppp/pp1b1n2/2nPp3/2P5/2N1PN2/PBB2PPP/R2Q1RK1 w - - 1 13"),
 (@game_id, 13, "b", "r2q1rk1/1bp2ppp/pp1b1n2/2nPp3/2P1P3/2N2N2/PBB2PPP/R2Q1RK1 b - - 0 13"),
-(@game_id, 14, "w", "r2q1rk1/1b3ppp/pppb1n2/2nPp3/2P1P3/2N2N2/PBB2PPP/R2Q1RK1 w - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. c4 Nf6 2. d4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. b3 Bd6 7. Nbd2 O-O 8. O-O Nbd7 9. Bb2 Ne4 10. Qe2 a5 11. Rfc1 Qe7 12. cxd5 exd5 13. Bb5 Ra7 14. Nxe4 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "w", "r2q1rk1/1b3ppp/pppb1n2/2nPp3/2P1P3/2N2N2/PBB2PPP/R2Q1RK1 w - - 0 14");
+SET @game_id = (SELECT gid FROM Games WHERE game="c4 Nf6 d4 e6 Nf3 b6 e3 Bb7 Bd3 d5 b3 Bd6 Nbd2 O-O O-O Nbd7 Bb2 Ne4 Qe2 a5 Rfc1 Qe7 cxd5 exd5 Bb5 Ra7 Nxe4 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -1980,7 +2156,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 13, "w", "r4rk1/1bpnqppp/1p1b4/p2p4/3Pn3/1P1BPN2/PB1NQPPP/R1R3K1 w - - 0 13"),
 (@game_id, 13, "b", "r4rk1/1bpnqppp/1p1b4/pB1p4/3Pn3/1P2PN2/PB1NQPPP/R1R3K1 b - - 1 13"),
 (@game_id, 14, "w", "5rk1/rbpnqppp/1p1b4/pB1p4/3Pn3/1P2PN2/PB1NQPPP/R1R3K1 w - - 2 14"),
-(@game_id, 14, "b", "5rk1/rbpnqppp/1p1b4/pB1p4/3PN3/1P2PN2/PB2QPPP/R1R3K1 b - - 0 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 g6 6. Nc3 Bg7 7. e4 d6 8. O-O O-O 9. Re1 Nbd7 10. h3 e5 11. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "b", "5rk1/rbpnqppp/1p1b4/pB1p4/3PN3/1P2PN2/PB2QPPP/R1R3K1 b - - 0 14");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 g6 Nc3 Bg7 e4 d6 O-O O-O Re1 Nbd7 h3 e5 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -2000,7 +2178,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 9, "b", "rn1q1rk1/pbp2pbp/1p1ppnp1/8/2PPP3/2NB1N2/PP3PPP/R1BQR1K1 b - - 3 9"),
 (@game_id, 10, "w", "r2q1rk1/pbpn1pbp/1p1ppnp1/8/2PPP3/2NB1N2/PP3PPP/R1BQR1K1 w - - 4 10"),
 (@game_id, 10, "b", "r2q1rk1/pbpn1pbp/1p1ppnp1/8/2PPP3/2NB1N1P/PP3PP1/R1BQR1K1 b - - 0 10"),
-(@game_id, 11, "w", "r2q1rk1/pbpn1pbp/1p1p1np1/4p3/2PPP3/2NB1N1P/PP3PP1/R1BQR1K1 w - - 0 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. O-O Nbd7 7. Nc3 Be7 8. Qe2 O-O 9. b3 c5 10. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "w", "r2q1rk1/pbpn1pbp/1p1p1np1/4p3/2PPP3/2NB1N1P/PP3PP1/R1BQR1K1 w - - 0 11");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 O-O Nbd7 Nc3 Be7 Qe2 O-O b3 c5 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -2018,7 +2198,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 8, "b", "r2qk2r/pbpnbppp/1p2pn2/3p4/2PP4/2NBPN2/PP2QPPP/R1B2RK1 b kq - 5 8"),
 (@game_id, 9, "w", "r2q1rk1/pbpnbppp/1p2pn2/3p4/2PP4/2NBPN2/PP2QPPP/R1B2RK1 w - - 6 9"),
 (@game_id, 9, "b", "r2q1rk1/pbpnbppp/1p2pn2/3p4/2PP4/1PNBPN2/P3QPPP/R1B2RK1 b - - 0 9"),
-(@game_id, 10, "w", "r2q1rk1/pb1nbppp/1p2pn2/2pp4/2PP4/1PNBPN2/P3QPPP/R1B2RK1 w - - 0 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. b3 Bb4+ 7. Nbd2 O-O 8. O-O Bd6 9. Qc2 dxc4 10. bxc4 c5 11. d5 Nbd7 12. Bb2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "w", "r2q1rk1/pb1nbppp/1p2pn2/2pp4/2PP4/1PNBPN2/P3QPPP/R1B2RK1 w - - 0 10");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 b3 Bb4+ Nbd2 O-O O-O Bd6 Qc2 dxc4 bxc4 c5 d5 Nbd7 Bb2 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -2041,7 +2223,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 11, "w", "rn1q1rk1/pb3ppp/1p1bpn2/2p5/2PP4/3BPN2/P1QN1PPP/R1B2RK1 w - - 0 11"),
 (@game_id, 11, "b", "rn1q1rk1/pb3ppp/1p1bpn2/2pP4/2P5/3BPN2/P1QN1PPP/R1B2RK1 b - - 0 11"),
 (@game_id, 12, "w", "r2q1rk1/pb1n1ppp/1p1bpn2/2pP4/2P5/3BPN2/P1QN1PPP/R1B2RK1 w - - 1 12"),
-(@game_id, 12, "b", "r2q1rk1/pb1n1ppp/1p1bpn2/2pP4/2P5/3BPN2/PBQN1PPP/R4RK1 b - - 2 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. Nbd2 Nbd7 7. b3 Bd6 8. Bb2 O-O 9. O-O Ne4 10. Bxe4 dxe4 11. Ne5 Bxe5 12. dxe5 Qg5 13. Qc2 Nxe5 14. Nxe4 Qg6 15. 0-1");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "b", "r2q1rk1/pb1n1ppp/1p1bpn2/2pP4/2P5/3BPN2/PBQN1PPP/R4RK1 b - - 2 12");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 Nbd2 Nbd7 b3 Bd6 Bb2 O-O O-O Ne4 Bxe4 dxe4 Ne5 Bxe5 dxe5 Qg5 Qc2 Nxe5 Nxe4 Qg6 0-1");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -2069,7 +2253,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 13, "b", "r4rk1/pbpn1ppp/1p2p3/4P1q1/2P1p3/1P2P3/PBQN1PPP/R4RK1 b - - 2 13"),
 (@game_id, 14, "w", "r4rk1/pbp2ppp/1p2p3/4n1q1/2P1p3/1P2P3/PBQN1PPP/R4RK1 w - - 0 14"),
 (@game_id, 14, "b", "r4rk1/pbp2ppp/1p2p3/4n1q1/2P1N3/1P2P3/PBQ2PPP/R4RK1 b - - 0 14"),
-(@game_id, 15, "w", "r4rk1/pbp2ppp/1p2p1q1/4n3/2P1N3/1P2P3/PBQ2PPP/R4RK1 w - - 1 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Nc3 d5 6. cxd5 Nxd5 7. Qc2 c5 8. e4 Nxc3 9. bxc3 Nd7 10. Bd3 Rc8 11. Qe2 Qc7 12. O-O 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "w", "r4rk1/pbp2ppp/1p2p1q1/4n3/2P1N3/1P2P3/PBQ2PPP/R4RK1 w - - 1 15");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Nc3 d5 cxd5 Nxd5 Qc2 c5 e4 Nxc3 bxc3 Nd7 Bd3 Rc8 Qe2 Qc7 O-O 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -2092,7 +2278,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 11, "w", "2rqkb1r/pb1n1ppp/1p2p3/2p5/3PP3/2PB1N2/P1Q2PPP/R1B1K2R w KQk - 3 11"),
 (@game_id, 11, "b", "2rqkb1r/pb1n1ppp/1p2p3/2p5/3PP3/2PB1N2/P3QPPP/R1B1K2R b KQk - 4 11"),
 (@game_id, 12, "w", "2r1kb1r/pbqn1ppp/1p2p3/2p5/3PP3/2PB1N2/P3QPPP/R1B1K2R w KQk - 5 12"),
-(@game_id, 12, "b", "2r1kb1r/pbqn1ppp/1p2p3/2p5/3PP3/2PB1N2/P3QPPP/R1B2RK1 b k - 6 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 e6 2. Nf3 Nf6 3. e3 b6 4. c4 Bb4+ 5. Bd2 Qe7 6. Bxb4 Qxb4+ 7. Qd2 a5 8. Qxb4 axb4 9. Nbd2 Bb7 10. Be2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "b", "2r1kb1r/pbqn1ppp/1p2p3/2p5/3PP3/2PB1N2/P3QPPP/R1B2RK1 b k - 6 12");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 e6 Nf3 Nf6 e3 b6 c4 Bb4+ Bd2 Qe7 Bxb4 Qxb4+ Qd2 a5 Qxb4 axb4 Nbd2 Bb7 Be2 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 1 2"),
@@ -2111,7 +2299,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 9, "w", "rnb1k2r/2pp1ppp/1p2pn2/8/1pPP4/4PN2/PP3PPP/RN2KB1R w KQkq - 0 9"),
 (@game_id, 9, "b", "rnb1k2r/2pp1ppp/1p2pn2/8/1pPP4/4PN2/PP1N1PPP/R3KB1R b KQkq - 1 9"),
 (@game_id, 10, "w", "rn2k2r/1bpp1ppp/1p2pn2/8/1pPP4/4PN2/PP1N1PPP/R3KB1R w KQkq - 2 10"),
-(@game_id, 10, "b", "rn2k2r/1bpp1ppp/1p2pn2/8/1pPP4/4PN2/PP1NBPPP/R3K2R b KQkq - 3 10");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Be2 d5 6. cxd5 exd5 7. O-O Nbd7 8. Nc3 Bd6 9. b3 a6 10. a4 O-O 11. Ba3 Ne4 12. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 10, "b", "rn2k2r/1bpp1ppp/1p2pn2/8/1pPP4/4PN2/PP1NBPPP/R3K2R b KQkq - 3 10");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Be2 d5 cxd5 exd5 O-O Nbd7 Nc3 Bd6 b3 a6 a4 O-O Ba3 Ne4 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -2133,7 +2323,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 10, "b", "r2qk2r/1bpn1ppp/pp1b1n2/3p4/P2P4/1PN1PN2/4BPPP/R1BQ1RK1 b kq - 0 10"),
 (@game_id, 11, "w", "r2q1rk1/1bpn1ppp/pp1b1n2/3p4/P2P4/1PN1PN2/4BPPP/R1BQ1RK1 w - - 1 11"),
 (@game_id, 11, "b", "r2q1rk1/1bpn1ppp/pp1b1n2/3p4/P2P4/BPN1PN2/4BPPP/R2Q1RK1 b - - 2 11"),
-(@game_id, 12, "w", "r2q1rk1/1bpn1ppp/pp1b4/3p4/P2Pn3/BPN1PN2/4BPPP/R2Q1RK1 w - - 3 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 c5 6. O-O Be7 7. Nc3 cxd4 8. exd4 d5 9. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "w", "r2q1rk1/1bpn1ppp/pp1b4/3p4/P2Pn3/BPN1PN2/4BPPP/R2Q1RK1 w - - 3 12");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 c5 O-O Be7 Nc3 cxd4 exd4 d5 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -2149,7 +2341,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 7, "b", "rn1qk2r/pb1pbppp/1p2pn2/2p5/2PP4/2NBPN2/PP3PPP/R1BQ1RK1 b kq - 3 7"),
 (@game_id, 8, "w", "rn1qk2r/pb1pbppp/1p2pn2/8/2Pp4/2NBPN2/PP3PPP/R1BQ1RK1 w kq - 0 8"),
 (@game_id, 8, "b", "rn1qk2r/pb1pbppp/1p2pn2/8/2PP4/2NB1N2/PP3PPP/R1BQ1RK1 b kq - 0 8"),
-(@game_id, 9, "w", "rn1qk2r/pb2bppp/1p2pn2/3p4/2PP4/2NB1N2/PP3PPP/R1BQ1RK1 w kq - 0 9");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. cxd5 exd5 7. b3 Bb4+ 8. Bd2 Bd6 9. Nc3 a6 10. O-O Nbd7 11. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 9, "w", "rn1qk2r/pb2bppp/1p2pn2/3p4/2PP4/2NB1N2/PP3PPP/R1BQ1RK1 w kq - 0 9");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 cxd5 exd5 b3 Bb4+ Bd2 Bd6 Nc3 a6 O-O Nbd7 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -2169,7 +2363,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 9, "b", "rn1qk2r/pbp2ppp/1p1b1n2/3p4/3P4/1PNBPN2/P2B1PPP/R2QK2R b KQkq - 4 9"),
 (@game_id, 10, "w", "rn1qk2r/1bp2ppp/pp1b1n2/3p4/3P4/1PNBPN2/P2B1PPP/R2QK2R w KQkq - 0 10"),
 (@game_id, 10, "b", "rn1qk2r/1bp2ppp/pp1b1n2/3p4/3P4/1PNBPN2/P2B1PPP/R2Q1RK1 b kq - 1 10"),
-(@game_id, 11, "w", "r2qk2r/1bpn1ppp/pp1b1n2/3p4/3P4/1PNBPN2/P2B1PPP/R2Q1RK1 w kq - 2 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 e6 2. Nf3 Nf6 3. e3 b6 4. c4 Bb7 5. Nc3 Be7 6. Be2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "w", "r2qk2r/1bpn1ppp/pp1b1n2/3p4/3P4/1PNBPN2/P2B1PPP/R2Q1RK1 w kq - 2 11");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 e6 Nf3 Nf6 e3 b6 c4 Bb7 Nc3 Be7 Be2 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkbnr/pppp1ppp/4p3/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"),
 (@game_id, 2, "b", "rnbqkbnr/pppp1ppp/4p3/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 1 2"),
@@ -2180,7 +2376,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 5, "w", "rn1qkb1r/pbpp1ppp/1p2pn2/8/2PP4/4PN2/PP3PPP/RNBQKB1R w KQkq - 1 5"),
 (@game_id, 5, "b", "rn1qkb1r/pbpp1ppp/1p2pn2/8/2PP4/2N1PN2/PP3PPP/R1BQKB1R b KQkq - 2 5"),
 (@game_id, 6, "w", "rn1qk2r/pbppbppp/1p2pn2/8/2PP4/2N1PN2/PP3PPP/R1BQKB1R w KQkq - 3 6"),
-(@game_id, 6, "b", "rn1qk2r/pbppbppp/1p2pn2/8/2PP4/2N1PN2/PP2BPPP/R1BQK2R b KQkq - 4 6");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Bd3 Bb4+ 6. Nbd2 c5 7. a3 Bxd2+ 8. Bxd2 d6 9. Qc2 Nbd7 10. dxc5 Nxc5 11. Be2 Nce4 12. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 6, "b", "rn1qk2r/pbppbppp/1p2pn2/8/2PP4/2N1PN2/PP2BPPP/R1BQK2R b KQkq - 4 6");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Bd3 Bb4+ Nbd2 c5 a3 Bxd2+ Bxd2 d6 Qc2 Nbd7 dxc5 Nxc5 Be2 Nce4 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -2202,7 +2400,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 10, "b", "r2qk2r/pb1n1ppp/1p1ppn2/2P5/2P5/P2BPN2/1PQB1PPP/R3K2R b KQkq - 0 10"),
 (@game_id, 11, "w", "r2qk2r/pb3ppp/1p1ppn2/2n5/2P5/P2BPN2/1PQB1PPP/R3K2R w KQkq - 0 11"),
 (@game_id, 11, "b", "r2qk2r/pb3ppp/1p1ppn2/2n5/2P5/P3PN2/1PQBBPPP/R3K2R b KQkq - 1 11"),
-(@game_id, 12, "w", "r2qk2r/pb3ppp/1p1ppn2/8/2P1n3/P3PN2/1PQBBPPP/R3K2R w KQkq - 2 12");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Be2 Be7 6. O-O 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 12, "w", "r2qk2r/pb3ppp/1p1ppn2/8/2P1n3/P3PN2/1PQBBPPP/R3K2R w KQkq - 2 12");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Be2 Be7 O-O 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -2213,7 +2413,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 5, "w", "rn1qkb1r/pbpp1ppp/1p2pn2/8/2PP4/4PN2/PP3PPP/RNBQKB1R w KQkq - 1 5"),
 (@game_id, 5, "b", "rn1qkb1r/pbpp1ppp/1p2pn2/8/2PP4/4PN2/PP2BPPP/RNBQK2R b KQkq - 2 5"),
 (@game_id, 6, "w", "rn1qk2r/pbppbppp/1p2pn2/8/2PP4/4PN2/PP2BPPP/RNBQK2R w KQkq - 3 6"),
-(@game_id, 6, "b", "rn1qk2r/pbppbppp/1p2pn2/8/2PP4/4PN2/PP2BPPP/RNBQ1RK1 b kq - 4 6");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Nc3 Bb4 6. Bd3 O-O 7. O-O Bxc3 8. bxc3 Be4 9. Qc2 Bxd3 10. Qxd3 d6 11. a4 Nc6 12. Ba3 Re8 13. Nd2 e5 14. f3 Qd7 15. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 6, "b", "rn1qk2r/pbppbppp/1p2pn2/8/2PP4/4PN2/PP2BPPP/RNBQ1RK1 b kq - 4 6");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Nc3 Bb4 Bd3 O-O O-O Bxc3 bxc3 Be4 Qc2 Bxd3 Qxd3 d6 a4 Nc6 Ba3 Re8 Nd2 e5 f3 Qd7 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -2241,7 +2443,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 13, "b", "r2qr1k1/p1p2ppp/1pnppn2/8/P1PP4/B1PQP3/3N1PPP/R4RK1 b - - 4 13"),
 (@game_id, 14, "w", "r2qr1k1/p1p2ppp/1pnp1n2/4p3/P1PP4/B1PQP3/3N1PPP/R4RK1 w - - 0 14"),
 (@game_id, 14, "b", "r2qr1k1/p1p2ppp/1pnp1n2/4p3/P1PP4/B1PQPP2/3N2PP/R4RK1 b - - 0 14"),
-(@game_id, 15, "w", "r3r1k1/p1pq1ppp/1pnp1n2/4p3/P1PP4/B1PQPP2/3N2PP/R4RK1 w - - 1 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Be2 d5 6. O-O Bd6 7. Nc3 a6 8. Qc2 Nbd7 9. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "w", "r3r1k1/p1pq1ppp/1pnp1n2/4p3/P1PP4/B1PQPP2/3N2PP/R4RK1 w - - 1 15");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Be2 d5 O-O Bd6 Nc3 a6 Qc2 Nbd7 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -2257,7 +2461,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 7, "b", "rn1qk2r/pbp2ppp/1p1bpn2/3p4/2PP4/2N1PN2/PP2BPPP/R1BQ1RK1 b kq - 3 7"),
 (@game_id, 8, "w", "rn1qk2r/1bp2ppp/pp1bpn2/3p4/2PP4/2N1PN2/PP2BPPP/R1BQ1RK1 w kq - 0 8"),
 (@game_id, 8, "b", "rn1qk2r/1bp2ppp/pp1bpn2/3p4/2PP4/2N1PN2/PPQ1BPPP/R1B2RK1 b kq - 1 8"),
-(@game_id, 9, "w", "r2qk2r/1bpn1ppp/pp1bpn2/3p4/2PP4/2N1PN2/PPQ1BPPP/R1B2RK1 w kq - 2 9");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Bd3 Bb4+ 6. Nbd2 O-O 7. a3 Bxd2+ 8. Nxd2 c5 9. dxc5 bxc5 10. b4 Nc6 11. Qb3 Ng4 12. O-O Nce5 13. Be2 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 9, "w", "r2qk2r/1bpn1ppp/pp1bpn2/3p4/2PP4/2N1PN2/PPQ1BPPP/R1B2RK1 w kq - 2 9");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Bd3 Bb4+ Nbd2 O-O a3 Bxd2+ Nxd2 c5 dxc5 bxc5 b4 Nc6 Qb3 Ng4 O-O Nce5 Be2 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -2282,7 +2488,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 12, "w", "r2q1rk1/pb1p1ppp/2n1p3/2p5/1PP3n1/PQ1BP3/3N1PPP/R1B1K2R w KQ - 3 12"),
 (@game_id, 12, "b", "r2q1rk1/pb1p1ppp/2n1p3/2p5/1PP3n1/PQ1BP3/3N1PPP/R1B2RK1 b - - 4 12"),
 (@game_id, 13, "w", "r2q1rk1/pb1p1ppp/4p3/2p1n3/1PP3n1/PQ1BP3/3N1PPP/R1B2RK1 w - - 5 13"),
-(@game_id, 13, "b", "r2q1rk1/pb1p1ppp/4p3/2p1n3/1PP3n1/PQ2P3/3NBPPP/R1B2RK1 b - - 6 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Nc3 Bb4 6. Bd2 Bxc3 7. Bxc3 d5 8. cxd5 Bxd5 9. Bd3 O-O 10. Qb1 Nbd7 11. Ng5 h6 12. Bh7+ Nxh7 13. Qxh7+ 1-0");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r2q1rk1/pb1p1ppp/4p3/2p1n3/1PP3n1/PQ2P3/3NBPPP/R1B2RK1 b - - 6 13");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Nc3 Bb4 Bd2 Bxc3 Bxc3 d5 cxd5 Bxd5 Bd3 O-O Qb1 Nbd7 Ng5 h6 Bh7+ Nxh7 Qxh7+ 1-0");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -2307,7 +2515,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 12, "w", "r2q1rk1/p1pn1pp1/1p2pn1p/3b2N1/3P4/2BBP3/PP3PPP/RQ2K2R w KQ - 0 12"),
 (@game_id, 12, "b", "r2q1rk1/p1pn1ppB/1p2pn1p/3b2N1/3P4/2B1P3/PP3PPP/RQ2K2R b KQ - 1 12"),
 (@game_id, 13, "w", "r2q1rk1/p1pn1ppn/1p2p2p/3b2N1/3P4/2B1P3/PP3PPP/RQ2K2R w KQ - 0 13"),
-(@game_id, 13, "b", "r2q1rk1/p1pn1ppQ/1p2p2p/3b2N1/3P4/2B1P3/PP3PPP/R3K2R b KQ - 0 13");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Nbd2 d5 6. Bd3 dxc4 7. Nxc4 c5 8. O-O cxd4 9. Nxd4 Nc6 10. Qa4 Qd7 11. Ne5 Nxe5 12. Bb5 Nc6 13. Nxc6 a6 14. Ne5 Qxb5 15. 0-1");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 13, "b", "r2q1rk1/p1pn1ppQ/1p2p2p/3b2N1/3P4/2B1P3/PP3PPP/R3K2R b KQ - 0 13");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Nbd2 d5 Bd3 dxc4 Nxc4 c5 O-O cxd4 Nxd4 Nc6 Qa4 Qd7 Ne5 Nxe5 Bb5 Nc6 Nxc6 a6 Ne5 Qxb5 0-1");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -2335,7 +2545,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 13, "b", "r3kb1r/pb1q1ppp/1pN1pn2/1B6/Q7/4P3/PP3PPP/R1B2RK1 b kq - 0 13"),
 (@game_id, 14, "w", "r3kb1r/1b1q1ppp/ppN1pn2/1B6/Q7/4P3/PP3PPP/R1B2RK1 w kq - 0 14"),
 (@game_id, 14, "b", "r3kb1r/1b1q1ppp/pp2pn2/1B2N3/Q7/4P3/PP3PPP/R1B2RK1 b kq - 1 14"),
-(@game_id, 15, "w", "r3kb1r/1b3ppp/pp2pn2/1q2N3/Q7/4P3/PP3PPP/R1B2RK1 w kq - 0 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 Bb4+ 6. Nbd2 O-O 7. O-O 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "w", "r3kb1r/1b3ppp/pp2pn2/1q2N3/Q7/4P3/PP3PPP/R1B2RK1 w kq - 0 15");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 Bb4+ Nbd2 O-O O-O 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -2348,7 +2560,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 6, "w", "rn1qk2r/pbpp1ppp/1p2pn2/8/1bPP4/3BPN2/PP3PPP/RNBQK2R w KQkq - 3 6"),
 (@game_id, 6, "b", "rn1qk2r/pbpp1ppp/1p2pn2/8/1bPP4/3BPN2/PP1N1PPP/R1BQK2R b KQkq - 4 6"),
 (@game_id, 7, "w", "rn1q1rk1/pbpp1ppp/1p2pn2/8/1bPP4/3BPN2/PP1N1PPP/R1BQK2R w KQ - 5 7"),
-(@game_id, 7, "b", "rn1q1rk1/pbpp1ppp/1p2pn2/8/1bPP4/3BPN2/PP1N1PPP/R1BQ1RK1 b - - 6 7");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 Be7 6. O-O O-O 7. Nbd2 d5 8. b3 Nbd7 9. Bb2 c5 10. Qe2 Rc8 11. Rfd1 Qc7 12. Rac1 Qb8 13. h3 cxd4 14. exd4 Rfd8 15. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 7, "b", "rn1q1rk1/pbpp1ppp/1p2pn2/8/1bPP4/3BPN2/PP1N1PPP/R1BQ1RK1 b - - 6 7");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 Be7 O-O O-O Nbd2 d5 b3 Nbd7 Bb2 c5 Qe2 Rc8 Rfd1 Qc7 Rac1 Qb8 h3 cxd4 exd4 Rfd8 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -2376,7 +2590,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 13, "b", "1qr2rk1/pb1nbppp/1p2pn2/2pp4/2PP4/1P1BPN1P/PB1NQPP1/2RR2K1 b - - 0 13"),
 (@game_id, 14, "w", "1qr2rk1/pb1nbppp/1p2pn2/3p4/2Pp4/1P1BPN1P/PB1NQPP1/2RR2K1 w - - 0 14"),
 (@game_id, 14, "b", "1qr2rk1/pb1nbppp/1p2pn2/3p4/2PP4/1P1B1N1P/PB1NQPP1/2RR2K1 b - - 0 14"),
-(@game_id, 15, "w", "1qrr2k1/pb1nbppp/1p2pn2/3p4/2PP4/1P1B1N1P/PB1NQPP1/2RR2K1 w - - 1 15");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. e3 Bb7 5. Nc3 d5 6. cxd5 exd5 7. Bb5+ c6 8. Bd3 Nbd7 9. O-O Bd6 10. e4 dxe4 11. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 15, "w", "1qrr2k1/pb1nbppp/1p2pn2/3p4/2PP4/1P1B1N1P/PB1NQPP1/2RR2K1 w - - 1 15");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 Nf3 e6 c4 b6 e3 Bb7 Nc3 d5 cxd5 exd5 Bb5+ c6 Bd3 Nbd7 O-O Bd6 e4 dxe4 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
@@ -2396,7 +2612,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 9, "b", "r2qkb1r/pb1n1ppp/1pp2n2/3p4/3P4/2NBPN2/PP3PPP/R1BQ1RK1 b kq - 3 9"),
 (@game_id, 10, "w", "r2qk2r/pb1n1ppp/1ppb1n2/3p4/3P4/2NBPN2/PP3PPP/R1BQ1RK1 w kq - 4 10"),
 (@game_id, 10, "b", "r2qk2r/pb1n1ppp/1ppb1n2/3p4/3PP3/2NB1N2/PP3PPP/R1BQ1RK1 b kq - 0 10"),
-(@game_id, 11, "w", "r2qk2r/pb1n1ppp/1ppb1n2/8/3Pp3/2NB1N2/PP3PPP/R1BQ1RK1 w kq - 0 11");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 b6 3. Nf3 e6 4. e3 Bb7 5. Bd3 c5 6. O-O Nc6 7. Nc3 d5 8. Nb1 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 11, "w", "r2qk2r/pb1n1ppp/1ppb1n2/8/3Pp3/2NB1N2/PP3PPP/R1BQ1RK1 w kq - 0 11");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 b6 Nf3 e6 e3 Bb7 Bd3 c5 O-O Nc6 Nc3 d5 Nb1 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -2411,7 +2629,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 7, "w", "r2qkb1r/pb1p1ppp/1pn1pn2/2p5/2PP4/3BPN2/PP3PPP/RNBQ1RK1 w kq - 2 7"),
 (@game_id, 7, "b", "r2qkb1r/pb1p1ppp/1pn1pn2/2p5/2PP4/2NBPN2/PP3PPP/R1BQ1RK1 b kq - 3 7"),
 (@game_id, 8, "w", "r2qkb1r/pb3ppp/1pn1pn2/2pp4/2PP4/2NBPN2/PP3PPP/R1BQ1RK1 w kq - 0 8"),
-(@game_id, 8, "b", "r2qkb1r/pb3ppp/1pn1pn2/2pp4/2PP4/3BPN2/PP3PPP/RNBQ1RK1 b kq - 1 8");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 d5 6. cxd5 exd5 7. O-O Bd6 8. Nc3 O-O 9. b3 Nbd7 10. Bb2 a6 11. Rc1 Re8 12. Rc2 Qe7 13. Ne2 Ne4 14. 1/2-1/2");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 8, "b", "r2qkb1r/pb3ppp/1pn1pn2/2pp4/2PP4/3BPN2/PP3PPP/RNBQ1RK1 b kq - 1 8");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Bd3 d5 cxd5 exd5 O-O Bd6 Nc3 O-O b3 Nbd7 Bb2 a6 Rc1 Re8 Rc2 Qe7 Ne2 Ne4 1/2-1/2");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -2437,7 +2657,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 12, "b", "r2qr1k1/1bpn1ppp/pp1b1n2/3p4/3P4/1PNBPN2/PBR2PPP/3Q1RK1 b - - 3 12"),
 (@game_id, 13, "w", "r3r1k1/1bpnqppp/pp1b1n2/3p4/3P4/1PNBPN2/PBR2PPP/3Q1RK1 w - - 4 13"),
 (@game_id, 13, "b", "r3r1k1/1bpnqppp/pp1b1n2/3p4/3P4/1P1BPN2/PBR1NPPP/3Q1RK1 b - - 5 13"),
-(@game_id, 14, "w", "r3r1k1/1bpnqppp/pp1b4/3p4/3Pn3/1P1BPN2/PBR1NPPP/3Q1RK1 w - - 6 14");SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Nc3 Be7 6. Be2 Kf8 7. O-O 0-1");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 14, "w", "r3r1k1/1bpnqppp/pp1b4/3p4/3Pn3/1P1BPN2/PBR1NPPP/3Q1RK1 w - - 6 14");
+SET @game_id = (SELECT gid FROM Games WHERE game="d4 Nf6 c4 e6 Nf3 b6 e3 Bb7 Nc3 Be7 Be2 Kf8 O-O 0-1");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"),
@@ -2450,7 +2672,9 @@ SET @game_id = (SELECT gid FROM Games WHERE game="1. d4 Nf6 2. c4 e6 3. Nf3 b6 4
 (@game_id, 6, "w", "rn1qk2r/pbppbppp/1p2pn2/8/2PP4/2N1PN2/PP3PPP/R1BQKB1R w KQkq - 3 6"),
 (@game_id, 6, "b", "rn1qk2r/pbppbppp/1p2pn2/8/2PP4/2N1PN2/PP2BPPP/R1BQK2R b KQkq - 4 6"),
 (@game_id, 7, "w", "rn1q1k1r/pbppbppp/1p2pn2/8/2PP4/2N1PN2/PP2BPPP/R1BQK2R w KQ - 5 7"),
-(@game_id, 7, "b", "rn1q1k1r/pbppbppp/1p2pn2/8/2PP4/2N1PN2/PP2BPPP/R1BQ1RK1 b - - 6 7");SET @game_id = (SELECT gid FROM Games WHERE game="");INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
+(@game_id, 7, "b", "rn1q1k1r/pbppbppp/1p2pn2/8/2PP4/2N1PN2/PP2BPPP/R1BQ1RK1 b - - 6 7");
+SET @game_id = (SELECT gid FROM Games WHERE game="");
+INSERT IGNORE INTO Moves(gid, movenum, color, fen) VALUES 
 (@game_id, 1, "b", "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"),
 (@game_id, 2, "w", "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2"),
 (@game_id, 2, "b", "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2"),
