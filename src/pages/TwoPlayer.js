@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import Chess from "chess.js";
+
+import React, { useEffect, useState } from "react";
+import Chess from 'chess.js';
 import "../css/chess-page.css";
 import { Chessboard } from "react-chessboard";
 
-const PlayChess = () => {
+const TwoPlayer = () => {
   const [game, setGame] = useState(new Chess());
   const [moveFrom, setMoveFrom] = useState("");
   const [moveTo, setMoveTo] = useState(null);
@@ -47,19 +48,6 @@ const PlayChess = () => {
     };
     setOptionSquares(newSquares);
     return true;
-  }
-
-  function makeRandomMove() {
-    const possibleMoves = game.moves();
-
-    // exit if the game is over
-    if (game.game_over() || game.in_draw() || possibleMoves.length === 0)
-      return;
-
-    const randomIndex = Math.floor(Math.random() * possibleMoves.length);
-    safeGameMutate((game) => {
-      game.move(possibleMoves[randomIndex]);
-    });
   }
 
   function onSquareClick(square) {
@@ -124,7 +112,6 @@ const PlayChess = () => {
 
       setGame(gameCopy);
 
-      setTimeout(makeRandomMove, 300);
       setMoveFrom("");
       setMoveTo(null);
       setOptionSquares({});
@@ -142,7 +129,6 @@ const PlayChess = () => {
         promotion: piece[1].toLowerCase() ?? "q",
       });
       setGame(gameCopy);
-      setTimeout(makeRandomMove, 300);
     }
 
     setMoveFrom("");
@@ -153,7 +139,7 @@ const PlayChess = () => {
   }
 
   function onSquareRightClick(square) {
-    const colour = "rgba(0, 0, 0, 0.4)";
+    const colour = "rgba(0, 0, 255, 0.4)";
     setRightClickedSquares({
       ...rightClickedSquares,
       [square]:
@@ -164,9 +150,13 @@ const PlayChess = () => {
     });
   }
 
+  function flipBoard() {
+    setGame(game.flipBoard());
+  }
+
   return (
     <div id="main-game">
-      <h1>Player VS Random</h1>
+      <h1>Player VS Player</h1>
       <Chessboard
         id="ClickToMove"
         animationDuration={200}
@@ -175,7 +165,7 @@ const PlayChess = () => {
         onSquareClick={onSquareClick}
         onSquareRightClick={onSquareRightClick}
         onPromotionPieceSelect={onPromotionPieceSelect}
-        boardWidth="400"
+        boardWidth="400" 
         customBoardStyle={{
           borderRadius: "4px",
           boxShadow: "0 2px 10px rgba(0, 0, 0, 0.5)",
@@ -206,7 +196,6 @@ const PlayChess = () => {
         onClick={() => {
           safeGameMutate((game) => {
             game.undo();
-            game.undo();
           });
           setMoveSquares({});
           setOptionSquares({});
@@ -217,6 +206,6 @@ const PlayChess = () => {
       </button>
     </div>
   );
-};
+}
 
-export default PlayChess;
+export default TwoPlayer;

@@ -3,26 +3,24 @@ import chess.pgn
 import io, os
 import sys
 
-fields = ["gid", "movenum", "color", "fen"]
+fields = ["gid", "movenum", "color", "fen", "move"]
 
-def values_row(fen):
+def values_row(fen, move):
     movenum = fen.split(" ")[-1]
     color = fen.split(" ")[-5]
-    return f"(@game_id, {movenum}, \"{color}\", \"{fen}\")"
+    return f"(@game_id, {movenum}, \"{color}\", \"{fen}\", \"{move}\")"
 
 # bc the moves format in game is different from the moves in the games database
 def removeNums(moves):
   a = moves.split(" ")
-  r = ""
+  r = []
   k = -1
   for i in a:
     k += 1
     if k % 3 == 0:
       continue
-    r += i
-    r += " "
-    
-  return r[:-1]
+    r.append(i)
+  return r
 
 
 def one_pgn(file_name, fen_gened):
@@ -47,13 +45,24 @@ def one_pgn(file_name, fen_gened):
                 continue
 
 
+        
+        moves = pgn.split('\n')
+        while moves[-1] == "" or moves[-1][0] != "1": 
+            moves.pop()
+        moves = removeNums(moves[-1])
+        if moves == []: 
+            print(pgn) 
+            return
         # SET GAME ID
-        moves = pgn.split('\n')[-1]
-        f.write(f"\nSET @game_id = (SELECT gid FROM Games WHERE game=\"{removeNums(moves)}\");\n")
+        f.write(f"\nSET @game_id = (SELECT gid FROM Games WHERE game=\"{' '.join(moves)}\");\n")
         f.write('INSERT IGNORE INTO Moves(' + ', '.join(fields) + ') VALUES ')
         s = ""
-        for fen in fens:
-            s += "\n" + values_row(fen) + ","
+        for j in range(len(fens)):
+            if j >= len(moves):
+                print(pgn)
+                print(pgn.split('\n'))
+                break
+            s += "\n" + values_row(fens[j], moves[j]) + ","
         s = s[:-1]
         f.write(s + ";")
     f.close()
