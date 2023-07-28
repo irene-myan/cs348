@@ -6,6 +6,7 @@ import BookOpenings from "./pages/BookOpenings";
 import WorldRanking from "./pages/WorldRanking";
 import "./css/main.css";
 import NavBar from "./pages/NavBar";
+import NextMove from "./pages/NextMove";
 import PlayChess from "./pages/PlayChess";
 import TwoPlayer from "./pages/TwoPlayer";
 import StockFish from "./pages/StockFish";
@@ -21,6 +22,7 @@ function Router() {
             <Route path="/percentage" element={<Percentage />} />
             <Route path="/book-openings" element={<BookOpenings />} />
             <Route path="/top-elo-players" element={<WorldRanking />} />
+            <Route path="/next-move" element={<NextMove />} />
             <Route path="/play-chess" element={<PlayChess />} />
             <Route path="/two-player" element={<TwoPlayer />} />
             <Route path="/stock-fish" element={<StockFish />} />

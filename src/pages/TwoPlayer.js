@@ -1,6 +1,5 @@
-
 import React, { useEffect, useState } from "react";
-import Chess from 'chess.js';
+import Chess from "chess.js";
 import "../css/chess-page.css";
 import { Chessboard } from "react-chessboard";
 
@@ -126,7 +125,7 @@ const TwoPlayer = () => {
       gameCopy.move({
         from: moveFrom,
         to: moveTo,
-        promotion: piece[1].toLowerCase() ?? "q",
+        promotion: piece[1].toLowerCase() ? piece[1].toLowerCase() : "q",
       });
       setGame(gameCopy);
     }
@@ -165,7 +164,7 @@ const TwoPlayer = () => {
         onSquareClick={onSquareClick}
         onSquareRightClick={onSquareRightClick}
         onPromotionPieceSelect={onPromotionPieceSelect}
-        boardWidth="400" 
+        boardWidth="400"
         customBoardStyle={{
           borderRadius: "4px",
           boxShadow: "0 2px 10px rgba(0, 0, 0, 0.5)",
@@ -206,6 +205,6 @@ const TwoPlayer = () => {
       </button>
     </div>
   );
-}
+};
 
 export default TwoPlayer;

@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../css/nav-bar.css";
 
 const NavBar = () => {
-  const [curPath, setCurPath] = useState(window.location.pathname);
+  const [curPath, setCurPath] = useState("");
+
+  useEffect(() => {
+    setCurPath(window.location.pathname);
+  });
 
   const handleLink = (path) => {
     setCurPath(path);
@@ -48,6 +52,16 @@ const NavBar = () => {
             World Ranking
           </Link>
         </li>
+        <li>
+          <Link
+            onClick={() => handleLink("/next-move")}
+            to="/next-move"
+            className={curPath === "/next-move" ? "active" : ""}
+          >
+            Moves Probability
+          </Link>
+        </li>
+
         <li>
           <Link
             onClick={() => handleLink("/play-chess")}

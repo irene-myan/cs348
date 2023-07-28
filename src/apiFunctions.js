@@ -98,3 +98,16 @@ export async function GetMovesFromGid(gid, setMoves) {
     console.error("Error fetching moves from gid", error);
   }
 }
+
+export async function GetNextBestMove(fen, setMoves) {
+  try {
+    const response = await axios.get("http://localhost:8000/get_next_moves/", {
+      params: {
+        fen: fen,
+      },
+    });
+    setMoves(response.data);
+  } catch (error) {
+    console.error("Error fetching next best move from fen", error);
+  }
+}

@@ -139,7 +139,7 @@ const PlayChess = () => {
       gameCopy.move({
         from: moveFrom,
         to: moveTo,
-        promotion: piece[1].toLowerCase() ?? "q",
+        promotion: piece[1].toLowerCase() ? piece[1].toLowerCase() : "q",
       });
       setGame(gameCopy);
       setTimeout(makeRandomMove, 300);
