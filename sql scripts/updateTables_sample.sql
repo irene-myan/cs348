@@ -3,6 +3,7 @@ DELETE FROM sampleDB.Moves WHERE gid IN (SELECT gid FROM sampleDB.Games WHERE ec
 DELETE FROM sampleDB.Games WHERE eco = "" AND gid != 0;
 
 -- Turn DB into sample
+DELETE FROM Moves WHERE (gid % 1000 != 996 AND gid % 1000 != 997 AND gid % 1000 != 995)AND gid != 1;
 DELETE FROM Games WHERE (gid % 1000 != 996 AND gid % 1000 != 997 AND gid % 1000 != 995)AND gid != 1;
 
 -- Insert player names into Players table and assign ID
