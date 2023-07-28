@@ -3,7 +3,6 @@ import TextField from "@mui/material/TextField";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { GetPercentage } from "../apiFunctions";
 import Chessboard from "chessboardjsx";
-import Chess from "chess.js";
 
 const darkTheme = createTheme({
   palette: {
@@ -12,26 +11,12 @@ const darkTheme = createTheme({
 });
 
 const Percentage = () => {
-  const [chess, setGame] = useState(
-    new Chess("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1")
-  );
   const [fen, setFen] = useState(
     "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
   );
   const [winPercentage, setWWinPercentage] = useState(null);
   const [lossPercentage, setLossPercentage] = useState(null);
   const [drawPercentage, setDrawPercentage] = useState(null);
-
-  const changeFen = async (FEN) => {
-    await GetPercentage(
-      FEN,
-      setWWinPercentage,
-      setLossPercentage,
-      setDrawPercentage
-    );
-    console.log(winPercentage);
-    setFen(FEN);
-  };
 
   return (
     <div>
@@ -44,8 +29,6 @@ const Percentage = () => {
           onKeyPress={(e) => {
             if (e.key === "Enter") {
               setFen(e.target.value);
-              setGame(new Chess(fen));
-              console.log(chess.fen());
               GetPercentage(
                 e.target.value,
                 setWWinPercentage,

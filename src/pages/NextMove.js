@@ -15,25 +15,21 @@ const darkTheme = createTheme({
 });
 
 const columns = [
-  { field: "event", headerName: "Event", width: 130, filterable: false },
   {
-    field: "wp_id",
-    headerName: "White Player",
+    field: "play_count",
+    headerName: "Play Count",
     width: 130,
     filterable: false,
   },
-  { field: "bp_id", headerName: "Black Player", width: 130, filterable: false },
-  { field: "result", headerName: "Result", width: 130, filterable: false },
+  {
+    field: "move",
+    headerName: "Move",
+    width: 130,
+    filterable: false,
+  },
 ];
 
 const NextMove = () => {
-  // const [chess] =
-  //   useState <
-  //   ChessInstance >
-  //   new Chess("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1");
-  // useEffect(() => {
-  //   setGame(new Chess());
-  // });
   var row_id = 0;
   const [chess, setGame] = useState(
     new Chess("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1")
@@ -41,24 +37,22 @@ const NextMove = () => {
   const [fen, setFen] = useState(
     "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
   );
-  const [moves, setMoves] = useState(null);
-  //   const [winPercentage, setWWinPercentage] = useState(null);
-  //   const [lossPercentage, setLossPercentage] = useState(null);
-  //   const [drawPercentage, setDrawPercentage] = useState(null);
+  const [moves, setMoves] = useState([]);
 
-  //   const changeFen = async (FEN) => {
-  //     await GetPercentage(
-  //       FEN,
-  //       setWWinPercentage,
-  //       setLossPercentage,
-  //       setDrawPercentage
-  //     );
-  //     console.log(winPercentage);
-  //     setFen(FEN);
-  //   };
-
-  const handleClick = () => {
+  const handleClickWhite = () => {
     GetNextBestMove(fen);
+  };
+
+  const handleClickBlack = () => {
+    let newFen = "";
+    for (let i = 0; i < fen.length; i++) {
+      if (fen[i] === "w") {
+        newFen += "b";
+        continue;
+      }
+      newFen += fen[i];
+    }
+    GetNextBestMove(newFen);
   };
 
   const handlePut = (piece, pos, delPos) => {
@@ -89,43 +83,54 @@ const NextMove = () => {
           marginBottom: 32,
         }}
       >
-        <Chessboard
-          width={350}
-          position={fen}
-          //   sparePieces={true}
-          onDrop={(move) =>
-            handlePut(
-              {
-                type: move.piece[1],
-                color: move.piece[0],
-              },
-              move.targetSquare,
-              move.sourceSquare
-            )
-          }
-          //   dropOffBoard="trash"
-        />
+        <ThemeProvider theme={darkTheme}>
+          <TextField
+            style={{
+              marginBottom: 32,
+            }}
+            id="standard-basic"
+            label="FEN"
+            variant="standard"
+            onKeyPress={(e) => {
+              if (e.key === "Enter") {
+                setFen(e.target.value);
+                setGame(new Chess(fen));
+                console.log(chess.fen());
+                GetNextBestMove(e.target.value, setMoves);
+              }
+            }}
+          />
+        </ThemeProvider>
       </div>
-      <Button onClick={handleClick} variant="contained">
-        Next Moves
-      </Button>
-      {/* <ThemeProvider theme={darkTheme}>
-        <DataGrid
-          disableColumnSelector
-          rows={moves}
-          getRowId={() => {
-            row_id++;
-            return row_id;
-          }}
-          columns={columns}
-          initialState={{
-            pagination: {
-              paginationModel: { page: 0, pageSize: 5 },
-            },
-          }}
-          pageSizeOptions={[5, 10, 20, 50]}
-        />
-      </ThemeProvider> */}
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          flexDirection: "row",
+          marginTop: 32,
+          marginBottom: 32,
+        }}
+      >
+        <ThemeProvider theme={darkTheme}>
+          <DataGrid
+            disableColumnSelector
+            style={{ marginRight: 32 }}
+            rows={moves}
+            getRowId={() => {
+              row_id++;
+              return row_id;
+            }}
+            columns={columns}
+            initialState={{
+              pagination: {
+                paginationModel: { page: 0, pageSize: 5 },
+              },
+            }}
+            pageSizeOptions={[5, 10, 20, 50]}
+          />
+        </ThemeProvider>
+        <Chessboard width={350} position={fen} allowDrag={() => false} />
+      </div>
     </div>
   );
 };
