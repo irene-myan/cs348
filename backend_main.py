@@ -196,7 +196,7 @@ def get_items(fen: str, db: Session = Depends(get_db)):
 @app.get('/get_fens_from_gid/')
 def get_items(gid: str, db: Session = Depends(get_db)):
     query = (
-        "SELECT m.fen, m.movenum "
+        "SELECT m.fen, m.movenum, m.color, result "
         "FROM moves m, games g "
         "WHERE m.gid = g.gid AND g.gid = :gid "
     )

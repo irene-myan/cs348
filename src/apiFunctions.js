@@ -77,9 +77,24 @@ export async function GetStockFishEval(fen, setStockEval, timeToThink = 10000) {
         },
       }
     );
-    console.log(response.data);
     setStockEval(response.data);
   } catch (error) {
-    console.error("Error fetching stockfix:", error);
+    console.error("Error fetching stockfish:", error);
+  }
+}
+
+export async function GetMovesFromGid(gid, setMoves) {
+  try {
+    const response = await axios.get(
+      "http://localhost:8000/get_fens_from_gid/",
+      {
+        params: {
+          gid: gid,
+        },
+      }
+    );
+    setMoves(response.data);
+  } catch (error) {
+    console.error("Error fetching moves from gid", error);
   }
 }
