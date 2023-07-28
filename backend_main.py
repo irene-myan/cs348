@@ -129,6 +129,7 @@ def get_items(db: Session = Depends(get_db)):
 
     return generate_result_from_query(result)
 
+# Sorts the players by their highest achieved ranking within two dates
 @app.get('/players_ranking/')
 def get_items(date_start: Optional[date] = None, date_end: Optional[date] = None, db: Session = Depends(get_db)):
     if not date_start:
@@ -152,6 +153,7 @@ def get_items(date_start: Optional[date] = None, date_end: Optional[date] = None
 
     return generate_result_from_query(result)
 
+# given an opening ECO return the amount of times each player played it and sort by highest played
 @app.get('/players_opening_count/')
 def get_items(eco: str, db: Session = Depends(get_db)):
     query = (
@@ -172,6 +174,7 @@ def get_items(eco: str, db: Session = Depends(get_db)):
 
     return generate_result_from_query(result)
 
+# Given a fen return the count of next moves played from that spot
 @app.get('/get_next_moves/')
 def get_items(fen: str, db: Session = Depends(get_db)):
     move_inc = 0 if 'w' in fen else 1
@@ -196,6 +199,7 @@ def get_items(fen: str, db: Session = Depends(get_db)):
 
     return generate_result_from_query(result)
 
+# given a game return all of the fens (moves) associated with that games. (The sequence of fens)
 @app.get('/get_fens_from_gid/')
 def get_items(gid: str, db: Session = Depends(get_db)):
     query = (
@@ -222,6 +226,7 @@ def get_items(gid: str, db: Session = Depends(get_db)):
 
     return generate_result_from_query(result)
 
+# Given a gen return all of the games that have reached that position
 @app.get('/get_games_from_fen/')
 def get_items(fen: str, db: Session = Depends(get_db)):
     '''
@@ -280,7 +285,7 @@ def extract_score(input_string):
     else:
         return None, None
 
-
+# Given a fen return stockfish analysis of the position
 @app.get('/get_stockfish_eval/')
 def get_items(fen: str, time_to_think_ms: int, timeout_ms: int=-1, db: Session = Depends(get_db)):
     if timeout_ms == -1:

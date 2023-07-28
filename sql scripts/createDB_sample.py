@@ -1,7 +1,7 @@
 import os, subprocess
 
 # Set up the MySQL command
-mysql_command = "mysql -u root -pPassword123 testDB"
+mysql_command = "mysql -u root -pPassword123 sampleDB"
 
 # List of SQL files in order
 sql_files = [
