@@ -152,6 +152,12 @@ const StockFish = () => {
           animationDuration={200}
           position={game.fen()}
           boardWidth="400"
+          customBoardStyle={{
+            borderRadius: "4px",
+            boxShadow: "0 2px 10px rgba(0, 0, 0, 0.5)",
+          }}
+          customDarkSquareStyle={{ backgroundColor: "#005b96" }}
+          customLightSquareStyle={{ backgroundColor: "#6497b1" }}
           onSquareClick={onSquareClick}
           customSquareStyles={{ ...squares }}
           onPieceDrop={onPieceDrop}
