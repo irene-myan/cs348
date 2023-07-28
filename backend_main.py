@@ -112,7 +112,16 @@ def get_items(date_start: Optional[date] = None, date_end: Optional[date] = None
 @app.get("/sbd/")
 def get_items(desc: bool, db: Session = Depends(get_db)):
     order = "DESC" if desc else "ASC"
-    result = db.execute(text(f"SELECT * FROM Games ORDER BY date {order}"))
+
+    query = (
+        "SELECT gid, w.name AS wp_name, b.name AS bp_name, result, event "
+        "FROM Games g JOIN players w ON g.wp_id = w.pID "
+        "JOIN players b ON g.bp_id = b.pid "
+        f"ORDER BY date {order}"
+    )
+
+    result = db.execute(text(query))
+    
     return generate_result_from_query(result)
 
 # Count the number of openings and its name

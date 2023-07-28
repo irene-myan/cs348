@@ -14,12 +14,17 @@ const darkTheme = createTheme({
 const columns = [
   { field: "event", headerName: "Event", width: 130, filterable: false },
   {
-    field: "wp_id",
+    field: "wp_name",
     headerName: "White Player",
     width: 130,
     filterable: false,
   },
-  { field: "bp_id", headerName: "Black Player", width: 130, filterable: false },
+  {
+    field: "bp_name",
+    headerName: "Black Player",
+    width: 130,
+    filterable: false,
+  },
   { field: "result", headerName: "Result", width: 130, filterable: false },
 ];
 
