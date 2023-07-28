@@ -1,0 +1,14 @@
+.home-page-container {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.games, .chess-board {
+  margin: 5px;
+}
+
+.chess-board {
+  width: 400px;
+  height: 400px;
+}
