@@ -101,10 +101,9 @@ export async function GetMovesFromGid(gid, setMoves) {
 
 export async function GetNextBestMove(fen) {
   try {
-    console.log(fen.split(" ")[0]);
     const response = await axios.get("http://localhost:8000/get_next_moves/", {
       params: {
-        fen: fen.split(" ")[0],
+        fen: fen,
       },
     });
     console.log(response);
