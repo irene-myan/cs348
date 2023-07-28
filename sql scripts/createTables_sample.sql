@@ -34,7 +34,7 @@ CREATE TABLE Games(
     bp_id INT, -- pop
     bp_elo INT,
     eco VARCHAR(3) NOT NULL, -- del
-    moves INT NOT NULL,
+    moves INT NOT NULL CHECK (moves > 0),
 	result VARCHAR(10) NOT NULL,
     game VARCHAR(255) NOT NULL UNIQUE
 );
@@ -60,7 +60,7 @@ CREATE TABLE PlayedGames(
 
 CREATE TABLE Moves(
     gid INT NOT NULL,
-    movenum INT NOT NULL,
+    movenum INT NOT NULL CHECK (movenum > 0),
     color VARCHAR(1),
     fen VARCHAR(100),
     move VARCHAR(7),
