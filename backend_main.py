@@ -174,22 +174,24 @@ def get_items(eco: str, db: Session = Depends(get_db)):
 
 @app.get('/get_next_moves/')
 def get_items(fen: str, db: Session = Depends(get_db)):
+    move_inc = 0 if 'w' in fen else 1
+    find = 'b' if 'w' in fen else 'w'
     query = (
-        "WITH next_games as ( "
-        "  SELECT m.gid, m.movenum + 1 as movenum"
+        "WITH next_games_white as ( "
+        "  SELECT m.gid, m.movenum + :move_inc as movenum"
         "  FROM moves m "
-        "  WHERE m.fen = :fen "
+        "  WHERE m.fen = :fen"
         ") "
         "SELECT COUNT(*) as play_count, m.move, m.fen "
         "FROM next_games ng, moves m "
-        "WHERE ng.gid = m.gid and ng.movenum = m.movenum "
+        "WHERE ng.gid = m.gid and ng.movenum = m.movenum and m.color = :find"
         "GROUP BY m.move, m.fen "
         "ORDER BY play_count DESC"
     )
 
     result = db.execute(
         text(query),
-        {"fen": fen}
+        {"fen": fen, "move_inc": move_inc, "find": find}
         )
 
     return generate_result_from_query(result)
