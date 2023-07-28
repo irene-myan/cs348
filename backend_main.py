@@ -180,14 +180,14 @@ def get_items(fen: str, db: Session = Depends(get_db)):
     move_inc = 0 if 'w' in fen else 1
     find = 'b' if 'w' in fen else 'w'
     query = (
-        "WITH next_games_white as ( "
+        "WITH next_games as ( "
         "  SELECT m.gid, m.movenum + :move_inc as movenum"
         "  FROM moves m "
-        "  WHERE m.fen = :fen"
+        "  WHERE m.fen = :fen "
         ") "
         "SELECT COUNT(*) as play_count, m.move, m.fen "
         "FROM next_games ng, moves m "
-        "WHERE ng.gid = m.gid and ng.movenum = m.movenum and m.color = :find"
+        "WHERE ng.gid = m.gid and ng.movenum = m.movenum and m.color = :find "
         "GROUP BY m.move, m.fen "
         "ORDER BY play_count DESC"
     )
