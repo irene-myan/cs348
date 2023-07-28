@@ -3,10 +3,10 @@ import TextField from "@mui/material/TextField";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { GetPercentage } from "../apiFunctions";
 import Chessboard from "chessboardjsx";
-import { Chess } from "chess.js";
+import Chess from "chess.js";
 import Button from "@mui/material/Button";
 import { DataGrid } from "@mui/x-data-grid";
-import axios from "axios";
+import { GetNextBestMove } from "../apiFunctions";
 
 const darkTheme = createTheme({
   palette: {
@@ -57,6 +57,10 @@ const NextMove = () => {
   //     setFen(FEN);
   //   };
 
+  const handleClick = () => {
+    GetNextBestMove(fen);
+  };
+
   const handlePut = (piece, pos, delPos) => {
     try {
       if (chess.put(piece, pos)) {
@@ -67,15 +71,6 @@ const NextMove = () => {
     } catch (e) {
       alert("invalid move");
     }
-  };
-
-  const handleClick = async () => {
-    const response = await axios.get("http://localhost:8000/get_next_moves/", {
-      params: {
-        fen: chess.fen,
-      },
-    });
-    console.log(response.data);
   };
 
   return (

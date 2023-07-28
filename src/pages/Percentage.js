@@ -3,7 +3,7 @@ import TextField from "@mui/material/TextField";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { GetPercentage } from "../apiFunctions";
 import Chessboard from "chessboardjsx";
-import { Chess } from "chess.js";
+import Chess from "chess.js";
 
 const darkTheme = createTheme({
   palette: {
