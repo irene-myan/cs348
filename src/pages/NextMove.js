@@ -129,7 +129,14 @@ const NextMove = () => {
             pageSizeOptions={[5, 10, 20, 50]}
           />
         </ThemeProvider>
-        <Chessboard width={350} position={fen} allowDrag={() => false} />
+        <Chessboard width={350} position={fen} boardWidth="400"
+        customBoardStyle={{
+          borderRadius: "4px",
+          boxShadow: "0 2px 10px rgba(0, 0, 0, 0.5)",
+        }}
+        customDarkSquareStyle={{ backgroundColor: "#005b96" }}
+        customLightSquareStyle={{ backgroundColor: "#6497b1" }}
+        allowDrag={() => false} />
       </div>
     </div>
   );

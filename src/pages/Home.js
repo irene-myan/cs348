@@ -106,7 +106,16 @@ const Home = () => {
         <div className="chess-board">
           <div style={{ height: "25px" }}>{result}</div>
 
-          <Chessboard id="StepperBoard" position={moves[moveNum].fen} />
+          <Chessboard 
+          id="StepperBoard" 
+          position={moves[moveNum].fen} 
+          boardWidth="400"
+          customBoardStyle={{
+            borderRadius: "4px",
+            boxShadow: "0 2px 10px rgba(0, 0, 0, 0.5)",
+          }}
+          customDarkSquareStyle={{ backgroundColor: "#005b96" }}
+          customLightSquareStyle={{ backgroundColor: "#6497b1" }} />
           <div className="button-row">
             <button
               disabled={moveNum === 0}
